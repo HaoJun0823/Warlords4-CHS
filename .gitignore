@@ -6,7 +6,8 @@
 # ---- 构建产物 ----
 build_out/
 release/
-W4CHS_DLL/build/        # DLL 编译产物（obj/dll），CI 重新生成
+# DLL 编译产物（obj/dll），CI 重新生成
+W4CHS_DLL/build/
 W4CHS_DLL/*.user
 W4CHS_DLL/*.pch
 W4CHS_DLL/ipch/
