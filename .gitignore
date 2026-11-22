@@ -19,4 +19,8 @@ venv/
 
 # ---- 临时文件 ----
 *.bak
+*.backup
 *.tmp
+*.orig
+# 仓库目录级的整包快照（误生成物，不入库）
+Warlords_IV_HOE_106_CH.zip
