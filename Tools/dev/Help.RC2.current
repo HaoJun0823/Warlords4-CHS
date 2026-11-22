@@ -1,0 +1,1371 @@
+<Help>
+
+   <!-- LIST OF TOPICS -->
+   <Topics>
+      <Topic id="0">游玩技巧</Topic>
+      <Topic id="3">统帅技能</Topic>
+      <Topic id="6">英雄技能</Topic>
+      <Topic id="1">单位技能（A–H）</Topic>
+      <Topic id="2">单位技能（I–Z）</Topic>
+      <Topic id="4">单位属性</Topic>
+      <Topic id="8">物品技能</Topic>
+      <Topic id="7">地形效果</Topic>
+      <Topic id="9">杂项</Topic>
+      <Topic id="5">教程</Topic>
+   </Topics>
+
+   <!-- LIST OF ITEMS -->
+   <Items>
+      <Item id="0" topic="0">10 大种族</Item>
+      <Item id="1" topic="0">统帅创建：主修战斗</Item>
+      <Item id="2" topic="0">统帅创建：主修神圣魔法</Item>
+      <Item id="3" topic="0">统帅创建：主修符文魔法</Item>
+      <Item id="4" topic="0">统帅创建：主修自然魔法</Item>
+      <Item id="5" topic="0">统帅创建：主修召唤术</Item>
+      <Item id="6" topic="0">统帅创建：主修死灵术</Item>
+      <Item id="7" topic="0">统帅创建：辅修技能</Item>
+      <Item id="8" topic="0">士气与混沌</Item>
+      <Item id="9" topic="0">法术施放</Item>
+      <Item id="10" topic="0">魔力</Item>
+      <Item id="11" topic="0">魔力消耗</Item>
+      <Item id="12" topic="0">城市防御塔</Item>
+
+      <Item id="100" topic="1">箭术</Item>
+      <Item id="101" topic="1">护甲</Item>
+      <Item id="102" topic="1">暗杀</Item>
+      <Item id="103" topic="1">祝福</Item>
+      <Item id="104" topic="1">嗜血</Item>
+      <Item id="105" topic="1">建造</Item>
+      <Item id="106" topic="1">重击</Item>
+      <Item id="107" topic="1">诅咒</Item>
+      <Item id="141" topic="1">恶魔克星</Item>
+      <Item id="108" topic="1">死亡凝视</Item>
+      <Item id="109" topic="1">亡灵克星</Item>
+      <Item id="110" topic="1">疫病</Item>
+      <Item id="111" topic="1">屠龙</Item>
+      <Item id="112" topic="1">矮人克星</Item>
+      <Item id="113" topic="1">精灵克星</Item>
+      <Item id="140" topic="1">额外强韧</Item>
+      <Item id="115" topic="1">烈焰</Item>
+      <Item id="116" topic="1">先手攻击</Item>
+      <Item id="117" topic="1">巨人克星</Item>
+      <Item id="118" topic="1">治疗</Item>
+      <Item id="119" topic="2">收入</Item>
+      <Item id="122" topic="2">魔法免疫</Item>
+      <Item id="120" topic="2">人类克星</Item>
+      <Item id="142" topic="2">怪物克星</Item>
+      <Item id="123" topic="2">连击</Item>
+      <Item id="124" topic="2">抵消</Item>
+      <Item id="125" topic="2">兽人克星</Item>
+      <Item id="126" topic="2">毒素</Item>
+      <Item id="127" topic="2">再生</Item>
+      <Item id="128" topic="2">搜刮</Item>
+      <Item id="129" topic="2">侦察</Item>
+      <Item id="130" topic="2">攻城</Item>
+      <Item id="131" topic="2">惩戒邪恶</Item>
+      <Item id="132" topic="2">惩戒善良</Item>
+      <Item id="133" topic="2">速度</Item>
+      <Item id="134" topic="2">嘲讽</Item>
+      <Item id="135" topic="2">威慑</Item>
+      <Item id="136" topic="2">吸血</Item>
+      <Item id="137" topic="2">庇护</Item>
+
+      <Item id="138" topic="4">战力</Item>
+      <Item id="139" topic="4">生命值</Item>
+
+      <Item id="200" topic="3">反魔法</Item>
+      <Item id="201" topic="3">大法师</Item>
+      <Item id="202" topic="3">混沌</Item>
+      <Item id="203" topic="3">圣战</Item>
+      <Item id="204" topic="3">守城</Item>
+      <Item id="205" topic="3">神圣魔法</Item>
+      <Item id="206" topic="3">工程学</Item>
+      <Item id="207" topic="3">声望</Item>
+      <Item id="208" topic="3">召唤强化</Item>
+      <Item id="209" topic="3">荣耀</Item>
+      <Item id="210" topic="3">商贸</Item>
+      <Item id="211" topic="3">士气</Item>
+      <Item id="212" topic="3">自然魔法</Item>
+      <Item id="213" topic="3">死灵术</Item>
+      <Item id="214" topic="3">符文魔法</Item>
+      <Item id="215" topic="3">召唤术</Item>
+      <Item id="216" topic="3">武器大师</Item>
+
+      <Item id="500" topic="5">教程 1：法术研究</Item>
+      <Item id="501" topic="5">教程 2：你的首都</Item>
+      <Item id="502" topic="5">教程 3：生产</Item>
+      <Item id="503" topic="5">教程 4：城内部队</Item>
+      <Item id="504" topic="5">教程 5：目标</Item>
+      <Item id="505" topic="5">教程 6：战斗</Item>
+      <Item id="506" topic="5">教程 7：攻占城市</Item>
+      <Item id="507" topic="5">教程 8：攻克遗迹</Item>
+      <Item id="508" topic="5">教程 9：任务</Item>
+      <Item id="509" topic="5">教程 10：快捷菜单</Item>
+      <Item id="510" topic="5">教程 11：学习新法术</Item>
+      <Item id="511" topic="5">教程 12：金币与魔力</Item>
+      <Item id="512" topic="5">教程 13：施放法术</Item>
+      <Item id="513" topic="5">教程 14：生产集结点</Item>
+      <Item id="514" topic="5">教程 15：结束回合</Item>
+      <Item id="515" topic="5">教程 16：单位升级</Item>
+      <Item id="516" topic="5">教程 17：士气</Item>
+      <Item id="517" topic="5">教程 18：小地图</Item>
+      <Item id="518" topic="5">教程 19：胜利条件</Item>
+      <Item id="519" topic="5">教程 20：摧毁与加固</Item>
+
+      <Item id="601" topic="6">恐惧</Item>
+      <Item id="602" topic="6">统率</Item>
+      <Item id="603" topic="6">坐骑</Item>
+      <Item id="604" topic="6">法术</Item>
+
+      <Item id="701" topic="7">峡谷</Item>
+      <Item id="702" topic="7">城市</Item>
+      <Item id="703" topic="7">沙漠</Item>
+      <Item id="704" topic="7">森林</Item>
+      <Item id="705" topic="7">丘陵</Item>
+      <Item id="706" topic="7">熔岩</Item>
+      <Item id="707" topic="7">沼泽</Item>
+      <Item id="708" topic="7">山脉</Item>
+      <Item id="709" topic="7">平原</Item>
+      <Item id="710" topic="7">道路</Item>
+      <Item id="711" topic="7">岩石</Item>
+      <Item id="712" topic="7">遗迹</Item>
+      <Item id="713" topic="7">雪地</Item>
+      <Item id="714" topic="7">水域</Item>
+      <Item id="715" topic="7">树林</Item>
+      <Item id="716" topic="7">杂项</Item>
+
+      <Item id="801" topic="8">城市金币</Item>
+      <Item id="802" topic="8">神圣</Item>
+      <Item id="803" topic="8">逃脱</Item>
+      <Item id="804" topic="8">效忠</Item>
+      <Item id="805" topic="8">移动加成</Item>
+      <Item id="806" topic="8">自然</Item>
+      <Item id="807" topic="8">死灵</Item>
+      <Item id="808" topic="8">招募盟军</Item>
+      <Item id="809" topic="8">符文</Item>
+      <Item id="810" topic="8">召唤</Item>
+      <Item id="811" topic="8">经验加成</Item>
+
+      <Item id="901" topic="9">命中率对照表</Item>
+      <Item id="902" topic="9">士气对照表</Item>
+      <Item id="903" topic="9">英雄／佣兵／商人报价</Item>
+   </Items>
+
+   <!--  ......................................PLAY TIPS.................................... -->
+
+   <!-- RACE WHEEL -->
+   <Entry item="0">
+      <Picture x="10" y="5" width="304" height="240">English\RaceWheel.tga</Picture>
+      <Text align="center">在上方的种族圆环中，两个种族距离越近，你生产该种族单位的速度就越快，加固其城市的费用也越低。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - COMBAT MAJOR -->
+   <Entry item="1">
+      <Text align="left">以下简要介绍以战斗为主修方向的统帅技能。</Text>
+      <Text align="left">优势：能组建拥有大量高级单位的军队，并在战斗中获得额外攻击机会。</Text>
+      <Text align="left">弱点：只能使用英雄系法术，魔力恢复速度极低。</Text>
+      <Text align="left">适合：偏爱集中培养少数高级精锐部队、不依赖魔法的玩家。</Text>
+      <Text align="left">玩法建议：优先提升“武器大师”，再提升“士气”。取得首都单位的全部升级，用这些单位组建精锐部队。尽量保持满编，以充分发挥“武器大师”的效果。可以考虑夷平附近城市，让更多特殊地点归属首都。“战斗”“自然”和“死灵”都是不错的辅修方向。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - DIVINE MAJOR -->
+   <Entry item="2">
+      <Text align="left">以下简要介绍以神圣魔法为主修方向的统帅技能。</Text>
+      <Text align="left">优势：兼具大量持续性法术、额外战斗生命值和单位移动力。</Text>
+      <Text align="left">弱点：缺少战斗法术，首都单位较弱，防守不易。</Text>
+      <Text align="left">适合：偏爱快速行军和主动进攻、不喜欢固守的玩家。</Text>
+      <Text align="left">玩法建议：优先提升“圣战”，再提升“神圣魔法”。尽量主动攻击，利用“圣战”的生命值加成。施放“坚韧”以迅速扩张。优先研究持续性法术；“圣骑士”“灵感”“白色结界”“坚韧”和“祭坛”法术尤为重要。“战斗”和“神圣魔法”适合作为辅修。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - RUNE MAJOR -->
+   <Entry item="3">
+      <Text align="left">以下简要介绍以符文魔法为主修方向的统帅技能。</Text>
+      <Text align="left">优势：法术搭配均衡，资金充裕，获得商人出售魔法物品机会较多；在团队游戏中尤为出色。</Text>
+      <Text align="left">弱点：没有特别突出的专长。</Text>
+      <Text align="left">适合：喜欢收集魔法物品、积累资金以升级城市的玩家。</Text>
+      <Text align="left">玩法建议：“商贸”和“符文魔法”同步提升。招募或生产大量英雄，并为他们留出装备空位，以便购买商人的物品。尽早施放“迟缓术”，阻滞敌人的扩张。“大地之灵”“冰雹”“大地之力”“迟缓术”和“祭坛”法术尤其重要。“战斗”“神圣魔法”和“符文魔法”均适合作为辅修。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - NATURE MAJOR -->
+   <Entry item="4">
+      <Text align="left">以下简要介绍以自然魔法为主修方向的统帅技能。</Text>
+      <Text align="left">优势：拥有许多强力战斗法术，还能提高守城单位的生命值和防御塔伤害。</Text>
+      <Text align="left">弱点：“祭坛”法术最弱，战斗法术耗魔较高，进攻可能受到限制。</Text>
+      <Text align="left">适合：喜欢逐城推进、攻占后立即重兵加固的玩家。</Text>
+      <Text align="left">玩法建议：优先提升“守城”，再提升“自然魔法”。把部队驻扎在城内，以获得“守城”的生命值加成。尽早、频繁施放“生长”，加快扩张。升级城市或增加防御塔生命值。“生长”“伊莉丝的祝福”“草药学”和“精准术”是重要法术，尽量避开“祭坛”法术。“自然魔法”和“召唤术”适合作为辅修。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - SUMMONING MAJOR -->
+   <Entry item="5">
+      <Text align="left">以下简要介绍以召唤术为主修方向的统帅技能。</Text>
+      <Text align="left">优势：拥有大量召唤法术，并能强化被召唤单位的战力与生命值。</Text>
+      <Text align="left">弱点：法术耗魔较高，往往必须在召唤单位与施放其他法术之间取舍。</Text>
+      <Text align="left">适合：喜爱快攻、希望尽早且频繁召唤高级单位的玩家。</Text>
+      <Text align="left">玩法建议：优先提升“召唤强化”，再提升“召唤术”。派飞行单位深入敌后，施放“召唤仆从”或“烈焰九头蛇”。用“火焰之环”打击城内守军，用“激怒”消灭弓箭手。“火焰之环”“召唤仆从”“激怒”“烈焰九头蛇”“厄运蝠群”及“祭坛”法术十分关键。“战斗”和“召唤术”适合作为辅修。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - NECROMANCY MAJOR -->
+   <Entry item="6">
+      <Text align="left">以下简要介绍以死灵术为主修方向的统帅技能。</Text>
+      <Text align="left">优势：兼有多样的召唤与战斗法术，还能提高部队的魔法抗性。</Text>
+      <Text align="left">弱点：许多法术仅对不死族或邪恶阵营有效。</Text>
+      <Text align="left">适合：偏爱多种法术搭配与魔法防护的玩家。</Text>
+      <Text align="left">玩法建议：“反魔法”和“死灵术”同步提升。使用不死族时，“死亡瘟疫”威力惊人。前期召唤“燃烧颅骨”协助攻城。派飞行单位深入远方，再施放“亡灵勇士”，以便购买远处城市。“死亡瘟疫”“燃烧颅骨”“幽灵战马”“魔力汲取”和“祭坛”法术尤为关键。“战斗”和“死灵术”适合作为辅修。</Text>
+   </Entry>
+
+   <!-- WARLORD CREATION - MINOR SKILLS -->
+   <Entry item="7">
+	  <Text align="left">统帅的辅修技能大致对应 4 种基本玩法。</Text>
+      <Text align="left">声望／混沌：适合希望招募大量盟军、削弱敌方士气的玩家。</Text>
+      <Text align="left">荣耀：适合喜欢招募众多英雄的玩家。</Text>
+	  <Text align="left">工程学：适合重视城市、防御塔及特殊地点升级的玩家。</Text>
+	  <Text align="left">大法师：适合经常施放各类法术的玩家。</Text>
+   </Entry>
+
+   <!-- MORALE AND CHAOS -->
+   <Entry item="8">
+      <Text align="left">单位每次在战斗中击中敌人时，都会比较双方士气。如果己方士气较高，就有机会额外免费攻击一次；士气差距越大，额外攻击的概率越高。</Text>
+      <Text align="left">最终士气受到以下因素影响：</Text>
+      <Text align="center">己方统帅的“士气”技能和敌方的“混沌”技能</Text>
+      <Text align="center">首都中的各种建筑</Text>
+      <Text align="center">己方及敌方英雄装备的物品</Text>
+      <Text align="center">己方城市每连接一座雕像，士气 +1</Text>
+      <Text align="center">同一部队全部由同种族生物组成，士气 +2</Text>
+      <Text align="center">同一部队全部由种族圆环上相邻种族的生物组成，士气 +1</Text>
+      <Text align="center">同一部队含有敌对种族的生物，士气 -1</Text>
+      <Text align="center">己方统帅阵亡，士气 -3</Text>
+   </Entry>
+
+   <!-- SPELLCASTING -->
+   <Entry item="9">
+      <Text align="left">统帅只要将 5 大魔法学派中的一种选为主修或辅修，就能施放法术。</Text>
+      <Text align="left">法术必须先学会才能施放；威力越强的法术，研究所需时间越长。统帅一旦阵亡，便无法再研究或施放法术。</Text>
+      <Text align="left">法术从当前选中的部队或城市所在位置施放；若均未选中，则从首都施放。</Text>
+      <Text align="left">施法地点距首都越远，消耗的魔力就越多。</Text>
+      <Text align="left">英雄也能施放数量有限的英雄专属法术；这些法术可由任何统帅研究。</Text>
+   </Entry>
+
+   <!-- MANA -->
+   <Entry item="10">
+      <Text align="left">每道法术都有魔力消耗；威力越强，通常耗魔越高。</Text>
+      <Text align="left">统帅每回合都会恢复魔力，以下方式可以提高恢复速度：</Text>
+      <Text align="center">每块魔力水晶使恢复量 +1</Text>
+      <Text align="center">首都的建筑</Text>
+      <Text align="center">英雄装备的物品</Text>
+      <Text align="center">“大法师”技能</Text>
+      <Text align="center">每座己方图书馆使恢复量 +1</Text>
+   </Entry>
+
+   <!-- MANA COSTS -->
+   <Entry item="11">
+      <Text align="left">法术列出的魔力消耗，是在首都施放所需的基础值。在其他地点施法，还要加上以下消耗：</Text>
+      <Text align="center">在附近城市召唤：额外 +4</Text>
+      <Text align="center">在附近部队召唤：额外 +6</Text>
+      <Text align="center">在远处城市召唤：额外 +8</Text>
+      <Text align="center">在远处部队召唤：额外 +12</Text>
+      <Text align="center">在附近城市施放祈唤术：额外 +5</Text>
+      <Text align="center">在附近部队施放祈唤术：额外 +8</Text>
+      <Text align="center">在远处城市施放祈唤术：额外 +10</Text>
+      <Text align="center">在远处部队施放祈唤术：额外 +15</Text>
+   </Entry>
+
+   <!-- CITY TOWERS -->
+   <Entry item="12">
+      <Text align="left">进攻敌方城市时，不仅要击败守军，还必须承受敌方防御塔的攻击。</Text>
+      <Text align="left">投石机等攻城单位会自动向防御塔开火，试图摧毁它；城市等级越高，防御塔越坚固。</Text>
+      <Text align="left">每当有新单位进入战斗，防御塔就会射击进攻方。伤害取决于城市等级：</Text>
+      <Text align="center">1 级城市：造成 1–3 点伤害</Text>
+      <Text align="center">2 级城市：造成 1–4 点伤害</Text>
+      <Text align="center">3 级城市：造成 1–5 点伤害</Text>
+      <Text align="center">4 级城市：造成 1–6 点伤害</Text>
+      <Text align="center">首都：造成 1–10 点伤害</Text>
+   </Entry>
+
+
+   <!--  ......................................UNIT SKILLS.................................... -->
+
+   <!-- ARCHERY -->
+   <Entry item="100">
+      <Text align="left">拥有“箭术”的单位，每当有新生物进入战斗时，都有概率射击当前敌方单位。</Text>
+      <Text align="left">无论一支部队里有多少名弓箭手，对单个敌方单位最多只能射出 2 箭。</Text>
+      <Text align="center">等级 1：20% 概率造成 1–2 点伤害</Text>
+      <Text align="center">等级 2：35% 概率造成 1–3 点伤害</Text>
+      <Text align="center">等级 3：50% 概率造成 1–4 点伤害</Text>
+      <Text align="center">等级 4：65% 概率造成 1–5 点伤害</Text>
+      <Text align="center">等级 5：80% 概率造成 1–6 点伤害</Text>
+   </Entry>
+
+   <!-- ARMOR -->
+   <Entry item="101">
+      <Text align="left">减少单位受到近战或远程攻击时承受的伤害。</Text>
+      <Text align="center">等级 1：近战减伤 1 点，远程减伤 1 点</Text>
+      <Text align="center">等级 2：近战减伤 1-2 点，远程减伤 1-2 点</Text>
+      <Text align="center">等级 3：近战减伤 1-3 点，远程减伤 1-3 点</Text>
+      <Text align="center">等级 4：近战减伤 1-4 点，远程减伤 1-4 点</Text>
+      <Text align="center">等级 5：近战减伤 1-5 点，远程减伤 1-5 点</Text>
+   </Entry>
+
+   <!-- ASSASSIN -->
+   <Entry item="102">
+      <Text align="left">拥有“暗杀”技能的单位，每次攻击敌方英雄时都有概率直接将其击杀。</Text>
+      <Text align="left">成功击中任意单位后，触发暴击的概率还会翻倍。</Text>
+      <Text align="center">等级 1：10% 触发概率</Text>
+      <Text align="center">等级 2：20% 触发概率</Text>
+      <Text align="center">等级 3：30% 触发概率</Text>
+      <Text align="center">等级 4：40% 触发概率</Text>
+      <Text align="center">等级 5：50% 触发概率</Text>
+   </Entry>
+
+   <!-- BLESS -->
+   <Entry item="103">
+      <Text align="left">拥有“祝福”技能的单位，每当己方单位进入战斗，都有机会为其施加祝福。被祝福的单位战力 +3，并获得一定的敌方特殊能力防护。邪恶单位无法受到祝福。</Text>
+      <Text align="center">等级 1：10% 触发概率</Text>
+      <Text align="center">等级 2：20% 触发概率</Text>
+      <Text align="center">等级 3：30% 触发概率</Text>
+      <Text align="center">等级 4：40% 触发概率</Text>
+      <Text align="center">等级 5：50% 触发概率</Text>
+   </Entry>
+
+   <!-- BLOODLUST -->
+   <Entry item="104">
+      <Text align="left">单位受到近战攻击时，有机会陷入狂怒，战力 +3。每场战斗中最多可触发 3 次。</Text>
+      <Text align="center">等级 1：20% 触发概率</Text>
+      <Text align="center">等级 2：35% 触发概率</Text>
+      <Text align="center">等级 3：50% 触发概率</Text>
+      <Text align="center">等级 4：65% 触发概率</Text>
+      <Text align="center">等级 5：80% 触发概率</Text>
+   </Entry>
+
+   <!-- BUILD -->
+   <Entry item="105">
+      <Text align="left">当拥有“建造”技能的单位位于城市内或紧邻城市时，该城市重建或加固所需的费用会降低。</Text>
+      <Text align="center">等级 1：费用减免 20%</Text>
+      <Text align="center">等级 2：费用减免 35%</Text>
+      <Text align="center">等级 3：费用减免 50%</Text>
+      <Text align="center">等级 4：费用减免 65%</Text>
+      <Text align="center">等级 5：费用减免 80%</Text>
+   </Entry>
+
+   <!-- CRUSHING BLOW -->
+   <Entry item="106">
+      <Text align="left">单位在战斗中每次攻击都有机会发动“重击”。重击先造成正常伤害，再将目标剩余生命值减半。</Text>
+      <Text align="center">等级 1：20% 触发概率</Text>
+      <Text align="center">等级 2：35% 触发概率</Text>
+      <Text align="center">等级 3：50% 触发概率</Text>
+      <Text align="center">等级 4：65% 触发概率</Text>
+      <Text align="center">等级 5：80% 触发概率</Text>
+   </Entry>
+
+   <!-- CURSE -->
+   <Entry item="107">
+      <Text align="left">拥有“诅咒”技能的单位，每当敌方单位进入战斗，都有机会诅咒它。受诅咒单位战力 -3，其特殊能力只能按当前等级的一半生效（向下取整）。</Text>
+      <Text align="center">等级 1：10% 触发概率</Text>
+      <Text align="center">等级 2：20% 触发概率</Text>
+      <Text align="center">等级 3：30% 触发概率</Text>
+      <Text align="center">等级 4：40% 触发概率</Text>
+      <Text align="center">等级 5：50% 触发概率</Text>
+   </Entry>
+
+   <!-- DEATH GAZE -->
+   <Entry item="108">
+      <Text align="left">拥有“死亡凝视”的单位与敌人交战时，有机会在正式开战前直接杀死对手。</Text>
+      <Text align="center">等级 1：10% 触发概率</Text>
+      <Text align="center">等级 2：15% 触发概率</Text>
+      <Text align="center">等级 3：20% 触发概率</Text>
+      <Text align="center">等级 4：25% 触发概率</Text>
+      <Text align="center">等级 5：30% 触发概率</Text>
+   </Entry>
+
+   <!-- DEATHSLAYER -->
+   <Entry item="109">
+      <Text align="left">拥有“不死族克星”的单位对抗敌方不死族时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- DISEASE -->
+   <Entry item="110">
+      <Text align="left">攻击命中敌人时，有机会使其染上疫病。患病单位无法得到治疗，造成的伤害减半。</Text>
+	<Text align="left">疫病持续至战斗结束、患病单位死亡，或该单位在战斗中击杀 3 名敌人为止。</Text>
+      <Text align="center">等级 1：20% 触发概率</Text>
+      <Text align="center">等级 2：35% 触发概率</Text>
+      <Text align="center">等级 3：50% 触发概率</Text>
+      <Text align="center">等级 4：65% 触发概率</Text>
+      <Text align="center">等级 5：80% 触发概率</Text>
+   </Entry>
+
+   <!-- DRAGONSLAYER -->
+   <Entry item="111">
+      <Text align="left">拥有“屠龙”的单位对抗敌方龙族时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- DWARFSLAYER -->
+   <Entry item="112">
+      <Text align="left">拥有“矮人克星”的单位对抗敌方矮人时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- ELFSLAYER -->
+   <Entry item="113">
+      <Text align="left">拥有“精灵克星”的单位对抗敌方精灵时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- FIRE -->
+   <Entry item="115">
+      <Text align="left">拥有“烈焰”的单位每次击中敌人都会造成额外伤害，且烈焰伤害无视对方护甲。</Text>
+      <Text align="center">等级 1：额外伤害 1 点</Text>
+      <Text align="center">等级 2：额外伤害 1-2 点</Text>
+      <Text align="center">等级 3：额外伤害 1-3 点</Text>
+      <Text align="center">等级 4：额外伤害 1-4 点</Text>
+      <Text align="center">等级 5：额外伤害 1-5 点</Text>
+   </Entry>
+
+   <!-- FIRST STRIKE -->
+   <Entry item="116">
+      <Text align="left">拥有“先手攻击”的单位，每当新敌人进入战斗时，都会率先出手。</Text>
+      <Text align="center">等级 1：先手攻击造成 3 点伤害</Text>
+      <Text align="center">等级 2：先手攻击造成 3-6 点伤害</Text>
+      <Text align="center">等级 3：先手攻击造成 3-9 点伤害</Text>
+      <Text align="center">等级 4：先手攻击造成 3-12 点伤害</Text>
+      <Text align="center">等级 5：先手攻击造成 3-15 点伤害</Text>
+   </Entry>
+
+   <!-- GIANTSLAYER -->
+   <Entry item="117">
+      <Text align="left">拥有“巨人克星”的单位对抗敌方巨人类单位时，伤害和战力均获得加成，巨魔、食人魔和牛头怪也在此列。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- HEAL -->
+   <Entry item="118">
+      <Text align="left">战斗中每当有敌人被击败，拥有“治疗”技能的单位便会为当前正在作战的己方单位恢复生命。</Text>
+      <Text align="left">如果部队里有多名治疗单位，它们都会尝试治疗，但最终只采用其中恢复量最高的一次结果。</Text>
+      <Text align="center">等级 1：恢复 1 点生命值</Text>
+      <Text align="center">等级 2：恢复 1-2 点生命值</Text>
+      <Text align="center">等级 3：恢复 1-3 点生命值</Text>
+      <Text align="center">等级 4：恢复 1-4 点生命值</Text>
+      <Text align="center">等级 5：恢复 1-5 点生命值</Text>
+   </Entry>
+
+   <!-- INCOME -->
+   <Entry item="119">
+      <Text align="left">拥有“收入”技能的单位会增加你的金币收入，也可能影响其所在部队的维护费。</Text>
+      <Text align="center">等级 1：收入 +2</Text>
+      <Text align="center">等级 2：收入 +4；该单位维护费减半</Text>
+      <Text align="center">等级 3：收入 +6；该单位免维护费</Text>
+      <Text align="center">等级 4：收入 +10；所在部队维护费减半</Text>
+      <Text align="center">等级 5：收入 +15；所在部队免维护费</Text>
+   </Entry>
+
+   <!-- KINSLAYER -->
+   <Entry item="120">
+      <Text align="left">拥有“人类克星”的单位对抗敌方人类时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- MAGIC IMMUNITY -->
+   <Entry item="122">
+      <Text align="left">拥有“魔法免疫”的单位可以保护整支部队免受敌方法术影响。若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
+      <Text align="center">等级 1：40% 触发概率</Text>
+      <Text align="center">等级 2：55% 触发概率</Text>
+      <Text align="center">等级 3：70% 触发概率</Text>
+      <Text align="center">等级 4：85% 触发概率</Text>
+      <Text align="center">等级 5：100% 触发概率</Text>
+   </Entry>
+
+   <!-- MULTI-ATTACK -->
+   <Entry item="123">
+      <Text align="left">拥有“连击”的单位不仅攻击当前交战的敌人，还会攻击敌方部队中尚未上场的所有单位。</Text>
+      <Text align="center">等级 1：对尚未上场的敌方单位造成 1 点伤害</Text>
+      <Text align="center">等级 2：对尚未上场的敌方单位造成 1-2 点伤害</Text>
+      <Text align="center">等级 3：对尚未上场的敌方单位造成 1-3 点伤害</Text>
+      <Text align="center">等级 4：对尚未上场的敌方单位造成 1-4 点伤害</Text>
+      <Text align="center">等级 5：对尚未上场的敌方单位造成 1-5 点伤害</Text>
+   </Entry>
+
+   <!-- NEGATE -->
+   <Entry item="124">
+      <Text align="left">拥有“抵消”的单位受到敌方大多数特殊能力作用时，可以削弱其效果；但无法削弱暗杀和死亡凝视。</Text>
+      <Text align="center">等级 1：敌方特殊能力等级 -1</Text>
+      <Text align="center">等级 2：敌方特殊能力等级 -2</Text>
+      <Text align="center">等级 3：敌方特殊能力等级 -3</Text>
+      <Text align="center">等级 4：敌方特殊能力等级 -4</Text>
+      <Text align="center">等级 5：敌方特殊能力等级 -5</Text>
+   </Entry>
+
+   <!-- ORCSLAYER -->
+   <Entry item="125">
+      <Text align="left">拥有“兽人克星”的单位对抗敌方兽人类单位时，伤害和战力均获得加成，地精也在此列。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+   <!-- POISON -->
+   <Entry item="126">
+      <Text align="left">攻击命中敌人时，有机会使其中毒。中毒单位无法得到治疗，战力降至原来的三分之二。</Text>
+	<Text align="left">毒素持续至战斗结束、中毒单位死亡，或该单位在战斗中击杀 3 名敌人为止。</Text>
+      <Text align="center">等级 1：20% 触发概率</Text>
+      <Text align="center">等级 2：35% 触发概率</Text>
+      <Text align="center">等级 3：50% 触发概率</Text>
+      <Text align="center">等级 4：65% 触发概率</Text>
+      <Text align="center">等级 5：80% 触发概率</Text>
+   </Entry>
+
+   <!-- REGENERATION -->
+   <Entry item="127">
+      <Text align="left">拥有“再生”的单位，在战斗中每当有一名敌人被击杀，便会恢复一定生命值。</Text>
+      <Text align="center">等级 1：战斗中恢复 3 点生命值</Text>
+      <Text align="center">等级 2：战斗中恢复 4 点生命值</Text>
+      <Text align="center">等级 3：战斗中恢复 5 点生命值；战斗外恢复 2 点</Text>
+      <Text align="center">等级 4：战斗中恢复 6 点生命值；战斗外恢复 4 点</Text>
+      <Text align="center">等级 5：战斗中恢复 7 点生命值；战斗外恢复 6 点</Text>
+   </Entry>
+
+   <!-- SCAVENGING -->
+   <Entry item="128">
+      <Text align="left">拥有“搜刮”技能的单位参与掠夺、洗劫或摧毁城市时，可增加获得的金币。若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
+      <Text align="center">等级 1：额外获得 1–50 金币</Text>
+      <Text align="center">等级 2：额外获得 25–100 金币</Text>
+      <Text align="center">等级 3：额外获得 50–150 金币</Text>
+      <Text align="center">等级 4：额外获得 75–200 金币</Text>
+      <Text align="center">等级 5：额外获得 100–250 金币</Text>
+   </Entry>
+
+   <!-- SCOUTING -->
+   <Entry item="129">
+      <Text align="left">拥有“侦察”的单位可以查看遗迹及敌方城市。若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
+      <Text align="left">开启战争迷雾时，“侦察”还会扩大该单位的视野范围。</Text>
+      <Text align="center">等级 1：可侦察相邻的 1 级敌方城市</Text>
+      <Text align="center">等级 2：可侦察相邻的 2 级敌方城市及低级遗迹</Text>
+      <Text align="center">等级 3：可侦察相邻的 3 级敌方城市及高级遗迹</Text>
+      <Text align="center">等级 4：可侦察相邻的 4 级敌方城市</Text>
+      <Text align="center">等级 5：可侦察地图上任意位置的城市和遗迹</Text>
+   </Entry>
+
+   <!-- SIEGE -->
+   <Entry item="130">
+      <Text align="left">拥有“攻城”技能的单位在进攻城市时可攻击敌方防御塔。每有新生物进入战斗，它就会开火。</Text>
+      <Text align="center">等级 1：每次射击造成 3 点伤害</Text>
+      <Text align="center">等级 2：每次射击造成 4 点伤害</Text>
+      <Text align="center">等级 3：每次射击造成 5 点伤害；有 25% 概率再射击一次</Text>
+      <Text align="center">等级 4：每次射击造成 6 点伤害；有 25% 概率再射击一次</Text>
+      <Text align="center">等级 5：每次射击造成 6 点伤害；有 50% 概率再射击一次</Text>
+   </Entry>
+
+   <!-- SMITE EVIL -->
+   <Entry item="131">
+      <Text align="left">拥有“惩戒邪恶”的单位每次击中邪恶单位，都会造成额外伤害。</Text>
+      <Text align="center">等级 1：伤害 +2</Text>
+      <Text align="center">等级 2：伤害 +3</Text>
+      <Text align="center">等级 3：伤害 +4</Text>
+      <Text align="center">等级 4：伤害 +5</Text>
+      <Text align="center">等级 5：伤害 +6</Text>
+   </Entry>
+
+   <!-- SMITE GOOD -->
+   <Entry item="132">
+      <Text align="left">拥有“惩戒善良”的单位每次击中善良单位，都会造成额外伤害。</Text>
+      <Text align="center">等级 1：伤害 +2</Text>
+      <Text align="center">等级 2：伤害 +3</Text>
+      <Text align="center">等级 3：伤害 +4</Text>
+      <Text align="center">等级 4：伤害 +5</Text>
+      <Text align="center">等级 5：伤害 +6</Text>
+   </Entry>
+
+   <!-- SPEED -->
+   <Entry item="133">
+      <Text align="left">拥有“速度”的单位可以增加所在部队的移动力上限；同一部队中多个单位的“速度”加成可以叠加。</Text>
+      <Text align="center">等级 1：移动力 +1</Text>
+      <Text align="center">等级 2：移动力 +2</Text>
+      <Text align="center">等级 3：移动力 +3</Text>
+      <Text align="center">等级 4：移动力 +4</Text>
+      <Text align="center">等级 5：移动力 +5</Text>
+   </Entry>
+
+   <!-- TAUNT -->
+   <Entry item="134">
+      <Text align="left">“嘲讽”会迫使敌方实力较弱的下一名单位进入战斗，使敌方无法自行选择下一个上场单位，并令被嘲讽单位的战力降低 3 点。</Text>
+      <Text align="center">等级 1：20% 触发概率</Text>
+      <Text align="center">等级 2：35% 触发概率</Text>
+      <Text align="center">等级 3：50% 触发概率</Text>
+      <Text align="center">等级 4：65% 触发概率</Text>
+      <Text align="center">等级 5：80% 触发概率</Text>
+   </Entry>
+
+   <!-- TERROR -->
+   <Entry item="135">
+      <Text align="left">拥有“威慑”的单位，在交战开始时有机会使敌人陷入恐惧。受惊吓的单位在若干回合内战力与生命值都降为 1。</Text>
+      <Text align="left">拥有“威慑”技能的单位不会受到其他单位的恐惧效果影响。</Text>
+      <Text align="center">等级 1：5% 触发概率，持续 5 回合</Text>
+      <Text align="center">等级 2：10% 触发概率，持续 6 回合</Text>
+      <Text align="center">等级 3：15% 触发概率，持续 7 回合</Text>
+      <Text align="center">等级 4：20% 触发概率，持续 8 回合</Text>
+      <Text align="center">等级 5：25% 触发概率，持续 9 回合</Text>
+   </Entry>
+
+   <!-- VAMPIRISM -->
+   <Entry item="136">
+      <Text align="left">拥有“吸血”的单位，每次在战斗中造成伤害时，都有机会吸收等量生命值，从而治疗自身。</Text>
+      <Text align="center">等级 1：10% 触发概率</Text>
+      <Text align="center">等级 2：20% 触发概率</Text>
+      <Text align="center">等级 3：30% 触发概率</Text>
+      <Text align="center">等级 4：40% 触发概率</Text>
+      <Text align="center">等级 5：50% 触发概率</Text>
+   </Entry>
+
+   <!-- WARDING -->
+   <Entry item="137">
+      <Text align="left">“庇护”使单位有机会避开箭术、暗杀和死亡凝视的影响。</Text>
+      <Text align="center">等级 1：抵御箭术：60%；抵御暗杀、死亡凝视：20%</Text>
+      <Text align="center">等级 2：抵御箭术：80%；抵御暗杀、死亡凝视：40%</Text>
+      <Text align="center">等级 3：抵御箭术：100%；抵御暗杀、死亡凝视：60%</Text>
+      <Text align="center">等级 4：抵御箭术：100%；抵御暗杀、死亡凝视：80%</Text>
+      <Text align="center">等级 5：抵御箭术：100%；抵御暗杀、死亡凝视：100%</Text>
+   </Entry>
+
+   <!-- COMBAT -->
+   <Entry item="138">
+      <Text align="left">单位的“战力”决定其战斗表现。双方战力差距越大，高战力一方越有可能击中对手。</Text>
+      <Text align="left">单位击中敌人时，会使目标损失 5–8 点生命值；若攻击未命中，则只造成 1 点伤害。</Text>
+      <Text align="left">单位每次命中敌人，都有 10% 的概率造成暴击，造成 12 点伤害，而不是通常的 5–8 点。</Text>
+   </Entry>
+
+   <!-- LIFE -->
+   <Entry item="139">
+      <Text align="left">单位生命值越高，便越能在战斗中存活。受到的所有伤害都会从当前生命值中扣除。</Text>
+      <Text align="left">单位受到的伤害不会自然恢复，直到其所属玩家的下一个回合开始。</Text>
+   </Entry>
+
+   <!-- EXTRA TOUGH -->
+   <Entry item="140">
+      <Text align="left">这项技能仅兽人可用。除同时增加战力与生命值外，不提供其他特殊能力。</Text>
+      <Text align="center">战力：+1</Text>
+      <Text align="center">生命值：+2</Text>
+   </Entry>
+
+  <!-- DAEMONSLAYER -->
+   <Entry item="141">
+      <Text align="left">拥有“恶魔克星”的单位对抗敌方恶魔时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+  <!-- MONSTERSLAYER -->
+   <Entry item="142">
+      <Text align="left">拥有“怪物克星”的单位对抗敌方怪物时，伤害和战力均获得加成。</Text>
+      <Text align="center">等级 1：伤害 +2，战力 +2</Text>
+      <Text align="center">等级 2：伤害 +3，战力 +3</Text>
+      <Text align="center">等级 3：伤害 +4，战力 +4</Text>
+      <Text align="center">等级 4：伤害 +5，战力 +5</Text>
+      <Text align="center">等级 5：伤害 +6，战力 +6</Text>
+   </Entry>
+
+
+   <!--  ......................................WARLORD SKILLS.................................... -->
+
+   <!-- ANTIMAGIC -->
+   <Entry item="200">
+      <Text align="left">提升“反魔法”技能，可以提高己方所有部队抵御敌方魔法的能力。只有在非战斗状态下，这项效果才能与“魔法免疫”叠加。</Text>
+      <Text align="center">等级 1：魔法抗性 +5%</Text>
+      <Text align="center">等级 2：魔法抗性 +10%</Text>
+      <Text align="center">等级 3：魔法抗性 +15%</Text>
+      <Text align="center">等级 4：魔法抗性 +20%</Text>
+      <Text align="center">等级 5：魔法抗性 +25%</Text>
+      <Text align="center">等级 6：魔法抗性 +30%</Text>
+      <Text align="center">等级 7：魔法抗性 +35%</Text>
+      <Text align="center">等级 8：魔法抗性 +40%</Text>
+      <Text align="center">等级 9：魔法抗性 +45%</Text>
+      <Text align="center">等级 10：魔法抗性 +50%</Text>
+   </Entry>
+
+   <!-- ARCHMAGE -->
+   <Entry item="201">
+      <Text align="left">获得“大法师”技能后，统帅的初始魔力、最大魔力和每回合魔力恢复量都会提高。</Text>
+      <Text align="center">等级 1：初始魔力 +1，每回合恢复 +1，最大魔力 +1</Text>
+      <Text align="center">等级 2：初始魔力 +2，每回合恢复 +1，最大魔力 +2</Text>
+      <Text align="center">等级 3：初始魔力 +3，每回合恢复 +1，最大魔力 +3</Text>
+      <Text align="center">等级 4：初始魔力 +4，每回合恢复 +1，最大魔力 +4</Text>
+      <Text align="center">等级 5：初始魔力 +5，每回合恢复 +2，最大魔力 +5</Text>
+      <Text align="center">等级 6：初始魔力 +6，每回合恢复 +2，最大魔力 +6</Text>
+      <Text align="center">等级 7：初始魔力 +7，每回合恢复 +2，最大魔力 +7</Text>
+      <Text align="center">等级 8：初始魔力 +8，每回合恢复 +2，最大魔力 +8</Text>
+      <Text align="center">等级 9：初始魔力 +9，每回合恢复 +3，最大魔力 +9</Text>
+      <Text align="center">等级 10：初始魔力 +10，每回合恢复 +3，最大魔力 +10</Text>
+   </Entry>
+
+   <!-- CHAOS -->
+   <Entry item="202">
+      <Text align="left">“混沌”会降低所有敌方统帅的士气。</Text>
+      <Text align="center">等级 1：敌方士气 -1（限制值：0）</Text>
+      <Text align="center">等级 2：敌方士气 -1（限制值：-1）</Text>
+      <Text align="center">等级 3：敌方士气 -2（限制值：-1）</Text>
+      <Text align="center">等级 4：敌方士气 -2（限制值：-2）</Text>
+      <Text align="center">等级 5：敌方士气 -3（限制值：-2）</Text>
+      <Text align="center">等级 6：敌方士气 -3（限制值：-3）</Text>
+      <Text align="center">等级 7：敌方士气 -4（限制值：-3）</Text>
+      <Text align="center">等级 8：敌方士气 -4（限制值：-4）</Text>
+      <Text align="center">等级 9：敌方士气 -5（限制值：-4）</Text>
+      <Text align="center">等级 10：敌方士气 -5（限制值：-5）</Text>
+   </Entry>
+
+   <!-- CRUSADER -->
+   <Entry item="203">
+      <Text align="left">“圣战”提高部队移动力，并在主动攻击时赋予额外生命值，有时还能增加攻城攻击次数。</Text>
+      <Text align="center">等级 1：移动力 +1，生命值 +1，攻城加成 +10%</Text>
+      <Text align="center">等级 2：移动力 +1，生命值 +1，攻城加成 +20%</Text>
+      <Text align="center">等级 3：移动力 +1，生命值 +1，攻城加成 +30%</Text>
+      <Text align="center">等级 4：移动力 +1，生命值 +2，攻城加成 +30%</Text>
+      <Text align="center">等级 5：移动力 +1，生命值 +2，攻城加成 +40%</Text>
+      <Text align="center">等级 6：移动力 +2，生命值 +2，攻城加成 +40%</Text>
+      <Text align="center">等级 7：移动力 +2，生命值 +3，攻城加成 +40%</Text>
+      <Text align="center">等级 8：移动力 +2，生命值 +3，攻城加成 +50%</Text>
+      <Text align="center">等级 9：移动力 +2，生命值 +4，攻城加成 +50%</Text>
+      <Text align="center">等级 10：移动力 +3，生命值 +4，攻城加成 +60%</Text>
+   </Entry>
+
+   <!-- DEFENDER -->
+   <Entry item="204">
+      <Text align="left">“守城”提高己方部队防守城市时的生命值，并增强防御塔伤害。</Text>
+      <Text align="center">等级 1：生命值 +2，防御塔伤害 +1</Text>
+      <Text align="center">等级 2：生命值 +2，防御塔伤害 +2</Text>
+      <Text align="center">等级 3：生命值 +3，防御塔伤害 +2</Text>
+      <Text align="center">等级 4：生命值 +3，防御塔伤害 +3</Text>
+      <Text align="center">等级 5：生命值 +4，防御塔伤害 +3</Text>
+      <Text align="center">等级 6：生命值 +4，防御塔伤害 +4</Text>
+      <Text align="center">等级 7：生命值 +5，防御塔伤害 +4</Text>
+      <Text align="center">等级 8：生命值 +5，防御塔伤害 +5</Text>
+      <Text align="center">等级 9：生命值 +6，防御塔伤害 +5</Text>
+      <Text align="center">等级 10：生命值 +7，防御塔伤害 +6</Text>
+   </Entry>
+
+   <!-- DIVINE MAGIC -->
+   <Entry item="205">
+      <Text align="left">“神圣魔法”让你可以研究并施放治疗、祝福和消灭邪恶生物的法术。</Text>
+      <Text align="left">提升这项技能可加快神圣系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
+      <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
+   </Entry>
+
+   <!-- ENGINEER -->
+   <Entry item="206">
+      <Text align="left">“工程学”降低城市建设与升级的费用，强化防御塔，并使部分特殊地点可以升级。</Text>
+      <Text align="center">等级 1：建设费用减免 10%，防御塔生命值 +3，可升级锻造厂</Text>
+      <Text align="center">等级 2：建设费用减免 20%，防御塔生命值 +4</Text>
+      <Text align="center">等级 3：建设费用减免 25%，防御塔生命值 +5</Text>
+      <Text align="center">等级 4：建设费用减免 30%，防御塔生命值 +6，可升级水井</Text>
+      <Text align="center">等级 5：建设费用减免 35%，防御塔生命值 +7</Text>
+      <Text align="center">等级 6：建设费用减免 40%（升至 2 级免费），防御塔生命值 +8</Text>
+      <Text align="center">等级 7：建设费用减免 45%（升至 2 级免费），防御塔生命值 +9，可升级农场</Text>
+      <Text align="center">等级 8：建设费用减免 50%（升至 2 级免费），防御塔生命值 +10</Text>
+      <Text align="center">等级 9：建设费用减免 55%（升至 2 级免费），防御塔生命值 +11</Text>
+      <Text align="center">等级 10：建设费用减免 60%（升至 3 级免费），防御塔生命值 +12，可升级伐木场</Text>
+   </Entry>
+
+   <!-- FAME -->
+   <Entry item="207">
+      <Text align="left">“声望”提高每回合出现盟军招募提议的概率（前提是你有足够金币），同时降低招募价格。</Text>
+      <Text align="center">等级 1：出现概率 +4%，招募价格减免 5%</Text>
+      <Text align="center">等级 2：出现概率 +8%，招募价格减免 10%</Text>
+      <Text align="center">等级 3：出现概率 +12%，招募价格减免 15%</Text>
+      <Text align="center">等级 4：出现概率 +16%，招募价格减免 20%</Text>
+      <Text align="center">等级 5：出现概率 +20%，招募价格减免 25%</Text>
+      <Text align="center">等级 6：出现概率 +24%，招募价格减免 30%</Text>
+      <Text align="center">等级 7：出现概率 +28%，招募价格减免 35%</Text>
+      <Text align="center">等级 8：出现概率 +32%，招募价格减免 40%</Text>
+      <Text align="center">等级 9：出现概率 +36%，招募价格减免 45%</Text>
+      <Text align="center">等级 10：出现概率 +40%，招募价格减免 50%</Text>
+   </Entry>
+
+   <!-- GATE -->
+   <Entry item="208">
+      <Text align="left">“召唤强化”提高通过法术召唤的所有单位的实力。</Text>
+      <Text align="center">等级 1：战力 +1</Text>
+      <Text align="center">等级 2：战力 +1，生命值 +1</Text>
+      <Text align="center">等级 3：战力 +1，生命值 +2</Text>
+      <Text align="center">等级 4：战力 +2，生命值 +3</Text>
+      <Text align="center">等级 5：战力 +2，生命值 +3，等级 +1</Text>
+      <Text align="center">等级 6：战力 +2，生命值 +4，等级 +1</Text>
+      <Text align="center">等级 7：战力 +3，生命值 +4，等级 +1</Text>
+      <Text align="center">等级 8：战力 +3，生命值 +5，等级 +1</Text>
+      <Text align="center">等级 9：战力 +4，生命值 +5，等级 +1</Text>
+      <Text align="center">等级 10：战力 +4，生命值 +6，等级 +2</Text>
+   </Entry>
+
+   <!-- GLORY -->
+   <Entry item="209">
+      <Text align="left">“荣耀”提高每回合出现英雄招募提议的概率（前提是你有足够金币），同时降低招募价格。</Text>
+      <Text align="center">等级 1：出现概率 +4%，招募价格减免 5%</Text>
+      <Text align="center">等级 2：出现概率 +8%，招募价格减免 10%</Text>
+      <Text align="center">等级 3：出现概率 +12%，招募价格减免 15%</Text>
+      <Text align="center">等级 4：出现概率 +16%，招募价格减免 20%</Text>
+      <Text align="center">等级 5：出现概率 +20%，招募价格减免 25%</Text>
+      <Text align="center">等级 6：出现概率 +24%，招募价格减免 30%</Text>
+      <Text align="center">等级 7：出现概率 +28%，招募价格减免 35%</Text>
+      <Text align="center">等级 8：出现概率 +32%，招募价格减免 40%</Text>
+      <Text align="center">等级 9：出现概率 +26%，招募价格减免 45%</Text>
+      <Text align="center">等级 10：出现概率 +40%，招募价格减免 50%</Text>
+   </Entry>
+
+   <!-- MERCHANT -->
+   <Entry item="210">
+      <Text align="left">“商贸”提高你的每回合总金币收入，也增加商人上门出售物品的概率。</Text>
+      <Text align="center">等级 1：金币收入加成 +10%，商人物品报价出现概率 +3%，购买折扣 2%</Text>
+      <Text align="center">等级 2：金币收入加成 +20%，商人物品报价出现概率 +6%，购买折扣 4%</Text>
+      <Text align="center">等级 3：金币收入加成 +30%，商人物品报价出现概率 +9%，购买折扣 6%</Text>
+      <Text align="center">等级 4：金币收入加成 +40%，商人物品报价出现概率 +12%，购买折扣 8%</Text>
+      <Text align="center">等级 5：金币收入加成 +50%，商人物品报价出现概率 +15%，购买折扣 10%</Text>
+      <Text align="center">等级 6：金币收入加成 +60%，商人物品报价出现概率 +18%，购买折扣 12%</Text>
+      <Text align="center">等级 7：金币收入加成 +70%，商人物品报价出现概率 +21%，购买折扣 14%</Text>
+      <Text align="center">等级 8：金币收入加成 +80%，商人物品报价出现概率 +24%，购买折扣 16%</Text>
+      <Text align="center">等级 9：金币收入加成 +90%，商人物品报价出现概率 +27%，购买折扣 18%</Text>
+      <Text align="center">等级 10：金币收入加成 +100%，商人物品报价出现概率 +30%，购买折扣 20%</Text>
+   </Entry>
+
+   <!-- MORALE -->
+   <Entry item="211">
+      <Text align="left">较高的士气能让你在战斗中占据优势。</Text>
+      <Text align="left">单位每次在战斗中击中敌人时，都会比较双方士气。若己方士气较高，便有机会免费额外攻击一次；差距越大，概率越高。</Text>
+	  <Text align="left">有关士气的更多信息，请参阅本帮助中的“游玩技巧”。</Text>
+   </Entry>
+
+   <!-- NATURE MAGIC -->
+   <Entry item="212">
+      <Text align="left">“自然魔法”让你能够研究并施放召唤、强化怪物，以及改善生产和收入的法术。</Text>
+      <Text align="left">提升这项技能可加快自然系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
+      <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
+   </Entry>
+
+   <!-- NECROMANCY -->
+   <Entry item="213">
+      <Text align="left">“死灵术”让你能够研究并施放复活、强化不死族，以及消灭善良生物的法术。</Text>
+      <Text align="left">提升这项技能可加快死灵系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
+      <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
+   </Entry>
+
+   <!-- RUNE MAGIC -->
+   <Entry item="214">
+      <Text align="left">“符文魔法”让你能够研究并施放与岩石、力量、大地和防护有关的法术。</Text>
+      <Text align="left">提升这项技能可加快符文系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
+      <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
+   </Entry>
+
+   <!-- SUMMONING -->
+   <Entry item="215">
+      <Text align="left">“召唤术”让你能够研究并施放与火焰有关的法术，以及召唤、强化恶魔的法术。</Text>
+      <Text align="left">提升这项技能可加快召唤系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
+      <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
+   </Entry>
+
+   <!-- WEAPONMASTER -->
+   <Entry item="216">
+      <Text align="left">“武器大师”会增加每场战斗结束后可分配的经验值，也能让新生产的单位自带经验值。</Text>
+      <Text align="center">等级 1：战后经验池 +10%</Text>
+      <Text align="center">等级 2：战后经验池 +20%，新生产单位经验 +1</Text>
+      <Text align="center">等级 3：战后经验池 +30%，新生产单位经验 +2</Text>
+      <Text align="center">等级 4：战后经验池 +40%，新生产单位经验 +3</Text>
+      <Text align="center">等级 5：战后经验池 +50%，新生产单位经验 +4</Text>
+      <Text align="center">等级 6：战后经验池 +60%，新生产单位经验 +5</Text>
+      <Text align="center">等级 7：战后经验池 +70%，新生产单位经验 +6</Text>
+      <Text align="center">等级 8：战后经验池 +80%，新生产单位经验 +7</Text>
+      <Text align="center">等级 9：战后经验池 +90%，新生产单位经验 +8</Text>
+      <Text align="center">等级 10：战后经验池 +100%，新生产单位经验 +9</Text>
+   </Entry>
+
+   <!--  ......................................TUTORIAL.................................... -->
+
+
+   <!-- SPELL RESEARCH -->
+   <Entry item="500">
+      <Text align="left">每场战役中，你的统帅都会逐渐学会许多法术，但每道法术都必须先经过研究。</Text>
+      <Text align="left">每场战役开始时，以及每次学会新法术后，你都会得到最多 8 种可供研究的法术。</Text>
+      <Text align="left">法术越稀有、威力越强，研究所需时间就越长。不过，如果统帅擅长某个魔法学派，该学派法术的研究时间便会缩短。</Text>
+      <Text align="left">现在请选择一种可研究的法术，然后继续游戏。</Text>
+   </Entry>
+
+   <!-- CAPITAL CITIES -->
+   <Entry item="501">
+      <Text align="left">每场战役开始时，你都会控制自己的首都。首都会不断散发细小的流星状光点，很容易辨认。</Text>
+      <Text align="left">务必守住这座城市。一旦敌人占领你的首都，你就会输掉这场战役！</Text>
+      <Text align="left">统帅和初始部队都驻扎在首都。统帅不能离开首都，但其他部队可以。</Text>
+      <Text align="left">首先用鼠标左键点击首都，选中它。</Text>
+   </Entry>
+
+   <!-- PRODUCTION -->
+   <Entry item="502">
+      <Text align="left">现在你已经进入城市界面。</Text>
+      <Text align="left">右侧是“生产”，左侧是“部队”。我们先从生产开始。</Text>
+      <Text align="left">每座城市根据自身等级，可生产 2–6 种不同单位；生产每种单位都需要一定回合数。</Text>
+      <Text align="left">左键点击一个单位，选择将其投入生产；右键点击可查看详细资料。</Text>
+   </Entry>
+
+   <!-- TROOPS IN THE CITY -->
+   <Entry item="503">
+      <Text align="left">左侧显示城内部队，它们分别位于帐篷或塔楼区域。</Text>
+      <Text align="left">帐篷中的单位可以出城。塔楼内的驻军必须先调入帐篷，才能离城。统帅属于特殊单位，永远不能离开塔楼。</Text>
+      <Text align="left">在地图上对目标位置连续右击两次，便可将部分单位调出城市：第一次设置路线，第二次沿路线移动。</Text>
+      <Text align="left">请记住：左键用于选中对象，右键用于移动对象（除非你在选项菜单中更改了操作方式）。</Text>
+   </Entry>
+
+   <!-- OBJECTIVES -->
+   <Entry item="504">
+      <Text align="left">《战神IV》的核心是战斗：进攻敌方城市，以及挑战遗迹中的守护者。</Text>
+      <Text align="left">想要扩张帝国，首先需要攻击中立城市，也就是悬挂灰旗的城市。</Text>
+      <Text align="left">你还应该探索遗迹，击败守护者，取得其中的宝藏。</Text>
+      <Text align="left">发起战斗与移动相似：先右击目标一次，再右击一次，部队便会前进并开战。</Text>
+   </Entry>
+
+   <!-- COMBAT -->
+   <Entry item="505">
+      <Text align="left">你现在进入了战斗界面。</Text>
+      <Text align="left">双方只能有一方存活；这里没有撤退。</Text>
+      <Text align="left">每次选择己方一名单位出战。若其阵亡，你可以再选择下一个，直到有一方全军覆没。</Text>
+      <Text align="left">许多单位都有特殊能力（右键点击头像可查看详情）。这些能力会在适当时机自动生效。</Text>
+   </Entry>
+
+   <!-- VICTORY IN A CITY -->
+   <Entry item="506">
+      <Text align="left">你攻占了这座城市！城市本身及其附属建筑如今都归你所有。</Text>
+      <Text align="left">接下来会出现若干处理选项：其中一些会改变城市等级，某些甚至会摧毁这座城市。</Text>
+      <Text align="left">一般而言，你对城市造成的破坏越大，就越能从中掠夺到更多金币。</Text>
+      <Text align="left">但请记住：破坏越严重，城市的生产能力就越低，防御也越薄弱。</Text>
+   </Entry>
+
+   <!-- VICTORY IN A RUIN -->
+   <Entry item="507">
+      <Text align="left">你击败了这座遗迹的守护者。</Text>
+      <Text align="left">每座遗迹中都藏有宝物：可能是金币、魔力水晶、盟军、英雄或经验值。</Text>
+      <Text align="left">遗迹一经探索就不能立即再次探索。不过，过一段时间有时会有怪物重新占据已探索的遗迹，并带来新的宝藏。</Text>
+   </Entry>
+
+   <!-- QUESTS -->
+   <Entry item="508">
+      <Text align="left">如果你的城市连接着一座神殿，你就可以领取任务。</Text>
+      <Text align="left">领取任务后，你便能探索地图上特殊的隐藏遗迹。只要找齐并探索全部 4 座遗迹，就能获得丰厚的奖励。</Text>
+      <Text align="left">要领取任务，请右击打开快捷菜单，再选择“领取任务”。</Text>
+   </Entry>
+
+   <!-- POPUP MENU -->
+   <Entry item="509">
+      <Text align="left">游戏中有一组常用命令，集中在“弹出菜单”中，其中通常还包含各种战报。</Text>
+      <Text align="left">你可以用多种方式打开弹出菜单：点击左上角的按钮、按住 Ctrl 再点击地图，或在未选中任何对象时右击地图。</Text>
+      <Text align="left">许多游戏对象还支持右键查看详情，例如右击单位头像可查看完整属性，右击技能可查看说明。</Text>
+   </Entry>
+
+   <!-- LEARNED A NEW SPELL -->
+   <Entry item="510">
+      <Text align="left">你学会了一道新法术。需要施法时，可从右键菜单中选择“施放法术”。</Text>
+      <Text align="left">战役期间，你会不断研究新法术，直到学会所有可用法术为止。</Text>
+      <Text align="left">在世界地图上可以施放任何法术；但进入战斗后，只能施放战斗法术。</Text>
+   </Entry>
+
+   <!-- GOLD AND MANA -->
+   <Entry item="511">
+      <Text align="left">游戏中有两种极其重要的资源：金币与魔力。</Text>
+      <Text align="left">底部控制面板会显示金币和魔力总量，以及收入与维护费。</Text>
+      <Text align="left">你拥有的每座城市都能产出金币，而你控制的每个单位都需要金币维持。金币耗尽时，你将无法继续生产部队。</Text>
+      <Text align="left">魔力则不同。它用于施放法术，并会随时间自然恢复。要查看魔力详情，请将鼠标停在魔力数值上，阅读屏幕最底部的帮助栏。</Text>
+   </Entry>
+
+   <!-- CASTING A SPELL -->
+   <Entry item="512">
+      <Text align="left">有些法术属于“战斗法术”，可以在战斗中施放。</Text>
+      <Text align="left">另一些属于“附魔”，可以随时施放，效果会持续存在，但需要不断消耗魔力维持。</Text>
+      <Text align="left">某些法术需要指定施法位置（如召唤或伤害法术）。它们会从当前选中的部队或城市施放；若未选中任何对象，则从首都施放。</Text>
+      <Text align="left">施法位置距首都越远，消耗的魔力就越多。</Text>
+   </Entry>
+
+   <!-- WAYPOINTS -->
+   <Entry item="513">
+      <Text align="left">生产集结点能让新生产的部队自动前往前线。</Text>
+      <Text align="left">进入集结点菜单，左键选中一座城市，再右键点击目的地。此后该城新生产的部队便会自动向目标行进。</Text>
+      <Text align="left">如果 A 城的集结点指向 B 城，而 B 城指向 C 城，那么 A 城生产的所有单位都会沿集结路线抵达 C 城。</Text>
+      <Text align="left">你也可以在城市界面中，通过右下角小地图的左右键点击来设置集结点。</Text>
+   </Entry>
+
+   <!-- END TURN -->
+   <Entry item="514">
+      <Text align="left">当所有部队都行动完毕，就该结束回合了。点击右下角的盾牌按钮即可。</Text>
+      <Text align="left">如果想查找尚未行动的部队，可以点击底部面板的“下一支部队”按钮（从右数第四个）。</Text>
+      <Text align="left">记住：驻扎在城市塔楼里的守军不会出现在“下一支部队”的循环中。</Text>
+   </Entry>
+
+   <!-- LEVELLING UP UNITS -->
+   <Entry item="515">
+      <Text align="left">你的一名单位升级了。</Text>
+      <Text align="left">升级时，单位可以提升若干属性之一：战力、生命值或特殊能力。</Text>
+      <Text align="left">如需查看此界面中某项特殊能力的说明，只需对它点击右键。</Text>
+  </Entry>
+
+   <!-- MORALE -->
+   <Entry item="516">
+      <Text align="left">保持高士气对战斗胜负十分重要。士气高的部队能够获得额外攻击机会。</Text>
+      <Text align="left">当前士气显示在底部控制面板中。许多因素都会影响它，包括你拥有的雕像数量，以及同一部队中的种族组合。</Text>
+      <Text align="left">有关士气的详细说明，请参阅本帮助“游玩技巧”中的相关条目。</Text>
+   </Entry>
+
+   <!-- MINI MAP -->
+   <Entry item="517">
+      <Text align="left">右上角的小地图能帮助你观察敌方动向。</Text>
+      <Text align="left">你也可以左键点击小地图，快速移动到地图上的相应位置。</Text>
+      <Text align="left">右键点击小地图，或按 M 键，即可改变其尺寸。</Text>
+   </Entry>
+
+   <!-- VICTORY CONDITIONS -->
+   <Entry item="518">
+      <Text align="left">在《战神IV》中，获胜条件很简单。</Text>
+      <Text align="left">只需在敌人占领你的首都之前，夺取全部敌方首都。</Text>
+      <Text align="left">但要小心：每座敌方首都都有一名强大的统帅坐镇守卫。</Text>
+   </Entry>
+
+   <!-- RAZING AND FORTIFYING -->
+   <Entry item="519">
+      <Text align="left">你应该已经注意到，不同城市的防御等级各不相同。</Text>
+      <Text align="left">你可以加固自己的城市来增强防御。右键点击城市，选择“加固城市”。</Text>
+      <Text align="left">不过，加固需要花钱。只要资金充足，甚至可以重建大多数此前遭到摧毁的城市。</Text>
+      <Text align="left">当然，你也可以摧毁城市，让敌人无城可占。</Text>
+   </Entry>
+
+
+   <!--  ......................................HERO SKILLS.................................... -->
+
+
+   <!-- FEAR -->
+   <Entry item="601">
+      <Text align="left">拥有“恐惧”技能的英雄，会降低战斗中所有敌方单位的战力；若有多名英雄拥有该技能，只采用最高等级的效果，不能叠加。</Text>
+      <Text align="center">等级 1：敌方战力 -1</Text>
+      <Text align="center">等级 2：敌方战力 -2</Text>
+      <Text align="center">等级 3：敌方战力 -3</Text>
+      <Text align="center">等级 4：敌方战力 -4</Text>
+      <Text align="center">等级 5：敌方战力 -5</Text>
+   </Entry>
+
+   <!-- LEADERSHIP -->
+   <Entry item="602">
+      <Text align="left">拥有“统率”技能的英雄，会提高所在部队的战力与移动速度；若有多名英雄拥有该技能，只采用最高等级的效果，不能叠加。</Text>
+      <Text align="center">等级 1：所在部队战力 +1，速度 +1</Text>
+      <Text align="center">等级 2：所在部队战力 +2，速度 +1</Text>
+      <Text align="center">等级 3：所在部队战力 +2，速度 +2</Text>
+      <Text align="center">等级 4：所在部队战力 +3，速度 +2</Text>
+      <Text align="center">等级 5：所在部队战力 +3，速度 +3</Text>
+   </Entry>
+
+   <!-- MOUNTS -->
+   <Entry item="603">
+      <Text align="left">英雄可以通过法术召唤飞行坐骑，但坐骑只能载召唤它的英雄。如果多名英雄都想飞行，就必须各自召唤坐骑。</Text>
+      <Text align="left">如果坐骑被杀，或者英雄与坐骑在水面或熔岩上方分离，英雄就会坠地身亡。</Text>
+      <Text align="left">坐骑的种类取决于英雄的阵营属性与等级。</Text>
+      <Text align="center">英雄等级 1–4：1 级坐骑</Text>
+      <Text align="center">英雄等级 5–9：2 级坐骑</Text>
+      <Text align="center">英雄等级 10 及以上：3 级坐骑</Text>
+      <Text align="center">善良阵营：召唤天马坐骑</Text>
+      <Text align="center">中立阵营：召唤风暴龙坐骑</Text>
+      <Text align="center">邪恶阵营：召唤双足飞龙坐骑</Text>
+   </Entry>
+
+   <!-- SPELLS -->
+   <Entry item="604">
+      <Text align="left">英雄可以施放英雄魔法学派的法术（以橙色图标表示）。这些法术也需要研究，但所有统帅都能使用英雄魔法学派。</Text>
+      <Text align="left">英雄系法术必须在当前部队中有英雄时才能施放。若统帅阵亡，仍可施放已学会的英雄系法术，但不能再研究新法术。</Text>
+      <Text align="left">英雄系法术列表：</Text>
+      <Text align="center">英雄坐骑：为英雄召唤飞行坐骑（生物法术）</Text>
+      <Text align="center">英勇一击：使所有单位的暴击概率翻倍（战斗法术）</Text>
+      <Text align="center">英雄威仪：所有单位士气 +2（战斗法术）</Text>
+      <Text align="center">英雄精通：所有单位伤害 +1（战斗法术）</Text>
+      <Text align="center">英雄盛宴：所有单位生命值 +2（战斗法术）</Text>
+   </Entry>
+
+
+   <!--  ......................................TERRAIN EFFECTS.................................... -->
+
+   <!-- CHASM -->
+   <Entry item="701">
+      <Text align="left">峡谷地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：2 点（仅飞行单位可通过）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">无战斗修正。</Text>
+   </Entry>
+
+   <!-- CITY -->
+   <Entry item="702">
+      <Text align="left">城市地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：2 点</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">弓箭单位：防守时战力 +1</Text>
+      <Text align="center">攻城单位：进攻时战力 +1，生命值 +2</Text>
+   </Entry>
+
+   <!-- DESERT -->
+   <Entry item="703">
+      <Text align="left">沙漠地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：4 点</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">兽人单位：战力 -1</Text>
+      <Text align="center">不死族单位：生命值 -2</Text>
+   </Entry>
+
+   <!-- FOREST -->
+   <Entry item="704">
+      <Text align="left">森林地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：2 点（仅飞行单位可通过）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">骑兵单位：战力 -1</Text>
+      <Text align="center">精灵单位：战力 +2</Text>
+   </Entry>
+
+   <!-- HILL -->
+   <Entry item="705">
+      <Text align="left">丘陵地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：5 点（矮人、食人魔阵营只需 3 点）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">矮人单位：生命值 +2</Text>
+      <Text align="center">食人魔单位：生命值 +2</Text>
+   </Entry>
+
+   <!-- LAVA -->
+   <Entry item="706">
+      <Text align="left">熔岩地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：3 点（纯熔岩仅飞行单位可通过）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">黑暗精灵单位：战力 -1</Text>
+      <Text align="center">恶魔单位：战力 +1，生命值 +2</Text>
+      <Text align="center">精灵单位：战力 -1</Text>
+      <Text align="center">拥有“烈焰”的单位：烈焰等级 +1</Text>
+   </Entry>
+
+   <!-- MARSH -->
+   <Entry item="707">
+      <Text align="left">沼泽地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：4 点（兽人、不死族阵营只需 3 点）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">兽人单位：战力 +1</Text>
+      <Text align="center">不死族单位：生命值 +2</Text>
+      <Text align="center">拥有“疫病”的单位：疫病等级 +1</Text>
+   </Entry>
+
+   <!-- MOUNTAIN -->
+   <Entry item="708">
+      <Text align="left">山脉地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：4 点（仅飞行单位可通过）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">龙族单位：生命值 +2</Text>
+      <Text align="center">矮人单位：战力 +1，生命值 +2</Text>
+      <Text align="center">食人魔单位：战力 +1，生命值 +2</Text>
+   </Entry>
+
+   <!-- PLAINS -->
+   <Entry item="709">
+      <Text align="left">平原地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：3 点</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">无战斗修正。</Text>
+    </Entry>
+
+   <!-- ROAD -->
+   <Entry item="710">
+      <Text align="left">道路地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：2 点</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">骑兵单位：战力 +1</Text>
+      <Text align="center">步兵单位：战力 -1</Text>
+      <Text align="center">攻城单位：战力 -1</Text>
+   </Entry>
+
+   <!-- ROCK -->
+   <Entry item="711">
+      <Text align="left">岩石地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：4 点</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">黑暗精灵单位：战力 +1</Text>
+      <Text align="center">矮人单位：战力 +1</Text>
+      <Text align="center">食人魔单位：战力 +1</Text>
+   </Entry>
+
+   <!-- RUIN -->
+   <Entry item="712">
+      <Text align="left">遗迹地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：不适用</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">弓箭单位：防守时战力 +1</Text>
+      <Text align="center">骑兵单位：战力 -1</Text>
+      <Text align="center">飞行单位：进攻时战力 -1</Text>
+      <Text align="center">怪物单位：防守时战力 +1，生命值 +2</Text>
+      <Text align="center">拥有“威慑”的单位：防守时威慑等级 +1</Text>
+   </Entry>
+
+   <!-- SNOW -->
+   <Entry item="713">
+      <Text align="left">雪地地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：4 点</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">恶魔单位：战力 -1，生命值 -2</Text>
+      <Text align="center">龙族单位：战力 -1</Text>
+      <Text align="center">拥有“烈焰”的单位：烈焰等级 -1</Text>
+   </Entry>
+
+   <!-- WATER -->
+   <Entry item="714">
+      <Text align="left">水域地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：2 点（纯水域仅飞行单位可通过）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">矮人单位：生命值 -2</Text>
+      <Text align="center">飞行单位：战力 +1</Text>
+      <Text align="center">拥有“烈焰”的单位：烈焰等级 -1</Text>
+   </Entry>
+
+   <!-- WOODS -->
+   <Entry item="715">
+      <Text align="left">树林地形对移动和战斗的影响如下：</Text>
+      <Text align="left">移动消耗：4 点（黑暗精灵、精灵阵营只需 3 点）</Text>
+      <Text align="left">战斗修正：符合多个类别的单位会同时受到所有对应修正。</Text>
+      <Text align="center">骑兵单位：战力 -1</Text>
+      <Text align="center">矮人单位：生命值 -2</Text>
+      <Text align="center">精灵单位：战力 +2</Text>
+      <Text align="center">食人魔单位：战力 -1，生命值 -2</Text>
+   </Entry>
+
+   <!-- MISCELLANEOUS -->
+   <Entry item="716">
+      <Text align="left">战斗采用防守方所在的地形，其类型会显示在战斗界面中。</Text>
+      <Text align="left">有时战斗界面会列出多种地形，此时会同时应用全部相关地形修正。</Text>
+      <Text align="left">特殊战斗修正：适用于所有地形。</Text>
+      <Text align="center">拥有“箭术”的单位：对抗飞行单位时箭术等级 +1</Text>
+   </Entry>
+
+
+   <!--  ......................................ITEM SKILLS.................................... -->
+
+
+  <!-- CITYGOLD -->
+   <Entry item="801">
+      <Text align="left">具有“城市金币”效果的物品，会提高你每回合从各座城市获得的金币。</Text>
+   </Entry>
+
+  <!-- DIVINE -->
+   <Entry item="802">
+      <Text align="left">具有“神圣”效果的物品，会提高统帅的神圣魔法技能。不过，如果统帅没有主修或辅修神圣魔法，该物品也不会让其获得施放神圣系法术的能力。</Text>
+   </Entry>
+
+  <!-- ESCAPE -->
+   <Entry item="803">
+      <Text align="left">具有“逃脱”效果的物品，可让佩戴者在战斗中遭到致命攻击前脱身。英雄会自动使用，但只能生效一次。</Text>
+      <Text align="left">这种效果无法阻止暗杀、死亡凝视或箭术造成的死亡。</Text>
+    </Entry>
+
+  <!-- FEALTY -->
+   <Entry item="804">
+      <Text align="left">具有“效忠”效果的物品，可让你直接买下一座任意种族的中立城市。它只能使用一次，请慎重选择目标。</Text>
+   </Entry>
+
+  <!-- MOVEBONUS -->
+   <Entry item="805">
+      <Text align="left">具有“移动加成”效果的物品，使佩戴者所在部队能将各种地形都视为平原。</Text>
+   </Entry>
+
+  <!-- NATURE -->
+   <Entry item="806">
+      <Text align="left">具有“自然”效果的物品，会提高统帅的自然魔法技能。不过，如果统帅没有主修或辅修自然魔法，该物品也不会赋予施放自然系法术的能力。</Text>
+   </Entry>
+
+  <!-- NECROMANCY -->
+   <Entry item="807">
+      <Text align="left">具有“死灵”效果的物品，会提高统帅的死灵术技能。不过，如果统帅没有主修或辅修死灵术，该物品也不会赋予施放死灵系法术的能力。</Text>
+   </Entry>
+
+  <!-- RECRUIT ALLIES -->
+   <Entry item="808">
+      <Text align="left">具有“招募盟军”效果的物品，会提高每回合盟军主动提出加入的概率，但不会降低其价格。</Text>
+   </Entry>
+
+  <!-- RUNE -->
+   <Entry item="809">
+      <Text align="left">具有“符文”效果的物品，会提高统帅的符文魔法技能。不过，如果统帅没有主修或辅修符文魔法，该物品也不会赋予施放符文系法术的能力。</Text>
+   </Entry>
+
+  <!-- SUMMONING -->
+   <Entry item="810">
+      <Text align="left">具有“召唤”效果的物品，会提高统帅的召唤术技能。不过，如果统帅没有主修或辅修召唤术，该物品也不会赋予施放召唤系法术的能力。</Text>
+   </Entry>
+
+  <!-- XP BONUS -->
+   <Entry item="811">
+      <Text align="left">具有“经验加成”效果的物品，会增加每场战斗结束后获得的经验值。</Text>
+   </Entry>
+
+
+   <!--  ......................................MISCELLANEOUS.................................... -->
+
+
+  <!-- COMBAT TABLE -->
+   <Entry item="901">
+      <Text align="left">战斗中命中对手的概率取决于双方单位的战力差值。用较强单位的战力减去较弱单位的战力，再查阅下表，即可得到较强单位的命中概率（百分比）。</Text>
+      <Text align="center">战力差：00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20</Text>
+      <Text align="center">命中率：50 55 59 63 67 70 73 76 79 82 84 86 88 90 92 94 95 96 97 98 99</Text>
+      <Text align="center">.</Text>
+      <Text align="left">较弱单位的命中概率为 100 减去较强单位的命中概率。</Text>
+      <Text align="left">例 1：两名战力相同的单位交战，战力差为 0，双方命中概率均为 50%。</Text>
+      <Text align="left">例 2：战力 15 与战力 5 的单位交战，差值为 10。较强单位的命中概率为 84%，较弱单位为 16%。</Text>
+   </Entry>
+
+   <Entry item="902">
+      <Text align="left">士气可能介于 -5 至 15 之间，具体取决于各种加成和惩罚。</Text>
+      <Text align="left">士气较高的一方，每轮战斗都有机会额外攻击一次；概率为“双方士气差 × 3%”。</Text>
+      <Text align="left">例 1：两方士气分别为 10 和 5，差值为 5，士气 10 的一方每轮额外攻击的概率为 5×3＝15%。</Text>
+   </Entry>
+
+   <Entry item="903">
+      <Text align="left">每回合收到英雄、佣兵和商人报价的基础概率如下：</Text>
+      <Text align="left">英雄：20%，已有每名英雄使其降低 1%（包括随从、召唤与生产的英雄）。</Text>
+      <Text align="left">佣兵：20%。</Text>
+      <Text align="left">商人：20%。</Text>
+      <Text align="left">统帅技能、己方城市附属的旅馆及英雄携带的物品，都可能提高这些概率。</Text>
+      <Text align="left">每回合最多只会出现一种报价。系统按英雄、佣兵、商人的顺序依次检查。</Text>
+   </Entry>
+
+
+
+</Help>
