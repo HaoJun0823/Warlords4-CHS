@@ -1,156 +1,158 @@
-# 中文换行修复：DLL Hook 方案（IDA 静态分析结论）
+# 中文换行根治方案：ASI Loader + DLL Hook（参考 PanzerGeneral2CHS）
 
-> 目标：修复引擎排版中文时**按字节断行/截字**，导致汉字被劈成两半、换行错乱的问题。
+> 目标：根治引擎排版中文时**字符码符号判断错误 + 逐字节截字**导致的换行错乱。
 > 分析基于 `Warlords4.exe`（GOG 1.06, PE32, imagebase 0x400000），2026-11-22。
+> 工程范式完全对标 `G:\Projects\PanzerGeneral2CHS`（纯 Win32 手动 detour，无 MinHook）。
 
 ---
 
-## 1. 核心结论（根因）
+## 1. 根因（与 PanzerGeneral2CHS 同类 BUG）
 
-引擎的文本排版子系统把 **GBK 双字节字符当作单字节 ASCII 处理断行**，
-但**字符宽度查询却按 word（2字节）读取**。两条路径不一致 → 中文换行错位。
+PanzerGeneral2CHS 的已验证结论（`dllmain.cpp` 头部）：
+> `CharWidth` 逐字节 `movsx` → GBK 高位字节变负 → 负索引越界 → 崩溃/乱码。修法：hook 字符宽度，高位字节返回半宽。
 
-### 1.1 关键函数
+Warlords 的对应点（IDA 确认）：
 
-| 地址 | 函数 | 作用 |
-|---|---|---|
-| `0x5B1CA0` | `sub_5B1CA0` | **主排版/换行函数**：把整段文本拆成多行（32 行 × 128 字节槽） |
-| `0x5B1770` | `sub_5B1770` | **分词**：按 `0x20` 空格把文本切成"词"，逐**字节**遍历 |
-| `0x5B1C40` | `sub_5B1C40` | **取当前字符宽度**：`movzx eax, word[ecx]` 按 **word** 读字符码 |
-| `0x5B2700` | `sub_5B2700` | **查字体宽度表**：字符码 × 0x2C 索引表，返回像素宽度 |
-| `0x5B17F0` | `sub_5B17F0` | 上层包装：调用 5B1CA0，生成行描述数组 |
+### 1.1 字符宽度函数（符号判断把 GBK 判为非法）
 
-### 1.2 致命的逐字节删除循环（0x5B2050–0x5B206D）
-
-当一个"词"装配到当前行后，若行宽超出上限（`cmp ax, si`，si=最大宽度像素），
-引擎执行**逐字节删除**直到宽度达标：
+两个同构函数：
+- `sub_5B2660` @ `0x5B2660`
+- `sub_5B2700` @ `0x5B2700`
 
 ```asm
-5B2050  mov  ecx, ebx          ; ebx = 当前行缓冲
+5B2710  mov  eax, [ebp+8]       ; 字符码(word)
+5B2719  movzx eax, ax           ; 零扩展到32位
+5B271C  test esi, esi           ; esi = 字符串指针
+5B271E  jnz  loc_5B2733
+...
+5B2733  test ax, ax             ; 测 AX 符号位
+5B2736  js   return_0           ; ← 字符码>=0x8000 → 宽度=0
+5B2738  cmp  ax, [edx]          ; 字符码 vs 表条目数
+5B273B  jge  return_0           ; ← 超出表 → 宽度=0
+5B273D  cwde
+5B273E  imul ecx, eax, 2Ch      ; 表项 44 字节
+...
+```
+
+GBK 字符 word（如"中"=0xD6D8）最高位=1 → `js` 命中 → 返回宽度 0。
+
+### 1.2 逐字节截字（把汉字劈成两半）
+
+`sub_5B1CA0` @ `0x5B1CA0`（主排版，32行×128字节槽），当行超宽时：
+
+```asm
+5B2050  mov  ecx, ebx
 5B2052  lea  edx, [ecx+1]
-5B2055  mov  al, [ecx]         ; 逐字节扫描到 NUL
+5B2055  mov  al, [ecx]           ; 逐字节扫描到末尾
 5B2057  inc  ecx
 5B205A  test al, al
 5B205A  jnz  5B2055
-5B205C  sub  ecx, edx          ; ecx = 行长度（字节）
-5B205E  push ebx
-5B205F  mov  [ebx+ecx-1], al   ; ← al=0，删掉最后 1 个字节！
+5B205C  sub  ecx, edx            ; 行长度(字节)
+5B205F  mov  [ebx+ecx-1], al      ; ← al=0，删最后 1 字节！
 5B2063  mov  ecx, edi
-5B2065  call sub_5B1C40        ; 重算宽度
+5B2065  call sub_5B1C40          ; 重算宽度
 5B206A  cmp  ax, si
-5B206D  jg   5B2050            ; 仍超宽 → 再删 1 字节
+5B206D  jg   5B2050              ; 仍超宽 → 再删 1 字节
 ```
 
-**问题**：`5B205F` 每次只删 **1 字节**。中文一个汉字 2 字节，
-若被删的正好是某汉字的一半，该汉字被劈开，剩余字节流全部错位 → 乱码 + 换行错乱。
-
-### 1.3 分词也是逐字节（0x5B1770）
-
-```asm
-5B17A0  cmp  cl, 20h           ; 检查空格 0x20
-5B17A3  jz   5B17AE            ; 空格 → 词边界
-5B17A5  mov  cl, [eax+edx+1]   ; 读下一字节
-5B17A9  inc  eax               ; ← 单字节递增
-5B17AC  jnz  5B17A0
-```
-
-GBK 汉字第二字节范围 0x40–0xFE，**不会是 0x20**，所以分词本身对中文相对安全；
-但整句中文会被当成一个"超长词"，必然触发 1.2 的逐字节删除 → 劈字。
+每次删 1 字节，若删的是汉字一半 → 汉字劈开 → 后续字节流错位 → 乱码 + 换行乱。
+分词函数 `sub_5B1770` @ `0x5B1770` 也按字节找 `0x20` 空格，整句中文被当一个超长词，必然触发截字。
 
 ---
 
-## 2. Hook 方案
-
-### 方案 A（推荐）：Hook 逐字节删除循环，改为按 2 字节对齐删除
-
-**注入点**：`0x5B2050`（循环入口）或 `0x5B205F`（删除指令）
-
-**难点**：这是函数内部循环，不能用普通 MinHook 函数级 hook，需 **inline hook / 代码补丁**：
-- 在 `0x5B205F` 处写 `jmp` 到自己的 cave（或分配的可执行内存）
-- 在 cave 里实现：删除时若最后一字节是 GBK 首字节（0x81–0xFE），
-  则**同时清掉它前一个字节**（删整字 2 字节），而不是只删 1 字节
-- 跳回 `0x5B2063` 继续
-
-**风险**：需保证 GBK 双字节对齐；若删除位置恰好是 ASCII（0x00–0x7F），只删 1 字节。
-判断规则：从行缓冲末尾往前，若 `buf[len-1]` 在 0x81–0xFE 且 `buf[len-2]` 也在 0x81–0xFE，
-说明末尾是完整汉字 → 删 2 字节；否则删 1 字节。
-
-### 方案 B（更彻底）：Hook `sub_5B1C40`（0x5B1C40），修正字符宽度
-
-`sub_5B1C40` 每次取一个字符码算宽度。若字体表对 GBK 字符返回错误宽度，
-可以在这里修正。但如果根因是 1.2 的截字，这个方案治标不治本。
-
-### 方案 C（最省事，非 hook）：文本层规避
-
-既然整句中文被当超长词 → 触发截字，那就**在每个中文词之间插入半角空格 `0x20`**：
-- 引擎按空格分词，每个"词"变短，不再触发超宽删除
-- 半角空格在中文里视觉上可接受（类似词间空隙）
-- 已验证：Help 每段压到 24 字以内不刷屏；插入空格相当于把长词拆成多个短词
-
----
-
-## 3. 推荐实施顺序
-
-1. **先试方案 C**（零风险）：在超长中文段落的词间插入空格，看换行是否正常。
-   若正常，连 DLL 都不用写。
-2. 若必须 hook（例如要保留无空格排版），走**方案 A**：
-   - 用 MinHook 无法 hook 函数内部循环，改用 **inline patch + trampoline**
-   - 或用 `VirtualAlloc` 分配 cave，写 GBK-safe 删除逻辑
-3. Hook 后用 `check_translation.py` 回归，确认文本层没被破坏。
-
----
-
-## 4. 待动态验证的疑点（重要：先验证再 hook）
-
-> ⚠️ 以下两点是**静态推断**，必须用调试器动态确认后才能动手 hook，否则可能改错地方。
-
-### 4.1 字体对象 offset 0 到底是"当前字符码"还是"字体ID"
-
-`sub_5B1C40` 里 `movzx eax, word[ecx]`（ecx=字体对象 this）作为参数传给 `sub_5B2700`。
-这个值**可能**是：
-- (a) 逐字符设置进去的"当前字符码" → 那么 4.2 的符号判断成立
-- (b) 字体对象的固定属性（字体ID/高度等）→ 那么 4.2 不成立，字符码其实来自别处
-
-**验证方法**：在 `0x5B2700` 入口下断点，触发一次中文渲染，观察 **EAX**（=`[ebp+8]`）的值：
-- 若是 GBK 码（如 0xD6D8、0xB4F3）→ 情况(a)，按 4.2 处理
-- 若是小整数（字体ID 0/1/2）→ 情况(b)，需另找真正的字符宽度调用点
-
-### 4.2 `sub_5B2700` 的符号判断（若 4.1 验证为情况 a 才成立）
-
-```asm
-5B2719  movzx eax, ax          ; 取字符码（无符号扩展）
-5B2733  test ax, ax
-5B2736  js   return_0          ; ← 若字符码最高位为1（GBK首字节≥0x80）→ 返回宽度0
-```
-
-注：`movzx eax,ax` 是无符号扩展，但 `test ax,ax; js` 测的是 **AX 的符号位**。
-GBK 汉字码 0xD6D8，AX=0xD6D8，最高位=1 → **js 跳转 → 宽度返回 0**。
-这意味着**所有 GBK 汉字宽度都被算成 0**！排版时整行宽度只算 ASCII 标点，
-中文不占宽度 → 引擎认为行很"空"，塞入过多字符 → 超出缓冲区 → 换行错乱/劈字。
-
-**这比 1.2 的逐字节删除更根本。优先 hook 这里。**
-
----
-
-## 5. 最小可行 Hook（如果验证 4 成立）
-
-**目标**：让 `sub_5B2700` 对 GBK 字符返回正常宽度。
-
-**方法**：hook `0x5B2736` 的 `js` 跳转。把它改成不跳（或改为只排除 0xFFFF/-1 哨兵值）。
-- 原：`js 5B2720`（return 0）
-- 改：仅当 `ax == 0xFFFF` 或 `ax == 0` 时 return 0，其它（含 GBK 高字节）继续查表
-
-或者更简单：hook `sub_5B1C40`，在调用 `sub_5B2700` 前，把汉字字符码映射到一个
-宽度合适的"代理字符"（如 0x20 空格的宽度，或固定值），让排版占位正确。
-
----
-
-## 6. 地址速查
+## 2. 字符码语义链（已厘清）
 
 ```
-sub_5B1CA0  0x5B1CA0  主排版（32×128 行槽，逐字节删除 @ 0x5B205F）
-sub_5B1770  0x5B1770  分词（按 0x20 空格，逐字节）
-sub_5B1C40  0x5B1C40  取字符宽度（word 读字符码）
-sub_5B2700  0x5B2700  查字体宽度表（0x5B2736 js 疑点）
-0x5B205F    逐字节删除指令（mov [ebx+ecx-1], al）
+XML字符 word → [esi+1Ch] (0x5B9994)
+  → sub_5B1730(字符word) @0x5B1730
+  → sub_5B1C60 把 word 存入字符对象[0] (0x5B1C70: mov [edi], ax)
+  → sub_5B1C40/sub_5B1C20 读 word[字符对象] (movzx eax, word[ecx])
+  → sub_5B2700/sub_5B2660 查宽度表
 ```
+
+字符对象 offset 0 = 当前字符码 word。若为中文，是 GBK 码（高位置位）。
+
+> ⚠️ 运行时验证仍建议做：hook 宽度函数后打日志，确认传入的字符码是 GBK 码还是小索引。
+> 若是小索引，则 1.1 的符号判断不成立，只需处理 1.2 的截字。
+
+---
+
+## 3. Hook 方案（对标 PG2CHS 的 4 点 detour）
+
+### 方案 A（推荐，先做）：Hook 两个宽度函数，修符号判断
+
+**注入点**：`0x5B2660`（prologue `55 8B EC 83 EC 14`）和 `0x5B2700`（同 prologue）
+
+**逻辑**：
+```cpp
+// 字符码来自 [ebp+8]（栈传参），esi=[ebp+0Ch] 字符串
+// 原逻辑: if (ch & 0x8000 || ch >= tableSize) return 0;
+// 改为:   对 GBK 字符返回合理全角宽度，其它仍走原函数
+short HookWidth(void* fontMgr, int ch, const char* s) {
+    WORD c = (WORD)ch;
+    if (c >= 0x8100) {           // GBK 字符码区
+        return FULL_WIDTH;        // 全角宽度（运行时调，先试 fontObj 的半角×2）
+    }
+    return origWidth(fontMgr, ch, s);  // ASCII 走原函数，零回归
+}
+```
+**收益**：中文占正确宽度 → 行宽计算准确 → 不会过量塞字 → 大幅减少触发截字。
+
+### 方案 B（配套）：Hook 截字循环，改为按 GBK 字符对齐删除
+
+**注入点**：`0x5B2050`（循环入口，函数 `sub_5B1CA0` 内部）
+
+这是 inline hook（非函数级），用 trampoline：
+- 在 `0x5B2050` 放 `jmp` 到自己分配的 cave
+- cave 里重新实现"扫描行尾 → 判断末尾是否 GBK 双字节 → 删 1 个完整字符（1 或 2 字节）→ 重算宽度"
+- 重算宽度需回调 `sub_5B1C40` 原函数（用 detour trampoline）
+
+### 方案 C（兜底）：Hook 绘制/排版上层，整体接管
+
+若 A+B 仍不理想，参考 PG2CHS `WrapDrawCJK`，完整接管 `sub_5B1CA0`：
+- 自己解析 UTF-8/GBK，按字符计宽，按像素宽度换行
+- 工作量大，但最彻底
+
+---
+
+## 4. 工程结构（复制 PG2CHS 范式）
+
+```
+W4CHS_DLL/
+  dllmain.cpp          # 主逻辑 + 手动 detour（复制 PG2CHS 的 Detour 结构）
+  pch.h / pch.cpp
+  W4CHS_DLL.vcxproj    # VS2017 v141 Win32 /LD
+Tools/ci/
+  build_dll_local.py   # 复制 PG2CHS，改路径/目标名
+dist/common/winmm.dll  # Ultimate ASI Loader（从 PG2CHS 复制）
+```
+
+部署：`W4CHS_DLL.dll` → 改名 `W4CHS_DLL.asi`，放游戏根目录，由 `winmm.dll` 加载。
+
+---
+
+## 5. 关键地址速查（VA, imagebase 0x400000）
+
+```
+0x5B2660  sub_5B2660   宽度函数A（prologue 55 8B EC 83 EC 14）
+0x5B2700  sub_5B2700   宽度函数B（prologue 55 8B EC 83 EC 14）
+0x5B1C40  sub_5B1C40   取字符宽度包装（prologue 55 8B EC FF 75 08）
+0x5B1C20  sub_5B1C20   取字符宽度包装A（同构）
+0x5B1CA0  sub_5B1CA0   主排版（prologue 55 8B EC 81 EC 9C 03）
+0x5B205F   逐字节删除指令（mov [ebx+ecx-1], al）
+0x5B1770  sub_5B1770   分词（按 0x20）
+0x5B1730  sub_5B1730   字符对象创建（参数=字符word）
+0x876100  全局字体管理器
+```
+
+---
+
+## 6. 实施顺序
+
+1. 复制 PG2CHS 的 DLL 工程骨架到 `W4CHS_DLL/`，改 TARGET_EXE=`Warlords4.exe`、IMAGE_BASE/地址。
+2. 先只装**方案 A**的两个宽度 hook + debug 日志（`W4CHS.ini` Debug=1）。
+3. 启动游戏，看日志里传入的字符码：
+   - 若是 GBK 码 → 方案 A 成立，调 `FULL_WIDTH` 让中文正常排版
+   - 若是小索引 → 转方案 B（截字对齐）
+4. 验证换行正常后，把 DLL 纳入 `build_release.py` 打包（改名 .asi + winmm.dll）。
+5. CI 用 msvc-wine v141 编译（复用 PG2CHS 的 `build_dll_local.py`）。
