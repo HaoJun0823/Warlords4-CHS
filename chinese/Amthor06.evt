@@ -6,8 +6,8 @@
     <!--Story start-->
 	<Event side="0" repeat="1" location="city" locdata="5">
 		<Trigger type="turn" data1="1"/>
-		<Message>With the Drop of Life in hand you head back to the Realms of Death. Lord Ubgard is very surprised to see you so soon. You hand over the bottle:&quot;I have met my obligations, Ubgard! Now it is your turn.&quot;|The bony fingers of the Lord grasp the tincture. Suddenly six skeletons appear beside him. They do not look dangerous, but with a gesture of his bony hand, three of them turn into mighty Liches.</Message>
-		<Message>Standing before such unholy creatures you begin to doubt your plan, but there is no way back. You head to the passage of Melwell to enter the White Mountains.| But the Knights of Siria have blocked your path. You need to fight your way through...</Message>
+		<Message>你带着生命之滴重返死者国度。乌布加德领主见你如此快便归来，惊讶不已。你递上小瓶：“我已经履行了承诺，乌布加德！现在该你兑现诺言了。”|不死族领主伸出骨瘦如柴的手指，抓住药剂。忽然，六具骷髅出现在他身旁。它们看起来毫不起眼，但他只挥了挥白骨手掌，其中三具便化作了强大的巫妖。</Message>
+		<Message>面对这些亵渎生死的生物，你不禁开始怀疑自己的计划，但如今已无退路。你率军前往梅尔维尔隘口，准备进入白色山脉。|然而希里亚骑士团封锁了去路。你必须杀出重围……</Message>
 		<Action type="unit" data1="30" data2="3" data3="1"/>
 		<Action type="unit" data1="31" data2="3" data3="7"/>
 	</Event>
@@ -16,7 +16,7 @@
     <!--Global Holy Word-->
 	<Event side="0" repeat="1" location="city" locdata="5">
 		<Trigger type="turn" data1="3"/>
-		<Message>Siantra sends you an envoy. She has heard rumors that the Inquisitor Sinora has reached Melwell. He is a very powerful priest and a master of the Holy Word.</Message>
+		<Message>希安特拉派来一名使者。她听说宗教裁判官西诺拉已经抵达梅尔维尔。此人是极其强大的祭司，也是一位精通“圣言”的大师。</Message>
 		<Action type="counter_set" data1="0" String1="q1"/>
 	</Event>
 
@@ -24,7 +24,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="5"/>
 		<Trigger type="chance" data1="15"/>
-		<ShortMessage>Inquisitor Sinora speaks the Holy Word.</ShortMessage>
+		<ShortMessage>宗教裁判官西诺拉施展了“圣言”。</ShortMessage>
 		<Action type="counter_add" data1="1" String1="q1"/>
 		<Action type="counter_set" data1="1" String1="cast"/>
 	</Event>
@@ -105,7 +105,7 @@
 	<Event side="0" repeat="1" location="city" locdata="1">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="1"/>
-		<Message>You have fought your way into the White Mountains.|Continue with Amthor 7...</Message>
+		<Message>你浴血奋战，终于进入白色山脉。|接下来进入《阿姆索尔 7》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

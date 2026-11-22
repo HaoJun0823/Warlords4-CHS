@@ -9,30 +9,30 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>You must defeat the Giants, Ogres and Trolls blocking your path east through the Giantridge Mountains. | Once you have done this, you will be able to make your way to Aravein&apos;s Citadel and ask for her advice.</Message>
+		<Message>你必须击败阻挡在巨人脊山脉东行道路上的巨人、食人魔和巨魔。|道路打通之后，你便能前往阿拉薇恩的堡垒，请她指点迷津。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>A Giant approaches your capital. | He tells you that any attempt to cross the Giantridge Mountains will be regarded as an act of war.</Message>
+		<Message>一名巨人来到你的首都。|他警告你，任何试图穿越巨人脊山脉的举动，都将被视为宣战。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>The Giant approaches your capital once again. | He has heard tell that you plan to cross his lands near the city of Kirak Izgol. He warns you against it one last time.</Message>
+		<Message>那名巨人再次来到你的首都。|他听说你打算从基拉克·伊兹戈尔城附近穿越他的领地，于是向你发出最后的警告。</Message>
 	</Event>
 
 	<Ruin id="1" available_for_quest="no">
-		<Heading>Half a Shield</Heading>
-		<Message>As well as 1056 Gold, you find half of a broken magical shield!</Message>
+		<Heading>半面盾牌</Heading>
+		<Message>除了 1056 枚金币，你还找到了一面断裂魔法盾牌的一半！</Message>
 		<Monster type="19" number="1" level="4"/>
 		<Monster type="19" number="3" level="1"/>
 		<Reward type="gold" data="1056"/>
 	</Ruin >
 
 	<Ruin id="10" available_for_quest="no">
-		<Heading>Half a Shield</Heading>
-		<Message>As well as 1135 Gold, you find half of a broken magical shield!</Message>
+		<Heading>半面盾牌</Heading>
+		<Message>除了 1135 枚金币，你还找到了一面断裂魔法盾牌的一半！</Message>
 		<Monster type="20" number="1" level="3"/>
 		<Monster type="19" number="3" level="1"/>
 		<Reward type="gold" data="1135"/>
@@ -56,7 +56,7 @@
 		<Trigger type="counter_eq" data1="2" string1="shield_counter"/>
 		<Action type="counter_set" data1="0" string1="shield_counter"/>
 		<Action type="item" data1="86"/>
-		<Message>The two pieces of shield you found are a perfect fit. | You send them back to your capital to be forged into a Shield of Negation.</Message>
+		<Message>你找到的两块盾牌残片严丝合缝。|你把它们送回首都，准备重新锻造成一面抵消之盾。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">
@@ -65,20 +65,20 @@
 		<Trigger type="counter_eq" data1="2" string1="shield_counter"/>
 		<Action type="counter_set" data1="0" string1="shield_counter"/>
 		<Action type="item" data1="86"/>
-		<Message>The two pieces of shield you found are a perfect fit. | You send them back to your capital to be forged into a Shield of Negation.</Message>
+		<Message>你找到的两块盾牌残片严丝合缝。|你把它们送回首都，准备重新锻造成一面抵消之盾。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="1">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="1"/>
-		<Message>The remaining creatures flee from Kirak Izgol. | You realize that you are now truly at war with these giants... to the death!</Message>
+		<Message>残余的敌人仓皇逃出基拉克·伊兹戈尔。|你终于意识到，这场与巨人的战争已是不死不休！</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="1">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="city_owned" data1="1" data2="0"/>
-		<Message>A group of Giantslayers arrive at Kirak Izgol ready to join you. | They heard that you were at war with the Giants here.</Message>
+		<Message>一队巨人猎手赶到基拉克·伊兹戈尔，愿意加入你的军队。|他们听说你正在这里与巨人交战。</Message>
 		<Action type="unit" data1="12" data2="4" data3="1"/>
 		<Action type="unit" data1="12" data2="1" data3="5" string1="Giantslayer"/>
 	</Event>

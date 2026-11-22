@@ -8,8 +8,8 @@
 
 
 	<Ruin id="11" available_for_quest="no">
-		<Heading>An Ancient Spirit</Heading>
-		<Message>The spirit of an ancient knight approaches you, and warns you of great danger in your future!</Message>
+		<Heading>远古之魂</Heading>
+		<Message>一位古代骑士的幽灵向你走来，警告说未来将有巨大的危机降临！</Message>
 		<Monster type="30" number="3" level="1"/>
 		<Monster type="30" number="1" level="4"/>
 		<Reward type="xp" data="10"/>
@@ -17,27 +17,27 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>You must save your northern lands from the Orcs by capturing the Orkish citadel of Livaria. Only then, will your people be safe from further invasion.|In doing this you might also discover who is behind this Orkish Invasion.</Message>
+		<Message>你必须攻占兽人堡垒利瓦里亚，拯救北方领土，才能让百姓免受进一步侵袭。|在此过程中，或许还能查出究竟是谁在幕后策动这场兽人入侵。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="3"/>
-		<Message>Some refugees from the northern citadels arrive in your capital. | They are ready to fight alongside you for revenge.  They have many tales of how the Orcs are wreaking havoc in their homes.</Message>
+		<Message>几名来自北方堡垒的难民抵达首都。|他们愿意与你并肩作战，向侵略者复仇。他们还讲述了兽人如何在家园里横行肆虐。</Message>
 		<Action type="unit" data1="0" data2="4" data3="1"/>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="5"/>
-		<Message>More refugees from the northern citadels arrive in your capital. | They have interesting news. It seems that the Orcs are being led by strange fiery creatures, possibly Daemons.</Message>
+		<Message>又一批北方难民赶到了首都。|他们带来了一条惊人的消息：据说兽人受一些周身燃烧着火焰的古怪生物指挥，那些生物很可能是恶魔。</Message>
 		<Action type="unit" data1="0" data2="5" data3="1"/>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="7"/>
-		<Message>A group of Knights ride into your capital. | They have heard rumors about Daemons leading a band of Orcs in the Storm Hills and wish to help find and kill these creatures.</Message>
+		<Message>一队骑士策马进入你的首都。|他们听说有恶魔在风暴丘陵率领兽人肆虐，希望与你一道揪出这些邪恶生物，将其消灭。</Message>
 		<Action type="unit" data1="2" data2="4" data3="1"/>
 	</Event>
 
@@ -45,28 +45,28 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="0"/>
-		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+		<Message>利瓦里亚陷落，兽人被击退。|匆匆搜查战场后，人们终于证实：指挥兽人的果然是恶魔。然而，疑问仍在——他们究竟为何而来？</Message>
 
 	</Event>
 	<Event side="2" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="2"/>
-		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+		<Message>利瓦里亚陷落，兽人被击退。|匆匆搜查战场后，人们终于证实：指挥兽人的果然是恶魔。然而，疑问仍在——他们究竟为何而来？</Message>
 
 	</Event>
 	<Event side="4" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="4"/>
-		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+		<Message>利瓦里亚陷落，兽人被击退。|匆匆搜查战场后，人们终于证实：指挥兽人的果然是恶魔。然而，疑问仍在——他们究竟为何而来？</Message>
 
 	</Event>
 	<Event side="6" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="6"/>
-		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+		<Message>利瓦里亚陷落，兽人被击退。|匆匆搜查战场后，人们终于证实：指挥兽人的果然是恶魔。然而，疑问仍在——他们究竟为何而来？</Message>
 
 	</Event>
 

@@ -3,31 +3,31 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>The Broken Marsh is full of unquiet spirits and perhaps even Daemons. | You must defeat these creatures, travelling northwest on twisting paths, to open up the way to Aravein.</Message>
+		<Message>破碎沼泽徘徊着无数不得安息的亡魂，甚至可能有恶魔出没。|你必须沿着曲折的小路向西北进军，击败这些怪物，为通往阿拉薇恩所在地的道路扫清障碍。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>The sound of chanting drifts softly across the marsh.  Daemons are being summoned in the distance!</Message>
+		<Message>低沉的吟唱声轻轻飘过沼泽。远处有人正在召唤恶魔！</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="5"/>
-		<Message>A group of Undead shamble into your capital. They still remember the destruction of 3000 years ago, and want to help stop it happening again.</Message>
+		<Message>一群不死族摇摇晃晃地走进你的首都。它们仍记得 3000 年前那场毁灭性的灾难，希望阻止悲剧重演。</Message>
 		<Action type="unit" data1="30" data2="8" data3="1"/>
 	</Event>
 
 
 	<Event side="3" repeat="1" location="capital">
 		<Trigger type="turn" data1="3"/>
-		<ShortMessage>Aravein has summoned 8 Daemons to slow you down</ShortMessage>
+		<ShortMessage>阿拉薇恩召唤了 8 名恶魔，试图拖慢你的脚步。</ShortMessage>
 		<Action type="unit" data1="44" data2="8" data3="1"/>
 	</Event>
 
 	<Event side="3" repeat="1" location="capital">
 		<Trigger type="turn_or_later" data1="5"/>
 		<Trigger type="chance" data1="10"/>
-		<ShortMessage>Aravein has summoned 4 more Daemons to slow you down</ShortMessage>
+		<ShortMessage>阿拉薇恩又召唤了 4 名恶魔，试图拖慢你的脚步。</ShortMessage>
 		<Action type="unit" data1="44" data2="4" data3="1"/>
 	</Event>
 

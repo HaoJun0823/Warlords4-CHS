@@ -1,3 +1,3 @@
 <CutScene file="Video\Hero_dwa.bik" voice="Campaign\Hero_dwa.wav" duration="10000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1000">For having shown great resolve, the Dwarven hero, Lord Kharik, will join you in your next battle.</Text>
+	<Text time="1000">你表现出了非凡的决心。矮人英雄卡里克领主将加入你的下一场战斗。</Text>
 </CutScene>

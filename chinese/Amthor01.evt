@@ -12,8 +12,8 @@
 	<Event side="0" repeat="1">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="1"/>
-		<Message string1="dummy" string2="English\\Sounds\\Amthor\\intro01.wav">You have reached the edge of the White Mountains. Only a handful of warriors have managed to flee with you into this small village. All of your brothers and sisters are dead, killed by the haunters of Khaz Agar...|You are sitting by the fireside as a guard appears in the doorway to announce Siantra - an Elf. An Elf in your house? You reach for your staff, but your fingers get an electric shock. In that moment the air is filled with electricity. Suddenly a beautiful young woman stands right before you.|&quot;I greet you Lord Amthor, last son of the Uthnags...&quot;</Message>
-		<Message>Her dark eyes look over you.|&quot;I came here to offer you an alliance. We are not friends, but we have the same enemy - Khaz Agar.&quot;|You try to interrupt her,but she stops you with a click of her fingers.|&quot;Before you give me an answer you should assess the situation. This is your last chance...&quot;|You know she is right, so you gnash your teeth and agree to the pact.|A smile flickers over her lips. &quot;I knew we would get along wonderfully... Go to Triilfold in the south. There you will receive the support you need.&quot;|Then she leaves the room without another word.</Message>
+		<Message string1="dummy" string2="English\\Sounds\\Amthor\\intro01.wav">你终于抵达白色山脉的边缘。只有寥寥几名战士跟随你逃入这座小村。你的兄弟姐妹全都死了……死在卡兹·阿加尔那些幽魂手中。|你正坐在炉火旁，一名卫兵突然出现在门口，通报说希安特拉求见——一个精灵。精灵竟敢踏进你的家门？你伸手去抓法杖，指尖却骤然传来一阵电击。刹那间，电光弥漫了整个房间。一位美丽的年轻女子忽然站在你面前。|“向你致意，阿姆索尔领主，乌斯纳格一族最后的子嗣……”</Message>
+		<Message>她用深色的眼眸打量着你。|“我来是想与你结盟。我们算不上朋友，却有同一个敌人——卡兹·阿加尔。”|你正要打断她，她只打了个响指便阻止了你。|“回答之前，最好先看清眼下的处境。这是你最后的机会……”|你知道她说得没错，只能咬紧牙关，答应结盟。|她唇边掠过一丝笑意：“我就知道，我们会相处得很愉快……去南方的特里尔福德吧，你会在那里得到所需的支援。”|说完，她一言不发地离开了房间。</Message>
 		<Action type="unit" data1="12" data2="3" data3="3"/>
 	</Event>
 
@@ -28,7 +28,7 @@
 	<Event side="0" repeat="99" location="city" locdata="5">
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_eq" data1="3" String1="reinforcement"/>
-		<ShortMessage>A Harpy reaches Triilfold</ShortMessage>
+		<ShortMessage>一只鹰身女妖抵达特里尔福德。</ShortMessage>
 		<Action type="unit" data1="40" data2="1" data3="3"/>
 		<Action type="counter_add" data1="1" String1="reinforcement"/>
 	</Event>
@@ -36,7 +36,7 @@
 	<Event side="0" repeat="99" location="city" locdata="5">
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_eq" data1="2" String1="reinforcement"/>
-		<ShortMessage>Spiders reach Triilfold</ShortMessage>
+		<ShortMessage>一群蜘蛛抵达特里尔福德。</ShortMessage>
 		<Action type="unit" data1="36" data2="2" data3="2"/>
 		<Action type="counter_add" data1="1" String1="reinforcement"/>
 	</Event>
@@ -44,7 +44,7 @@
 	<Event side="0" repeat="99" location="city" locdata="5">
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_eq" data1="1" String1="reinforcement"/>
-		<ShortMessage>A Spider reaches Triilfold 1</ShortMessage>
+		<ShortMessage>一只蜘蛛抵达特里尔福德 1。</ShortMessage>
 		<Action type="unit" data1="36" data2="1" data3="4"/>
 		<Action type="counter_add" data1="1" String1="reinforcement"/>
 	</Event>
@@ -58,7 +58,7 @@
 	<Event side="0" repeat="1" location="city" locdata="5">
 		<Trigger type="on_city"/>
 		<Trigger type="city_owned" data1="5" data2="0"/>
-		<Message>You have reached the city of Triilfold. The Viceregent greets you. He has a message from Siantra. Her reinforcement will reach this city soon.</Message>
+		<Message>你抵达了特里尔福德城。摄政官前来迎接，并转达希安特拉的消息：她的援军很快便会抵达这里。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="1" String1="reinforcement"/>
 	</Event>
@@ -78,14 +78,14 @@
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_eq" data1="10" String1="reinforcement"/>
-		<Message>The city of supply is under the control of your enemies. You have failed your quest.</Message>
+		<Message>补给城市落入敌人手中。你的任务失败了。</Message>
 		<Action type="defeat" data1="0"/>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="20">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="20"/>
-		<Message>You have managed to kill the leader of the haunters.|Continue with Amthor 02...</Message>
+		<Message>你终于杀死了幽魂首领。|接下来进入《阿姆索尔 02》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

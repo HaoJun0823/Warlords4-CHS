@@ -1,41 +1,41 @@
 <Quest name="The Summoning">
    <Part id="0">
-      <Description done="no">If you can find 4 pieces of a summoning spell, you will be able to summon a Daemon Prince.  The knights have hidden the first piece. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the first guardian knight and recovered part of the spell on a scrap of parchment.</Description>
-      <Description done="yes" first="no">There was no guardian, but you found a piece of the spell on a scrap of parchment.</Description>
-      <Success first="yes">You have slain the guardian knight and recovered the first piece of the spell.</Success>
-      <Success first="no">This place is empty, but a thorough search soon reveals the first part of the spell.</Success>
-      <Reward type="item" data="12">As well as the first part of the spell you also find a magical helm.</Reward>
+      <Description done="no">如果能找到召唤咒文的 4 份残卷，你就能召来一名恶魔王子。骑士们藏起了第一份。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了第一名骑士守卫，从一片羊皮纸上找回了咒文残卷。</Description>
+      <Description done="yes" first="no">这里已没有守卫，但你在一片羊皮纸上找到了部分召唤咒文。</Description>
+      <Success first="yes">你杀死了守卫骑士，取回了第一份咒文。</Success>
+      <Success first="no">这里空无一人，但经过仔细搜寻，你还是找到了第一份咒文。</Success>
+      <Reward type="item" data="12">除了第一份咒文，你还发现了一顶魔法头盔。</Reward>
       <Monster type="2" number="1" level="10"/>
       <Monster type="0" number="4" level="2"/>
    </Part>
    <Part id="1">
-      <Description done="no">The second piece of the summoning spell is also guarded by a knight. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the second guardian knight and recovered part of the spell on a scrap of parchment.</Description>
-      <Description done="yes" first="no">There was no guardian, but you found a piece of the spell on a scrap of parchment.</Description>
-      <Success first="yes">You have slain the guardian knight and recovered the second piece of the spell.</Success>
-      <Success first="no">This place is empty, but a thorough search soon reveals the second part of the spell.</Success>
-      <Reward type="item" data="48">As well as the second part of the spell you also find a magical sword.</Reward>
+      <Description done="no">第二份召唤咒文也由一名骑士看守。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了第二名骑士守卫，从一片羊皮纸上找回了咒文残卷。</Description>
+      <Description done="yes" first="no">这里已没有守卫，但你在一片羊皮纸上找到了部分召唤咒文。</Description>
+      <Success first="yes">你杀死了守卫骑士，取回了第二份咒文。</Success>
+      <Success first="no">这里空无一人，但经过仔细搜寻，你还是找到了第二份咒文。</Success>
+      <Reward type="item" data="48">除了第二份咒文，你还发现了一柄魔法宝剑。</Reward>
       <Monster type="2" number="1" level="12"/>
       <Monster type="1" number="4" level="1"/>
    </Part>
    <Part id="2">
-      <Description done="no">The third piece of the summoning spell is also guarded by a knight. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the third guardian knight and recovered part of the spell on a scrap of parchment.</Description>
-      <Description done="yes" first="no">There was no guardian, but you found a piece of the spell on a scrap of parchment.</Description>
-      <Success first="yes">You have slain the guardian knight and recovered the third piece of the spell.</Success>
-      <Success first="no">This place is empty, but a thorough search soon reveals the third part of the spell.</Success>
-      <Reward type="item" data="96">As well as the third part of the spell you also find a magical shield.</Reward>
+      <Description done="no">第三份召唤咒文也由一名骑士看守。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了第三名骑士守卫，从一片羊皮纸上找回了咒文残卷。</Description>
+      <Description done="yes" first="no">这里已没有守卫，但你在一片羊皮纸上找到了部分召唤咒文。</Description>
+      <Success first="yes">你杀死了守卫骑士，取回了第三份咒文。</Success>
+      <Success first="no">这里空无一人，但经过仔细搜寻，你还是找到了第三份咒文。</Success>
+      <Reward type="item" data="96">除了第三份咒文，你还发现了一面魔法盾牌。</Reward>
       <Monster type="2" number="1" level="15"/>
       <Monster type="50" number="1" level="1"/>
    </Part>
    <Part id="3">
-      <Description done="no">The final piece of the summoning spell is guarded by a ancient and powerful Paladin. Location: %s.</Description>
-      <Description done="yes" first="yes">You recovered the final part of the spell and summoned a Daemon Lord.</Description>
-      <Description done="yes" first="no">Alas!  The final part of the spell could not be found, and so the spell could not be cast.</Description>
-      <Success first="yes">You have slain the final guardian and completed the spell.</Success>
-      <Success first="no">This place is empty.  Somebody has already been here and taken the final part of the spell.</Success>
-      <Reward type="allies" unit="44" level="18" number="1" name="Prince Azrafel">You put the pieces of parchment together and read the spell.  A huge Daemon Prince appears, ready to serve you.</Reward>
+      <Description done="no">最后一份召唤咒文由一名古老而强大的圣骑士看守。地点：%s。</Description>
+      <Description done="yes" first="yes">你取回了最后的咒文残卷，并召唤出一名恶魔领主。</Description>
+      <Description done="yes" first="no">唉！最后一份咒文遍寻不获，因此无法施放召唤法术。</Description>
+      <Success first="yes">你杀死了最后的守卫，终于凑齐了整道咒文。</Success>
+      <Success first="no">这里空空如也。有人比你先到，并带走了最后一份咒文。</Success>
+      <Reward type="allies" unit="44" level="18" number="1" name="Prince Azrafel">你将羊皮纸残卷拼合，念出了上面的咒文。一名庞大的恶魔王子随即现身，愿供你驱使。</Reward>
       <Monster type="2" number="1" level="24" name="Paladin"/>
       <Monster type="52" number="2" level="1"/>
    </Part>

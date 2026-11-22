@@ -6,7 +6,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>This is the final battle.  Aravein awaits you in her citadel, summoning Daemons to throw themselves in your way!</Message>
+		<Message>决战终于来临。阿拉薇恩正在她的堡垒中等候，源源不断地召唤恶魔，驱使它们阻挡你的去路！</Message>
 	</Event>
 
 </Events>

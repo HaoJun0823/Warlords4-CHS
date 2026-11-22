@@ -2,155 +2,155 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>You must defeat the various factions of dragons in the Dragon Realm to gain access to Kelthurax&apos;s cave.  Only then will you be able to ask Kelthurax about the Sundering.</Message>
+		<Message>你必须击败龙族之境中的各个巨龙派系，才能抵达凯尔图拉克斯的洞穴。唯有如此，你才有机会询问它关于大崩裂的真相。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>It seems that the word is out that you carry the Dragonstone. | The dragons in this land will stop at nothing to get it back. Your way to Kelthurax may be harder than it first seemed.</Message>
+		<Message>看来你身怀龙之石的消息已经传开了。|这里的巨龙会不惜一切代价夺回龙之石。前往凯尔图拉克斯的道路，恐怕比最初想象的更加艰险。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>A Dragonslayer, named Ivan Wyrmsbane, arrives in your capital. | Ivan offers to help you. He tells you that a set of 3 different-colored skulls from some larger dragons, typically found in ruins, can be fashioned into a mana crystal.</Message>
+		<Message>一位名叫伊凡·屠龙者的屠龙勇士抵达你的首都。|伊凡愿意助你一臂之力，并告诉你：在遗迹中常能找到大型巨龙的头骨，收集 3 颗颜色不同的头骨，便能将它们制成一块魔力水晶。</Message>
 		<Action type="unit" data1="0" data2="1" data3="14" string1="Ivan Wyrmsbane"/>
 	</Event>
 
 	<Ruin id="0" available_for_quest="no">
-		<Heading>Swamp Dragon</Heading>
-		<Message>This dragon has a large treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽龙</Heading>
+		<Message>这头巨龙拥有一大批宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="6"/>
 		<Reward type="gold" data="2000"/>
 	</Ruin >
 	<Ruin id="1" available_for_quest="no">
-		<Heading>Storm Dragon</Heading>
-		<Message>This dragon has a huge treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴龙</Heading>
+		<Message>这头巨龙囤积了成堆的宝石、珠宝与金币。</Message>
 		<Monster type="50" number="1" level="7"/>
 		<Reward type="gold" data="2500"/>
 	</Ruin >
 	<Ruin id="2" available_for_quest="no">
-		<Heading>Fire Dragon</Heading>
-		<Message>This dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>火龙</Heading>
+		<Message>这头巨龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="52" number="1" level="8"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="3" available_for_quest="no">
-		<Heading>Swamp Lord</Heading>
-		<Message>This ancient dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽之主</Heading>
+		<Message>这头古龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="10"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="4" available_for_quest="no">
-		<Heading>Storm Lord</Heading>
-		<Message>This ancient dragon has an immense treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴之主</Heading>
+		<Message>这头古龙积攒着极其庞大的宝石、珠宝与金币宝藏。</Message>
 		<Monster type="50" number="1" level="11"/>
 		<Reward type="gold" data="3500"/>
 	</Ruin >
 	<Ruin id="5" available_for_quest="no">
-		<Heading>Fire Lord</Heading>
-		<Message>This ancient dragon has a titanic treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>烈焰之主</Heading>
+		<Message>这头古龙的财宝多得难以计数，宝石、珠宝与金币堆积如山。</Message>
 		<Monster type="52" number="1" level="12"/>
 		<Reward type="gold" data="4000"/>
 	</Ruin >
 	<Ruin id="6" available_for_quest="no">
-		<Heading>Swamp Dragon</Heading>
-		<Message>This dragon has a large treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽龙</Heading>
+		<Message>这头巨龙拥有一大批宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="6"/>
 		<Reward type="gold" data="2000"/>
 	</Ruin >
 	<Ruin id="7" available_for_quest="no">
-		<Heading>Storm Dragon</Heading>
-		<Message>This dragon has a huge treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴龙</Heading>
+		<Message>这头巨龙囤积了成堆的宝石、珠宝与金币。</Message>
 		<Monster type="50" number="1" level="7"/>
 		<Reward type="gold" data="2500"/>
 	</Ruin >
 	<Ruin id="8" available_for_quest="no">
-		<Heading>Fire Dragon</Heading>
-		<Message>This dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>火龙</Heading>
+		<Message>这头巨龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="52" number="1" level="8"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="9" available_for_quest="no">
-		<Heading>Swamp Lord</Heading>
-		<Message>This ancient dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽之主</Heading>
+		<Message>这头古龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="10"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="10" available_for_quest="no">
-		<Heading>Storm Lord</Heading>
-		<Message>This ancient dragon has an immense treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴之主</Heading>
+		<Message>这头古龙积攒着极其庞大的宝石、珠宝与金币宝藏。</Message>
 		<Monster type="50" number="1" level="11"/>
 		<Reward type="gold" data="3500"/>
 	</Ruin >
 	<Ruin id="11" available_for_quest="no">
-		<Heading>Fire Lord</Heading>
-		<Message>This ancient dragon has a titanic treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>烈焰之主</Heading>
+		<Message>这头古龙的财宝多得难以计数，宝石、珠宝与金币堆积如山。</Message>
 		<Monster type="52" number="1" level="12"/>
 		<Reward type="gold" data="4000"/>
 	</Ruin >
 	<Ruin id="12" available_for_quest="no">
-		<Heading>Swamp Dragon</Heading>
-		<Message>This dragon has a large treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽龙</Heading>
+		<Message>这头巨龙拥有一大批宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="6"/>
 		<Reward type="gold" data="2000"/>
 	</Ruin >
 	<Ruin id="13" available_for_quest="no">
-		<Heading>Storm Dragon</Heading>
-		<Message>This dragon has a huge treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴龙</Heading>
+		<Message>这头巨龙囤积了成堆的宝石、珠宝与金币。</Message>
 		<Monster type="50" number="1" level="7"/>
 		<Reward type="gold" data="2500"/>
 	</Ruin >
 	<Ruin id="14" available_for_quest="no">
-		<Heading>Fire Dragon</Heading>
-		<Message>This dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>火龙</Heading>
+		<Message>这头巨龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="52" number="1" level="8"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="15" available_for_quest="no">
-		<Heading>Swamp Lord</Heading>
-		<Message>This ancient dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽之主</Heading>
+		<Message>这头古龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="10"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="16" available_for_quest="no">
-		<Heading>Storm Lord</Heading>
-		<Message>This ancient dragon has an immense treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴之主</Heading>
+		<Message>这头古龙积攒着极其庞大的宝石、珠宝与金币宝藏。</Message>
 		<Monster type="50" number="1" level="11"/>
 		<Reward type="gold" data="3500"/>
 	</Ruin >
 	<Ruin id="17" available_for_quest="no">
-		<Heading>Fire Lord</Heading>
-		<Message>This ancient dragon has a titanic treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>烈焰之主</Heading>
+		<Message>这头古龙的财宝多得难以计数，宝石、珠宝与金币堆积如山。</Message>
 		<Monster type="52" number="1" level="12"/>
 		<Reward type="gold" data="4000"/>
 	</Ruin >
 	<Ruin id="18" available_for_quest="no">
-		<Heading>Swamp Dragon</Heading>
-		<Message>This dragon has a large treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽龙</Heading>
+		<Message>这头巨龙拥有一大批宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="6"/>
 		<Reward type="gold" data="2000"/>
 	</Ruin >
 	<Ruin id="19" available_for_quest="no">
-		<Heading>Storm Dragon</Heading>
-		<Message>This dragon has a huge treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴龙</Heading>
+		<Message>这头巨龙囤积了成堆的宝石、珠宝与金币。</Message>
 		<Monster type="50" number="1" level="7"/>
 		<Reward type="gold" data="2500"/>
 	</Ruin >
 	<Ruin id="20" available_for_quest="no">
-		<Heading>Fire Dragon</Heading>
-		<Message>This dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>火龙</Heading>
+		<Message>这头巨龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="52" number="1" level="8"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="21" available_for_quest="no">
-		<Heading>Swamp Lord</Heading>
-		<Message>This ancient dragon has a massive treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>沼泽之主</Heading>
+		<Message>这头古龙的宝库里堆满了大量宝石、珠宝与金币。</Message>
 		<Monster type="49" number="1" level="10"/>
 		<Reward type="gold" data="3000"/>
 	</Ruin >
 	<Ruin id="22" available_for_quest="no">
-		<Heading>Storm Lord</Heading>
-		<Message>This ancient dragon has an immense treasure hoard of gems, jewellery and coins.</Message>
+		<Heading>风暴之主</Heading>
+		<Message>这头古龙积攒着极其庞大的宝石、珠宝与金币宝藏。</Message>
 		<Monster type="50" number="1" level="11"/>
 		<Reward type="gold" data="3500"/>
 	</Ruin >
@@ -162,56 +162,56 @@
 		<Trigger type="ruin_searched" data1="0"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="3">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="3"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="6">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="6"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="9">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="9"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="12">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="12"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="15">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="15"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="18">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="18"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="21">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="21"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="green_counter"/>
-		<Message>You find the skull of a Swamp Dragon and take it for your collection.</Message>
+		<Message>你找到一颗沼泽龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 
 
@@ -220,56 +220,56 @@
 		<Trigger type="ruin_searched" data1="1"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="4">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="4"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="7">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="7"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="10">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="10"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="13">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="13"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="16">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="16"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="19">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="19"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="22">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="22"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="blue_counter"/>
-		<Message>You find the skull of a Storm Dragon and take it for your collection.</Message>
+		<Message>你找到一颗风暴龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 
 
@@ -278,49 +278,49 @@
 		<Trigger type="ruin_searched" data1="2"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="5">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="5"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="8">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="8"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="11">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="11"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="14">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="14"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="17">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="17"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="ruin" locdata="20">
 		<Trigger type="on_ruin"/>
 		<Trigger type="ruin_searched" data1="20"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Action type="counter_add" data1="1" string1="red_counter"/>
-		<Message>You find the skull of a Fire Dragon and take it for your collection.</Message>
+		<Message>你找到一颗火龙的头骨，将它收进收藏之中。</Message>
 	</Event>
 
 
@@ -333,7 +333,7 @@
 		<Action type="counter_add" data1="-1" string1="red_counter"/>
 		<Action type="counter_add" data1="-1" string1="blue_counter"/>
 		<Action type="mana_crystals" data1="1"/>
-		<Message>You take the set of 3 skulls you have found, and fashion them into a mana crystal.</Message>
+		<Message>你取出收集齐的 3 颗不同龙骨，将它们制成一块魔力水晶。</Message>
 	</Event>
 
 </Events>

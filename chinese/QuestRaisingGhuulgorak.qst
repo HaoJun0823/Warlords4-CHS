@@ -1,41 +1,41 @@
 <Quest name="Raising Ghuulgorak">
    <Part id="0">
-      <Description done="no">If you gather the skulls of 3 ancient Dragons you can raise a mighty Dragonliche.  First seek the Lord of Swamps. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the Lord of Swamps and obtained his skull.</Description>
-      <Description done="yes" first="no">The first Ancient Dragon was already dead when you found him, but you retrieved his skull.</Description>
-      <Success first="yes">You have slain the first Ancient Dragon and taken his skull.</Success>
-      <Success first="no">The first Dragon is already dead, but his skull is still intact.</Success>
-      <Reward type="gold" data="3542">This Dragon also had a massive treasure worth 3542 gold.</Reward>
+      <Description done="no">只要集齐 3 头古龙的头骨，你就能唤醒一头强大的龙巫妖。先去寻找沼泽之主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了沼泽之主，取得了它的头骨。</Description>
+      <Description done="yes" first="no">你找到第一头古龙时，它已死去，但你仍取到了它的头骨。</Description>
+      <Success first="yes">你杀死了第一头古龙，取走了它的头骨。</Success>
+      <Success first="no">第一头巨龙早已死去，但它的头骨仍完好无损。</Success>
+      <Reward type="gold" data="3542">这头巨龙还积攒了大量财宝，价值 3542 金币。</Reward>
       <Monster type="49" number="1" level="12" name="Lord of Swamps"/>
       <Monster type="18" number="7" level="3"/>
    </Part>
    <Part id="1">
-      <Description done="no">To raise the Dragonliche, you must now seek and slay the Lord of Storms. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the Lord of Storms and obtained his skull.</Description>
-      <Description done="yes" first="no">The second Ancient Dragon was already dead when you found him, but you retrieved his skull.</Description>
-      <Success first="yes">You have slain the second Ancient Dragon and taken his skull.</Success>
-      <Success first="no">The second Dragon is already dead, but his skull is still intact.</Success>
-      <Reward type="item" data="48">In this Dragon&apos;s treasure horde you find a magical sword - the Stormblade.</Reward>
+      <Description done="no">若要唤醒龙巫妖，现在必须找到并杀死风暴之主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了风暴之主，取得了它的头骨。</Description>
+      <Description done="yes" first="no">你找到第二头古龙时，它已死去，但你仍取到了它的头骨。</Description>
+      <Success first="yes">你杀死了第二头古龙，取走了它的头骨。</Success>
+      <Success first="no">第二头巨龙早已死去，但它的头骨仍完好无损。</Success>
+      <Reward type="item" data="48">你在这头巨龙的宝藏中找到一柄魔法宝剑——风暴之刃。</Reward>
       <Monster type="50" number="1" level="13" name="Lord of Storms"/>
       <Monster type="24" number="7" level="2"/>
    </Part>
    <Part id="2">
-      <Description done="no">To raise the Dragonliche, you must now seek and slay the Lord of Flame. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the Lord of Flame and obtained his skull.</Description>
-      <Description done="yes" first="no">The third Ancient Dragon was already dead when you found him, but you retrieved his skull.</Description>
-      <Success first="yes">You have slain the third Ancient Dragon and taken his skull.</Success>
-      <Success first="no">The third Dragon is already dead, but his skull is still intact.</Success>
-      <Reward type="mana" data="3">This Dragon also had a cache of 3 mana crystals.</Reward>
+      <Description done="no">若要唤醒龙巫妖，现在必须找到并杀死烈焰之主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了烈焰之主，取得了它的头骨。</Description>
+      <Description done="yes" first="no">你找到第三头古龙时，它已死去，但你仍取到了它的头骨。</Description>
+      <Success first="yes">你杀死了第三头古龙，取走了它的头骨。</Success>
+      <Success first="no">第三头巨龙早已死去，但它的头骨仍完好无损。</Success>
+      <Reward type="mana" data="3">这头巨龙还收藏着 3 块魔力水晶。</Reward>
       <Monster type="52" number="1" level="14" name="Lord of Flame"/>
       <Monster type="42" number="7" level="2"/>
    </Part>
    <Part id="3">
-      <Description done="no">You must now take the 3 skulls to the Dragonliche&apos;s resting place. Location: %s.</Description>
-      <Description done="yes" first="yes">You have raised the Dragonliche Ghuulgorak to serve you.</Description>
-      <Description done="yes" first="no">Alas!  Ghuulgorak&apos;s body could not be found at his resting place.</Description>
-      <Success first="yes">You have fought your way to Ghuulgorak&apos;s resting place.</Success>
-      <Success first="no">Alas!  Ghuulgorak&apos;s resting place is deserted - it seems sonebody was here before you.</Success>
-      <Reward type="allies" unit="34" level="15" number="1" name="Ghuulgorak">You place the 3 skulls on Ghuulgorak&apos;s grave, and he bursts from the ground.</Reward>
+      <Description done="no">现在，你必须将这 3 颗头骨带到龙巫妖的安息之地。地点：%s。</Description>
+      <Description done="yes" first="yes">你成功唤醒了龙巫妖古尔戈拉克，使它为你效命。</Description>
+      <Description done="yes" first="no">唉！在古尔戈拉克的长眠之处，竟找不到它的遗骸。</Description>
+      <Success first="yes">你奋战一路，终于抵达了古尔戈拉克的安息之地。</Success>
+      <Success first="no">唉！古尔戈拉克的墓穴早已空空如也——看来有人比你先到。</Success>
+      <Reward type="allies" unit="34" level="15" number="1" name="Ghuulgorak">你将 3 颗头骨放在古尔戈拉克的坟墓上。大地轰然裂开，它破土而出。</Reward>
       <Monster type="35" number="1" level="15"/>
       <Monster type="31" number="3" level="8"/>
       <Monster type="30" number="4" level="8"/>

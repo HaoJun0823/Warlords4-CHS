@@ -9,25 +9,25 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>You must fight your way to the center of the Doomwood to seek an audience with King Garranoth. | It is entirely possible that Garranoth will challenge you to combat before he speaks with you!</Message>
+		<Message>你必须一路杀入厄运密林深处，求见加拉诺斯国王。|甚至在开口交谈之前，加拉诺斯就很可能先向你发起挑战！</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>Ghostly sounds emanate from the dark wood in the center of this land. | Were it not for your quest to seek answers from King Garranoth, you would not go near the Doomwood.</Message>
+		<Message>这片土地中央的黑暗林地里传出阵阵鬼魅般的声响。|若不是为了从加拉诺斯国王那里寻求答案，你绝不会接近厄运密林。</Message>
 	</Event>
 
 	<Ruin id="13" available_for_quest="no">
-		<Heading>A Crystal Ball</Heading>
-		<Message>These Harpies have a crystal ball that shows your future.</Message>
+		<Heading>水晶球</Heading>
+		<Message>这些鹰身女妖有一颗水晶球，据说能映出你的未来。</Message>
 		<Monster type="40" number="1" level="3"/>
 		<Monster type="40" number="2" level="1"/>
 		<Reward type="xp" data="15"/>
 	</Ruin >
 
 	<Ruin id="9" available_for_quest="no">
-		<Heading>Assassins!</Heading>
-		<Message>This group of Assassins had waylaid a Knight. Grateful for his rescue, he offers to join you.</Message>
+		<Heading>刺客！</Heading>
+		<Message>这群刺客伏击了一名骑士。获救后，他感激不尽，愿意加入你的队伍。</Message>
 		<Monster type="41" number="1" level="5"/>
 		<Monster type="37" number="3" level="1"/>
 		<Reward type="hero" data="5" level="5" number="1" name="Sir Uther"/>
@@ -37,7 +37,7 @@
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="3"/>
-		<Message>A group of Elves approach you. | One of their kin is being held captive in the citadel of Zeskin, in the southern part of the Doomwood. If you rescue her, they will send troops to aid you in your quest.</Message>
+		<Message>一群精灵来到你面前。|他们的一名同族被囚禁在厄运密林南部的泽斯金堡垒。若你能将她救出，他们便会派部队协助你完成使命。</Message>
 		<Action type="counter_set" data1="1" string1="zeskin_counter"/>
 	</Event>
 
@@ -46,14 +46,14 @@
 		<Trigger type="counter_eq" string1="zeskin_counter" data1="1"/>
 		<Trigger type="city_won" data1="13"/>
 		<Action type="counter_set" data1="2" string1="zeskin_counter"/>
-		<Message>You rescue the Elven captive from Zeskin. | She leaves you with a promise that help from her kinsfolk will be forthcoming shortly.</Message>
+		<Message>你从泽斯金救出了那名精灵俘虏。|她临走时承诺，族人很快便会送来援助。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="counter_eq" string1="zeskin_counter" data1="2"/>
-		<Message>As promised, a group of Elves rally to join you at your capital city.</Message>
+		<Message>一队精灵如约而至，在你的首都集结，愿意加入你的队伍。</Message>
 		<Action type="counter_set" data1="3" string1="zeskin_counter"/>
 		<Action type="unit" data1="54" data2="6" data3="2"/>
 	</Event>
@@ -63,7 +63,7 @@
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="counter_eq" string1="zeskin_counter" data1="3"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>Still grateful for your aid in the rescue at Zeskin, the Elves find a few more troops to send you.</Message>
+		<Message>精灵们仍感激你在泽斯金的救援行动，又派来几名战士助你一臂之力。</Message>
 		<Action type="unit" data1="56" data2="3" data3="2"/>
 	</Event>
 
@@ -72,25 +72,25 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="0"/>
-		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 	<Event side="3" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="3"/>
-		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 	<Event side="5" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="5"/>
-		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 	<Event side="7" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="7"/>
-		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 
 </Events>

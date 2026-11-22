@@ -27,9 +27,9 @@
 
 	<Event side="0" repeat="1" location="city" locdata="14">
 		<Trigger type="turn" data1="1"/>
-		<Message>You have spent weeks in the library of Skyvine and Myrryn together with Siantra. Once again you are sitting in front of a stack of books, browsing through their pages. You looking to the elf. A cold shiver runs down your back as her dark strange eyes glance at you. How is it possible that you feel such an attraction to her?|You clear your thoughts and pay attention to the book before you. Again the Elven letters start to morph into cuneiform runes. Fortunately Siantra is a powerful wizard. Her spell enables you to read every book in this library.</Message>
-		<Message>You take the next book from the table. It is about dragon magic. And once again without an index. This will take another day to make any sense. But you turn some pages and suddenly there it is, right before you:|&quot;Brothealevi - The Breath of Fire.|It is a key of many powerful tinctures. But only an ancient dragon is able to spell such a structure of magic strings and fire. One of the most famous tinctures of that kind is the Drop of Life...&quot;</Message>
-		<Message>Siantra and you have carefully study every single word of the text. You need to get only three ingredients:|The heart of an Archon|The blood of a Pegasus|and the horn of a Unicorn.| |The power of the sacrifices is crucial for success.|When you have found all the pieces of the tincture, then you should bring them to the ancient fire dragon Kirin, who lives somewhere near the volcanoes in the west. </Message>
+		<Message>ÄãºÍÏ£°²ÌØÀ­ÒÑ¾­ÔÚÌìÌÙ³ÇÓëÃ×ÁÖµÄÍ¼Êé¹İÀïÂñÊ×¿à¶ÁÊıÖÜ¡£´Ë¿Ì£¬ÄãÓÖ×øÔÚÒ»µşÊéÇ°£¬Ò»Ò³Ò³·­ÔÄ¡£ÄãÌ§Í·ÍûÏòÄÇ¸ö¾«Áé¡£µ±ËıÄÇË«ÓÄ°µ¶øÆæÒìµÄÑÛ¾¦ÓëÄãÏàÓöÊ±£¬Ò»Õóº®ÒâÂÓ¹ı¼¹±³¡£ÄãÔõÃ´»á¶ÔËıÈç´Ë×ÅÃÔ£¿|ÄãÊÕÁ²ĞÄÉñ£¬ÖØĞÂÍûÏòÊÖÖĞµÄÊé¡£¹Å¾«ÁéÎÄ×ÖÔÙ¶È»¯×÷Ğ¨ĞÎ·ûÎÄ¡£ĞÒ¿÷Ï£°²ÌØÀ­ÊÇÒ»ÃûÇ¿´óµÄ·¨Ê¦£¬ËıµÄÄ§·¨ÈÃÄãÄÜ¹»¶Á¶®Í¼Êé¹İÀïµÄÃ¿Ò»±¾²ØÊé¡£</Message>
+		<Message>Äã´Ó×ÀÉÏÄÃÆğÏÂÒ»±¾Êé£¬ÊéÀï½²µÄÊÇÁú×åÄ§·¨£¬Æ«Æ«ÓÖÃ»ÓĞÄ¿Â¼¡£ÏëÅª¶®Ëü£¬¿ÖÅÂ»¹µÃºÄÉÏÒ»ÕûÌì¡£µ«ÄãËæÊÖ·­ÁË¼¸Ò³£¬ºöÈ»£¬´ğ°¸¾¹ºÕÈ»Ô¾ÈëÑÛÁ±£º|¡°²¼ÂŞÎ÷ÑÇÀ³Î¬¡ª¡ªÁÒÑæÖ®Ï¢¡£|ËüÊÇĞí¶àÇ¿´óÁ¶½ğÒ©¼ÁµÄ¹Ø¼ü¡£È»¶ø£¬Ö»ÓĞ¹ÅÁú²ÅÄÜ±àÖ¯³öÓÉÄ§·¨Ë¿ÏßÓë»ğÑæ½»Ö¯¶ø³ÉµÄÕâÖÖ·¨Êõ¡£ÆäÖĞ×îÖøÃûµÄÒ©¼ÁÖ®Ò»£¬±ãÊÇÉúÃüÖ®µÎ¡­¡­¡±</Message>
+		<Message>ÄãÓëÏ£°²ÌØÀ­Öğ×ÖÖğ¾äµØÑĞ¶ÁÁËÕâ¶Î¼ÇÔØ¡£ÅäÖÆÒ©¼ÁÖ»ĞèÈıÖÖ²ÄÁÏ£º|Ò»ÃûÖ´ÕşÌìÊ¹µÄĞÄÔà|Ò»Æ¥ÌìÂíµÄÏÊÑª|ÒÔ¼°Ò»Ö»¶À½ÇÊŞµÄ½Ç¡£| |¼ÀÆ·µÄÁ¦Á¿Ç¿ÈõÊÇ³É°Ü¹Ø¼ü¡£|¼¯ÆëÒ©¼Á²ÄÁÏºó£¬¾Í½«ËüÃÇ´ø¸ø¹ÅÀÏµÄ»ğÁú»ùÁÖ¡£ËüÆÜÏ¢ÔÚÎ÷·½Ä³´¦»ğÉ½¸½½ü¡£</Message>
 		<Action type="counter_set" data1="0" String1="w2"/>
 		<Action type="counter_set" data1="0" String1="q1"/>
 		<Action type="counter_set" data1="0" String1="q2"/>
@@ -41,7 +41,7 @@
 
 	<Event side="0" repeat="1" location="city" locdata="14">
 		<Trigger type="turn" data1="2"/>
-		<Message>Siantra sends you a troop of experienced adventurers. She reminds you to be inconspicuous. You should not give your enemies any hint of your plan.</Message>
+		<Message>Ï£°²ÌØÀ­ÅÉÀ´Ò»¶Ó¾­Ñé·á¸»µÄÃ°ÏÕÕß£¬²¢¶£ÖöÄãÎñ±ØµÍµ÷ĞĞÊÂ¡£¾ø²»ÄÜÈÃµĞÈË²ì¾õÄãµÄ¼Æ»®¡£</Message>
 		<Action type="unit" data1="37" data2="4" data3="20"/>
 		<Action type="unit" data1="18" data2="1" data3="10"/>
 	</Event>
@@ -50,7 +50,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>Siantra sends you another troop of adventurers.</Message>
+		<Message>Ï£°²ÌØÀ­ÓÖÅÉÀ´ÁËÒ»¶ÓÃ°ÏÕÕß¡£</Message>
 		<Action type="unit" data1="37" data2="4" data3="20"/>
 		<Action type="unit" data1="18" data2="1" data3="10"/>
 	</Event>
@@ -59,7 +59,7 @@
 	<Event side="0" repeat="1" location="city" locdata="31">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="31"/>
-		<Message>You have managed to kill Dranon, the leader of the Dwarves.</Message>
+		<Message>ÄãÉ±ËÀÁË°«ÈËÊ×ÁìµÂÀ­Å©¡£</Message>
 		<Action type="counter_set" data1="2" String1="w2"/>
 	</Event>
 
@@ -67,7 +67,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="on_city_count" data1="0" data2="4"/>
 		<Trigger type="counter_eq" data1="0" String1="w2"/>
-		<Message>You have to act more carefully! Be aware of the scouts of Khaz Agar!</Message>
+		<Message>ĞĞÊÂ±ØĞë¸ü¼Ó½÷É÷£¡Ğ¡ĞÄ¿¨×È¡¤°¢¼Ó¶ûµÄ³âºò£¡</Message>
 		<Action type="counter_set" data1="1" String1="w2"/>
 	</Event>
 
@@ -76,7 +76,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="on_city_count" data1="0" data2="7"/>
 		<Trigger type="counter_ne" data1="2" String1="w2"/>
-		<Message>Your clumsy actions have been detected by the scouts of Khaz Agar.| They have sent forth an echelon to stop you!</Message>
+		<Message>Äã±¿×¾µÄĞĞ¶¯±»¿¨×È¡¤°¢¼Ó¶ûµÄ³âºò·¢ÏÖÁË¡£|ËûÃÇÅÉ³öÒ»Ö§Ìİ¶Ó£¬×¼±¸À¹½ØÄã£¡</Message>
 		<Action type="AI_level" data1="2" data2="3"/>
 		<Action type="counter_set" data1="2" String1="w2"/>
 	</Event>
@@ -96,7 +96,7 @@
 		<Trigger type="counter_ge" data1="1" String1="q2"/>
 		<Trigger type="counter_ge" data1="1" String1="q3"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
-		<Message>You have conquered the capital of the dragon lord, but the scaled creature is not willing to cast the fire spell for free. You will need a magnificent gift to win his favor.</Message>
+		<Message>Äã¹¥Õ¼ÁËÁú×åÁìÖ÷µÄÊ×¶¼£¬µ«ÕâÍ·ÅûÁÛµÄ¾ŞÊŞ²»¿Ï°×°×ÌæÄãÊ©Õ¹»ğÑæ·¨Êõ¡£ÄãµÃÏ×ÉÏÒ»¼ş×ã¹»¹óÖØµÄÀñÎï£¬²ÅÄÜ²©µÃËüµÄ»¶ĞÄ¡£</Message>
 		<Action type="counter_set" data1="1" String1="dragon"/>
 	</Event>
 
@@ -104,21 +104,21 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
-		<Message>You have conquered the capital of the dragon lord. But you still miss some pieces of the tincture.|It is impossible to confine the ancient dragon in a dungeon until you have all ingredients.|You have lost your mission!</Message>
+		<Message>Äã¹¥Õ¼ÁËÁú×åÁìÖ÷µÄÊ×¶¼£¬È´ÈÔÎ´¼¯ÆëÒ©¼Á²ÄÁÏ¡£|Äã²»¿ÉÄÜ°ÑÕâÍ·¹ÅÁú¹Ø½øµØÀÎ£¬µÈµ½ÆäÓà²ÄÁÏ¶¼µ½ÊÖÔÙÊÍ·Å¡£|ÄãµÄÈÎÎñÊ§°ÜÁË£¡</Message>
 		<Action type="defeat" data1="0"/>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="counter_eq" data1="1" String1="chest"/>
 		<Trigger type="counter_eq" data1="1" String1="dragon"/>
-		<Message>You hand over the golden chest, which you have found in the Tower of Guldonies. The dragon snaps up the box and stashes it away beneath his body. Then he puts the three ingredients into a cauldron.|&quot;Stand aside&quot;, growls the dragon. He takes a deep breath and exhales a wind of fire...</Message>
+		<Message>ÄãÏ×ÉÏ´Ó¹Å¶û¶àÄáË¹Ö®ËşÕÒµ½µÄ½ğÉ«±¦Ïä¡£¾ŞÁúÒ»¿Úµğ×¡Ïä×Ó£¬½«Ëü²Øµ½¸¹ÏÂ£¬Ëæºó°ÑÈıÖÖ²ÄÁÏÍ¶Èë´ó¹ø¡£|¡°Õ¾Ô¶µã¡£¡±¾ŞÁúµÍºğÒ»Éù£¬ÉîÎüÒ»¿ÚÆø£¬Åç³öÒ»¹ÉÁÒÑæ¡­¡­</Message>
 		<Action type="counter_set" data1="2" String1="dragon"/>
 	</Event>
 
 
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="counter_eq" data1="1" String1="dragon"/>
-		<Message>Without a treasure at hand you have to give up. It is impossible to confine the ancient dragon in a dungeon until you have find something suitable.|You have lost your mission!</Message>
+		<Message>ÄãÃ»ÓĞÈÎºÎºÏÊÊµÄ²Æ±¦¿ÉÒÔÏ×ÉÏ£¬Ö»µÃ·ÅÆú¡£Äã²»¿ÉÄÜ°Ñ¹ÅÁú¹Ø½øµØÀÎ£¬Ò»Ö±µÈµ½ÕÒµ½³ÆĞÄµÄÀñÎï¡£|ÄãµÄÈÎÎñÊ§°ÜÁË£¡</Message>
 		<Action type="defeat" data1="0"/>
 	</Event>
 
@@ -127,14 +127,14 @@
 		<Trigger type="counter_ge" data1="2" String1="q2"/>
 		<Trigger type="counter_ge" data1="2" String1="q3"/>
 		<Trigger type="counter_eq" data1="2" String1="dragon"/>
-		<Message>It takes only a few seconds and you hold a small bottle in your hands. It contains only a single drop. You have fulfilled your quest.|Continue with Amthor 6...</Message>
+		<Message>²»¹ıÆ¬¿Ì£¬Ò»Ö»Ğ¡Æ¿±ãÂäÈëÄãÊÖÖĞ¡£Æ¿ÀïÖ»ÓĞÒ»µÎÒºÌå¡£ÄãÖÕÓÚÍê³ÉÁËÊ¹Ãü¡£|½ÓÏÂÀ´½øÈë¡¶°¢Ä·Ë÷¶û 6¡·¡­¡­</Message>
 		<Action type="counter_set" data1="3" String1="dragon"/>
 		<Action type="victory" data1="0"/>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="counter_eq" data1="2" String1="dragon"/>
-		<Message>It takes only a few seconds, then you look into the cauldron. It is empty!|“What have you done?”, you shout to the dragon.||&quot;One or more ingredients have been too weak&quot;, answers the dragon impatiently.|You have lost your mission!</Message>
+		<Message>Ö»¹ıÁË¼¸Ãë£¬Äã±ãÏò´ó¹øÀïÍûÈ¥¡£ÀïÃæ¾¹¿Õ¿ÕÈçÒ²£¡|¡°Äã¶¼¸ÉÁËĞ©Ê²Ã´£¿¡±Äã³å¾ŞÁúÅ­ºğ¡£||¡°Ò»ÖÖ»ò¶àÖÖ²ÄÁÏµÄÁ¦Á¿Ì«ÈõÁË¡£¡±¾ŞÁú²»ÄÍ·³µØ»Ø´ğ¡£|ÄãµÄÈÎÎñÊ§°ÜÁË£¡</Message>
 		<Action type="defeat" data1="0"/>
 	</Event>
 
@@ -145,14 +145,14 @@
 		<Trigger type="counter_ge" data1="1" String1="q1"/>
 		<Trigger type="counter_ge" data1="1" String1="q2"/>
 		<Trigger type="counter_ge" data1="1" String1="q3"/>
-		<Message>You have found all ingredients of the tincture. You may now head to the dragon.</Message>
+		<Message>ÄãÒÑÊÕ¼¯ÆëÈ«Ò©¼Á²ÄÁÏ¡£ÏÖÔÚ¿ÉÒÔÈ¥ÕÒ¾ŞÁúÁË¡£</Message>
 		<Action type="counter_set" data1="1" string1="ruin"/>
 	</Event>
 
 	<!-- Archon -->
 	<Ruin id="8" available_for_quest="no">
-		<Heading>Archon refuge</Heading>
-		<Message>You have defeated an innocent Archon. You take your dagger, open the thorax of its dead body and tear out the heart.</Message>
+		<Heading>Ö´ÕşÌìÊ¹µÄ±ÜÄÑËù</Heading>
+		<Message>Äã»÷°ÜÁËÒ»ÃûÎŞ¹¼µÄÖ´ÕşÌìÊ¹¡£Äã°Î³öØ°Ê×£¬»®¿ªËüµÄĞØÌÅ£¬´ÓÊ¬ÌåÖĞ³¶³öĞÄÔà¡£</Message>
 		<Monster type="4" number="1" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
@@ -165,8 +165,8 @@
 	</Event>
 
 	<Ruin id="18" available_for_quest="no">
-		<Heading>Archon refuge</Heading>
-		<Message>You have defeated a holy Archon. You cut the heart from its dead, but still warm, body.</Message>
+		<Heading>Ö´ÕşÌìÊ¹µÄ±ÜÄÑËù</Heading>
+		<Message>Äã»÷°ÜÁËÒ»ÃûÉñÊ¥µÄÖ´ÕşÌìÊ¹£¬´ÓÉĞÓĞÓàÎÂµÄÒÅÌåÖĞ¸îÏÂĞÄÔà¡£</Message>
 		<Monster type="4" number="1" level="15"/>
 		<Reward type="xp" data="40"/>
 	</Ruin >
@@ -180,8 +180,8 @@
 
 	<!-- Pegasus -->
 	<Ruin id="10" available_for_quest="no">
-		<Heading>Pegasus refuge</Heading>
-		<Message>You have struck down a wild Pegasus. Let the bloodletting begin.</Message>
+		<Heading>ÌìÂíµÄ±ÜÄÑËù</Heading>
+		<Message>Äã»÷µ¹ÁËÒ»Æ¥Ò°ÉúÌìÂí¡£¸Ã¿ªÊ¼·ÅÑªÁË¡£</Message>
 		<Monster type="10" number="1" level="3"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
@@ -194,8 +194,8 @@
 	</Event>
 
 	<Ruin id="0" available_for_quest="no">
-		<Heading>Pegasus refuge</Heading>
-		<Message>You have struck down a strong Pegasus. Hopefully he has not lost too much blood during the fight.</Message>
+		<Heading>ÌìÂíµÄ±ÜÄÑËù</Heading>
+		<Message>Äã»÷µ¹ÁËÒ»Æ¥Ç¿×³µÄÌìÂí¡£µ«Ô¸ËüÔÚ²«¶·ÖĞÃ»ÓĞÁ÷Ê§Ì«¶àÑªÒº¡£</Message>
 		<Monster type="10" number="1" level="12"/>
 		<Reward type="xp" data="25"/>
 	</Ruin >
@@ -208,8 +208,8 @@
 	</Event>
 
 	<Ruin id="11" available_for_quest="no">
-		<Heading>Pegasus refuge</Heading>
-		<Message>You have struck down a Pegasus. Let the bloodletting begin.</Message>
+		<Heading>ÌìÂíµÄ±ÜÄÑËù</Heading>
+		<Message>Äã»÷µ¹ÁËÒ»Æ¥ÌìÂí¡£¸Ã¿ªÊ¼·ÅÑªÁË¡£</Message>
 		<Monster type="10" number="1" level="9"/>
 		<Reward type="xp" data="19"/>
 	</Ruin >
@@ -224,8 +224,8 @@
 
 	<!-- Unicorn -->
 	<Ruin id="5" available_for_quest="no">
-		<Heading>Unicorn refuge</Heading>
-		<Message>You have over come an impetuous Unicorn.</Message>
+		<Heading>¶À½ÇÊŞµÄ±ÜÄÑËù</Heading>
+		<Message>ÄãÖÆ·şÁËÒ»Ö»ĞÔÇé±©ÁÒµÄ¶À½ÇÊŞ¡£</Message>
 		<Monster type="57" number="1" level="3"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
@@ -239,8 +239,8 @@
 	</Event>
 
 	<Ruin id="16" available_for_quest="no">
-		<Heading>Unicorn refuge</Heading>
-		<Message>You have over come a mighty Unicorn. With some work you cut the horn from the head.</Message>
+		<Heading>¶À½ÇÊŞµÄ±ÜÄÑËù</Heading>
+		<Message>ÄãÖÆ·şÁËÒ»Ö»Ç¿´óµÄ¶À½ÇÊŞ£¬·ÑÁËÒ»·¬¹¤·ò²Å½«ËüµÄ½Ç´ÓÍ·ÉÏ¸îÏÂ¡£</Message>
 		<Monster type="57" number="1" level="16"/>
 		<Reward type="xp" data="35"/>
 	</Ruin >
@@ -255,8 +255,8 @@
 
 	<!-- Chest -->
 	<Ruin id="17" available_for_quest="no">
-		<Heading>Temple Guldonies</Heading>
-		<Message>You have found a bright shining golden chest. It is heavy it is locked. Maybe you could find a key.</Message>
+		<Heading>¹Å¶û¶àÄáË¹Éñµî</Heading>
+		<Message>ÄãÕÒµ½Ò»Ö»ÉÁÉÁ·¢¹âµÄ½ğÉ«±¦Ïä¡£Ëü¼È³ÁÖØÓÖÉÏÁËËø¡£Ò²ĞíÄãÄÜÕÒµ½Ô¿³×¡£</Message>
 		<Monster type="36" number="1" level="1"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >

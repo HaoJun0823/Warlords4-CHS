@@ -1,11 +1,11 @@
 <CutScene file="Video\Campaign_0.bik" voice="Campaign\Campaign_0.wav" duration="98000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">They say that true Genius is made of equal parts Wisdom and Inspiration, with just the right dose of madness added to the mix.</Text>
-	<Text time="10500">I have a tale to tell you of such Genius.  Of the wonders that it created, and ultimately… how it almost destroyed the world.</Text>
-	<Text time="19500">This tale has its roots in a distant age.  So distant that few save the most ancient Dragons can remember.</Text>
-	<Text time="27000">There was once an Elven Prince, named Mordaine.  Like many a younger child of royalty, the desire to rule burned fiercely in his blood.</Text>
-	<Text time="36500">Ever jealous of his brothers, Mordaine incited a rebellion – a bloody civil war - but after many years of bloodshed, he and his followers were defeated and exiled from their homelands.</Text>
-	<Text time="48500">They became known as the Dark Elves.  And while they plotted and schemed, Prince Mordaine delved into dark magicks, searching for a spell – one that would bring him victory.</Text>
-	<Text time="60500">Finally, Mordaine, found his spell.  He would open up a portal to the Dark Realms and summon forth four mighty creatures to do his bidding.</Text>
-	<Text time="70000">But the spell went awry.  The magical backlash slew Mordaine and shook the very world itself.  The earth cracked, mountains fell, and cities were washed away.</Text>
-	<Text time="82500">It was a dark time – 3000 years past - known as The Sundering.  And it would have eventually passed from memory altogether… but some cannot let history lie.</Text>
+	<Text time="1500">ÊÀÈË³£Ëµ£¬ÕæÕıµÄÌì²Å£¬Ò»°ëÔ´ÓÚÖÇ»Û£¬Ò»°ëÀ´×ÔÁé¸Ğ£¬ÔÙÌíÉÏÒ»Ë¿Ç¡µ½ºÃ´¦µÄ·è¿ñ¡£</Text>
+	<Text time="10500">ÎÒÒª½²¸øÄãÌıµÄ£¬ÕıÊÇÕâÑùÒ»Î»Ìì²ÅµÄ¹ÊÊÂ£ºËû´´ÔìÁËÖÖÖÖÆæ¼££¬È´Ò²ÏÕĞ©Ç×ÊÖ»ÙÃğÕâ¸öÊÀ½ç¡£</Text>
+	<Text time="19500">¹ÊÊÂÊ¼ÓÚ¼«ÆäÒ£Ô¶µÄÄê´ú¡£¾ÃÔ¶µÃ³ıÁË×î¹ÅÀÏµÄ¾ŞÁú£¬¼¸ºõÎŞÈË»¹¼ÇµÃµ±ÄêµÄÍùÊÂ¡£</Text>
+	<Text time="27000">´ÓÇ°ÓĞÎ»¾«ÁéÍõ×Ó£¬Ãû½ĞÄª¶û´÷¶÷¡£ÈçÍ¬Ğí¶àÍõÊÒÓ××Ó£¬ËûĞÄÖĞÊ¼ÖÕÈ¼ÉÕ×Å¶ÔÍõÈ¨µÄ¿ÊÍû¡£</Text>
+	<Text time="36500">Äª¶û´÷¶÷¼µºŞ×Ô¼ºµÄĞÖ³¤£¬ÖÕÓÚÉ¿¶¯ÅÑÂÒ£¬ÏÆÆğÒ»³¡ÑªĞÈµÄÄÚÕ½¡£¶àÄêÉ±Â¾Ö®ºó£¬ËûÓë×·ËæÕßÖÕ¸æ°Ü±±£¬±»Öğ³ö¹ÊÍÁ¡£</Text>
+	<Text time="48500">´Ëºó£¬ËûÃÇ±»³ÆÎªºÚ°µ¾«Áé¡£ËûÃÇÈÔÔÚ°µÖĞ³ïÄ±£¬¶øÄª¶û´÷¶÷Íõ×ÓÔòÇ±ĞÄÑĞÏ°ºÚ°µÄ§·¨£¬¿àÑ°Ò»ÖÖÄÜÎªËûÓ®µÃÊ¤ÀûµÄÖäÊõ¡£</Text>
+	<Text time="60500">ÖÕÓÚ£¬Äª¶û´÷¶÷ÕÒµ½ÁËËùÇóÖ®Êõ£ºËûÒª´ò¿ªÍ¨ÍùºÚ°µÖî½çµÄ´«ËÍÃÅ£¬ÕÙÀ´ËÄÍ·Ç¿´óµÄÉúÁé£¬ÇıÊ¹ËüÃÇÎª¼ºËùÓÃ¡£</Text>
+	<Text time="70000">È»¶ø£¬·¨ÊõÊ§¿ØÁË¡£Ä§Á¦·´ÊÉ¶áÈ¥ÁËÄª¶û´÷¶÷µÄĞÔÃü£¬Ò²º³¶¯ÁËÕû¸öÊÀ½ç¡£´óµØ¿ªÁÑ£¬ÈºÉ½ÇãÍÇ£¬³ÇÊĞÃ»ÈëºéÁ÷¡£</Text>
+	<Text time="82500">ÄÇÊÇÈıÇ§ÄêÇ°µÄºÚ°µËêÔÂ£¬ºóÊÀ³ÆÖ®Îª¡°´ó±ÀÁÑ¡±¡£Õâ¶ÎÍùÊÂ±¾¸Ã½¥½¥äÎÃ»ÓÚ¼ÇÒäÖ®ÖĞ¡­¡­Æ«Æ«ÓĞÈË²»¿ÏÈÃÀúÊ·³ÁË¯¡£</Text>
 </CutScene>

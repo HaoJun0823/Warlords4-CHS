@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_1_1.bik" voice="Campaign\Campaign_1_1.wav" duration="30000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">The Orkish invasion had been quelled.  What was more disturbing than the attack itself though, was the way the Orcs had looted the Libraries.</Text>
-	<Text time="10000">Ordinarily, a book was nothing more to these creatures than a piece of kindling, so the question remained… Why would Orcs do such a thing?</Text>
-	<Text time="19000">A quick examination of the battlefield, soon showed a reason for this strange behavior – they had been led by Daemons…  And Daemons always have a sinister purpose.</Text>
+	<Text time="1500">ÊŞÈËµÄÈëÇÖÖÕÓÚÆ½Ï¢¡£È»¶ø£¬±ÈÏ®»÷±¾Éí¸üÁîÈË²»°²µÄ£¬ÊÇËûÃÇ¶ÔÍ¼Êé¹İµÄÏ´½Ù¡£</Text>
+	<Text time="10000">ÕâĞ©¼Ò»ïËØÀ´Ö»°ÑÊé±¾µ±×÷Òı»ğµÄ²ñĞ½¡£¿ÉÕâÒ»´Î£¬ËûÃÇÎªºÎÆ«Æ«ÒªÇÀÊé£¿</Text>
+	<Text time="19000">Õ½ºóµÄ²Ö´Ù¿±²ìºÜ¿ì½Ò¿ªÁË¹Å¹ÖĞĞ¾¶±³ºóµÄÔµÓÉ¡ª¡ªÂÊÁìÊŞÈËµÄ£¬¾¹ÊÇ¶ñÄ§¡­¡­¶ø¶ñÄ§ĞĞÊÂ£¬´ÓÀ´¶¼»³×ÅÏÕ¶ñµÄÍ¼Ä±¡£</Text>
 </CutScene>

@@ -12,7 +12,7 @@
     <!--Story start-->
 	<Event side="0" repeat="1" location="city" locdata="22">
 		<Trigger type="turn" data1="1"/>
-		<Message>You are back in the White Mountains. You inhale the cold fresh air think of revenge. This time you are the hunter and you are not coming alone. Your Undead companions are longing for victims.| Khaz Agar lies in the east behind the high mountain range. You send out your scouts and start to prepare your first echelon.</Message>
+		<Message>ÄãÖØ·µ°×É«É½Âö¡£ÉîÉîÎü½øÒ»¿Úº®Àä¶øÇåĞÂµÄ¿ÕÆø£¬¸´³ğµÄÄîÍ·ÔÙ´ÎÓ¿ÉÏĞÄÍ·¡£Õâ»Ø£¬ÄãÊÇÁÔÈË£¬¶øÇÒ¾ø·Ç¹ÂÉíÒ»ÈË¡£ÄãµÄ²»ËÀ×åÍ¬°éÔçÒÑ¿ÊÍûÁÔÎï¡£|¿¨×È¡¤°¢¼Ó¶û×øÂäÔÚ¶«·½µÄ¸ßÉ½±³ºó¡£ÄãÅÉ³ö³âºò£¬¿ªÊ¼¼¯½áµÚÒ»Ìİ¶Ó¡£</Message>
 		<Action type="counter_set" data1="0" String1="agnoril"/>
 		<Action type="counter_set" data1="0" String1="dragon"/>
 		<Action type="counter_set" data1="0" String1="empire"/>
@@ -25,13 +25,13 @@
 	<Event side="0" repeat="1" location="city" locdata="22">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="3"/>
-		<Message>Your first scouts are back. The Empire assembles troops in the Borderlands. You must expect a strong resistance in the south.</Message>
+		<Message>µÚÒ»Åú³âºò¹éÀ´ÁË¡£µÛ¹úÕıÔÚ±ß¾³µØÇø¼¯½á±øÁ¦£¬Äã±ØĞëÌá·ÀÀ´×ÔÄÏ·½µÄÍçÇ¿µÖ¿¹¡£</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="22">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="5"/>
-		<Message>Your scouts are back from Khaz Agar. It is still in ruins. They haven&apos;t found a trace of Prince Agnoril. But they heard the rumor, that Drakh Agar is their new capital. It&apos;s said to be located in the southeast.</Message>
+		<Message>³âºò´Ó¿¨×È¡¤°¢¼Ó¶û·µ»Ø¡£ÄÇÀïÒÀ¾ÉÂúÄ¿´¯ğê£¬ËûÃÇÃ»·¢ÏÖ°¢¸ñÅµÀï¶ûÍõ×ÓµÄ×Ù¼£¡£²»¹ı£¬ËûÃÇÌıËµ°«ÈËÒÑ½«µÂÀ­¿Ë¡¤°¢¼Ó¶û¶¨ÎªĞÂÊ×¶¼£¬¾İ³ÆËüÎ»ÓÚ¶«ÄÏ·½¡£</Message>
 	</Event>
 
     <!-- Scouts -->
@@ -50,7 +50,7 @@
 	<Event side="0" repeat="1" location="city" locdata="22">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="1" String1="scouts"/>
-		<Message>You have found some of your scouts. They are dead. The marks of death leave no doubt. Dragons are near!</Message>
+		<Message>ÄãÕÒµ½ÁË¼¸Ãû³âºò¡­¡­È»¶øËûÃÇ¶¼ÒÑËÀÈ¥¡£Ê¬ÌåÉÏµÄºÛ¼£ÈÃÄãÈ·ĞÅ£º¸½½üÓĞ¾ŞÁú³öÃ»£¡</Message>
 	</Event>
 
     <!-- Elementar -->
@@ -66,7 +66,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
-		<Message>Siantra reaches your capital. Her face is drawn with worry, &quot;Kirin, the ancient fire dragon, has followed closely behind us. A new brood of dragons is soon to hatch out. We need to change our plans.&quot;</Message>
+		<Message>Ï£°²ÌØÀ­µÖ´ïÊ×¶¼£¬ÃæÈİÒòÓÇÂÇ¶øã¾ã²¡£¡°¹ÅÀÏµÄ»ğÁú»ùÁÖÒ»Â·½ô×·ÎÒÃÇ¡£ĞÂÒ»ÎÑÓ×ÁúºÜ¿ì¾ÍÒª·õ»¯ÁË¡£ÎÒÃÇ±ØĞë¸Ä±ä¼Æ»®¡£¡±</Message>
 		<Action type="counter_set" data1="1" String1="reinforcement"/>
 	</Event>
 
@@ -109,7 +109,7 @@
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
 		<Trigger type="counter_eq" data1="0" String1="agnoril"/>
-		<Message>Anger wells within you, &quot;Change our plan?&quot;|The elf looks directly into your eyes and again you feel that strange tingle, &quot;Yes! We first need to deal with the lizards and kill Kirin!&quot;|The elf turns around to leave, but with a quick move you hold her tight. &quot;What do you think about some more support for our plan, my dear?!” The elf looks disparagingly at you, &quot;You are the Warlord... and I...&quot;|Suddenly a smile appears on her face, &quot;I will teach you a useful spell...&quot;</Message>
+		<Message>Å­»ğÔÚÄãĞÄÖĞÉıÌÚ£º¡°¸Ä±ä¼Æ»®£¿¡±|¾«ÁéÖ±ÊÓÄãµÄË«ÑÛ£¬ÄÇ¹ÉÆæÒìµÄËÖÂé¸ĞÓÖÀ´ÁË¡£¡°Ã»´í£¡ÎÒÃÇ±ØĞëÏÈÊÕÊ°ÄÇĞ©òáòæ£¬É±ËÀ»ùÁÖ£¡¡±|Ëı×ªÉíÓû×ß£¬ÄãÈ´Ñ¸ËÙÉìÊÖ£¬½«ËıÀÎÀÎÀ­×¡¡£¡°Ç×°®µÄ£¬Òª²»ÒªÔÙ¸øÎÒÃÇµÄ¼Æ»®ÌíĞ©Ô®¾ü£¿¡±ËıÇáÃïµØÆ³ÁËÄãÒ»ÑÛ¡£¡°ÄãÊÇÍ³Ë§¡­¡­¶øÎÒ¡­¡­¡±|Í»È»£¬ËıÁ³ÉÏÕÀ³öÒ»Ä¨Ğ¦Èİ£º¡°ÎÒ»á½ÌÄãÒ»µÀÓĞÓÃµÄ·¨Êõ¡­¡­¡±</Message>
 		<Action type="spell" data1="20"/>
 		<Action type="mana_crystals" data1="4"/>
 		<Action type="counter_set" data1="0" String1="story"/>
@@ -121,7 +121,7 @@
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
 		<Trigger type="counter_eq" data1="1" String1="agnoril"/>
-		<Message>Anger wells within you, &quot;Change what plan? Prince Agnoril is dead! And I have found this amulet around his neck. Any clue who could have given it to him?&quot;|The elf looks directly into your eyes and again you feel that strange tingle, &quot;This is the craft of a Dragon!&quot;</Message>
+		<Message>Å­»ğÔÚÄãĞÄÖĞÉıÌÚ£º¡°¸Ä±äÊ²Ã´¼Æ»®£¿°¢¸ñÅµÀï¶ûÍõ×ÓÒÑ¾­ËÀÁË£¡ÎÒÔÚËû²±×ÓÉÏÕÒµ½ÁËÕâÃ¶»¤·û¡£ÄãÖªµÀÊÇË­¸øËûµÄÂğ£¿¡±|¾«ÁéÖ±ÊÓÄãµÄË«ÑÛ£¬ÄÇ¹ÉÆæÒìµÄËÖÂé¸ĞÓÖÀ´ÁË¡£¡°ÕâÊÇÁú×åµÄÊÖÒÕ£¡¡±</Message>
 		<Action type="counter_set" data1="0" String1="story"/>
 	</Event>
 
@@ -133,8 +133,8 @@
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="1" String1="dragon"/>
 		<Trigger type="counter_eq" data1="0" String1="agnoril"/>
-		<Message>Siantra reaches your capital. Her face is drawn with worry, &quot;Kirin, the ancient fire dragon, have you any news of him?  I heard rumor, that he is following our steps!”|Anger wells within you, &quot;You are a litle late, scout! The lizards are dead, but Kirin has managed to escape.&quot;</Message>
-		<Message>The elf looks directly into your eyes and suddenly you feel a pain deep in your head, &quot;Never again call me a scout! Warlord!&quot;| With a gesture of her hand the pain subsides. Then a smile apears on her face, &quot;Send me one of your envoys when you have found Prince Agnoril!&quot;</Message>
+		<Message>Ï£°²ÌØÀ­µÖ´ïÊ×¶¼£¬Ãæ´øÓÇÉ«£º¡°ÄÇÍ·¹ÅÀÏµÄ»ğÁú»ùÁÖ¡­¡­ÄãÓĞËüµÄÏûÏ¢Âğ£¿ÎÒÌıËµËüÒ»Ö±ÔÚ¸ú×ÙÎÒÃÇ£¡¡±|Å­»ğÔÚÄãĞÄÖĞÉıÌÚ£º¡°³âºò£¬ÄãÀ´µÃÌ«³ÙÁË£¡ÄÇĞ©òáòæ¶¼ËÀÁË£¬¿É»ùÁÖ»¹ÊÇÌÓ×ßÁË¡£¡±</Message>
+		<Message>¾«ÁéÖ±ÊÓÄãµÄË«ÑÛ£¬ÄãµÄÄÔº£Éî´¦ÖèÈ»´«À´Ò»Õó¾çÍ´¡£¡°ÔÙÒ²±ğ½ĞÎÒ³âºò£¡Í³Ë§£¡¡±|Ëı»ÓÁË»ÓÊÖ£¬¾çÍ´ËæÖ®ÍËÈ¥¡£Ëæºó£¬ËıÎ¢Î¢Ò»Ğ¦£º¡°ÕÒµ½°¢¸ñÅµÀï¶ûÍõ×ÓÖ®ºó£¬ÅÉ¸öÊ¹ÕßÀ´¼ûÎÒ£¡¡±</Message>
 		<Action type="counter_set" data1="0" String1="story"/>
 	</Event>
 
@@ -144,7 +144,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="9"/>
 		<Trigger type="counter_eq" data1="0" String1="agnoril"/>
-		<Message>You have captured the capital of the Dragons, but Kirin has fled.|You search the citadel, but you cannot find a hint why the ancient Dragon is following you.</Message>
+		<Message>Äã¹¥Õ¼ÁËÁú×åÊ×¶¼£¬µ«»ùÁÖÌÓ×ßÁË¡£|ËÑ±é±¤Àİ£¬ÄãÈÔÕÒ²»µ½ÈÎºÎÏßË÷£¬ÎŞ·¨½âÊÍÕâÍ·¹ÅÁúÎªºÎÒ»Â·×·×ÙÄã¡£</Message>
 		<Action type="counter_set" data1="1" String1="dragon"/>
 	</Event>
 
@@ -152,7 +152,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="9"/>
 		<Trigger type="counter_eq" data1="1" String1="agnoril"/>
-		<Message>You have captured the capital of the Dragons, but Kirin has fled.|You search the citadel, but you cannot find a hint about the amulet.</Message>
+		<Message>Äã¹¥Õ¼ÁËÁú×åÊ×¶¼£¬µ«»ùÁÖÌÓ×ßÁË¡£|ËÑ±é±¤Àİ£¬ÄãÈÔÕÒ²»µ½¹ØÓÚÄÇÃ¶»¤·ûµÄÈÎºÎÏßË÷¡£</Message>
 		<Action type="counter_set" data1="1" String1="dragon"/>
 	</Event>
 
@@ -161,7 +161,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Trigger type="counter_eq" data1="0" String1="empire"/>
-		<Message>You have defeated the Dwarves of Drakh-Agar. The Twin Elementars are destroyed, but Prince Agnoril has fled into the Borderlands.</Message>
+		<Message>Äã»÷°ÜÁËµÂÀ­¿Ë¡¤°¢¼Ó¶ûµÄ°«ÈË£¬´İ»ÙÁËÔªËØË«×Ó¡£µ«°¢¸ñÅµÀï¶ûÍõ×ÓÌÓÍùÁË±ß¾³µØÇø¡£</Message>
 		<Action type="counter_set" data1="1" String1="dwarves"/>
 	</Event>
 
@@ -169,8 +169,8 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Trigger type="counter_eq" data1="1" String1="empire"/>
-		<Message>You have managed to defeat the Dwarves of Drakh-Agar. The dead body of Prince Agnoril lies in front of you. Why has he killed your father and the rest of your family?|You search the dead body and you recognize a small strange amulet. You try to remove the chain from his neck, but as you touch the cold metal a shock runs through your body. Instantly the whole air is filled with electricity.</Message>
-		<Message>No doubt this is a very powerful magic artefact. Prince Agnoril was under its bann!|You are full of anger. You need to find out who has created this artefact and given it to the Prince!</Message>
+		<Message>Äã»÷°ÜÁËµÂÀ­¿Ë¡¤°¢¼Ó¶ûµÄ°«ÈË¡£°¢¸ñÅµÀï¶ûÍõ×ÓµÄÊ¬Ìå¾ÍÌÉÔÚÄãÃæÇ°¡£ËûÎªºÎÒªÉ±ËÀÄãµÄ¸¸Ç×ºÍ¼ÒÖĞÆäËûÇ×ÈË£¿|ÄãËÑ²éÊ¬Ìå£¬·¢ÏÖÒ»Ã¶ÆæÒìµÄĞ¡»¤·û¡£ÕıÏë´ÓËû¾±ÉÏÈ¡ÏÂÁ´×Ó£¬ÊÖÖ¸¸Õ´¥¼°±ùÀä½ğÊô£¬µçÁ÷±ãÃÍµØ´Ü¹ıÈ«Éí¡£É²ÄÇ¼ä£¬¿ÕÆøÖĞ³äÂúÁËµç¹â¡£</Message>
+		<Message>ºÁÎŞÒÉÎÊ£¬ÕâÊÇÒ»¼şÍşÁ¦¾ªÈËµÄÄ§·¨ÉñÆ÷¡£°¢¸ñÅµÀï¶ûÍõ×ÓÒ»Ö±ÊÜËüµÄÄ§Á¦Ö§Åä£¡|ÄãÅ­²»¿É¶ô¡£±ØĞë²é³ö¾¿¾¹ÊÇË­ÖÆ×÷ÁËÕâ¼şÉñÆ÷£¬ÓÖÊÇË­°ÑËü½»µ½Íõ×ÓÊÖÉÏ£¡</Message>
 		<Action type="counter_set" data1="1" String1="dwarves"/>
 		<Action type="counter_set" data1="1" String1="agnoril"/>
 	</Event>
@@ -180,7 +180,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="3"/>
 		<Trigger type="counter_eq" data1="0" String1="dwarves"/>
-		<Message>You have defeated the Empire. Now the Dwarves of Drakh-Agar stand on their own. Prince Agnoril no longer has a place of refuge.</Message>
+		<Message>ÄãÖÕÓÚ»÷°ÜÁËµÛ¹ú¡£Èç½ñµÂÀ­¿Ë¡¤°¢¼Ó¶ûµÄ°«ÈË¹ÂÁ¢ÎŞÔ®£¬°¢¸ñÅµÀï¶ûÍõ×ÓÒ²Ê§È¥ÁË²ØÉíÖ®´¦¡£</Message>
 		<Action type="counter_set" data1="1" String1="empire"/>
 	</Event>
 
@@ -188,8 +188,8 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="3"/>
 		<Trigger type="counter_eq" data1="1" String1="dwarves"/>
-		<Message>You have managed to defeat the Empire. The dead body of Prince Agnoril lies infront of you. Why did he kill your father and the rest of your family?|You search the dead body and you recognize a small strange amulet. You try to remove the chain from his neck, but as you touch the cold metal a shock runs through your body. Instantly the whole air is filled with electricity.</Message>
-		<Message>No doubt this is a very powerful magic artefact. TPrince Agnoril was under its bann!|You are full of anger. You need to find out who has created this artefact and given it to the Prince!</Message>
+		<Message>Äã»÷°ÜÁËµÛ¹ú£¬°¢¸ñÅµÀï¶ûÍõ×ÓµÄÊ¬Ìå¾ÍÌÉÔÚÄãÃæÇ°¡£ËûÎªºÎÒªÉ±ËÀÄãµÄ¸¸Ç×ºÍ¼ÒÖĞÆäËûÇ×ÈË£¿|ÄãËÑ²éÊ¬Ìå£¬·¢ÏÖÒ»Ã¶ÆæÒìµÄĞ¡»¤·û¡£ÕıÏë´ÓËû¾±ÉÏÈ¡ÏÂÁ´×Ó£¬ÊÖÖ¸¸Õ´¥¼°±ùÀä½ğÊô£¬µçÁ÷±ãÃÍµØ´Ü¹ıÈ«Éí¡£É²ÄÇ¼ä£¬¿ÕÆøÖĞ³äÂúÁËµç¹â¡£</Message>
+		<Message>ºÁÎŞÒÉÎÊ£¬ÕâÊÇÒ»¼şÍşÁ¦¾ªÈËµÄÄ§·¨ÉñÆ÷¡£°¢¸ñÅµÀï¶ûÍõ×ÓÒ»Ö±ÊÜËüµÄÄ§Á¦Ö§Åä£¡|ÄãÅ­²»¿É¶ô¡£±ØĞë²é³ö¾¿¾¹ÊÇË­ÖÆ×÷ÁËÕâ¼şÉñÆ÷£¬ÓÖÊÇË­°ÑËü½»µ½Íõ×ÓÊÖÉÏ£¡</Message>
 		<Action type="counter_set" data1="1" String1="empire"/>
 		<Action type="counter_set" data1="1" String1="agnoril"/>
 	</Event>
@@ -199,7 +199,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="1" String1="agnoril"/>
 		<Trigger type="counter_eq" data1="1" String1="dragon"/>
-		<Message>Once again you have conquered the White Mountains, the homeland of your ancestors. But you are beset by doubt instead of pride.|You need to know how this magic amulet is involved. The ancient Dragon Kirin is your only clue. He seems to be involved in the plot.|Continue with Amthor 08...</Message>
+		<Message>ÄãÔÙÒ»´ÎÕ÷·şÁË°×É«É½Âö£¬¶á»Ø×æÏÈµÄ¹ÊÏç¡£¿ÉÕ¼¾İÄãĞÄÍ·µÄ²¢·Ç½¾°Á£¬¶øÊÇÒÉÂÇ¡£|Äã±ØĞë²éÃ÷ÄÇÃ¶Ä§·¨»¤·û¾¿¾¹°çÑİÁËÊ²Ã´½ÇÉ«¡£¹ÅÁú»ùÁÖÊÇÎ¨Ò»µÄÏßË÷£¬ËüËÆºõÒ²Ç£ÉæÕâ³¡ÒõÄ±¡£|½ÓÏÂÀ´½øÈë¡¶°¢Ä·Ë÷¶û 08¡·¡­¡­</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

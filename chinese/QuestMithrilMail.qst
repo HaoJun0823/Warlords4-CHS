@@ -1,41 +1,41 @@
 <Quest name="The Mithril Mail">
    <Part id="0">
-      <Description done="no">If you clear out 4 old Dwarven mines, the Dwarves will make you a suit of Mithril Mail. Seek the first mine. Location: %s.</Description>
-      <Description done="yes" first="yes">The first mine has been cleared out and the Dwarves can return there.</Description>
-      <Description done="yes" first="no">The first mine was already cleared out.</Description>
-      <Success first="yes">The first mine is now free for the Dwarves to return.</Success>
-      <Success first="no">This mine is already empty, so the Dwarves can return at their leisure.</Success>
-      <Reward type="gold" data="1976">You find treasure in this mine worth 1976 gold.</Reward>
+      <Description done="no">若能清除 4 座矮人旧矿井中的敌人，矮人便会为你打造一件秘银锁甲。先去第一座矿井。地点：%s。</Description>
+      <Description done="yes" first="yes">第一座矿井已被清理干净，矮人可以重返此地。</Description>
+      <Description done="yes" first="no">第一座矿井早已被清理干净。</Description>
+      <Success first="yes">第一座矿井已无危险，矮人可以回来了。</Success>
+      <Success first="no">这座矿井已经空了，矮人随时可以放心返回。</Success>
+      <Reward type="gold" data="1976">你在矿井里找到了价值 1976 金币的宝藏。</Reward>
       <Monster type="46" number="1" level="6"/>
       <Monster type="42" number="4" level="2"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must now clear out the second Dwarven mine. Location: %s.</Description>
-      <Description done="yes" first="yes">The second mine has been cleared out and the Dwarves can return there.</Description>
-      <Description done="yes" first="no">The second mine was already cleared out.</Description>
-      <Success first="yes">The second mine is now free for the Dwarves to return.</Success>
-      <Success first="no">This mine is already empty, so the Dwarves can return at their leisure.</Success>
-      <Reward type="xp" data="16">You find an ancient Dwarven text, detailing battle techniques.  Gain 16 XP.</Reward>
+      <Description done="no">现在，你必须清理第二座矮人矿井。地点：%s。</Description>
+      <Description done="yes" first="yes">第二座矿井已被清理干净，矮人可以重返此地。</Description>
+      <Description done="yes" first="no">第二座矿井早已被清理干净。</Description>
+      <Success first="yes">第二座矿井已无危险，矮人可以回来了。</Success>
+      <Success first="no">这座矿井已经空了，矮人随时可以放心返回。</Success>
+      <Reward type="xp" data="16">你发现了一部古老的矮人兵书，记载着战斗技巧。获得 16 点经验值。</Reward>
       <Monster type="31" number="1" level="12"/>
       <Monster type="30" number="7" level="3"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must now clear out the third Dwarven mine. Location: %s.</Description>
-      <Description done="yes" first="yes">The third mine has been cleared out and the Dwarves can return there.</Description>
-      <Description done="yes" first="no">The third mine was already cleared out.</Description>
-      <Success first="yes">The third mine is now free for the Dwarves to return.</Success>
-      <Success first="no">This mine is already empty, so the Dwarves can return at their leisure.</Success>
-      <Reward type="hero" unit="17" level="6" number="1" name="Khaffi">Impressed by your commitment, a Dwarven hero offers to help you with the final mine.</Reward>
+      <Description done="no">现在，你必须清理第三座矮人矿井。地点：%s。</Description>
+      <Description done="yes" first="yes">第三座矿井已被清理干净，矮人可以重返此地。</Description>
+      <Description done="yes" first="no">第三座矿井早已被清理干净。</Description>
+      <Success first="yes">第三座矿井已无危险，矮人可以回来了。</Success>
+      <Success first="no">这座矿井已经空了，矮人随时可以放心返回。</Success>
+      <Reward type="hero" unit="17" level="6" number="1" name="Khaffi">一名矮人英雄对你的尽心竭力十分钦佩，愿意协助你清理最后一座矿井。</Reward>
       <Monster type="29" number="1" level="9"/>
       <Monster type="25" number="7" level="3"/>
    </Part>
    <Part id="3">
-      <Description done="no">You must now clear out the final Dwarven mine. Location: %s.</Description>
-      <Description done="yes" first="yes">The final mine has been cleared out and the Dwarves have gifted you a suit of Mithril Mail.</Description>
-      <Description done="yes" first="no">The final mine was already cleared out.  The Dwarves refused to give you the Mithril Mail.</Description>
-      <Success first="yes">All 4 mines have now been cleared.</Success>
-      <Success first="no">Alas, this mine has already been cleared out.  The Dwarves decide not to give you the Mithril Mail.</Success>
-      <Reward type="item" data="74">With all the mines cleared out, the Dwarves are grateful, and they give you the Mithril Mail as promised.</Reward>
+      <Description done="no">现在，你必须清理最后一座矮人矿井。地点：%s。</Description>
+      <Description done="yes" first="yes">最后一座矿井终于清理完毕，矮人赠予你一件秘银锁甲。</Description>
+      <Description done="yes" first="no">最后一座矿井早已清空，矮人拒绝交出秘银锁甲。</Description>
+      <Success first="yes">如今，全部 4 座矿井都已清理完毕。</Success>
+      <Success first="no">唉！这座矿井已经被别人清理过，矮人决定不再把秘银锁甲赠予你。</Success>
+      <Reward type="item" data="74">所有矿井均已清理完毕。矮人心怀感激，依照约定赠予你一件秘银锁甲。</Reward>
       <Monster type="50" number="1" level="15"/>
       <Monster type="43" number="4" level="1"/>
    </Part>

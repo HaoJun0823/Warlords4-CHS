@@ -1,41 +1,41 @@
 <Quest name="The Magic Door">
    <Part id="0">
-      <Description done="no">There is rumored to be a magic door, behind which lies a great treasure.  You must discover 3 passwords to open the door.  The first can be found at: %s.</Description>
-      <Description done="yes" first="yes">You discovered the first word, engraved in a coffin.  It was &apos;Dedecus&apos;.</Description>
-      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found the first word, engraved in a coffin.  It was &apos;Dedecus&apos;.</Description>
-      <Success first="yes">After slaying the guardians of this ruin, you find the first word, engraved in a coffin. It is &apos;Dedecus&apos;.</Success>
-      <Success first="no">The ruin has already been searched, but you find the first word, engraved in a coffin. It is &apos;Dedecus&apos;.</Success>
-      <Reward type="xp" data="16">The Soul Gatherers had collected many spirits.  After releasing them, they reward you with their memories (+16 XP).</Reward>
+      <Description done="no">传闻有一道魔法之门，门后藏着惊人的宝藏。你必须找到 3 个口令，才能打开它。第一个口令藏在：%s。</Description>
+      <Description done="yes" first="yes">你找到了第一个词，刻在一具棺材上：“Dedecus”。</Description>
+      <Description done="yes" first="no">虽然你不是第一个抵达这座遗迹的人，但仍找到了棺材上刻着的第一个词：“Dedecus”。</Description>
+      <Success first="yes">击败遗迹守卫后，你发现棺材上刻着第一个词：“Dedecus”。</Success>
+      <Success first="no">这座遗迹已被人搜查过，但你仍发现棺材上刻着第一个词：“Dedecus”。</Success>
+      <Reward type="xp" data="16">聚魂者收集了许多灵魂。你将它们释放后，它们以记忆回报你（经验值 +16）。</Reward>
       <Monster type="43" number="7" level="2"/>
       <Monster type="43" number="1" level="12"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must now seek the second password for the door.  Location: %s</Description>
-      <Description done="yes" first="yes">You discovered the second word, engraved in an altar.  It was &apos;Ante&apos;.</Description>
-      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found the second word, engraved in an Altar.  It was &apos;Ante&apos;.</Description>
-      <Success first="yes">After slaying the guardians of this ruin, you find the second word, engraved in an Altar. It is &apos;Ante&apos;.</Success>
-      <Success first="no">The ruin has already been searched, but you find the second word, engraved in an Altar. It is &apos;Ante&apos;.</Success>
-      <Reward type="hero" unit="41" number="1" level="7" name="Terotha">After defeating the Daemon Guardians, you find a Dark Elven prisoner they were holding.  She vows to join you.</Reward>
+      <Description done="no">现在，你必须寻找魔法之门的第二个口令。地点：%s</Description>
+      <Description done="yes" first="yes">你找到了第二个词，刻在一座祭坛上：“Ante”。</Description>
+      <Description done="yes" first="no">虽然你不是第一个抵达这座遗迹的人，但仍找到了祭坛上刻着的第二个词：“Ante”。</Description>
+      <Success first="yes">击败遗迹守卫后，你发现祭坛上刻着第二个词：“Ante”。</Success>
+      <Success first="no">这座遗迹已被人搜查过，但你仍发现祭坛上刻着第二个词：“Ante”。</Success>
+      <Reward type="hero" unit="41" number="1" level="7" name="Terotha">击败恶魔守卫后，你找到一名被它们囚禁的黑暗精灵女子。她立誓加入你的队伍。</Reward>
       <Monster type="44" number="7" level="2"/>
       <Monster type="44" number="1" level="12"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must now seek the third password for the door.  Location: %s</Description>
-      <Description done="yes" first="yes">You discovered the third word, engraved in a stone.  It was &apos;Cladem&apos;.</Description>
-      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found the third word, engraved in a stone.  It was &apos;Cladem&apos;.</Description>
-      <Success first="yes">After slaying the guardians of this ruin, you find the third word, engraved in a stone. It is &apos;Cladem&apos;.</Success>
-      <Success first="no">The ruin has already been searched, but you find the third word, engraved in a stone. It is &apos;Cladem&apos;.</Success>
-      <Reward type="gold" data="2200">After defeating the Undead Guardians, you find a small fortune in gems, worth 2200 Gold.</Reward>
+      <Description done="no">现在，你必须寻找魔法之门的第三个口令。地点：%s</Description>
+      <Description done="yes" first="yes">你找到了第三个词，刻在一块石头上：“Cladem”。</Description>
+      <Description done="yes" first="no">虽然你不是第一个抵达这座遗迹的人，但仍找到了石头上刻着的第三个词：“Cladem”。</Description>
+      <Success first="yes">击败遗迹守卫后，你发现石头上刻着第三个词：“Cladem”。</Success>
+      <Success first="no">这座遗迹已被人搜查过，但你仍发现石头上刻着第三个词：“Cladem”。</Success>
+      <Reward type="gold" data="2200">击败不死族守卫后，你发现了一批价值 2200 金币的宝石，可算一笔小小的财富。</Reward>
       <Monster type="30" number="7" level="3"/>
       <Monster type="34" number="1" level="10"/>
    </Part>
    <Part id="3">
-      <Description done="no">All that remains is to fight your way to the door and speak the words. Location: %s.</Description>
-      <Description done="yes" first="yes">You have spoken the words, opened the door and taken the Orb of Etheria.</Description>
-      <Description done="yes" first="no">When you reached the door, it had already been opened. You were too late to complete the quest.</Description>
-      <Success first="yes">The way to the door is clear, so you speak the words &apos;Dedecus Ante Cladem&apos; and the door opens.</Success>
-      <Success first="no">Unfortunately, the door has already been opened and the treasure has been taken.</Success>
-      <Reward type="item" data="99">Beyond the door, you find one of the most powerful items in the Realm - the Orb of Etheria!</Reward>
+      <Description done="no">接下来只需杀出一条通往魔法之门的道路，念出那几个词。地点：%s。</Description>
+      <Description done="yes" first="yes">你念出了口令，打开了大门，获得了艾瑟里亚宝珠。</Description>
+      <Description done="yes" first="no">等你抵达时，门已经被打开。你来得太迟，无法完成任务。</Description>
+      <Success first="yes">通往大门的道路终于畅通。你念出“Dedecus Ante Cladem”，大门随之开启。</Success>
+      <Success first="no">可惜魔法之门早已被人打开，宝藏也被取走了。</Success>
+      <Reward type="item" data="99">越过大门，你发现了整个国度最强大的宝物之一——艾瑟里亚宝珠！</Reward>
       <Monster type="30" number="2" level="3"/>
       <Monster type="34" number="1" level="18" name="Porathgarax"/>
    </Part>

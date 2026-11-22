@@ -1,41 +1,41 @@
 <Quest name="Melkor&apos;s Staff">
    <Part id="0">
-      <Description done="no">The four parts of Melkor&apos;s Staff have been scattered throughout the land. The first is held by a Liche Lord. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the guardian and recovered the first part of Melkor&apos;s Staff.</Description>
-      <Description done="yes" first="no">The guardians of the first part of the staff were already dead, but you recovered the piece unharmed.</Description>
-      <Success first="yes">You have slain the guardians of the first part of the staff and recovered it.</Success>
-      <Success first="no">The guardians of the first part of the staff are already dead but fortunately the piece was unharmed.</Success>
-      <Reward type="mana" data="3">As well as the piece of the staff you also discover the Liche Lord had a cache of 3 Mana Crystals.</Reward>
+      <Description done="no">梅尔科尔法杖被拆成了四个部分，散落在大陆各处。第一块由一名巫妖领主持有。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了守卫，取回了梅尔科尔法杖的第一块残片。</Description>
+      <Description done="yes" first="no">守护法杖第一块残片的敌人早已死去，但你仍完好无损地将它取回。</Description>
+      <Success first="yes">你杀死了法杖第一块残片的守卫，取回了残片。</Success>
+      <Success first="no">守护法杖第一块残片的敌人早已死去；幸好残片没有受损。</Success>
+      <Reward type="mana" data="3">除了法杖残片，你还发现巫妖领主收藏着 3 块魔力水晶。</Reward>
       <Monster type="31" number="1" level="10" name="Liche Lord"/>
       <Monster type="31" number="7" level="1"/>
    </Part>
    <Part id="1">
-      <Description done="no">The second part of Melkor&apos;s staff is held by a Daemon Prince. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the guardian and recovered the second part of Melkor&apos;s Staff.</Description>
-      <Description done="yes" first="no">The guardians of the second part of the staff were already dead, but you recovered the piece unharmed.</Description>
-      <Success first="yes">You have slain the guardians of the second part of the staff and recovered it.</Success>
-      <Success first="no">The guardians of the second part of the staff are already dead but fortunately the piece was unharmed.</Success>
-      <Reward type="hero" unit="17" level="7" number="1" name="Khozar Thane">The Daemon had imprisoned and tortured a Dwarven Hero, who offers to join you.</Reward>
+      <Description done="no">梅尔科尔法杖的第二块残片由一名恶魔王子持有。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了守卫，取回了梅尔科尔法杖的第二块残片。</Description>
+      <Description done="yes" first="no">守护法杖第二块残片的敌人早已死去，但你仍完好无损地将它取回。</Description>
+      <Success first="yes">你杀死了法杖第二块残片的守卫，取回了残片。</Success>
+      <Success first="no">守护法杖第二块残片的敌人早已死去；幸好残片没有受损。</Success>
+      <Reward type="hero" unit="17" level="7" number="1" name="Khozar Thane">恶魔囚禁并折磨着一名矮人英雄。获救后，他愿意加入你的队伍。</Reward>
       <Monster type="44" number="1" level="12" name="Daemon Prince"/>
       <Monster type="44" number="7" level="1"/>
    </Part>
    <Part id="2">
-      <Description done="no">The third part of Melkor&apos;s staff is held by an Ogre Lord. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the guardian and recovered the third part of Melkor&apos;s Staff.</Description>
-      <Description done="yes" first="no">The guardians of the third part of the staff were already dead, but you recovered the piece unharmed.</Description>
-      <Success first="yes">You have slain the guardians of the third part of the staff and recovered it.</Success>
-      <Success first="no">The guardians of the third part of the staff are already dead but fortunately the piece was unharmed.</Success>
-      <Reward type="gold" data="2534">The Ogre lord has a chest full of treasure, worth 2534 gold.</Reward>
+      <Description done="no">梅尔科尔法杖的第三块残片由一名食人魔领主持有。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了守卫，取回了梅尔科尔法杖的第三块残片。</Description>
+      <Description done="yes" first="no">守护法杖第三块残片的敌人早已死去，但你仍完好无损地将它取回。</Description>
+      <Success first="yes">你杀死了法杖第三块残片的守卫，取回了残片。</Success>
+      <Success first="no">守护法杖第三块残片的敌人早已死去；幸好残片没有受损。</Success>
+      <Reward type="gold" data="2534">食人魔领主有一只装满财宝的箱子，价值 2534 金币。</Reward>
       <Monster type="22" number="1" level="13" name="Duug"/>
       <Monster type="25" number="7" level="2"/>
    </Part>
    <Part id="3">
-      <Description done="no">The final part of Melkor&apos;s staff is held by an ancient Fire Dragon. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the dragon and recovered final part of Melkor&apos;s Staff.</Description>
-      <Description done="yes" first="no">Alas!  The dragon was already slain and the final part of the staff was nowhere to be found.</Description>
-      <Success first="yes">You have slain the guardians of the final part of the staff and recovered it.</Success>
-      <Success first="no">Alas!  The dragon is already slain and the final part of the is was nowhere to be found.</Success>
-      <Reward type="item" data="56">You fit the pieces together to recreate Melkor&apos;s Staff.</Reward>
+      <Description done="no">梅尔科尔法杖最后的残片由一头古老的火龙持有。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了火龙，取回了梅尔科尔法杖最后的残片。</Description>
+      <Description done="yes" first="no">唉！火龙早已被杀，法杖最后的残片也不知去向。</Description>
+      <Success first="yes">你击败了最后的守卫，取回了法杖最后的残片。</Success>
+      <Success first="no">唉！火龙早已被杀，而法杖最后的残片遍寻不获。</Success>
+      <Reward type="item" data="56">你将所有残片重新拼合，终于复原了梅尔科尔法杖。</Reward>
       <Monster type="52" number="1" level="16" name="Melthorix"/>
       <Monster type="42" number="2" level="1"/>
    </Part>

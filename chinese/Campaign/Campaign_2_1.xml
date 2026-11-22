@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_2_1.bik" voice="Campaign\Campaign_2_1.wav" duration="27000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">At last the way was clear to the Aravein’s Citadel… but it was empty… deserted…</Text>
-	<Text time="8500">A search of its cold vacant towers soon revealed many of the books stolen from the northern Citadels.  It seemed that Aravein herself was behind the Daemonic attacks.</Text>
-	<Text time="19000">But the Dark Elven Sorceress was nowhere to be found… she had fled, and her trail was well hidden.</Text>
+	<Text time="1500">Í¨Íù°¢À­Ş±¶÷±¤ÀİµÄµÀÂ·ÖÕÓÚ´òÍ¨ÁË¡­¡­¿É±¤ÀİÀï¿ÕÎŞÒ»ÈË£¬ÔçÒÑÈËÈ¥Â¥¿Õ¡£</Text>
+	<Text time="8500">ÖÚÈËÔÚ±ùÀä¶ø¼Å¾²µÄËşÂ¥ÀïËÑÑ°£¬ºÜ¿ì±ã·¢ÏÖÁËĞí¶à´Ó±±·½±¤ÀİµÁÀ´µÄÊé¼®¡£¿´À´£¬²ß¶¯¶ñÄ§Ï®»÷µÄÕıÊÇ°¢À­Ş±¶÷±¾ÈË¡£</Text>
+	<Text time="19000">µ«ÄÇÃûºÚ°µ¾«ÁéÅ®ÊõÊ¿ÔçÒÑ²»ÖªÈ¥Ïò¡­¡­ËıÌÓ×ßÁË£¬ÉõÖÁ½«ĞĞ×ÙÒ²ÑÚ²ØµÃµÎË®²»Â©¡£</Text>
 </CutScene>

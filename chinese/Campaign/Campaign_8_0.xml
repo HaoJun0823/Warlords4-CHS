@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_8_0.bik" voice="Campaign\Campaign_8_0.wav" duration="22000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">The first thing to do was to get the counter-spell.</Text>
-	<Text time="4500">There was no time for lengthy negotiations with the Elves – a race of creatures who live so long can do nothing quickly.</Text>
-	<Text time="13000">A swift surgical strike at the Citadel of Ice – the very heart of the Elven Kingdom - was the only way to recover the spell in time.</Text>
+	<Text time="1500">µ±ÎñÖ®¼±£¬ÊÇÏÈÈ¡µÃÄÇµÀ·´ÖÆÖäÎÄ¡£</Text>
+	<Text time="4500">¸ù±¾Ã»ÓĞÊ±¼äÓë¾«ÁéÕ¹¿ªÂş³¤µÄÌ¸ÅĞ¡ª¡ªÒ»¸öÊÙÃüÓÆ³¤µÄÖÖ×å£¬×öÆğÊ²Ã´ÊÂÀ´¶¼ÂıÌõË¹Àí¡£</Text>
+	<Text time="13000">Î¨ÓĞÑ¸ËÙÍ»Ï®¾«ÁéÍõ¹ú¸¹µØµÄº®±ù±¤Àİ£¬²ÅÓĞ¿ÉÄÜ¼°Ê±È¡»ØÖäÎÄ¡£</Text>
 </CutScene>

@@ -9,41 +9,41 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>The Citadel of Ice is found to the west, in the center of the Northern Tundra. | You must capture the citadel and find the lost counterspell of Queen Ehlanna.</Message>
+		<Message>寒冰堡垒位于西方、北方冻原的中心。|你必须攻占堡垒，找回埃兰娜女王失传的反制咒文。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>You have found an old book that tells you of the Orbs of Winter. | These 5 Orbs contain the souls of old High Elven mages. There are 4 smaller Orbs and one Master Orb.</Message>
+		<Message>你找到一本古书，里面记载着冬之宝珠。|这 5 颗宝珠封存着古代高等精灵法师的灵魂，其中有 4 颗较小的宝珠和一颗主宝珠。</Message>
 	</Event>
 
 	<Ruin id="14" available_for_quest="no">
-		<Heading>Orb of Winter</Heading>
-		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Heading>冬之宝珠</Heading>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
 		<Monster type="54" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="13" available_for_quest="no">
-		<Heading>Orb of Winter</Heading>
-		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Heading>冬之宝珠</Heading>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
 		<Monster type="55" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="0" available_for_quest="no">
-		<Heading>Orb of Winter</Heading>
-		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Heading>冬之宝珠</Heading>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
 		<Monster type="54" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="3" available_for_quest="no">
-		<Heading>Orb of Winter</Heading>
-		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Heading>冬之宝珠</Heading>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
 		<Monster type="55" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="15" available_for_quest="no">
-		<Heading>Orb of Winter</Heading>
-		<Message>You find the Master Orb of Winter. You smash it, releasing a huge storm onto the Northern Tundra.</Message>
+		<Heading>冬之宝珠</Heading>
+		<Message>你找到了冬之主宝珠。将它击碎后，一场巨大的风暴席卷了北方冻原。</Message>
 		<Monster type="58" number="4" level="3"/>
 		<Reward type="xp" data="20"/>
 	</Ruin >
@@ -85,24 +85,24 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="0"/>
-		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 	<Event side="2" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="2"/>
-		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 	<Event side="4" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="4"/>
-		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 	<Event side="6" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="6"/>
-		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 </Events>

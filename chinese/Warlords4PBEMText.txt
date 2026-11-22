@@ -1,10 +1,10 @@
-Warlords IV Error
-Warlords IV Success
-Invalid Warlords IV PBEM File
-Invalid Password
-Player successfully added to the list of PBEM players
-Player NOT added to the list of PBEM players
-Password
-Please enter password
-Okay
-Please close Warlords IV and try again.
+战神IV 错误
+战神IV 操作成功
+无效的《战神IV》邮件对战文件
+密码无效
+已成功将玩家添加至邮件对战玩家列表
+未能将玩家添加至邮件对战玩家列表
+密码
+请输入密码
+确定
+请关闭《战神IV》，然后重试。

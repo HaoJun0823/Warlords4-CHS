@@ -1,41 +1,41 @@
 <Quest name="The Harpy Coven">
    <Part id="0">
-      <Description done="no">You must stop a coven of 4 harpies from casting a spell. The first is hidden away and has already begun. Location: %s.</Description>
-      <Description done="yes" first="yes">The first harpy has been slain.</Description>
-      <Description done="yes" first="no">The first harpy was already dead.</Description>
-      <Success first="yes">You have slain the first harpy.</Success>
-      <Success first="no">This place is empty.  The first harpy has already been slain.</Success>
-      <Reward type="hero" unit="5" level="5" number="1" name="Sir Corbitt">You discover that this harpy had charmed a Knight who offers to join you.</Reward>
+      <Description done="no">你必须阻止一个由 4 只鹰身女妖组成的巫团施放咒文。第一只藏身隐秘之处，已开始施法。地点：%s。</Description>
+      <Description done="yes" first="yes">第一只鹰身女妖已被杀死。</Description>
+      <Description done="yes" first="no">第一只鹰身女妖早已死去。</Description>
+      <Success first="yes">你杀死了第一只鹰身女妖。</Success>
+      <Success first="no">这里空无一人，第一只鹰身女妖早已被杀。</Success>
+      <Reward type="hero" unit="5" level="5" number="1" name="Sir Corbitt">你发现这只鹰身女妖曾魅惑一名骑士。摆脱控制后，他愿意加入你的队伍。</Reward>
       <Monster type="40" number="1" level="10" name="Phoebe"/>
       <Monster type="36" number="7" level="2"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must now seek the second Harpy. Location: %s.</Description>
-      <Description done="yes" first="yes">The second harpy has been slain.</Description>
-      <Description done="yes" first="no">The second harpy was already dead.</Description>
-      <Success first="yes">You have slain the second harpy.</Success>
-      <Success first="no">This place is empty.  The second harpy has already been slain.</Success>
-      <Reward type="hero" unit="59" level="6" number="1" name="Leafblade">You discover that this harpy had charmed an Elf who offers to join you.</Reward>
+      <Description done="no">现在，你必须去寻找第二只鹰身女妖。地点：%s。</Description>
+      <Description done="yes" first="yes">第二只鹰身女妖已被杀死。</Description>
+      <Description done="yes" first="no">第二只鹰身女妖早已死去。</Description>
+      <Success first="yes">你杀死了第二只鹰身女妖。</Success>
+      <Success first="no">这里空无一人，第二只鹰身女妖早已被杀。</Success>
+      <Reward type="hero" unit="59" level="6" number="1" name="Leafblade">你发现这只鹰身女妖曾魅惑一名精灵。摆脱控制后，他愿意加入你的队伍。</Reward>
       <Monster type="40" number="1" level="11" name="Piper"/>
       <Monster type="42" number="7" level="2"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must now seek out the third harpy.  Location: %s.</Description>
-      <Description done="yes" first="yes">The third harpy has been slain.</Description>
-      <Description done="yes" first="no">The third harpy was already dead.</Description>
-      <Success first="yes">You have slain the third harpy.</Success>
-      <Success first="no">This place is empty.  The third harpy has already been slain.</Success>
-      <Reward type="hero" unit="17" level="7" number="1" name="Doughal">You discover that this harpy had charmed a Dwarf who offers to join you.</Reward>
+      <Description done="no">现在，你必须去寻找第三只鹰身女妖。地点：%s。</Description>
+      <Description done="yes" first="yes">第三只鹰身女妖已被杀死。</Description>
+      <Description done="yes" first="no">第三只鹰身女妖早已死去。</Description>
+      <Success first="yes">你杀死了第三只鹰身女妖。</Success>
+      <Success first="no">这里空无一人，第三只鹰身女妖早已被杀。</Success>
+      <Reward type="hero" unit="17" level="7" number="1" name="Doughal">你发现这只鹰身女妖曾魅惑一名矮人。摆脱控制后，他愿意加入你的队伍。</Reward>
       <Monster type="40" number="1" level="12" name="Paige"/>
       <Monster type="44" number="7" level="2"/>
    </Part>
    <Part id="3">
-      <Description done="no">You must now seek out and slay the final and most powerful harpy. Location: %s.</Description>
-      <Description done="yes" first="yes">The final harpy has been slain.</Description>
-      <Description done="yes" first="no">The final harpy was already dead.</Description>
-      <Success first="yes">You have slain the final harpy.</Success>
-      <Success first="no">This place is empty.  The final harpy has already been slain.</Success>
-      <Reward type="hero" unit="53" level="12" number="1" name="Mordrak">You discover that this harpy had charmed a Dragonlord who offers to join you.</Reward>
+      <Description done="no">现在，你必须找到并杀死最后一只、也是最强大的鹰身女妖。地点：%s。</Description>
+      <Description done="yes" first="yes">最后一只鹰身女妖已被杀死。</Description>
+      <Description done="yes" first="no">最后一只鹰身女妖早已死去。</Description>
+      <Success first="yes">你杀死了最后一只鹰身女妖。</Success>
+      <Success first="no">这里空无一人，最后一只鹰身女妖早已被杀。</Success>
+      <Reward type="hero" unit="53" level="12" number="1" name="Mordrak">你发现这只鹰身女妖曾魅惑一名龙族领主。摆脱控制后，他愿意加入你的队伍。</Reward>
       <Monster type="40" number="1" level="10" name="Prue"/>
       <Monster type="28" number="7" level="1"/>
    </Part>

@@ -1,41 +1,41 @@
 <Quest name="The Mad Daemon">
    <Part id="0">
-      <Description done="no">The Ring of Doom was broken into 4 parts by the Mad Daemon.  Three of these parts were given to his minions. You must find and slay the first minion. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the first minion of the Mad Daemon and found the first part of the Ring of Doom.</Description>
-      <Description done="yes" first="no">Although the first minion of the Mad Daemon was already dead, a thorough search revealed the first part of the Ring of Doom.</Description>
-      <Success first="yes">You have slain the first minion of the Mad Daemon and found the first part of the Ring of Doom.</Success>
-      <Success first="no">The first minion of the Mad Daemon is already dead, but a thorough search reveals the first part of the Ring of Doom.</Success>
-      <Reward type="mana" data="2">As well as the portion of the ring, you also discover a cache of magical gems: 2 Mana Crystals.</Reward>
+      <Description done="no">疯狂恶魔将厄运指环打碎成 4 块，并把其中三块交给了自己的仆从。你必须先找到并杀死第一个仆从。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了疯狂恶魔的第一个仆从，找到了厄运指环的第一块残片。</Description>
+      <Description done="yes" first="no">虽然疯狂恶魔的第一个仆从早已死去，但经过仔细搜寻，你还是找到了厄运指环的第一块残片。</Description>
+      <Success first="yes">你杀死了疯狂恶魔的第一个仆从，找到了厄运指环的第一块残片。</Success>
+      <Success first="no">疯狂恶魔的第一个仆从早已死去，但经过仔细搜寻，你还是找到了厄运指环的第一块残片。</Success>
+      <Reward type="mana" data="2">除了指环残片，你还找到了一批魔法宝石：2 块魔力水晶。</Reward>
       <Monster type="44" number="1" level="8" name="Arax"/>
       <Monster type="42" number="5" level="3"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must find and slay the second minion of the Mad Daemon to gain the second part of the Ring of Doom. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the second minion of the Mad Daemon and found the second part of the Ring of Doom.</Description>
-      <Description done="yes" first="no">Although the second minion of the Mad Daemon was already dead, a thorough search revealed the second part of the Ring of Doom.</Description>
-      <Success first="yes">You have slain the second minion of the Mad Daemon and found the second part of the Ring of Doom.</Success>
-      <Success first="no">The second minion of the Mad Daemon is already dead, but a thorough search reveals the second part of the Ring of Doom.</Success>
-      <Reward type="gold" data="1894">As well as the portion of the ring, you also discover a cache of gems and jewellery worth 1894 gold.</Reward>
+      <Description done="no">你必须找到并杀死疯狂恶魔的第二个仆从，取回厄运指环的第二块残片。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了疯狂恶魔的第二个仆从，找到了厄运指环的第二块残片。</Description>
+      <Description done="yes" first="no">虽然疯狂恶魔的第二个仆从早已死去，但经过仔细搜寻，你还是找到了厄运指环的第二块残片。</Description>
+      <Success first="yes">你杀死了疯狂恶魔的第二个仆从，找到了厄运指环的第二块残片。</Success>
+      <Success first="no">疯狂恶魔的第二个仆从早已死去，但经过仔细搜寻，你还是找到了厄运指环的第二块残片。</Success>
+      <Reward type="gold" data="1894">除了指环残片，你还找到了一批珠宝首饰，价值 1894 金币。</Reward>
       <Monster type="44" number="1" level="10" name="Borax"/>
       <Monster type="46" number="2" level="3"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must find and slay the third minion of the Mad Daemon to gain the third part of the Ring of Doom. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the third minion of the Mad Daemon and found the third part of the Ring of Doom.</Description>
-      <Description done="yes" first="no">Although the third minion of the Mad Daemon was already dead, a thorough search revealed the third part of the Ring of Doom.</Description>
-      <Success first="yes">You have slain the third minion of the Mad Daemon and found the third part of the Ring of Doom.</Success>
-      <Success first="no">The third minion of the Mad Daemon is already dead, but a thorough search reveals the third part of the Ring of Doom.</Success>
-      <Reward type="hero" unit="59" level="7" number="1" name="Brianna">As well as the portion of the ring, you find that this minion was torturing an Elven prisoner.  Grateful for this rescue, she joins you.</Reward>
+      <Description done="no">你必须找到并杀死疯狂恶魔的第三个仆从，取回厄运指环的第三块残片。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了疯狂恶魔的第三个仆从，找到了厄运指环的第三块残片。</Description>
+      <Description done="yes" first="no">虽然疯狂恶魔的第三个仆从早已死去，但经过仔细搜寻，你还是找到了厄运指环的第三块残片。</Description>
+      <Success first="yes">你杀死了疯狂恶魔的第三个仆从，找到了厄运指环的第三块残片。</Success>
+      <Success first="no">疯狂恶魔的第三个仆从早已死去，但经过仔细搜寻，你还是找到了厄运指环的第三块残片。</Success>
+      <Reward type="hero" unit="59" level="7" number="1" name="Brianna">除了指环残片，你还发现这名仆从正折磨一名精灵俘虏。被你救出后，她满怀感激，愿意加入你的队伍。</Reward>
       <Monster type="44" number="1" level="12" name="Charax"/>
       <Monster type="43" number="3" level="3"/>
    </Part>
    <Part id="3">
-      <Description done="no">To obtain the final part of the Ring of Doom you must confront and slay the Mad Daemon himself. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the Mad Daemon and taken the Ring of Doom for yourself.</Description>
-      <Description done="yes" first="no">Alas!  The Mad Daemon was already dead, and the final part of thr Ring of Doom could not be found.</Description>
-      <Success first="yes">You have slain the Mad Daemon, leaving you free to take the final part of the Ring of Doom.</Success>
-      <Success first="no">Unfortunately the Mad Daemon is already dead and the final part of the Ring of Doom is gone.</Success>
-      <Reward type="item" data="100">You take the final piece of the Ring from the Mad Daemon&apos;s body and reassemble the Ring of Doom.</Reward>
+      <Description done="no">要取得厄运指环最后的残片，你必须直面疯狂恶魔，将其杀死。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了疯狂恶魔，将厄运指环据为己有。</Description>
+      <Description done="yes" first="no">唉！疯狂恶魔早已死去，而厄运指环的最后一块残片遍寻不获。</Description>
+      <Success first="yes">你杀死了疯狂恶魔，终于可以取走厄运指环的最后一块残片。</Success>
+      <Success first="no">可惜疯狂恶魔早已死去，厄运指环的最后一块残片也不见了。</Success>
+      <Reward type="item" data="100">你从疯狂恶魔的尸体上取下最后一块残片，将厄运指环重新拼合完整。</Reward>
       <Monster type="47" number="1" level="16" name="Mad Daemon"/>
       <Monster type="44" number="4" level="1"/>
    </Part>

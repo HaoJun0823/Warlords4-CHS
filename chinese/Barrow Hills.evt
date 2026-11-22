@@ -14,36 +14,36 @@
 
 
 	<Ruin id="0" available_for_quest="no">
-		<Heading>Barrow Wight</Heading>
-		<Message>This barrow contains the treasure of an ancient hero - a shining magical sword.</Message>
+		<Heading>古冢幽魂</Heading>
+		<Message>这座古冢藏着一位古代英雄的宝物——一柄闪闪发光的魔法宝剑。</Message>
 		<Monster type="30" number="1" level="16"/>
 		<Reward type="item" data="48"/>
 	</Ruin >
 
 	<Ruin id="1" available_for_quest="no">
-		<Heading>Barrow Wight</Heading>
-		<Message>This barrow contains the treasure of an ancient hero - a shining magical suit of armor.</Message>
+		<Heading>古冢幽魂</Heading>
+		<Message>这座古冢藏着一位古代英雄的宝物——一套闪闪发光的魔法护甲。</Message>
 		<Monster type="30" number="1" level="16"/>
 		<Reward type="item" data="71"/>
 	</Ruin >
 
 	<Ruin id="2" available_for_quest="no">
-		<Heading>Barrow Wight</Heading>
-		<Message>This barrow contains the treasure of an ancient hero - a shining magical helmet.</Message>
+		<Heading>古冢幽魂</Heading>
+		<Message>这座古冢藏着一位古代英雄的宝物——一顶闪闪发光的魔法头盔。</Message>
 		<Monster type="30" number="1" level="16"/>
 		<Reward type="item" data="19"/>
 	</Ruin >
 
 	<Ruin id="3" available_for_quest="no">
-		<Heading>Barrow Wight</Heading>
-		<Message>This barrow contains the treasure of an ancient hero - a shining magical shield.</Message>
+		<Heading>古冢幽魂</Heading>
+		<Message>这座古冢藏着一位古代英雄的宝物——一面闪闪发光的魔法盾牌。</Message>
 		<Monster type="30" number="1" level="16"/>
 		<Reward type="item" data="96"/>
 	</Ruin >
 
 	<Ruin id="5" available_for_quest="no">
-		<Heading>Harpy Hag</Heading>
-		<Message>The Harpy seems to have collected a number of books.  Many of them are ancient texts containing much wisdom.</Message>
+		<Heading>鹰身女妖巫婆</Heading>
+		<Message>这只鹰身女妖似乎搜集了不少书籍，其中许多都是蕴藏丰富智慧的古老典籍。</Message>
 		<Monster type="40" number="1" level="8"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
@@ -51,14 +51,14 @@
 	<Event side="0" repeat="1">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="1"/>
-		<Message>Your King has given you a mission - expand his lands to the north in the Barrow Hills by wiping out the Orkish and Imperial forces there.|These Barrow Hills are rumored to be haunted. Even without ghosts and spirits, your foes will be difficult enough to conquer.  To this end the King will periodically supply you with reinforcements and gold.</Message>
+		<Message>国王交给你一项使命：向北方的古冢丘陵扩张，消灭盘踞在那里的兽人和帝国军队。|传说古冢丘陵闹鬼。即使没有幽灵亡魂，你的敌人也足够难缠。为此，国王会定期送来援军与金币。</Message>
 	</Event>
 
 	<Event side="0" repeat="0" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="4"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>Reinforcements arrive! | 4 Knights arrive at your capital, sent by the King himself, bearing 300 Gold coins.</Message>
+		<Message>援军到了！|国王亲自派来 4 名骑士，抵达你的首都，并带来了 300 枚金币。</Message>
 		<Action type="gold" data1="300"/>
 		<Action type="unit" data1="2" data2="4" data3="2"/>
 	</Event>
@@ -66,7 +66,7 @@
 	<Event side="0" repeat="1">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="2"/>
-		<Message>You are learning many things about these lands.  Rumor has it that many old kings are buried here in the Southern Hills - hidden away in dark barrows.</Message>
+		<Message>你对这片土地了解得越来越多。据说南部丘陵埋葬着许多古代国王，遗骸深藏在幽暗的古冢之中。</Message>
 	</Event>
 
 
@@ -74,7 +74,7 @@
 	<Event side="0" repeat="1">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="3"/>
-		<Message>Today you heard a new rumor!  The people here tell of a legend that four pieces of Shining armor can be found in the Barrow Hills.  They say that he who wears them will control a legion of Undead!</Message>
+		<Message>今天你听到了新的传闻！当地人讲起一个传说：古冢丘陵藏着一套光辉铠甲的四个部件。据说谁能穿齐它们，谁就能统御一支不死族军团！</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="ruin" locdata="0">
@@ -109,7 +109,7 @@
 		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
 		<Action type="counter_set" data1="0" string1="shiny_counter"/>
 		<Action type="unit" data1="32" data2="8" data3="6"/>
-		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+		<Message>你找齐了那位英雄全套铠甲的 4 个部件。一支不死族骑士军团纷纷聚集到你的旗帜之下！</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="ruin" locdata="1">
@@ -118,7 +118,7 @@
 		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
 		<Action type="counter_set" data1="0" string1="shiny_counter"/>
 		<Action type="unit" data1="32" data2="8" data3="6"/>
-		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+		<Message>你找齐了那位英雄全套铠甲的 4 个部件。一支不死族骑士军团纷纷聚集到你的旗帜之下！</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="ruin" locdata="2">
@@ -127,7 +127,7 @@
 		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
 		<Action type="counter_set" data1="0" string1="shiny_counter"/>
 		<Action type="unit" data1="32" data2="8" data3="6"/>
-		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+		<Message>你找齐了那位英雄全套铠甲的 4 个部件。一支不死族骑士军团纷纷聚集到你的旗帜之下！</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="ruin" locdata="3">
@@ -136,7 +136,7 @@
 		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
 		<Action type="counter_set" data1="0" string1="shiny_counter"/>
 		<Action type="unit" data1="32" data2="8" data3="6"/>
-		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+		<Message>你找齐了那位英雄全套铠甲的 4 个部件。一支不死族骑士军团纷纷聚集到你的旗帜之下！</Message>
 	</Event>
 
 </Events>

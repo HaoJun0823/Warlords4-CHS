@@ -1,41 +1,41 @@
 <Quest name="The Healing Potion">
    <Part id="0">
-      <Description done="no">King Celeath of the Dragonlords is ill.  You must create a healing potion to save him.  First you will need a Unicorn&apos;s horn. Location: %s.</Description>
-      <Description done="yes" first="yes">You have obtained the Unicorn&apos;s horn - the first part of King Celeath&apos;s healing potion.</Description>
-      <Description done="yes" first="no">You found a dead Unicorn and recovered its horn for a potion.</Description>
-      <Success first="yes">You take the Unicorn&apos;s horn to help create the potion.</Success>
-      <Success first="no">This place is empty, but a search reveals a dead Unicorn with its horn still intact.</Success>
-      <Reward type="mana" data="2">You find the Unicorn had also collected 2 mana crystals.</Reward>
+      <Description done="no">龙族领主之王塞莱亚斯病重。你必须调制一剂疗伤药水救他。首先需要一支独角兽的角。地点：%s。</Description>
+      <Description done="yes" first="yes">你获得了独角兽之角，这是塞莱亚斯国王疗伤药水的第一味材料。</Description>
+      <Description done="yes" first="no">你发现了一头死去的独角兽，取下它的角，用于调配药水。</Description>
+      <Success first="yes">你取下独角兽之角，准备将它用于调制药水。</Success>
+      <Success first="no">这里空无一人，但经过搜寻，你发现了一头死去的独角兽，它的角仍完好无损。</Success>
+      <Reward type="mana" data="2">你还发现这头独角兽收集了 2 块魔力水晶。</Reward>
       <Monster type="57" number="1" level="10"/>
       <Monster type="55" number="7" level="3"/>
    </Part>
    <Part id="1">
-      <Description done="no">The next item King Celeath needs for his potion is Troll&apos;s Blood. Location: %s.</Description>
-      <Description done="yes" first="yes">You have obtained the Troll&apos;s Blood - the second part of King Celeath&apos;s healing potion.</Description>
-      <Description done="yes" first="no">You found some Troll&apos;s blood for the potion.</Description>
-      <Success first="yes">You collect some of the Troll&apos;s Blood to help create the potion.</Success>
-      <Success first="no">This place is empty, but a search reveals a freshly dead Troll with plenty of blood to spare.</Success>
-      <Reward type="gold" data="2312">This Troll had also collected a cache of 2312 gold.</Reward>
+      <Description done="no">塞莱亚斯国王的药水还需要巨魔之血。地点：%s。</Description>
+      <Description done="yes" first="yes">你获得了巨魔之血，这是塞莱亚斯国王疗伤药水的第二味材料。</Description>
+      <Description done="yes" first="no">你找到了一些巨魔之血，可用于调配药水。</Description>
+      <Success first="yes">你采集了一些巨魔之血，用于调制药水。</Success>
+      <Success first="no">这里空无一人，但经过搜寻，你发现了一头刚死去的巨魔，它体内的血液足够使用。</Success>
+      <Reward type="gold" data="2312">这头巨魔还藏有一批金币，共计 2312 枚。</Reward>
       <Monster type="19" number="1" level="14"/>
       <Monster type="24" number="7" level="2"/>
    </Part>
    <Part id="2">
-      <Description done="no">The next item King Celeath needs for his potion is an Archon&apos;s Feather. Location: %s.</Description>
-      <Description done="yes" first="yes">You have obtained the Archon&apos;s Feather - the third part of King Celeath&apos;s healing potion.</Description>
-      <Description done="yes" first="no">You found a dead Archon and plucked a feather from its wing.</Description>
-      <Success first="yes">You take the Archon&apos;s Feather to help create the potion.</Success>
-      <Success first="no">This place is empty, but a search reveals a dead Archon with a feather for you to collect.</Success>
-      <Reward type="xp" data="20">Nearby you find the Archon&apos;s well.  Drinking from its waters, fills you with wisdom.</Reward>
+      <Description done="no">塞莱亚斯国王的药水还需要一片执政天使的羽毛。地点：%s。</Description>
+      <Description done="yes" first="yes">你获得了执政天使之羽，这是塞莱亚斯国王疗伤药水的第三味材料。</Description>
+      <Description done="yes" first="no">你发现一名死去的执政天使，从它的羽翼上取下一片羽毛。</Description>
+      <Success first="yes">你取下执政天使之羽，用于调制药水。</Success>
+      <Success first="no">这里空无一人，但经过搜寻，你发现了一名死去的执政天使，从它身上取到一片羽毛。</Success>
+      <Reward type="xp" data="20">附近有一口执政天使之井。饮下井水，智慧仿佛涌入了你的心灵。</Reward>
       <Monster type="4" number="1" level="14"/>
       <Monster type="10" number="4" level="2"/>
    </Part>
    <Part id="3">
-      <Description done="no">The final item King Celeath needs for his potion is Spider Venom.  Location: %s.</Description>
-      <Description done="yes" first="yes">You have completed the potion and saved King Celeath</Description>
-      <Description done="yes" first="no">Alas!  You could find no Spider Venom and King Celeath died.</Description>
-      <Success first="yes">You collect the Spider Venom and the potion is complete.</Success>
-      <Success first="no">Alas!  This place is empty and you can find no spider venom.  King Celeath is doomed.</Success>
-      <Reward type="hero" unit="53" level="12" number="1" name="King Celeath">King Celeath makes a swift recovery and offers to join with you.</Reward>
+      <Description done="no">塞莱亚斯国王的疗伤药水只剩最后一味材料：蜘蛛毒液。地点：%s。</Description>
+      <Description done="yes" first="yes">你终于配好了药水，救活了塞莱亚斯国王。</Description>
+      <Description done="yes" first="no">唉！你没能找到蜘蛛毒液，塞莱亚斯国王最终病逝。</Description>
+      <Success first="yes">你采集到蜘蛛毒液，药水终于配制完成。</Success>
+      <Success first="no">唉！这里空空如也，找不到半滴蜘蛛毒液。塞莱亚斯国王已命悬一线。</Success>
+      <Reward type="hero" unit="53" level="12" number="1" name="King Celeath">塞莱亚斯国王很快恢复了健康，并主动提出加入你的阵营。</Reward>
       <Monster type="37" number="1" level="10"/>
       <Monster type="36" number="7" level="8"/>
    </Part>

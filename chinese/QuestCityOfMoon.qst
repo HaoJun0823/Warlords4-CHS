@@ -1,44 +1,44 @@
 <Quest name="The Lost City Of Moon">
    <Part id="0">
-      <Description done="no">Rumors have surfaced that the lost Elven city of Moon has been found by Orc Raiders!  Location: %s.</Description>
-      <Description done="yes" first="yes">The slain Orc raiders told you they stole the cup from Dark Elven marauders.</Description>
-      <Description done="yes" first="no">An investigation of the slain corpses points to a recent meeting with Dark Elves.</Description>
-      <Success first="yes">One of the slain Orc raiders boasted about the previous owner of the cup. In between guttural curses and sputtering blood, you learned that the cup was stolen from a band of Dark Elven marauders.</Success>
-      <Success first="no">An investigation of the slain corpses reveals they had recently met with a band of Dark Elves. Perhaps questioning the Dark Elves might help locate the city.</Success>
-      <Reward type="item" data="104">The Orcs were carrying the Moonwine Cup, whose mystical properties are conferred upon those drinking from it.</Reward>
+      <Description done="no">传言四起：一伙兽人劫掠者发现了精灵失落已久的月城！地点：%s。</Description>
+      <Description done="yes" first="yes">临死前，兽人劫掠者告诉你，他们的酒杯是从黑暗精灵掠夺者手中抢来的。</Description>
+      <Description done="yes" first="no">检查这些死者的尸体后，你发现他们不久前曾与黑暗精灵接触。</Description>
+      <Success first="yes">一名垂死的兽人劫掠者吹嘘起酒杯原来的主人。听着他含混的咒骂，混着涌出的鲜血，你终于明白：这酒杯是从一群黑暗精灵掠夺者手中夺来的。</Success>
+      <Success first="no">检查尸体后，你发现这些兽人最近曾与一群黑暗精灵碰面。也许向那些黑暗精灵打听，便能找到月城的下落。</Success>
+      <Reward type="item" data="104">兽人携带着一只月酿酒杯；凡饮用其中酒液的人，都能得到神奇的力量。</Reward>
       <Monster type="29" number="1" level="10" name="Lobar"/>
       <Monster type="25" number="7" level="5"/>
    </Part>
    <Part id="1">
-      <Description done="no">Queen Nefaria and her entourage are the most infamous Dark Elven Marauders in the land. You shrug off the fireside stories you heard as a child and decide a visit to her stronghold is in order.  Location: %s.</Description>
-      <Description done="yes" first="yes">You discover half of Greenblade&apos;s journal describing his visits to Moon. After close examination of the pages, you learn that the Elven princess Lunaria has the other half.</Description>
-      <Description done="yes" first="no">You discover notes detailing a meeting with an Elven princess in regards to the location of the city of Moon.</Description>
-      <Success first="yes">A torn book falls out of Queen Nefaria&apos;s belt pouch. It appears to be a journal belonging to a bard named Greenblade, a frequent entertainer at various Moonfests. You learn that the other half of the journal is held by the Elven Princess Lunaria.</Success>
-      <Success first="no">This place is deserted, but a search reveals shreds of paper containing love ballads addressed to an Elven Princess named Lunaria. She appears to be related to Moon somehow; a rough sketch directs you to her expected location.</Success>
-      <Reward type="gold" data="7734">As well as the journal, Queen Nefaria had a horde of treasure.</Reward>
+      <Description done="no">奈法莉娅女王及其随从，是这片土地上最恶名昭彰的黑暗精灵掠夺者。你将儿时炉边听来的恐怖传说抛诸脑后，决定亲赴她的要塞。地点：%s。</Description>
+      <Description done="yes" first="yes">你发现了吟游诗人绿刃的半本日记，其中记述了他造访月城的经历。细读之后，你得知另一半日记在精灵公主露娜莉娅手中。</Description>
+      <Description done="yes" first="no">你找到一些笔记，记载着一次关于月城所在位置的会谈，对方是一名精灵公主。</Description>
+      <Success first="yes">奈法莉娅女王的腰包里掉出一本残破的书。那似乎是吟游诗人绿刃的日记；他曾多次受邀在月之庆典上演出。你发现，日记的另一半由精灵公主露娜莉娅保管。</Success>
+      <Success first="no">这里早已荒无人烟，但搜寻时，你发现几张写给精灵公主露娜莉娅的情歌残稿。她似乎与月城有关；一幅潦草的地图指向了她可能所在的位置。</Success>
+      <Reward type="gold" data="7734">除了那半本日记，奈法莉娅女王还藏有大量财宝。</Reward>
       <Monster type="41" number="1" level="15" name="Queen Nefaria"/>
       <Monster type="37" number="3" level="8"/>
       <Monster type="38" number="4" level="10"/>
    </Part>
    <Part id="2">
-      <Description done="no">Rumors abound that Princess Lunaria and her retainers are also seeking the city of Moon. They were last seen searching old burial grounds for clues.  Location: %s.</Description>
-      <Description done="yes" first="yes">The complete journal contains a detailed map showing the way to the city of Moon.</Description>
-      <Description done="yes" first="no">Amidst the ruins you found an enchanted map by the light of the moon that showed the location of the city.</Description>
-      <Success first="yes">Reading the complete journal you discover a great catacylsm fell upon Moon after King Seren began experimenting with the Undead. It also contains a map to the city!</Success>
-      <Success first="no">Someone else was here first. Desperate and exhausted, you decide to camp for the night. In the moonlight you&apos;re able to make out what appears to be a map on a nearby wall. A prominent black crescent on a red field draws your attention.</Success>
-      <Reward type="item" data="103">Lunaria was holding the legendary Crown of KGB; many great heroes have died trying to possess it!</Reward>
+      <Description done="no">传言说露娜莉娅公主及其随从也在寻找月城。人们最后一次见到他们时，他们正搜查古老墓地，寻找线索。地点：%s。</Description>
+      <Description done="yes" first="yes">完整的日记中绘有一张详尽地图，标明了通往月城的道路。</Description>
+      <Description done="yes" first="no">你在废墟中发现了一幅受魔法加持的地图。借着月光，它显现出了月城的位置。</Description>
+      <Success first="yes">读完整本日记，你得知塞伦国王开始研究不死族之后，一场惊天灾变降临了月城。日记中还附有通往那座城市的地图！</Success>
+      <Success first="no">有人捷足先登。疲惫而绝望的你决定在此宿营。月光下，附近墙面上的图案渐渐清晰，仿佛是一幅地图；红色底纹上的醒目黑色新月引起了你的注意。</Success>
+      <Reward type="item" data="103">露娜莉娅珍藏着传说中的 KGB 王冠。无数伟大英雄都曾为争夺它而丧命！</Reward>
       <Monster type="59" number="1" level="13" name="Lunaria"/>
       <Monster type="57" number="1" level="10"/>
       <Monster type="56" number="2" level="10"/>
       <Monster type="54" number="4" level="8"/>
    </Part>
    <Part id="3">
-      <Description done="no">To recover any treasure, you must defeat the horde of undead that King Seren was tricked into releasing into his realm.  Location: %s.</Description>
-      <Description done="yes" first="yes">You found a cache of Moonwine, known throughout the Realm for its magical properties.</Description>
-      <Description done="yes" first="no">You searched for treasure, finding nothing but empty moonwine casks. It seems that somebody beat you here.</Description>
-      <Success first="yes">You found a priceless treasure - a cache of Moonwine. Distilled from the blood of slain enemies, this bizarre concoction is often used in moonlight rituals to incite otherwise frolicking Elves into a battle-mad frenzy.</Success>
-      <Success first="no">The ruins of the city are empty.  Somebody must have drunk the mystical Moonwine before you arrived.</Success>
-      <Reward type="xp" data="75">As you drink the Moonwine, it goes right to your head. You go into a trance-like battle rage. Several hours later, you awake as if from a dream feeling refreshed and full of knowledge. You gain 75 XP.</Reward>
+      <Description done="no">要取走这里的宝藏，你必须先击败塞伦国王受骗放进自己王国的不死族大军。地点：%s。</Description>
+      <Description done="yes" first="yes">你发现了一批月酿。这种酒凭借神奇的功效，在整个国度中享有盛名。</Description>
+      <Description done="yes" first="no">你寻找宝藏，却只发现一只只空荡荡的月酿酒桶。显然有人比你先来一步。</Description>
+      <Success first="yes">你找到了价值连城的宝藏——一批月酿。这种诡异的酒液以死去仇敌的鲜血酿成，常用于月光下的仪式，足以令平日嬉笑玩乐的精灵陷入狂热的战斗状态。</Success>
+      <Success first="no">月城废墟已被搜刮一空。看来有人先你一步，喝光了神奇的月酿。</Success>
+      <Reward type="xp" data="75">月酿刚一入口，便直冲头顶，你陷入恍惚而狂烈的战意。数个时辰后，你像从梦中醒来一般，只觉神清气爽，心中又多了许多知识。获得 75 点经验值。</Reward>
       <Monster type="35" number="1" level="17" name="Captain Crescent"/>
       <Monster type="34" number="2" level="12"/>
       <Monster type="32" number="3" level="10"/>

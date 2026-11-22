@@ -1,41 +1,41 @@
 <Quest name="The Archangel">
    <Part id="0">
-      <Description done="no">An Archangel visits you and charges you with the task of slaying 4 Daemons.  You should seek the first one immediately.  Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the first Daemon.</Description>
-      <Description done="yes" first="no">The first Daemon was already dead when you found him.</Description>
-      <Success first="yes">You have slain the first Daemon and should now seek the second one.</Success>
-      <Success first="no">The first Daemon is already dead, so you should immediately seek the second one.</Success>
-      <Reward type="item" data="94">You take the Daemon&apos;s skin and fashion it into a magical banner - the Banner of Rage.</Reward>
+      <Description done="no">一名大天使前来拜访，交给你一项使命：诛杀 4 名恶魔。你应立即去寻找第一个目标。地点：%s。</Description>
+      <Description done="yes" first="yes">你诛杀了第一名恶魔。</Description>
+      <Description done="yes" first="no">你找到第一名恶魔时，它已经死去。</Description>
+      <Success first="yes">你诛杀了第一名恶魔，接下来该寻找第二名了。</Success>
+      <Success first="no">第一名恶魔早已死去，你应立即寻找第二名。</Success>
+      <Reward type="item" data="94">你剥下恶魔的皮，将其制成一面魔法战旗——狂怒战旗。</Reward>
       <Monster type="47" number="1" level="12" name="Gorak"/>
       <Monster type="44" number="4" level="2"/>
    </Part>
    <Part id="1">
-      <Description done="no">The Archangel now asks that you seek the second Daemon.  Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the second Daemon.</Description>
-      <Description done="yes" first="no">The second Daemon was already dead when you found him.</Description>
-      <Success first="yes">You have slain the second Daemon and should now seek the third one.</Success>
-      <Success first="no">The second Daemon is already dead, so you should immediately seek the third one.</Success>
-      <Reward type="item" data="38">You take the Daemon&apos;s bone and fashion a magical bow out of it - the Bow of Accuracy.</Reward>
+      <Description done="no">大天使要你去寻找第二名恶魔。地点：%s。</Description>
+      <Description done="yes" first="yes">你诛杀了第二名恶魔。</Description>
+      <Description done="yes" first="no">你找到第二名恶魔时，它已经死去。</Description>
+      <Success first="yes">你诛杀了第二名恶魔，接下来该寻找第三名了。</Success>
+      <Success first="no">第二名恶魔早已死去，你应立即寻找第三名。</Success>
+      <Reward type="item" data="38">你取下恶魔的骨骼，将其制成一把魔法长弓——精准之弓。</Reward>
       <Monster type="47" number="1" level="13" name="Hergaal"/>
       <Monster type="44" number="4" level="2"/>
    </Part>
    <Part id="2">
-      <Description done="no">The Archangel now asks that you seek the third Daemon.  Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the third Daemon.</Description>
-      <Description done="yes" first="no">The third Daemon was already dead when you found him.</Description>
-      <Success first="yes">You have slain the third Daemon and should now seek the final one.</Success>
-      <Success first="no">The third Daemon is already dead, so you should immediately seek the final one.</Success>
-      <Reward type="item" data="1">You take the Daemon&apos;s skull and fashion it into a magical helm - the Grotesque Helm.</Reward>
+      <Description done="no">大天使要你去寻找第三名恶魔。地点：%s。</Description>
+      <Description done="yes" first="yes">你诛杀了第三名恶魔。</Description>
+      <Description done="yes" first="no">你找到第三名恶魔时，它已经死去。</Description>
+      <Success first="yes">你诛杀了第三名恶魔，接下来该寻找最后一名了。</Success>
+      <Success first="no">第三名恶魔早已死去，你应立即寻找最后一名。</Success>
+      <Reward type="item" data="1">你取下恶魔的头骨，将其制成一顶魔法头盔——怪诞头盔。</Reward>
       <Monster type="47" number="1" level="14" name="Ignoraak"/>
       <Monster type="44" number="5" level="2"/>
    </Part>
    <Part id="3">
-      <Description done="no">The Archangel now asks that you seek the final and most powerful Daemon.  Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the final Daemon, and the Archangel has joined you.</Description>
-      <Description done="yes" first="no">The final Daemon was already slain when you found him.  The Archangel was displeased with your commitment to the task.</Description>
-      <Success first="yes">You have slain the final Daemon, completing the Archangel&apos;s quest.</Success>
-      <Success first="no">The final Daemon is already dead.  The Archangel is displeased and leaves.</Success>
-      <Reward type="allies" unit="4" level="12" number="1" name="The Archangel">The Archangel is pleased.  He floats down from above and joins you in your battle.</Reward>
+      <Description done="no">大天使要你去寻找最后一个、也是最强大的恶魔。地点：%s。</Description>
+      <Description done="yes" first="yes">你诛杀了最后的恶魔，大天使随即加入了你的队伍。</Description>
+      <Description done="yes" first="no">你找到最后的恶魔时，它早已被杀。大天使对你完成使命的诚意颇感失望。</Description>
+      <Success first="yes">你诛杀了最后的恶魔，完成了大天使交付的使命。</Success>
+      <Success first="no">最后的恶魔早已死去。大天使失望地离开了。</Success>
+      <Reward type="allies" unit="4" level="12" number="1" name="The Archangel">大天使十分满意。他自高空缓缓降下，加入你的阵营，为你而战。</Reward>
       <Monster type="47" number="1" level="16" name="Ungoraak"/>
       <Monster type="44" number="5" level="2"/>
       <Monster type="46" number="1" level="1"/>

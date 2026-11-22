@@ -11,7 +11,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>Orcs have attacked your supply chain.|Siantra provides her troops to bring the cities back under your control.</Message>
+		<Message>兽人袭击了你的补给线。|希安特拉派出自己的部队，协助你夺回沿线的城市。</Message>
 		<Action type="counter_set" data1="0" String1="ss1"/>
 		<Action type="counter_set" data1="0" String1="ss2"/>
 		<Action type="counter_set" data1="0" String1="ss3"/>
@@ -221,7 +221,7 @@
 		<Trigger type="counter_eq" data1="1" String1="ss5"/>
 		<Trigger type="counter_eq" data1="1" String1="ss6"/>
 		<Trigger type="counter_eq" data1="1" String1="ss7"/>
-		<Message>You have managed to bring the supply chain under your control.|Continue with Amthor 03.</Message>
+		<Message>你已重新控制整条补给线。|接下来进入《阿姆索尔 03》。</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 
@@ -229,14 +229,14 @@
 	<Event side="0" repeat="1" location="city" locdata="42">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="42"/>
-		<Message>You have managed to kill the leader of the Dwarves.</Message>
+		<Message>你杀死了矮人首领。</Message>
 		<Action type="counter_set" data1="0" String1="k1"/>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="8">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="8"/>
-		<Message>You have managed to kill the leader of the Orcs.</Message>
+		<Message>你杀死了兽人首领。</Message>
 		<Action type="counter_set" data1="0" String1="k2"/>
 	</Event>
 
@@ -244,7 +244,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_eq" data1="1" String1="k1"/>
 		<Trigger type="counter_eq" data1="1" String1="k2"/>
-		<Message>You have killed the leaders of your enemies. Your supply chain is safe now.|Continue with Amthor 03...</Message>
+		<Message>你已除掉敌军首领，补给线终于安全了。|接下来进入《阿姆索尔 03》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 
@@ -263,13 +263,13 @@
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="counter_eq" data1="1" String1="k3"/>
-		<Message>The city of supply is under the control of your enemies. You have failed your quest.</Message>
+		<Message>补给城市落入敌人手中。你的任务失败了。</Message>
 		<Action type="defeat" data1="0"/>
 	</Event>
 
 	<Ruin id="12" available_for_quest="no">
-		<Heading>Cobweb</Heading>
-		<Message>This ruin contains the treasure of an old spider.</Message>
+		<Heading>蛛网</Heading>
+		<Message>这座遗迹中藏着一只老蜘蛛的宝藏。</Message>
 		<Monster type="36" number="7" level="5"/>
 		<Monster type="36" number="1" level="16"/>
 		<Reward type="item" data="124"/>

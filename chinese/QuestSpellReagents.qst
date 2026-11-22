@@ -1,38 +1,38 @@
 <Quest name="Spell Reagents">
    <Part id="0">
-      <Description done="no">A wizard offers you 7 mana crystals if you can bring him 4 spell reagents. First he needs a red dragon scale. Location: %s.</Description>
-      <Description done="yes" first="yes">You obtained a red dragon scale.</Description>
-      <Description done="yes" first="no">The dragon was already dead, but you retrieved a red dragon scale.</Description>
-      <Success first="yes">You take a scale from the dragon&apos;s body</Success>
-      <Success first="no">The dragon is already dead, so you take a scale from its body.</Success>
-      <Reward type="gold" data="2543">This dragon had a treasure worth 2543 gold.</Reward>
+      <Description done="no">一名法师答应，只要你替他收集 4 种施法材料，就赠予你 7 块魔力水晶。第一种材料是红龙的鳞片。地点：%s。</Description>
+      <Description done="yes" first="yes">你取得了一片红龙鳞片。</Description>
+      <Description done="yes" first="no">这头巨龙早已死去，但你仍从它身上取到了一片红龙鳞片。</Description>
+      <Success first="yes">你从巨龙的尸体上取下一片鳞片。</Success>
+      <Success first="no">巨龙已经死去，于是你从它的尸体上取下一片鳞片。</Success>
+      <Reward type="gold" data="2543">这头巨龙积攒了一批价值 2543 金币的宝藏。</Reward>
       <Monster type="52" number="1" level="10"/>
    </Part>
    <Part id="1">
-      <Description done="no">The next spell reagent is a Wyvern&apos;s stinger. Location: %s.</Description>
-      <Description done="yes" first="yes">You obtained a Wyvern&apos;s stinger.</Description>
-      <Description done="yes" first="no">You found a dead Wyvern and cut the stinger from its tail.</Description>
-      <Success first="yes">You cut the stinger from the Wyvern&apos;s tail.</Success>
-      <Success first="no">The Wyvern is already dead, so you cut the stinger from its tail.</Success>
-      <Reward type="allies" unit="0" level="20" number="1" name="Dragonslayer">Impressed by the way you slew this Wyvern a Dragonslayer joins you.</Reward>
+      <Description done="no">第二种施法材料是一根双足飞龙的尾刺。地点：%s。</Description>
+      <Description done="yes" first="yes">你取得了一根双足飞龙的尾刺。</Description>
+      <Description done="yes" first="no">你发现一头死去的双足飞龙，割下了它尾巴上的毒刺。</Description>
+      <Success first="yes">你从双足飞龙的尾巴上割下一根毒刺。</Success>
+      <Success first="no">双足飞龙早已死去，于是你从它的尾巴上割下一根毒刺。</Success>
+      <Reward type="allies" unit="0" level="20" number="1" name="Dragonslayer">一名屠龙者对你斩杀双足飞龙的身手十分钦佩，愿意加入你的队伍。</Reward>
       <Monster type="28" number="1" level="12"/>
    </Part>
    <Part id="2">
-      <Description done="no">The next spell reagent is a Minotaur&apos;s horn. Location: %s.</Description>
-      <Description done="yes" first="yes">You obtained a Minotaur&apos;s horn.</Description>
-      <Description done="yes" first="no">The Minotaur was already dead, but you retrieved one of its horns.</Description>
-      <Success first="yes">You cut off one of the Minotaur&apos;s horns.</Success>
-      <Success first="no">The Minotaur is already dead, so you cut off one of its horns.</Success>
-      <Reward type="item" data="33">This Minotaur had a dreaded Doubleblade.</Reward>
+      <Description done="no">第三种施法材料是牛头怪的一根角。地点：%s。</Description>
+      <Description done="yes" first="yes">你取得了一根牛头怪的角。</Description>
+      <Description done="yes" first="no">牛头怪早已死去，但你仍取下了它的一根角。</Description>
+      <Success first="yes">你割下牛头怪的一根角。</Success>
+      <Success first="no">牛头怪早已死去，于是你割下它的一根角。</Success>
+      <Reward type="item" data="33">这头牛头怪拥有一柄令人胆寒的双刃剑。</Reward>
       <Monster type="20" number="1" level="15"/>
    </Part>
    <Part id="3">
-      <Description done="no">The final spell reagent is a Liche Lord&apos;s skull. Location: %s.</Description>
-      <Description done="yes" first="yes">You obtained a Liche Lord&apos;s skull and the wizard rewarded you with 7 mana crystals..</Description>
-      <Description done="yes" first="no">Alas, the Liche Lord could not be found so you could not complete the quest.</Description>
-      <Success first="yes">You remove the skull from the Liche Lord&apos;s body.</Success>
-      <Success first="no">The Liche Lord is dead and his skull has already been removed.</Success>
-      <Reward type="mana" data="7">The wizard accepts the 4 spell reagents and gives you 7 mana crystals.</Reward>
+      <Description done="no">最后一种施法材料是一名巫妖领主的头骨。地点：%s。</Description>
+      <Description done="yes" first="yes">你取得了巫妖领主的头骨，法师如约赠予你 7 块魔力水晶。</Description>
+      <Description done="yes" first="no">唉！你未能找到巫妖领主，因此没能完成任务。</Description>
+      <Success first="yes">你从巫妖领主的尸体上取下头骨。</Success>
+      <Success first="no">巫妖领主已经死去，而它的头骨早被人取走了。</Success>
+      <Reward type="mana" data="7">法师收下 4 种施法材料，交给你 7 块魔力水晶。</Reward>
       <Monster type="31" number="1" level="20" name="Liche Lord"/>
       <Monster type="30" number="3" level="3"/>
    </Part>

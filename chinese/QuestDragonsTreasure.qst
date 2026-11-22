@@ -1,39 +1,39 @@
 <Quest name="The Dragon&apos;s Treasure">
    <Part id="0">
-      <Description done="no">You have heard rumors of a Dragon who guards a mighty treasure.  You should search for clues to its whereabouts in a young Dragon&apos;s cave.  Location: %s.</Description>
-      <Description done="yes" first="yes">Although you only found and slew a small dragon, you discovered the name of the greater dragon: Auravorax.</Description>
-      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found a clue: the name of the dragon you seek is Auravorax.</Description>
-      <Success first="yes">With its dying breath, the young Dragon curses you, saying that its mother, Auravorax, will hunt you down.  Perhaps Auravorax is the dragon you seek.</Success>
-      <Success first="no">You discover only the body of a Dragon.  A search through some books in its lair soon reveals that it is the offspring of a huge Wyrm named Auravorax. Perhaps Auravorax is the dragon you seek.</Success>
-      <Reward type="gold" data="1025">Although it was a young Dragon, it still has considerable treasure.  You discover 1025 Gold!</Reward>
+      <Description done="no">传闻有一头巨龙守护着惊人的宝藏。你应从一头幼龙的巢穴开始，寻找宝藏所在地的线索。地点：%s。</Description>
+      <Description done="yes" first="yes">虽然你找到并杀死的只是一头幼龙，但你得知了那头更强大巨龙的名字：奥拉沃拉克斯。</Description>
+      <Description done="yes" first="no">虽然有人抢先抵达这座遗迹，但你仍找到了一条线索：你要寻找的巨龙名叫奥拉沃拉克斯。</Description>
+      <Success first="yes">幼龙临死前恶狠狠地诅咒你，说它的母亲奥拉沃拉克斯一定会追杀你。或许奥拉沃拉克斯就是你寻找的那头巨龙。</Success>
+      <Success first="no">你只找到了一具龙尸。在巢穴中翻阅几本书后，你得知它是一头名叫奥拉沃拉克斯的巨型古龙的后代。也许那就是你寻找的巨龙。</Success>
+      <Reward type="gold" data="1025">尽管只是幼龙，它仍积攒了不少财宝。你找到了 1025 枚金币！</Reward>
       <Monster type="52" number="1" level="3"/>
    </Part>
    <Part id="1">
-      <Description done="no">Few would know the whereabouts of this old Dragon except the Council of Liches.  You must confront and defeat them. Location: %s.</Description>
-      <Description done="yes" first="yes">Although you still did not find the location of the Dragon&apos;s lair, you discovered that a magical lodestone might point you towards it.</Description>
-      <Description done="yes" first="no">Although you were too late to question the Council of Liches, you discovered that a magical lodestone might point you towards it.</Description>
-      <Success first="yes">The Liches are defeated.  All they can tell you is that you will need a magical lodestone to point to the Dragon&apos;s lair.</Success>
-      <Success first="no">The Council of Liches is long gone.  However you discover some evidence that a magical lodestone might point you towards the lair.</Success>
-      <Reward type="mana" data="2">With the Liches defeated, you also discover the source of their power: 2 Mana Crystals.</Reward>
+      <Description done="no">除了巫妖议会，恐怕没有多少人知道这头古龙的巢穴所在。你必须前去与他们对峙，并将其击败。地点：%s。</Description>
+      <Description done="yes" first="yes">你仍未找到龙巢的位置，但得知一种魔法引路石或许能指明方向。</Description>
+      <Description done="yes" first="no">你来得太迟，没能向巫妖议会问话；不过，你发现魔法引路石或许能指向龙巢。</Description>
+      <Success first="yes">巫妖们被击败了。他们只肯透露一点：你需要一块魔法引路石，才能找到龙巢。</Success>
+      <Success first="no">巫妖议会早已离去。不过，你发现了一些证据，表明魔法引路石或许能够指向龙巢。</Success>
+      <Reward type="mana" data="2">击败巫妖后，你还找到了它们力量的来源：2 块魔力水晶。</Reward>
       <Monster type="31" number="7" level="2"/>
       <Monster type="31" number="1" level="10"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must gather a magical lodestone.  It will point you towards the lair of Auravorax.  Location: %s.</Description>
-      <Description done="yes" first="yes">You slew a Goblin Shaman and discovered a magical lodestone to point towards the lair of Auravorax.</Description>
-      <Description done="yes" first="no">You discovered a magical lodestone to point towards the lair of Auravorax in an empty lair.</Description>
-      <Success first="yes">You have slain an old Goblin Shaman who was guarding a cache of magical lodestones.  You take one to aid in your quest.</Success>
-      <Success first="no">Although this site is long deserted, you still find a magical lodestone to help locate the lair.</Success>
-      <Reward type="xp" data="16">As well as the magical lodestones, the Goblin shaman has a potion that increases your experience (by +16).</Reward>
+      <Description done="no">你必须取得一块魔法引路石，它会指引你前往奥拉沃拉克斯的巢穴。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了一名地精萨满，找到了一块能指向奥拉沃拉克斯巢穴的魔法引路石。</Description>
+      <Description done="yes" first="no">你在一处空荡荡的巢穴里找到了一块魔法引路石，它能指向奥拉沃拉克斯的巢穴。</Description>
+      <Success first="yes">你杀死了一名老地精萨满。他守护着一批魔法引路石；你取走其中一块，以助完成任务。</Success>
+      <Success first="no">此地虽已荒废多时，你仍找到一块魔法引路石，可用它寻找龙巢。</Success>
+      <Reward type="xp" data="16">除了魔法引路石，那名地精萨满还藏着一瓶增加经验的药水，经验值 +16。</Reward>
       <Monster type="24" number="1" level="20"/>
    </Part>
    <Part id="3">
-      <Description done="no">Finally you have discovered the lair of Auravorax.  All that remains is to slay the beast and take its treasure. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain Auravorax and taken all of her treasure. The quest is complete.</Description>
-      <Description done="yes" first="no">Auravorax is slain and his treasure is taken. You were too late to complete the quest.</Description>
-      <Success first="yes">You have slain the mighty Auravorax, and all of her treasure is now yours.</Success>
-      <Success first="no">Unfortunately, Auravorax is already dead and her treasure hoard has been taken.</Success>
-      <Reward type="gold" data="20546">The lair of Auravorax is filled with golden coins and jewellery.  You manage to collect 20546 Gold!</Reward>
+      <Description done="no">你终于找到了奥拉沃拉克斯的巢穴。如今只需杀死巨龙，夺走它的宝藏。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了奥拉沃拉克斯，夺取了她的全部宝藏。任务完成。</Description>
+      <Description done="yes" first="no">奥拉沃拉克斯已死，宝藏也已被夺走。你来得太迟，未能完成任务。</Description>
+      <Success first="yes">你杀死了强大的奥拉沃拉克斯，她的全部宝藏如今都归你所有。</Success>
+      <Success first="no">可惜奥拉沃拉克斯早已死去，巢穴里的宝藏也被人取走了。</Success>
+      <Reward type="gold" data="20546">奥拉沃拉克斯的巢穴中堆满了金币与珠宝。你一共收集到 20546 枚金币！</Reward>
       <Monster type="52" number="1" level="25" name="Auravorax"/>
    </Part>
 </Quest>

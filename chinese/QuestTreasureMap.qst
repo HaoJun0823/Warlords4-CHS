@@ -1,41 +1,41 @@
 <Quest name="The Treasure Map">
    <Part id="0">
-      <Description done="no">Three pieces of a treasure map will show the way to a wealth of jewels and gems. Seek the first piece.  Location: %s.</Description>
-      <Description done="yes" first="yes">You found the first piece of the treasure map.</Description>
-      <Description done="yes" first="no">Nobody was around, so you took the first piece of the map for yourself.</Description>
-      <Success first="yes">A quick search reveals the first piece of the treasure map.</Success>
-      <Success first="no">This place is deserted, but a quick search reveals the first piece of the treasure map.</Success>
-      <Reward type="item" data="4">As well as the treasure map, you also find a Helm of Speed.</Reward>
+      <Description done="no">一张分成三块的藏宝图，指向价值连城的宝石与珠宝。先找到第一块地图。地点：%s。</Description>
+      <Description done="yes" first="yes">你找到了藏宝图的第一块。</Description>
+      <Description done="yes" first="no">这里没有其他人，于是你将藏宝图的第一块收入囊中。</Description>
+      <Success first="yes">一番搜寻后，你发现了藏宝图的第一块。</Success>
+      <Success first="no">这里已荒无人烟，但稍加搜寻，你还是找到了藏宝图的第一块。</Success>
+      <Reward type="item" data="4">除了藏宝图残片，你还找到了一顶迅捷之盔。</Reward>
       <Monster type="48" number="1" level="8"/>
       <Monster type="48" number="5" level="1"/>
    </Part>
    <Part id="1">
-      <Description done="no">You should seek the second piece of the treasure map.  Location: %s.</Description>
-      <Description done="yes" first="yes">You found the second piece of the treasure map.</Description>
-      <Description done="yes" first="no">Nobody was around, so you took the second piece of the map for yourself.</Description>
-      <Success first="yes">A quick search reveals the second piece of the treasure map.</Success>
-      <Success first="no">This place is deserted, but a quick search reveals the second piece of the treasure map.</Success>
-      <Reward type="mana" data="2">As well as the treasure map, you also find 2 Mana Crystals.</Reward>
+      <Description done="no">接下来该寻找藏宝图的第二块了。地点：%s。</Description>
+      <Description done="yes" first="yes">你找到了藏宝图的第二块。</Description>
+      <Description done="yes" first="no">这里没有其他人，于是你将藏宝图的第二块收入囊中。</Description>
+      <Success first="yes">一番搜寻后，你发现了藏宝图的第二块。</Success>
+      <Success first="no">这里已荒无人烟，但稍加搜寻，你还是找到了藏宝图的第二块。</Success>
+      <Reward type="mana" data="2">除了藏宝图残片，你还找到 2 块魔力水晶。</Reward>
       <Monster type="41" number="1" level="8"/>
       <Monster type="37" number="4" level="1"/>
    </Part>
    <Part id="2">
-      <Description done="no">You should seek the third piece of the treasure map.  Location: %s.</Description>
-      <Description done="yes" first="yes">You found the third piece of the treasure map.</Description>
-      <Description done="yes" first="no">Nobody was around, so you took the third piece of the map for yourself.</Description>
-      <Success first="yes">A quick search reveals the third piece of the treasure map.</Success>
-      <Success first="no">This place is deserted, but a quick search reveals the third piece of the treasure map.</Success>
-      <Reward type="allies" unit="12" level="12" number="1" name="Khudhar">A Dwarf who was also looking for the map offers to help you find the treasure.</Reward>
+      <Description done="no">接下来该寻找藏宝图的第三块了。地点：%s。</Description>
+      <Description done="yes" first="yes">你找到了藏宝图的第三块。</Description>
+      <Description done="yes" first="no">这里没有其他人，于是你将藏宝图的第三块收入囊中。</Description>
+      <Success first="yes">一番搜寻后，你发现了藏宝图的第三块。</Success>
+      <Success first="no">这里已荒无人烟，但稍加搜寻，你还是找到了藏宝图的第三块。</Success>
+      <Reward type="allies" unit="12" level="12" number="1" name="Khudhar">一名同样在寻找藏宝图的矮人主动提出帮助你寻找宝藏。</Reward>
       <Monster type="43" number="1" level="12"/>
       <Monster type="42" number="6" level="1"/>
    </Part>
    <Part id="3">
-      <Description done="no">The map is complete!  You can now see the location of the treasure.  Location: %s.</Description>
-      <Description done="yes" first="yes">You found the treasure - a fortune in gems and jewellery.</Description>
-      <Description done="yes" first="no">You searched for the treasure, but it seems that somebody beat you here.</Description>
-      <Success first="yes">This must be the place - there are gems and jewels everywhere.</Success>
-      <Success first="no">This place is empty.  Somebody must have gotten the gems and jewels before you.</Success>
-      <Reward type="gold" data="23186">You find gems and jewellery to the value of 23186 gold.</Reward>
+      <Description done="no">藏宝图终于拼完整了！现在你可以找到宝藏的所在地。地点：%s。</Description>
+      <Description done="yes" first="yes">你找到了宝藏——堆积如山的宝石与珠宝。</Description>
+      <Description done="yes" first="no">你赶来寻找宝藏，却发现似乎有人抢先一步。</Description>
+      <Success first="yes">一定就是这里了！放眼望去，尽是闪闪发光的宝石与珠宝。</Success>
+      <Success first="no">这里空空如也。看来有人在你之前取走了所有珠宝。</Success>
+      <Reward type="gold" data="23186">你找到了一批宝石与珠宝，总价值 23186 金币。</Reward>
       <Monster type="22" number="1" level="12"/>
       <Monster type="25" number="6" level="1"/>
    </Part>

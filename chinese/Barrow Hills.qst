@@ -1,38 +1,38 @@
 <Quest name="The Spirit Lord">
    <Part id="0">
-      <Description done="no">It is said that the essence of the Lord of the Barrow Hills was split into 4 parts and hidden away, locked inside magical globes.  You must seek the first one. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the first guardian and recovered the first globe.</Description>
-      <Description done="yes" first="no">The first guardian was already dead, but a thorough search soon found the first globe.</Description>
-      <Success first="yes">You have slain the first guardian and found the first globe containing the Spirit Lord&apos;s essence.</Success>
-      <Success first="no">The guardian is already dead, but a thorough search reveals the first part of the Spirit Lord&apos;s essence</Success>
-      <Reward type="mana" data="2">The globe containing the essence is actually fashioned from 2 Mana Crystals.</Reward>
+      <Description done="no">据说，古冢丘陵之主的灵魂精华被分成 4 份，分别封存在魔法宝珠中，藏于各处。你必须先找到第一颗宝珠。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了第一名守卫，夺回了第一颗宝珠。</Description>
+      <Description done="yes" first="no">第一名守卫早已死去，但经过仔细搜寻，你终于找到了第一颗宝珠。</Description>
+      <Success first="yes">你击败了第一名守卫，找到了封存着幽魂领主部分精华的第一颗宝珠。</Success>
+      <Success first="no">守卫已死，但细致搜寻之后，你还是找到了幽魂领主的第一份精华。</Success>
+      <Reward type="mana" data="2">这颗封存精华的宝珠，实际上由 2 块魔力水晶制成。</Reward>
       <Monster type="31" number="1" level="20"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must seek the second globe containing the Spirit Lord&apos;s Essence. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the second guardian and recovered the second globe.</Description>
-      <Description done="yes" first="no">The second guardian was already dead, but a thorough search soon found the second globe.</Description>
-      <Success first="yes">You have slain the second guardian and found the second globe containing the Spirit Lord&apos;s essence.</Success>
-      <Success first="no">The guardian is already dead, but a thorough search reveals the second part of the Spirit Lord&apos;s essence</Success>
-      <Reward type="mana" data="2">The globe containing the essence is actually fashioned from 2 Mana Crystals.</Reward>
+      <Description done="no">接下来，你必须寻找封存幽魂领主精华的第二颗宝珠。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了第二名守卫，夺回了第二颗宝珠。</Description>
+      <Description done="yes" first="no">第二名守卫早已死去，但经过仔细搜寻，你终于找到了第二颗宝珠。</Description>
+      <Success first="yes">你击败了第二名守卫，找到了封存着幽魂领主部分精华的第二颗宝珠。</Success>
+      <Success first="no">守卫已死，但细致搜寻之后，你还是找到了幽魂领主的第二份精华。</Success>
+      <Reward type="mana" data="2">这颗封存精华的宝珠，实际上由 2 块魔力水晶制成。</Reward>
       <Monster type="44" number="1" level="16"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must seek the third globe containing the Spirit Lord&apos;s Essence. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the third guardian and recovered the third globe.</Description>
-      <Description done="yes" first="no">The third guardian was already dead, but a thorough search soon found the third globe.</Description>
-      <Success first="yes">You have slain the third guardian and found the third globe containing the Spirit Lord&apos;s essence.</Success>
-      <Success first="no">The guardian is already dead, but a thorough search reveals the third part of the Spirit Lord&apos;s essence</Success>
-      <Reward type="mana" data="2">The globe containing the essence is actually fashioned from 2 Mana Crystals.</Reward>
+      <Description done="no">接下来，你必须寻找封存幽魂领主精华的第三颗宝珠。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了第三名守卫，夺回了第三颗宝珠。</Description>
+      <Description done="yes" first="no">第三名守卫早已死去，但经过仔细搜寻，你终于找到了第三颗宝珠。</Description>
+      <Success first="yes">你击败了第三名守卫，找到了封存着幽魂领主部分精华的第三颗宝珠。</Success>
+      <Success first="no">守卫已死，但细致搜寻之后，你还是找到了幽魂领主的第三份精华。</Success>
+      <Reward type="mana" data="2">这颗封存精华的宝珠，实际上由 2 块魔力水晶制成。</Reward>
       <Monster type="14" number="1" level="16"/>
    </Part>
    <Part id="3">
-      <Description done="no">You must seek the final globe containing the Spirit Lord&apos;s Essence. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the final guardian and recovered the final globe.  The Spirit Lord himself has joined your army.</Description>
-      <Description done="yes" first="no">Alas!  The third guardian was dead, and the globe gone.  Without it, you will never be able to call upon the Spirit Lord.</Description>
-      <Success first="yes">You have slain the final guardian and found the final globe containing the Spirit Lord&apos;s essence.</Success>
-      <Success first="no">The guardian is already dead, and the final globe is nowhere to be found.</Success>
-      <Reward type="allies" unit="43" level="20" number="1" name="Spirit Lord">With all 4 globes present, you finally call upon the Spirit Lord.  Grateful for his freedom, he offers to join you.</Reward>
+      <Description done="no">最后，你必须寻找封存幽魂领主精华的最后一颗宝珠。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了最后的守卫，夺回最终的宝珠。幽魂领主本人也加入了你的军队。</Description>
+      <Description done="yes" first="no">唉！第三名守卫已死，宝珠也不翼而飞。少了它，你永远无法召来幽魂领主。</Description>
+      <Success first="yes">你击败了最后的守卫，找到了封存着幽魂领主最后一份精华的宝珠。</Success>
+      <Success first="no">守卫已死，最后一颗宝珠却遍寻不获。</Success>
+      <Reward type="allies" unit="43" level="20" number="1" name="Spirit Lord">4 颗宝珠终于齐聚，你得以召回幽魂领主。为了感谢你给予的自由，他愿意加入你的麾下。</Reward>
       <Monster type="35" number="1" level="15"/>
    </Part>
 </Quest>

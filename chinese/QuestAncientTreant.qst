@@ -1,43 +1,43 @@
 <Quest name="The Ancient Treant">
    <Part id="0">
-      <Description done="no">An Ancient Treant is seeking revenge upon 4 creatures who destroyed his forest. The first one is an Orc Lord. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the first enemy of the Ancient Treant, the Orc Lord Braghus.</Description>
-      <Description done="yes" first="no">The first enemy or the Ancient Treant was already dead.</Description>
-      <Success first="yes">You have slain the first enemy of the Ancient Treant.</Success>
-      <Success first="no">The first enemy of the Ancient Treant is already dead.</Success>
-      <Reward type="hero" unit="11" level="5" number="1" name="Dheela">The Orc Lord Braghus was holding an Imperial Noble prisoner.  She offers to join you.</Reward>
+      <Description done="no">一棵远古树人正在寻找 4 个毁灭其森林的仇敌，誓要复仇。第一个目标是一名兽人领主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了远古树人的第一个仇敌——兽人领主布拉格斯。</Description>
+      <Description done="yes" first="no">远古树人的第一个仇敌早已死去。</Description>
+      <Success first="yes">你击败了远古树人的第一个仇敌。</Success>
+      <Success first="no">远古树人的第一个仇敌已经死去。</Success>
+      <Reward type="hero" unit="11" level="5" number="1" name="Dheela">兽人领主布拉格斯囚禁着一名帝国贵族女子。获救后，她主动提出加入你的队伍。</Reward>
       <Monster type="29" number="1" level="12" name="Braghus"/>
       <Monster type="25" number="7" level="2"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must now seek the second enemy of the Ancient Treant, a Dwarf Lord. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the second enemy of the Ancient Treant, the Dwarf Lord Khozar.</Description>
-      <Description done="yes" first="no">The second enemy or the Ancient Treant was already dead.</Description>
-      <Success first="yes">You have slain the second enemy of the Ancient Treant.</Success>
-      <Success first="no">The second enemy of the Ancient Treant is already dead.</Success>
-      <Reward type="gold" data="3108">The Dwarf Lord Khozar had a huge pile of treasure worth 3108 gold.</Reward>
+      <Description done="no">现在，你必须寻找远古树人的第二个仇敌——一名矮人领主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了远古树人的第二个仇敌——矮人领主科扎尔。</Description>
+      <Description done="yes" first="no">远古树人的第二个仇敌早已死去。</Description>
+      <Success first="yes">你击败了远古树人的第二个仇敌。</Success>
+      <Success first="no">远古树人的第二个仇敌已经死去。</Success>
+      <Reward type="gold" data="3108">矮人领主科扎尔留下了一大堆财宝，价值 3108 金币。</Reward>
       <Monster type="17" number="1" level="12" name="Khozar"/>
       <Monster type="12" number="7" level="2"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must now seek the third enemy of the Ancient Treant, a Dragon Lord. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the third enemy of the Ancient Treant, the Dragon Lord Aeonus.</Description>
-      <Description done="yes" first="no">The third enemy or the Ancient Treant was already dead.</Description>
-      <Success first="yes">You have slain the third enemy of the Ancient Treant.</Success>
-      <Success first="no">The third enemy of the Ancient Treant is already dead.</Success>
-      <Reward type="allies" unit="52" level="1" number="1" name="Ori">The Dragon Lord Aeonus had a young fire dragon whom you capture to train.</Reward>
+      <Description done="no">接下来，你必须寻找远古树人的第三个仇敌——一名龙族领主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了远古树人的第三个仇敌——龙族领主埃奥努斯。</Description>
+      <Description done="yes" first="no">远古树人的第三个仇敌早已死去。</Description>
+      <Success first="yes">你击败了远古树人的第三个仇敌。</Success>
+      <Success first="no">远古树人的第三个仇敌已经死去。</Success>
+      <Reward type="allies" unit="52" level="1" number="1" name="Ori">龙族领主埃奥努斯驯养着一头年幼的火龙；你将它捕获，准备加以训练。</Reward>
       <Monster type="53" number="1" level="12" name="Aeonus"/>
       <Monster type="49" number="1" level="1"/>
       <Monster type="50" number="1" level="1"/>
       <Monster type="52" number="1" level="1"/>
    </Part>
    <Part id="3">
-      <Description done="no">You must now seek the final enemy of the Ancient Treant, an Ogre Lord. Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the final enemy, and the Ancient Treant offered to join you.</Description>
-      <Description done="yes" first="no">The final enemy or the Ancient Treant was already dead. Content at last, the Treant thanked you and left.</Description>
-      <Success first="yes">You have slain the final enemy of the Ancient Treant.</Success>
-      <Success first="no">The final enemy of the Ancient Treant is already dead. Content at last, the Treant thanks you.</Success>
-      <Reward type="allies" unit="58" level="15" number="1" name="Ironleaf">Impressed by your thoughtfulness and dedication, the Treant offers to join you.</Reward>
+      <Description done="no">现在，你必须寻找远古树人最后的仇敌——一名食人魔领主。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了最后的仇敌，远古树人愿意加入你的队伍。</Description>
+      <Description done="yes" first="no">远古树人最后的仇敌早已死去。终于心愿得偿，树人向你道谢后离开了。</Description>
+      <Success first="yes">你击败了远古树人最后的仇敌。</Success>
+      <Success first="no">远古树人最后的仇敌已经死去。复仇的心愿得以了结，树人向你表示感谢。</Success>
+      <Reward type="allies" unit="58" level="15" number="1" name="Ironleaf">远古树人被你的体贴与坚毅所打动，愿意加入你的队伍。</Reward>
       <Monster type="23" number="1" level="14" name="Ograkk"/>
       <Monster type="22" number="2" level="3"/>
       <Monster type="18" number="5" level="8"/>

@@ -16,7 +16,7 @@
     <!--Story start-->
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="turn" data1="1"/>
-		<Message>You are back on land. You have missed your quest. The ancient Dragon Kirin is still alive. And he has told you that Ogres had crafted the amulet for Siantra! You need to find out who is telling the truth.|You have sent an envoy to Siantra. She must hand out the amulet. You want to make your own decision.|While you are waiting for the return of your envoy, you use the time to investigate ethe hills of the Giants. You cannot lead the Dark Elves for this task. It seems you cannot trust anyone anymore.|But you ARE a summoner.</Message>
+		<Message>你终于回到陆地，却没能达成此行的目的。古龙基林仍然活着，还告诉你那枚护符竟是食人魔替希安特拉打造的！你必须弄清究竟是谁在说谎。|你已经派使者去见希安特拉，要求她交出护符。你要亲自判断真相。|等待使者归来期间，你决定调查巨人丘陵。此行不能带上黑暗精灵，看来你再也不能信任任何人。|不过，你毕竟是一名召唤师。</Message>
 		<Action type="counter_set" data1="0" String1="w1"/>
 	</Event>
 
@@ -25,7 +25,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="10"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>You have heard nothing from your envoy. It seems he may have gotten into trouble...</Message>
+		<Message>你仍未收到使者的消息。看来他可能遭遇了麻烦……</Message>
 	</Event>
 
 
@@ -33,13 +33,13 @@
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="33"/>
-		<Message>An outpost of the Dark Elves?! That makes you think...</Message>
+		<Message>黑暗精灵的前哨站？！这可让你浮想联翩……</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="36">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="36"/>
-		<Message>You have found a portal to a dark sphere. This will improve your mana flow...</Message>
+		<Message>你找到一扇通往黑暗位面的传送门，它会改善你的魔力流动……</Message>
 		<Action type="particle" string1="BlackCapitol"/>
 		<Action type="mana_crystals" data1="2"/>
 	</Event>
@@ -74,25 +74,25 @@
 	<Event side="0" repeat="1" location="city" locdata="5">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="5"/>
-		<Message>It is always a pleasure to get rid of the stinky orcs...</Message>
+		<Message>摆脱那些臭烘烘的兽人，总是一件令人愉快的事……</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="5">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
-		<Message>It seams like you have aroused the interest of the Knights and the Empire. They are always close behind, but why?</Message>
+		<Message>看来你引起了骑士团和帝国的注意。他们总在你身后紧追不舍，可究竟为什么？</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="2">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="1" String1="w1"/>
-		<Message>You have struck down the giant warlord. You search the rooms of his citadel. The dragon was right; the Ogres possess the knowledge to craft items. But there is no proof of a connection to Siantra... yet.</Message>
+		<Message>你击倒了那名巨人统帅，搜查他的堡垒。巨龙说得没错：食人魔确实掌握着制作魔法物品的技艺。可是，仍没有证据表明他们与希安特拉有关……至少现在没有。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="2">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="2" String1="w1"/>
-		<Message>This giant was very difficult to overcome! There is no doubt he was supported by the dark elves. Again you search the rooms of his citadel. In the room of the warlord you find a wooden chest containing a letter; it is signed with the seal of Siantra!|Falsified or not, the time has come to visit the elf and confront her with the results of your investigation. And of course... ask after your envoy!|Continue with Amthor 10...</Message>
+		<Message>你费了好大力气才击败这名巨人！毫无疑问，黑暗精灵曾暗中援助他。你再次搜查堡垒，在统帅的房间里发现一只木箱，里面藏着一封信——信上盖着希安特拉的印章！|不论信是否伪造，现在都该去找那名精灵，当面质问调查所得。当然……还有你那名使者的下落！|接下来进入《阿姆索尔 10》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

@@ -108,11 +108,45 @@ def check_one(rel: str, chs_path: Path, eng_path: Path,
     if chs_path.suffix.lower() in XML_EXTS:
         tags = tag_sequence(raw)
         tags_eng = tag_sequence(eng_raw)
-        if tags != tags_eng:
+        # CutScene 的 <Text> 允许拆分（修复长文本复读的既定手段）：
+        # 对比时把连续的 <Text> 折叠归一化，只要求总体标签集合一致。
+        is_cutscene = raw.lstrip().startswith(b"<CutScene")
+        if is_cutscene:
+            norm = lambda seq: [t for t in seq if t != b"Text"] + [b"Text"] * seq.count(b"Text")
+            # 允许 Text 数量增加（拆分），但不能减少，其它标签必须完全一致
+            others = lambda seq: [t for t in seq if t != b"Text"]
+            if others(tags) != others(tags_eng) or tags.count(b"Text") < tags_eng.count(b"Text"):
+                errors.append(
+                    f"{rel}: 过场字幕结构异常——除 <Text> 外的标签须与原文一致，"
+                    "且 <Text> 节点数不得少于原文（拆分才能修复复读）"
+                )
+        elif tags != tags_eng:
             errors.append(
                 f"{rel}: XML 标签结构不一致（译文 {len(tags)} 个 / 原文 {len(tags_eng)} 个），"
                 "不得增删或重排标签"
             )
+
+        # 长文本复读风险（实测阈值，仅警告不阻断）：
+        #   - 过场字幕 <Text>  >=38 汉字会复读
+        #   - 事件消息 <Message> 首段 >=26 汉字会复读（| 之后的分页用独立缓冲，安全）
+        text = raw.decode("gbk", errors="ignore")
+        if is_cutscene:
+            for m in re.finditer(r"<Text\b[^>]*>([^<]*)</Text>", text):
+                n = len(m.group(1))
+                if n >= 38:
+                    warns.append(
+                        f"{rel}: 过场字幕 {n} 字（>=38），可能复读；"
+                        "请拆成多个 <Text time=...> 节点（每节点<=37字）"
+                    )
+        if rel.endswith(".evt") or rel.endswith(".qst"):
+            for m in re.finditer(r"<Message\b[^>]*>(.*?)</Message>", text, re.S):
+                first = m.group(1).split("|")[0]
+                n = len(first)
+                if n > 24:
+                    warns.append(
+                        f"{rel}: 事件消息首段 {n} 字（>24），可能复读；"
+                        "请用 '|' 把首段拆短（每页<=24字）"
+                    )
 
     if chs_path.suffix.lower() == ".nam":
         n = len(raw.splitlines())

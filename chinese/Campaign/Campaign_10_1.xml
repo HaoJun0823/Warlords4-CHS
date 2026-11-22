@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_10_1.bik" voice="Campaign\Campaign_10_1.wav" duration="28000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">And so Aravein was defeated.  All of her books – every last scrap of paper was taken and burned, and the ashes scattered to the four winds.</Text>
-	<Text time="11500">And that should be the end of this tale.  But if there is one absolute truth that we have seen in all of this chaos and madness, it is this:</Text>
-	<Text time="21500">“What is learned may be forgotten… but what is learned can never be un-learned.”</Text>
+	<Text time="1500">¾ÍÕâÑù£¬°¢À­Ş±¶÷ÖÕÓÚ°ÜÁË¡£ËıµÄËùÓĞÊé¼®£¬Á¬Í¬×îºóÒ»Æ¬Ö½Ğ¼£¬¶¼±»ÊÕ¼¯ÆğÀ´¸¶Ö®Ò»¾æ£»»Ò½ıËæ·çÆ®É¢£¬ÂäÏòËÄ·½¡£</Text>
+	<Text time="11500">Õâ¸ö¹ÊÊÂÀíÓ¦µ½´Ë½áÊø¡£È»¶ø£¬ÌÈÈôÕâ³¡»ìÂÒÓë·è¿ñ½Ì»áÁËÎÒÃÇÊ²Ã´ÓÀºã²»±äµÄÕæÀí£¬ÄÇ±ãÊÇ£º</Text>
+	<Text time="21500">¡°Ñ§µ½µÄ¶«Î÷»òĞí¿ÉÒÔÒÅÍü¡­¡­È´ÓÀÔ¶ÎŞ·¨µ±×÷´ÓÎ´Ñ§¹ı¡£¡±</Text>
 </CutScene>

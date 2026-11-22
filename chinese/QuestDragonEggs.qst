@@ -1,42 +1,42 @@
 <Quest name="The Dragon Eggs">
    <Part id="0">
-      <Description done="no">Elves have stolen four Dragon eggs from the ancient Dragon, Embrexa.  You will be rewarded for their return. Begin by finding the first egg. Location: %s.</Description>
-      <Description done="yes" first="yes">The guardians of the first egg were slain, and egg recovered still intact.</Description>
-      <Description done="yes" first="no">The guardians of the first egg were already dead, but you recovered the egg unharmed.</Description>
-      <Success first="yes">You have slain the guardians of the first egg and recovered the egg unharmed.</Success>
-      <Success first="no">The guardians of the first egg are already dead but fortunately the egg is unharmed.</Success>
-      <Reward type="item" data="59">As well as the egg, you also discover a suit of Elven Mail.</Reward>
+      <Description done="no">精灵从古龙恩布雷克莎那里偷走了 四枚龙蛋。若能物归原主，你将获得丰厚酬谢。先去寻找第一枚蛋。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了第一枚龙蛋的守卫，取回的龙蛋完好无损。</Description>
+      <Description done="yes" first="no">守护第一枚龙蛋的敌人早已死去，但你仍完好无损地取回了龙蛋。</Description>
+      <Success first="yes">你击败了第一枚龙蛋的守卫，平安取回了龙蛋。</Success>
+      <Success first="no">守护第一枚龙蛋的敌人早已死去；幸好龙蛋没有受损。</Success>
+      <Reward type="item" data="59">除了龙蛋，你还发现了一件精灵锁甲。</Reward>
       <Monster type="59" number="1" level="5" name="Thelena"/>
       <Monster type="56" number="2" level="3"/>
       <Monster type="54" number="3" level="1"/>
    </Part>
    <Part id="1">
-      <Description done="no">You must now seek the second dragon egg. Location: %s.</Description>
-      <Description done="yes" first="yes">The guardians of the second egg were slain, and egg recovered still intact.</Description>
-      <Description done="yes" first="no">The guardians of the second egg were already dead, but you recovered the egg unharmed.</Description>
-      <Success first="yes">You have slain the guardians of the second egg and recovered the egg unharmed.</Success>
-      <Success first="no">The guardians of the second egg are already dead but fortunately the egg is unharmed.</Success>
-      <Reward type="xp" data="10">As well as the egg, you also discover an Elven Potion of Wisdom: +10 Experience.</Reward>
+      <Description done="no">现在，你必须去寻找第二枚龙蛋。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了第二枚龙蛋的守卫，取回的龙蛋完好无损。</Description>
+      <Description done="yes" first="no">守护第二枚龙蛋的敌人早已死去，但你仍完好无损地取回了龙蛋。</Description>
+      <Success first="yes">你击败了第二枚龙蛋的守卫，平安取回了龙蛋。</Success>
+      <Success first="no">守护第二枚龙蛋的敌人早已死去；幸好龙蛋没有受损。</Success>
+      <Reward type="xp" data="10">除了龙蛋，你还发现了一剂精灵智慧药水，经验值 +10。</Reward>
       <Monster type="59" number="1" level="6" name="Belthera"/>
       <Monster type="57" number="5" level="3"/>
    </Part>
    <Part id="2">
-      <Description done="no">You must now seek the third dragon egg. Location: %s.</Description>
-      <Description done="yes" first="yes">The guardians of the third egg were slain, and egg recovered still intact.</Description>
-      <Description done="yes" first="no">The guardians of the third egg were already dead, but you recovered the egg unharmed.</Description>
-      <Success first="yes">You have slain the guardians of the third egg and recovered the egg unharmed.</Success>
-      <Success first="no">The guardians of third egg are already dead but fortunately the egg is unharmed.</Success>
-      <Reward type="allies" unit="12" level="6" number="8">Impressed by the way you slew these Elves, a group of Dwarven Axemen offer to join you.</Reward>
+      <Description done="no">现在，你必须去寻找第三枚龙蛋。地点：%s。</Description>
+      <Description done="yes" first="yes">你击败了第三枚龙蛋的守卫，取回的龙蛋完好无损。</Description>
+      <Description done="yes" first="no">守护第三枚龙蛋的敌人早已死去，但你仍完好无损地取回了龙蛋。</Description>
+      <Success first="yes">你击败了第三枚龙蛋的守卫，平安取回了龙蛋。</Success>
+      <Success first="no">守护第三枚龙蛋的敌人早已死去；幸好龙蛋没有受损。</Success>
+      <Reward type="allies" unit="12" level="6" number="8">一队矮人斧兵对你斩杀那些精灵时的身手大为赞赏，主动提出加入你的队伍。</Reward>
       <Monster type="59" number="1" level="8" name="Yealla"/>
       <Monster type="54" number="7" level="4"/>
    </Part>
    <Part id="3">
-      <Description done="no">You must now seek the final dragon egg. This is rumored to be guarded by a fierce group of Treants. Location: %s.</Description>
-      <Description done="yes" first="yes">All of the eggs were recovered and out of gratitude, Embrexa the Dragon offered to join you.</Description>
-      <Description done="yes" first="no">Unfortunately the resting place of the final egg was empty, and the egg was nowhere to be found.</Description>
-      <Success first="yes">You have slain the guardians of the final egg and recovered the egg unharmed.</Success>
-      <Success first="no">Unfortunately the resting place of the final egg is empty, and the egg is nowhere to be found.</Success>
-      <Reward type="allies" unit="50" level="8" number="1" name="Embrexa">Embrexa the Dragon, overjoyed at the safe return of her eggs, offers to fight alongside you.</Reward>
+      <Description done="no">现在只剩最后一枚龙蛋。据说它由一群凶猛的树人看守。地点：%s。</Description>
+      <Description done="yes" first="yes">所有龙蛋终于失而复得。为了表达感激之情，巨龙恩布雷克莎愿意加入你的队伍。</Description>
+      <Description done="yes" first="no">可惜最后一枚龙蛋的藏匿处空空如也，龙蛋已经不知去向。</Description>
+      <Success first="yes">你击败了最后一枚龙蛋的守卫，平安取回了龙蛋。</Success>
+      <Success first="no">可惜最后一枚龙蛋的藏匿处空空如也，龙蛋已经不知去向。</Success>
+      <Reward type="allies" unit="50" level="8" number="1" name="Embrexa">龙蛋终于全部安然归来。恩布雷克莎欣喜若狂，愿与你并肩作战。</Reward>
       <Monster type="58" number="6" level="8"/>
    </Part>
 </Quest>

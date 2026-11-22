@@ -1,43 +1,43 @@
 <Quest name="The Fallen Knight">
    <Part id="0">
-      <Description done="no">Some Knights have been attacked and cornered.  If you go to their aid, there may be a reward involved.  Location: %s.</Description>
-      <Description done="yes" first="yes">You saved the Knights from their attackers, although their commander had already been slain.</Description>
-      <Description done="yes" first="no">The Knights had already been saved, but they gratefully acknowledged your offer to help track their assailants.</Description>
-      <Success first="yes">You have saved the Knights, though their commander has been slain.  They ask you to track down the leader of the Assassins who attacked them.</Success>
-      <Success first="no">The Knights are already safe, though their commander has been slain.  They ask you to track down the leader of the Assassins who attacked them.</Success>
-      <Reward type="allies" unit="2" level="8" number="1" name="Sir Beltroth">A young Knight offers to join you and help identify the Assassin.</Reward>
+      <Description done="no">一队骑士遭到袭击，被逼入绝境。若你出手援救，或许能得到报酬。地点：%s。</Description>
+      <Description done="yes" first="yes">你从袭击者手中救出了骑士们，但他们的指挥官已经遇害。</Description>
+      <Description done="yes" first="no">骑士们早已获救，但对于你愿意帮助追查袭击者，他们仍心怀感激。</Description>
+      <Success first="yes">你救出了骑士们，然而他们的指挥官已经遇害。他们请求你追踪那群刺客的首领。</Success>
+      <Success first="no">骑士们已经安全，但指挥官仍未能幸免。他们请求你追踪那群刺客的首领。</Success>
+      <Reward type="allies" unit="2" level="8" number="1" name="Sir Beltroth">一名年轻骑士愿意加入你的队伍，帮助辨认那名刺客。</Reward>
       <Monster type="36" number="6" level="2"/>
       <Monster type="36" number="1" level="8"/>
       <Monster type="40" number="1" level="5"/>
    </Part>
    <Part id="1">
-      <Description done="no">It is well known that Assassins often frequent an old burial ground. You should search there for clues. Location: %s.</Description>
-      <Description done="yes" first="yes">Although you did not find the Assassin, you learned that he had just collected his payment, and had received a new target.</Description>
-      <Description done="yes" first="no">Although you did not find the Assassin, you learned that he had just collected his payment, and had received a new target.</Description>
-      <Success first="yes">The Undead Guardians are defeated.  After some searching you find an old Goblin who tells you the Assassin was here to receive payment... and a new target.</Success>
-      <Success first="no">No Undead guard this place.  After some searching you find an old Goblin who tells you the Assassin was here to receive payment... and a new target.</Success>
-      <Reward type="gold" data="2032">In the tombs and coffins here, you discover much treasure: 2032 Gold.</Reward>
+      <Description done="no">众所周知，刺客常在一片古老墓地出没。你应该去那里寻找线索。地点：%s。</Description>
+      <Description done="yes" first="yes">虽然没能找到刺客，但你得知他刚刚领取了酬金，又接下了一个新的目标。</Description>
+      <Description done="yes" first="no">虽然没能找到刺客，但你得知他刚刚领取了酬金，又接下了一个新的目标。</Description>
+      <Success first="yes">你击败了不死族守卫，经过搜寻，找到一名老地精。他告诉你，刺客来此领取酬金……并接下了新的刺杀目标。</Success>
+      <Success first="no">此处没有不死族守卫。搜寻之后，你找到一名老地精。他告诉你，刺客来此领取酬金……并接下了新的刺杀目标。</Success>
+      <Reward type="gold" data="2032">在墓室与棺椁中，你发现了不少宝物，共有 2032 枚金币。</Reward>
       <Monster type="30" number="7" level="3"/>
       <Monster type="35" number="1" level="8" name="Lord Boris"/>
    </Part>
    <Part id="2">
-      <Description done="no">The Assassin is attempting to slay a hero who is out adventuring.  You must try to stop him.  Location: %s.</Description>
-      <Description done="yes" first="yes">You slew the Assassin&apos;s troops, but he made a quick getaway.</Description>
-      <Description done="yes" first="no">The Assassin had already failed in this new task.  His allies were dead, but he was nowhere to be found.</Description>
-      <Success first="yes">You have stopped the Assassin and killed his allies.  Unfortunately the Assassin has escaped, but he has left a trail to follow.</Success>
-      <Success first="no">It seems that somebody else already stopped the Assassin, killing his allies.  Unfortunately the Assassin has escaped, but he has left a trail to follow.</Success>
-      <Reward type="item" data="35">One of the Assassin&apos;s men was carrying a wicked-looking blade - a Dagger of Venom.</Reward>
+      <Description done="no">刺客正准备杀害一名外出冒险的英雄。你必须设法阻止他。地点：%s。</Description>
+      <Description done="yes" first="yes">你消灭了刺客的手下，但他本人趁乱逃走了。</Description>
+      <Description done="yes" first="no">刺客的这次行动早已失败。他的同伙都已死去，而他本人不见踪影。</Description>
+      <Success first="yes">你阻止了刺杀行动，并杀死了刺客的同伙。遗憾的是，刺客逃走了，不过他留下了可供追踪的痕迹。</Success>
+      <Success first="no">似乎有人已经阻止了刺客，并杀死了他的同伙。遗憾的是，刺客逃走了，不过他留下了可供追踪的痕迹。</Success>
+      <Reward type="item" data="35">一名刺客手下携带着一柄寒光凶厉的短刀——剧毒匕首。</Reward>
       <Monster type="36" number="4" level="2"/>
       <Monster type="37" number="3" level="2"/>
       <Monster type="31" number="1" level="5"/>
    </Part>
    <Part id="3">
-      <Description done="no">The Assassin has escaped, but he was in such a hurry that he left a trail leading to his home. Location: %s.</Description>
-      <Description done="yes" first="yes">You have slain the Assassin and avenged the leader of the Knights.</Description>
-      <Description done="yes" first="no">Although you did not slay the Assassin, you found his dead body.</Description>
-      <Success first="yes">You have slain the Assassin and now the Knights have been avenged.</Success>
-      <Success first="no">Unfortunately, the Assassin is already dead and all of his treasure is gone.</Success>
-      <Reward type="allies" unit="2" level="8" number="8" >When news of this reaches the Knights, a group of them vow to serve you until death!</Reward>
+      <Description done="no">刺客虽然逃脱，却因为太过仓皇，留下了一路通往他住处的踪迹。地点：%s。</Description>
+      <Description done="yes" first="yes">你杀死了刺客，为骑士团的领袖报了仇。</Description>
+      <Description done="yes" first="no">虽然不是你亲手杀死刺客，但你找到了他的尸体。</Description>
+      <Success first="yes">你杀死了刺客，终于替骑士们报仇雪恨。</Success>
+      <Success first="no">可惜刺客早已死去，所有财宝也被人取走了。</Success>
+      <Reward type="allies" unit="2" level="8" number="8" >消息传回骑士团后，一队骑士立誓为你效忠，至死不渝！</Reward>
       <Monster type="36" number="2" level="8" />
       <Monster type="37" number="1" level="22" name="Talon"/>
    </Part>

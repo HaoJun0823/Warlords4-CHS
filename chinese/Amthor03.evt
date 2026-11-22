@@ -21,7 +21,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>After you have secured the supply of the troops, you prepare the attack on Khaz Agar. Your scouts report that Prince Agnoril has become the new King of Khaz Agar. He has assambled two mighty elementar beside him. You hear the rumour that the two elementars are invincible twins.|You need to get more information about the old legend of the twin elementar. A rash attack could lead to ruin, so you curb your anger and send your troops to the city Skyvine of the elves in the north west. Surely in the fabled library a book exists about the old legend. But the elves will never voluntarily admit a descendant of the dwarves.</Message>
+		<Message>巩固军队的补给之后，你开始筹划进攻卡兹·阿加尔。斥候报告说，阿格诺里尔王子已成为卡兹·阿加尔的新国王，身边还召集了两名强大的元素生物。传言这对元素双子无坚不摧。|你必须先查清关于元素双子的古老传说。贸然进攻只会招致毁灭。你强压怒火，命令部队前往西北方精灵的天藤城。那座传说中的图书馆里，想必存有记载此事的古书。只是精灵绝不会自愿接纳一名矮人的后裔。</Message>
 		<Action type="counter_set" data1="0" String1="eq1"/>
 		<Action type="counter_set" data1="0" String1="war1"/>
 		<Action type="counter_set" data1="0" String1="war2"/>
@@ -29,7 +29,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>Your scouts report that troops of Khaz Agar and the Sirian Knights are assembled in the west. Take care that you do not get caught between two fronts.</Message>
+		<Message>斥候报告，卡兹·阿加尔和希里亚骑士团的部队正在西方集结。小心别被夹在两条战线之间。</Message>
 	</Event>
 
     <!--Elementar Quest City Skyvine-->
@@ -39,7 +39,7 @@
 		<Trigger type="counter_eq" data1="1" String1="eq1"/>
 		<Trigger type="counter_eq" data1="1" String1="war1"/>
 		<Trigger type="counter_eq" data1="1" String1="war2"/>
-		<Message>You have managed to enter the library of Skyvine. Your scouts have found a book about the twin Elementar, but it is written in an old Elven language. Maybe Siantra could translate it for you.|Continue with Amthor 04.</Message>
+		<Message>你终于进入天藤城的图书馆。斥候找到一本记载元素双子传说的书，可惜它使用古精灵语写成。也许希安特拉能够翻译。|接下来进入《阿姆索尔 04》。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="2" String1="eq1"/>
 	</Event>
@@ -48,7 +48,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="1"/>
 		<Trigger type="counter_eq" data1="1" String1="eq1"/>
-		<Message>You have managed to enter the library of Skyvine. Your scouts have found a book about the twin Elementar, but it is written in an old Elven language. Maybe Siantra could translate it for you. You send an envoy to her.</Message>
+		<Message>你终于进入天藤城的图书馆。斥候找到一本记载元素双子传说的书，可惜它使用古精灵语写成。也许希安特拉能够翻译。你派出使者去找她。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="2" String1="eq1"/>
 	</Event>
@@ -58,7 +58,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="1"/>
 		<Trigger type="counter_eq" data1="0" String1="eq1"/>
-		<Message>You have managed to enter the library of Skyvine. But you could not find a book about the legend.| Your scouts report an Archon, which has fled onto the open sea.</Message>
+		<Message>你终于进入天藤城的图书馆，却没有找到记载那段传说的书。|斥候报告说，一名执政天使已逃向茫茫大海。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="1" String1="eq1"/>
 	</Event>
@@ -71,7 +71,7 @@
 		<Trigger type="counter_eq" data1="1" String1="eq1"/>
 		<Trigger type="counter_eq" data1="1" String1="war1"/>
 		<Trigger type="counter_eq" data1="1" String1="war2"/>
-		<Message>You have managed to enter the library of Myrryn. Your scouts have found a book about the twin Elementar, but it is written in an old Elven language. Maybe Siantra could translate it for you.|Continue with Amthor 04.</Message>
+		<Message>你终于进入米林的图书馆。斥候找到一本记载元素双子传说的书，可惜它使用古精灵语写成。也许希安特拉能够翻译。|接下来进入《阿姆索尔 04》。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="2" String1="eq1"/>
 	</Event>
@@ -80,7 +80,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Trigger type="counter_eq" data1="1" String1="eq1"/>
-		<Message>You have managed to enter the library of Myrryn. Your scouts have found a book about the twin Elementar, but it is written in an old Elven language. Maybe Siantra could translate it for you. You send an envoy to her.</Message>
+		<Message>你终于进入米林的图书馆。斥候找到一本记载元素双子传说的书，可惜它使用古精灵语写成。也许希安特拉能够翻译。你派出使者去找她。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="2" String1="eq1"/>
 	</Event>
@@ -90,7 +90,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Trigger type="counter_eq" data1="0" String1="eq1"/>
-		<Message>You enter the library of Myrryn. But you could not find a book about the legend.| Only the library of Skyvine holds a book about the twin Elementar.</Message>
+		<Message>你进入米林的图书馆，却没有找到记载那段传说的书。|只有天藤城的图书馆收藏着关于元素双子的古书。</Message>
 		<Action type="particle" string1="QuestSparkle"/>
 		<Action type="counter_set" data1="1" String1="eq1"/>
 	</Event>
@@ -101,7 +101,7 @@
 		<Trigger type="city_won" data1="3"/>
 		<Trigger type="counter_eq" data1="1" String1="war2"/>
 		<Trigger type="counter_eq" data1="2" String1="eq1"/>
-		<Message>You have managed to kill the leader of the Dwarves. The pursuers have been repelled.|Continue with Amthor 04.</Message>
+		<Message>你杀死了矮人首领，击退了追兵。|接下来进入《阿姆索尔 04》。</Message>
 		<Action type="counter_set" data1="1" String1="war1"/>
 	</Event>
 
@@ -110,7 +110,7 @@
 		<Trigger type="city_won" data1="3"/>
 		<Trigger type="counter_eq" data1="1" String1="war2"/>
 		<Trigger type="counter_ne" data1="2" String1="eq1"/>
-		<Message>You have managed to kill the leader of the Dwarves. The pursuers have been repeled.</Message>
+		<Message>你杀死了矮人首领，击退了追兵。</Message>
 		<Action type="counter_set" data1="1" String1="war1"/>
 	</Event>
 
@@ -118,7 +118,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="3"/>
 		<Trigger type="counter_eq" data1="0" String1="war2"/>
-		<Message>You have managed to kill the leader of the Dwarves. That will surely weaken your pursuers.</Message>
+		<Message>你杀死了矮人首领。追击你的敌军势必受到重创。</Message>
 		<Action type="counter_set" data1="1" String1="war1"/>
 	</Event>
 
@@ -128,7 +128,7 @@
 		<Trigger type="city_won" data1="31"/>
 		<Trigger type="counter_eq" data1="1" String1="war1"/>
 		<Trigger type="counter_eq" data1="2" String1="eq1"/>
-		<Message>You have managed to kill the leader of the Knights. The pursuers have been repelled.|Continue with Amthor 04.</Message>
+		<Message>你杀死了骑士团首领，击退了追兵。|接下来进入《阿姆索尔 04》。</Message>
 		<Action type="counter_set" data1="1" String1="war2"/>
 	</Event>
 
@@ -137,7 +137,7 @@
 		<Trigger type="city_won" data1="31"/>
 		<Trigger type="counter_eq" data1="1" String1="war1"/>
 		<Trigger type="counter_ne" data1="2" String1="eq1"/>
-		<Message>You have managed to kill the leader of the Knights. The pursuers have been repelled.</Message>
+		<Message>你杀死了骑士团首领，击退了追兵。</Message>
 		<Action type="counter_set" data1="1" String1="war2"/>
 	</Event>
 
@@ -145,7 +145,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="31"/>
 		<Trigger type="counter_eq" data1="0" String1="war1"/>
-		<Message>You have managed to kill the leader of the Knights. That will surely weaken the pursuers.</Message>
+		<Message>你杀死了骑士团首领。追击你的敌军势必受到重创。</Message>
 		<Action type="counter_set" data1="1" String1="war2"/>
 	</Event>
 
@@ -155,7 +155,7 @@
 		<Trigger type="counter_eq" data1="1" String1="war1"/>
 		<Trigger type="counter_eq" data1="1" String1="war2"/>
 		<Trigger type="counter_eq" data1="2" String1="eq1"/>
-		<Message>Continue with Amthor 04.</Message>
+		<Message>接下来进入《阿姆索尔 04》。</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

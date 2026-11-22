@@ -16,7 +16,7 @@
     <!--Story start-->
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="turn" data1="1"/>
-		<Message>Siantra has sent you an envoy, escorted by three Harpies. The elf has studied the amulet. There is no doubt. It is the craft of a dragon.|Siantra entrusts the Harpies to you. They should help you to dispense justice.|You travel to West Bay in the Borderlands. From here you must cross the water. You need to track down the ancient Dragon, Kirin. He lives on one of the four Dragon Islands. Be careful - now you are entering the Dragon Realm.</Message>
+		<Message>希安特拉派来一名使者，由三只鹰身女妖护送。精灵已研究过那枚护符，结论毫无疑问：它出自龙族之手。|希安特拉将鹰身女妖交给你指挥，希望她们能助你伸张正义。|你前往边境地区的西湾，从这里必须渡海。你要追踪古老的火龙基林，它栖身于四座龙岛之一。千万小心——你即将踏入龙族之境。</Message>
 		<Action type="unit" data1="40" data2="3" data3="3"/>
 		<Action type="counter_set" data1="0" String1="w1"/>
 	</Event>
@@ -25,7 +25,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="10"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>Siantra sends you some more Harpies. She reminds you to be firm. Strike with an iron hand!</Message>
+		<Message>希安特拉又派来几只鹰身女妖，叮嘱你意志坚定，出手务必果决！</Message>
 		<Action type="unit" data1="40" data2="3" data3="3"/>
 	</Event>
 
@@ -33,7 +33,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="20"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>Siantra sends you a elite Harpy. Don't fade!</Message>
+		<Message>希安特拉派来一只精锐鹰身女妖。别退缩！</Message>
 		<Action type="unit" data1="40" data2="1" data3="9"/>
 	</Event>
 
@@ -61,25 +61,25 @@
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="1" String1="w1"/>
-		<Message>You have conquered the Dragon Capital but found nothing. No hint of the amulet or the Dragon, Kirin.|This chase seems to get more and more complicated...</Message>
+		<Message>你攻占了龙族首都，却一无所获。既没有护符的线索，也没有基林的踪迹。|这场追逐似乎越来越扑朔迷离……</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="2" String1="w1"/>
-		<Message>You have struck down the Dragon of the second island. Mortally wounded he gasps some last words, &quot;...Read the stars...can't you see the wheel...it is turning...&quot;| You have no clue what the Dragon is talking about nor a chance to ask questions. The dragon is dead.</Message>
+		<Message>你击倒了第二座岛上的巨龙。它身受致命重伤，挣扎着吐出最后几个词：“……读懂星辰……难道你没看见那轮盘……它正在转动……”|你根本不明白巨龙所指为何，也再没有机会追问——它已经死了。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="3" String1="w1"/>
-		<Message>You have entered the citadel. An old dragon sits in the inner ward and open his wings. As you lift your staff to stop him, he springs up into the air. The Dragon flies toward the northwest.</Message>
+		<Message>你进入堡垒，只见一头老龙坐在内院，缓缓展开双翼。你刚举起法杖想要阻止，它便腾空而起，向西北方飞去。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="4">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
-		<Message>You have conquered the Dragon Capital, and you feel it instantly. Kirin is near! Suddenly you hear a dark voice in your head, &quot;You are late Amthor!&quot;|You turn around, but you cannot see the Dragon. &quot;I have been watching you, since I recognized the strange constellation of the stars. A numen change touches Etheria. The Dwarves and the Dragons are getting closer every second. Can't you feel it?&quot;|You cover your ears with your hands, but the voice keeps speaking, &quot;You cannot comprehend the truth yet. But you will soon enough.&quot;| The deep voice stops for a second and continues with a fatherly tone, &quot;Go to the hills of the Giants. They have crafted the amulet for ... hmm, you call her ... Siantra!&quot;|Continue with Amthor 09...</Message>
+		<Message>你攻占龙族首都，立刻便有所感应：基林就在附近！忽然，一个低沉的声音在脑海中响起：“你来迟了，阿姆索尔！”|你猛然转身，却看不见巨龙。“自从我看见星辰排列出的古怪征兆，便一直在注视着你。一场神意的变迁正触及艾瑟里亚。矮人与巨龙每一刻都在靠近彼此，难道你感受不到？”|你用双手捂住耳朵，但那声音仍在继续：“你还无法理解真相。不过很快，你就会明白。”|低沉的声音停顿片刻，换成了一种父亲般的口吻：“去巨人丘陵吧。那里的人替……唔，你叫她……希安特拉！……制作了那枚护符。”|接下来进入《阿姆索尔 09》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

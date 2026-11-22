@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_8_1.bik" voice="Campaign\Campaign_8_1.wav" duration="20000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">The assault was successful and the Elves soon retreated.</Text>
-	<Text time="5000">Following Kelthurax抯 instructions, a search of the Citadel soon turned up an ancient tome containing Queen Ehlanna抯 counter-spell.</Text>
-	<Text time="13500">All that was left was to travel through the Broken Marsh to Malbec and confront Aravein.</Text>
+	<Text time="1500">突袭奏效了，精灵很快败退。</Text>
+	<Text time="5000">依照凯尔图拉克斯的指引，众人在寒冰堡垒中搜寻，终于找到一部古老典籍，其中记载着埃兰娜女王的反制咒文。</Text>
+	<Text time="13500">接下来，只需穿越破碎沼泽，抵达马尔贝克，与阿拉薇恩当面对决。</Text>
 </CutScene>
