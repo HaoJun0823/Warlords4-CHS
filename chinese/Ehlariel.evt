@@ -14,7 +14,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>你找到一本古书，里面记载着冬之宝珠。|这 5 颗宝珠封存着古代高等精灵法师的灵魂，其中有 4 颗较小的宝珠和一颗主宝珠。</Message>
+		<Message>你找到一本古书，里面记载着冬之宝珠。|这 5 颗宝珠封存着古代高等精灵法师的灵魂，|其中有 4 颗较小的宝珠和一颗主宝珠。</Message>
 	</Event>
 
 	<Ruin id="14" available_for_quest="no">
@@ -85,24 +85,24 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="0"/>
-		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，|你终于在一只被遗忘的古旧卷轴匣中，|找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 	<Event side="2" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="2"/>
-		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，|你终于在一只被遗忘的古旧卷轴匣中，|找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 	<Event side="4" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="4"/>
-		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，|你终于在一只被遗忘的古旧卷轴匣中，|找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 	<Event side="6" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="6"/>
-		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，你终于在一只被遗忘的古旧卷轴匣中，找到了埃兰娜女王留下的反制咒文。</Message>
+		<Message>你攻占了寒冰堡垒。|经过长时间搜寻，|你终于在一只被遗忘的古旧卷轴匣中，|找到了埃兰娜女王留下的反制咒文。</Message>
 	</Event>
 </Events>

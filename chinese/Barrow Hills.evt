@@ -51,14 +51,14 @@
 	<Event side="0" repeat="1">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="1"/>
-		<Message>国王交给你一项使命：向北方的古冢丘陵扩张，|消灭盘踞在那里的兽人和帝国军队。|传说古冢丘陵闹鬼。即使没有幽灵亡魂，你的敌人也足够难缠。为此，国王会定期送来援军与金币。</Message>
+		<Message>国王交给你一项使命：向北方的古冢丘陵扩张，|消灭盘踞在那里的兽人和帝国军队。|传说古冢丘陵闹鬼。即使没有幽灵亡魂，|你的敌人也足够难缠。为此，|国王会定期送来援军与金币。</Message>
 	</Event>
 
 	<Event side="0" repeat="0" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="4"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>援军到了！|国王亲自派来 4 名骑士，抵达你的首都，并带来了 300 枚金币。</Message>
+		<Message>援军到了！|国王亲自派来 4 名骑士，抵达你的首都，|并带来了 300 枚金币。</Message>
 		<Action type="gold" data1="300"/>
 		<Action type="unit" data1="2" data2="4" data3="2"/>
 	</Event>

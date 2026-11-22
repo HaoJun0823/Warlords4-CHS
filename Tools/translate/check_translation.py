@@ -141,13 +141,14 @@ def check_one(rel: str, chs_path: Path, eng_path: Path,
                     )
         if rel.endswith(".evt") or rel.endswith(".qst"):
             for m in re.finditer(r"<Message\b[^>]*>(.*?)</Message>", text, re.S):
-                first = m.group(1).split("|")[0]
-                n = len(first)
-                if n > 24:
-                    warns.append(
-                        f"{rel}: 事件消息首段 {n} 字（>24），可能复读；"
-                        "请用 '|' 把首段拆短（每页<=24字）"
-                    )
+                # 实测：| 分隔的每一页都有 24 字上限，不只首段
+                for idx, page in enumerate(m.group(1).split("|")):
+                    n = len(page.strip())
+                    if n > 24:
+                        warns.append(
+                            f"{rel}: 事件消息第{idx+1}页 {n} 字（>24），可能复读；"
+                            "请用 '|' 拆短（每页<=24字）"
+                        )
 
     if chs_path.suffix.lower() == ".nam":
         n = len(raw.splitlines())

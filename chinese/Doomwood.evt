@@ -9,12 +9,12 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须一路杀入厄运密林深处，求见加拉诺斯国王。|甚至在开口交谈之前，加拉诺斯就很可能先向你发起挑战！</Message>
+		<Message>你必须一路杀入厄运密林深处，求见加拉诺斯国王。|甚至在开口交谈之前，|加拉诺斯就很可能先向你发起挑战！</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>这片土地中央的黑暗林地里传出阵阵鬼魅般的声响。|若不是为了从加拉诺斯国王那里寻求答案，你绝不会接近厄运密林。</Message>
+		<Message>这片土地中央的黑暗林地里传出阵阵鬼魅般的声响。|若不是为了从加拉诺斯国王那里寻求答案，|你绝不会接近厄运密林。</Message>
 	</Event>
 
 	<Ruin id="13" available_for_quest="no">
@@ -37,7 +37,7 @@
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn" data1="3"/>
-		<Message>一群精灵来到你面前。|他们的一名同族被囚禁在厄运密林南部的泽斯金堡垒。若你能将她救出，他们便会派部队协助你完成使命。</Message>
+		<Message>一群精灵来到你面前。|他们的一名同族被囚禁在厄运密林南部的泽斯金堡垒。|若你能将她救出，他们便会派部队协助你完成使命。</Message>
 		<Action type="counter_set" data1="1" string1="zeskin_counter"/>
 	</Event>
 

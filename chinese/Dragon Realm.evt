@@ -7,12 +7,12 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>看来你身怀龙之石的消息已经传开了。|这里的巨龙会不惜一切代价夺回龙之石。前往凯尔图拉克斯的道路，恐怕比最初想象的更加艰险。</Message>
+		<Message>看来你身怀龙之石的消息已经传开了。|这里的巨龙会不惜一切代价夺回龙之石。|前往凯尔图拉克斯的道路，|恐怕比最初想象的更加艰险。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>一位名叫伊凡·屠龙者的屠龙勇士抵达你的首都。|伊凡愿意助你一臂之力，并告诉你：在遗迹中常能找到大型巨龙的头骨，收集 3 颗颜色不同的头骨，便能将它们制成一块魔力水晶。</Message>
+		<Message>一位名叫伊凡·屠龙者的屠龙勇士抵达你的首都。|伊凡愿意助你一臂之力，并告诉你：|在遗迹中常能找到大型巨龙的头骨，|收集 3 颗颜色不同的头骨，|便能将它们制成一块魔力水晶。</Message>
 		<Action type="unit" data1="0" data2="1" data3="14" string1="Ivan Wyrmsbane"/>
 	</Event>
 

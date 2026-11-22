@@ -9,17 +9,17 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须击败阻挡在巨人脊山脉东行道路上的巨人、|食人魔和巨魔。|道路打通之后，你便能前往阿拉薇恩的堡垒，请她指点迷津。</Message>
+		<Message>你必须击败阻挡在巨人脊山脉东行道路上的巨人、|食人魔和巨魔。|道路打通之后，你便能前往阿拉薇恩的堡垒，|请她指点迷津。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>一名巨人来到你的首都。|他警告你，任何试图穿越巨人脊山脉的举动，都将被视为宣战。</Message>
+		<Message>一名巨人来到你的首都。|他警告你，任何试图穿越巨人脊山脉的举动，|都将被视为宣战。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>那名巨人再次来到你的首都。|他听说你打算从基拉克·伊兹戈尔城附近穿越他的领地，于是向你发出最后的警告。</Message>
+		<Message>那名巨人再次来到你的首都。|他听说你打算从基拉克·伊兹戈尔城附近穿越他的领地|，|于是向你发出最后的警告。</Message>
 	</Event>
 
 	<Ruin id="1" available_for_quest="no">

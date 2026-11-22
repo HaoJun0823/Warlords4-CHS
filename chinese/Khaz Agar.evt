@@ -9,38 +9,38 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须沿着山脉向东进军，击败矮人守卫，|直到找到卡兹·阿加尔的堡垒。|洗劫卡兹·阿加尔之后，你便能把财宝带回去献给凯尔图拉克斯。</Message>
+		<Message>你必须沿着山脉向东进军，击败矮人守卫，|直到找到卡兹·阿加尔的堡垒。|洗劫卡兹·阿加尔之后，|你便能把财宝带回去献给凯尔图拉克斯。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>一名矮人炼金术士前来求见，|似乎完全没有察觉你正准备进攻卡兹·阿加尔。|他提出，只要你愿意在首都为他提供庇护，他就会替你打造魔法物品。</Message>
+		<Message>一名矮人炼金术士前来求见，|似乎完全没有察觉你正准备进攻卡兹·阿加尔。|他提出，只要你愿意在首都为他提供庇护，|他就会替你打造魔法物品。</Message>
 	</Event>
 
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="5"/>
-		<Message>矮人炼金术士完成了一件魔法物品！|他献上一顶明视之盔（首都中的任意英雄都可以领取）。</Message>
+		<Message>矮人炼金术士完成了一件魔法物品！|他献上一顶明视之盔（首都中的任意英雄都可以领取）|。</Message>
 		<Action type="item" data1="2"/>
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="10"/>
-		<Message>矮人炼金术士又完成了一件魔法物品！|他献上一柄恶意战斧（首都中的任意英雄都可以领取）。</Message>
+		<Message>矮人炼金术士又完成了一件魔法物品！|他献上一柄恶意战斧（首都中的任意英雄都可以领取）|。</Message>
 		<Action type="item" data1="27"/>
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="15"/>
-		<Message>矮人炼金术士又完成了一件魔法物品！|他献上一套矮人锁甲（首都中的任意英雄都可以领取）。</Message>
+		<Message>矮人炼金术士又完成了一件魔法物品！|他献上一套矮人锁甲（首都中的任意英雄都可以领取）|。</Message>
 		<Action type="item" data1="58"/>
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="20"/>
-		<Message>矮人炼金术士又完成了一件魔法物品！|他献上一枚嘲讽指环（首都中的任意英雄都可以领取）。</Message>
+		<Message>矮人炼金术士又完成了一件魔法物品！|他献上一枚嘲讽指环（首都中的任意英雄都可以领取）|。</Message>
 		<Action type="item" data1="89"/>
 	</Event>
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="25"/>
-		<Message>矮人炼金术士前来求见。|这次他没带来物品，却告诉你一项新发现：凭借它，他能打造一柄威力强大的风暴之刃。不过，恐怕还需要些时日。</Message>
+		<Message>矮人炼金术士前来求见。|这次他没带来物品，却告诉你一项新发现：凭借它，|他能打造一柄威力强大的风暴之刃。不过，|恐怕还需要些时日。</Message>
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="30"/>

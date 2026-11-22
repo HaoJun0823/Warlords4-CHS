@@ -6,12 +6,12 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须攻占塞伦提亚帝国西北端的恩茅斯堡垒。|夺取这座城市后，就能把皇帝宝座上的宝石送回去献给凯尔图拉克斯。</Message>
+		<Message>你必须攻占塞伦提亚帝国西北端的恩茅斯堡垒。|夺取这座城市后，|就能把皇帝宝座上的宝石送回去献给凯尔图拉克斯。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="3"/>
-		<Message>一名叫扎尔贡的黑暗精灵来到你的首都。|此人是一个名为“黑暗之路”的教团成员。他们与塞伦提亚人为敌，愿意协助你进攻帝国。</Message>
+		<Message>一名叫扎尔贡的黑暗精灵来到你的首都。|此人是一个名为“黑暗之路”的教团成员。|他们与塞伦提亚人为敌，愿意协助你进攻帝国。</Message>
 		<Action type="unit" data1="37" data2="1" data3="5" string1="Xargon"/>
 	</Event>
 	<Event side="0" repeat="1">

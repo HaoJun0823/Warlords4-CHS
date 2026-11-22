@@ -12,7 +12,7 @@
     <!--Story start-->
 	<Event side="0" repeat="1" location="city" locdata="22">
 		<Trigger type="turn" data1="1"/>
-		<Message>你重返白色山脉。深深吸进一口寒冷而清新的空气，|复仇的念头再次涌上心头。这回，你是猎人，|而且绝非孤身一人。你的不死族同伴早已渴望猎物。|卡兹·阿加尔坐落在东方的高山背后。你派出斥候，开始集结第一梯队。</Message>
+		<Message>你重返白色山脉。深深吸进一口寒冷而清新的空气，|复仇的念头再次涌上心头。这回，你是猎人，|而且绝非孤身一人。你的不死族同伴早已渴望猎物。|卡兹·阿加尔坐落在东方的高山背后。你派出斥候，|开始集结第一梯队。</Message>
 		<Action type="counter_set" data1="0" String1="agnoril"/>
 		<Action type="counter_set" data1="0" String1="dragon"/>
 		<Action type="counter_set" data1="0" String1="empire"/>
@@ -109,7 +109,7 @@
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
 		<Trigger type="counter_eq" data1="0" String1="agnoril"/>
-		<Message>怒火在你心中升腾：“改变计划？”|精灵直视你的双眼，那股奇异的酥麻感又来了。“没错！我们必须先收拾那些蜥蜴，杀死基林！”|她转身欲走，你却迅速伸手，将她牢牢拉住。“亲爱的，要不要再给我们的计划添些援军？”她轻蔑地瞥了你一眼。“你是统帅……而我……”|突然，她脸上绽出一抹笑容：“我会教你一道有用的法术……”</Message>
+		<Message>怒火在你心中升腾：“改变计划？”|精灵直视你的双眼，那股奇异的酥麻感又来了。|“没错！我们必须先收拾那些蜥蜴，杀死基林！”|她转身欲走，你却迅速伸手，将她牢牢拉住。|“亲爱的，要不要再给我们的计划添些援军？|”她轻蔑地瞥了你一眼。“你是统帅……而我……”|突然，她脸上绽出一抹笑容：|“我会教你一道有用的法术……”</Message>
 		<Action type="spell" data1="20"/>
 		<Action type="mana_crystals" data1="4"/>
 		<Action type="counter_set" data1="0" String1="story"/>
@@ -121,7 +121,7 @@
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="0" String1="dragon"/>
 		<Trigger type="counter_eq" data1="1" String1="agnoril"/>
-		<Message>怒火在你心中升腾：“改变什么计划？|阿格诺里尔王子已经死了！|我在他脖子上找到了这枚护符。你知道是谁给他的吗？|”|精灵直视你的双眼，那股奇异的酥麻感又来了。“这是龙族的手艺！”</Message>
+		<Message>怒火在你心中升腾：“改变什么计划？|阿格诺里尔王子已经死了！|我在他脖子上找到了这枚护符。你知道是谁给他的吗？|”|精灵直视你的双眼，那股奇异的酥麻感又来了。|“这是龙族的手艺！”</Message>
 		<Action type="counter_set" data1="0" String1="story"/>
 	</Event>
 
@@ -133,8 +133,8 @@
 		<Trigger type="counter_ge" data1="25" String1="story"/>
 		<Trigger type="counter_eq" data1="1" String1="dragon"/>
 		<Trigger type="counter_eq" data1="0" String1="agnoril"/>
-		<Message>希安特拉抵达首都，面带忧色：|“那头古老的火龙基林……你有它的消息吗？|我听说它一直在跟踪我们！”|怒火在你心中升腾：“斥候，你来得太迟了！那些蜥蜴都死了，可基林还是逃走了。”</Message>
-		<Message>精灵直视你的双眼，你的脑海深处骤然传来一阵剧痛。|“再也别叫我斥候！统帅！”|她挥了挥手，剧痛随之退去。随后，她微微一笑：“找到阿格诺里尔王子之后，派个使者来见我！”</Message>
+		<Message>希安特拉抵达首都，面带忧色：|“那头古老的火龙基林……你有它的消息吗？|我听说它一直在跟踪我们！”|怒火在你心中升腾：“斥候，你来得太迟了！|那些蜥蜴都死了，可基林还是逃走了。”</Message>
+		<Message>精灵直视你的双眼，你的脑海深处骤然传来一阵剧痛。|“再也别叫我斥候！统帅！”|她挥了挥手，剧痛随之退去。随后，她微微一笑：|“找到阿格诺里尔王子之后，派个使者来见我！”</Message>
 		<Action type="counter_set" data1="0" String1="story"/>
 	</Event>
 
@@ -144,7 +144,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="9"/>
 		<Trigger type="counter_eq" data1="0" String1="agnoril"/>
-		<Message>你攻占了龙族首都，但基林逃走了。|搜遍堡垒，你仍找不到任何线索，无法解释这头古龙为何一路追踪你。</Message>
+		<Message>你攻占了龙族首都，但基林逃走了。|搜遍堡垒，你仍找不到任何线索，|无法解释这头古龙为何一路追踪你。</Message>
 		<Action type="counter_set" data1="1" String1="dragon"/>
 	</Event>
 
@@ -169,8 +169,8 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Trigger type="counter_eq" data1="1" String1="empire"/>
-		<Message>你击败了德拉克·阿加尔的矮人。|阿格诺里尔王子的尸体就躺在你面前。|他为何要杀死你的父亲和家中其他亲人？|你搜查尸体，发现一枚奇异的小护符。正想从他颈上取下链子，手指刚触及冰冷金属，电流便猛地窜过全身。刹那间，空气中充满了电光。</Message>
-		<Message>毫无疑问，这是一件威力惊人的魔法神器。|阿格诺里尔王子一直受它的魔力支配！|你怒不可遏。必须查出究竟是谁制作了这件神器，又是谁把它交到王子手上！</Message>
+		<Message>你击败了德拉克·阿加尔的矮人。|阿格诺里尔王子的尸体就躺在你面前。|他为何要杀死你的父亲和家中其他亲人？|你搜查尸体，发现一枚奇异的小护符。|正想从他颈上取下链子，手指刚触及冰冷金属，|电流便猛地窜过全身。刹那间，空气中充满了电光。</Message>
+		<Message>毫无疑问，这是一件威力惊人的魔法神器。|阿格诺里尔王子一直受它的魔力支配！|你怒不可遏。必须查出究竟是谁制作了这件神器，|又是谁把它交到王子手上！</Message>
 		<Action type="counter_set" data1="1" String1="dwarves"/>
 		<Action type="counter_set" data1="1" String1="agnoril"/>
 	</Event>
@@ -188,8 +188,8 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="3"/>
 		<Trigger type="counter_eq" data1="1" String1="dwarves"/>
-		<Message>你击败了帝国，阿格诺里尔王子的尸体就躺在你面前。|他为何要杀死你的父亲和家中其他亲人？|你搜查尸体，发现一枚奇异的小护符。正想从他颈上取下链子，手指刚触及冰冷金属，电流便猛地窜过全身。刹那间，空气中充满了电光。</Message>
-		<Message>毫无疑问，这是一件威力惊人的魔法神器。|阿格诺里尔王子一直受它的魔力支配！|你怒不可遏。必须查出究竟是谁制作了这件神器，又是谁把它交到王子手上！</Message>
+		<Message>你击败了帝国，阿格诺里尔王子的尸体就躺在你面前。|他为何要杀死你的父亲和家中其他亲人？|你搜查尸体，发现一枚奇异的小护符。|正想从他颈上取下链子，手指刚触及冰冷金属，|电流便猛地窜过全身。刹那间，空气中充满了电光。</Message>
+		<Message>毫无疑问，这是一件威力惊人的魔法神器。|阿格诺里尔王子一直受它的魔力支配！|你怒不可遏。必须查出究竟是谁制作了这件神器，|又是谁把它交到王子手上！</Message>
 		<Action type="counter_set" data1="1" String1="empire"/>
 		<Action type="counter_set" data1="1" String1="agnoril"/>
 	</Event>
@@ -199,7 +199,7 @@
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="1" String1="agnoril"/>
 		<Trigger type="counter_eq" data1="1" String1="dragon"/>
-		<Message>你再一次征服了白色山脉，夺回祖先的故乡。|可占据你心头的并非骄傲，而是疑虑。|你必须查明那枚魔法护符究竟扮演了什么角色。古龙基林是唯一的线索，它似乎也牵涉这场阴谋。|接下来进入《阿姆索尔 08》……</Message>
+		<Message>你再一次征服了白色山脉，夺回祖先的故乡。|可占据你心头的并非骄傲，而是疑虑。|你必须查明那枚魔法护符究竟扮演了什么角色。|古龙基林是唯一的线索，它似乎也牵涉这场阴谋。|接下来进入《阿姆索尔 08》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 
