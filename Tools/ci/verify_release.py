@@ -14,6 +14,7 @@ verify_release.py — 校验汉化发布包 zip 的结构与编码门禁
 """
 from __future__ import annotations
 
+import argparse
 import sys
 import zipfile
 from pathlib import Path
@@ -30,7 +31,21 @@ sys.path.insert(0, str(ROOT / "Tools" / "translate"))
 from check_translation import tag_sequence  # noqa: E402
 
 
-def verify_one(zip_path: Path) -> list[str]:
+def pe_is_32bit_dll(data: bytes) -> bool:
+    """检查是否为 32 位 PE DLL（machine == 0x14c）。"""
+    try:
+        if data[:2] != b"MZ":
+            return False
+        pe_off = int.from_bytes(data[0x3c:0x40], "little")
+        if data[pe_off:pe_off + 4] != b"PE\0\0":
+            return False
+        machine = int.from_bytes(data[pe_off + 4:pe_off + 6], "little")
+        return machine == 0x14c
+    except Exception:
+        return False
+
+
+def verify_one(zip_path: Path, require_asi: bool = False) -> list[str]:
     errors: list[str] = []
     try:
         with zipfile.ZipFile(zip_path) as z:
@@ -48,6 +63,22 @@ def verify_one(zip_path: Path) -> list[str]:
                 errors.append("缺少 许可/LICENSE")
             if "许可/Apache-2.0.txt" not in names:
                 errors.append("缺少 许可/Apache-2.0.txt")
+
+            # ---- ASI 换行修复插件校验 ----
+            asi = [n for n in names if n.endswith("W4CHS_DLL.asi")]
+            if not asi:
+                msg = "缺少 W4CHS_DLL.asi（换行修复插件，长中文文本会复读）"
+                (errors if require_asi else errors).append(msg)  # 本工程 ASI 为必备
+            else:
+                adata = z.read(asi[0])
+                if not pe_is_32bit_dll(adata):
+                    errors.append(f"{asi[0]} 不是 32 位 PE DLL（游戏是 32 位）")
+                if len(adata) < 20000:
+                    errors.append(f"{asi[0]} 体积过小（{len(adata)} B），疑似占位")
+            if "winmm.dll" not in names:
+                errors.append("缺少 winmm.dll（ASI Loader，须在包根）")
+            if "W4CHS.ini" not in names:
+                errors.append("缺少 W4CHS.ini（换行修复配置）")
 
             for n in entries:
                 data = z.read(n)
@@ -79,10 +110,11 @@ def verify_one(zip_path: Path) -> list[str]:
 
 
 def main() -> int:
-    if len(sys.argv) < 2:
-        print(__doc__)
-        return 2
-    target = Path(sys.argv[1])
+    ap = argparse.ArgumentParser(description="校验汉化发布包")
+    ap.add_argument("target", help="zip 文件或目录")
+    ap.add_argument("--require-asi", action="store_true", help="缺少 W4CHS_DLL.asi 时失败（CI 用）")
+    args = ap.parse_args()
+    target = Path(args.target)
     if target.is_dir():
         zips = sorted(target.glob("*.zip"))
         if not zips:
@@ -93,7 +125,7 @@ def main() -> int:
 
     failed = 0
     for z in zips:
-        errs = verify_one(z)
+        errs = verify_one(z, args.require_asi)
         if errs:
             failed += 1
             print(f"[FAIL] {z.name}")

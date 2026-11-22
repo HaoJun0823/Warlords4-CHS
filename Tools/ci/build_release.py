@@ -32,10 +32,35 @@ except Exception:
 ROOT = Path(__file__).resolve().parents[2]
 CHS = ROOT / "chinese"
 BUILD_OUT = ROOT / "build_out"
+DIST = ROOT / "dist"
 CST = timezone(timedelta(hours=8))
 
 sys.path.insert(0, str(ROOT / "Tools" / "translate"))
 from check_translation import run_check, text_files  # noqa: E402
+
+
+def find_compiled_dll(explicit: str | None, skip_dll: bool):
+    """定位已编译的 W4CHS_DLL.dll，返回路径或 None。"""
+    if skip_dll:
+        print("[dll] --skip-dll：跳过 ASI 打包")
+        return None
+    if explicit:
+        p = Path(explicit)
+        if p.is_file():
+            print(f"[dll] 显式指定：{p}")
+            return p
+        print(f"!! [dll] --dll-path 不存在：{p}")
+        return None
+    candidates = [
+        ROOT / "W4CHS_DLL" / "build" / "W4CHS_DLL.dll",
+        ROOT / "W4CHS_DLL" / "Release" / "W4CHS_DLL.dll",
+    ]
+    for c in candidates:
+        if c.is_file():
+            print(f"[dll] 自动发现：{c}")
+            return c
+    print("[dll] 未发现 W4CHS_DLL.dll —— 本次为纯文本构建（不含换行修复 ASI）")
+    return None
 
 
 README_TEXT = """《战神IV：艾瑟里亚英雄》(Warlords IV: Heroes of Etheria)
@@ -60,6 +85,12 @@ README_TEXT = """《战神IV：艾瑟里亚英雄》(Warlords IV: Heroes of Ethe
   - 请勿在文本中写数值实体（形如 &#x4E2D;），引擎不支持，会导致游戏死循环卡死。
     需要引号时请用命名实体 &quot; 和 &apos;（原文本身就在用）。
 
+【换行修复 ASI（重要）】
+  包内 W4CHS_DLL.asi + winmm.dll + W4CHS.ini 是中文换行修复插件：
+  解压到游戏根目录后，winmm.dll 会自动加载 W4CHS_DLL.asi。
+  它修复引擎对长中文文本反复重绘（复读机）的问题。
+  请勿删除 winmm.dll / W4CHS_DLL.asi / W4CHS.ini，否则长文本会复读。
+
 【附赠文档】
   附赠文档/ 目录下有《完整教程_未精简版》的 PDF 和 Markdown。
   游戏内教程为防止文本复读做了精简，完整原文请查阅此文档。
@@ -76,7 +107,8 @@ README_TEXT = """《战神IV：艾瑟里亚英雄》(Warlords IV: Heroes of Ethe
 """
 
 
-def build(out_root: Path, date: str | None, tm: str | None) -> Path:
+def build(out_root: Path, date: str | None, tm: str | None,
+          skip_dll: bool, dll_path: str | None) -> Path:
     errors, warns, stats = run_check(strict=False)
     if errors:
         print("校验未通过，拒绝出包：")
@@ -116,6 +148,30 @@ def build(out_root: Path, date: str | None, tm: str | None) -> Path:
                 z.write(lic, f"许可/{lic.name}")
                 print(f"  许可文件: {lic.name}")
 
+        # ---- 换行修复 ASI（ASI Loader + DLL + 配置）----
+        dll = find_compiled_dll(dll_path, skip_dll)
+        loader = DIST / "common" / "winmm.dll"
+        if dll is not None:
+            if not loader.is_file():
+                print("!! 缺少 dist/common/winmm.dll（ASI Loader），拒绝出包")
+                sys.exit(1)
+            # DLL 改名 .asi 放到游戏根目录（ASI Loader 自动加载）
+            z.write(dll, "W4CHS_DLL.asi")
+            z.write(loader, "winmm.dll")
+            print(f"  ASI: W4CHS_DLL.asi ({dll.stat().st_size} B) + winmm.dll (ASI Loader)")
+            # 默认配置（插入空格修复换行）
+            ini = DIST / "common" / "W4CHS.ini"
+            if ini.is_file():
+                z.write(ini, "W4CHS.ini")
+                print("  ASI 配置: W4CHS.ini")
+            else:
+                z.writestr("W4CHS.ini",
+                           "[W4CHS]\r\nDebug=0\r\nInsertSpace=1\r\nWordsPerLine=15\r\n")
+                print("  ASI 配置: W4CHS.ini（默认生成，Debug=0）")
+        else:
+            # 纯文本包也要说明：无换行修复
+            print("  [dll] 纯文本包，未含换行修复 ASI")
+
     print(f"已生成：{zip_path}（{zip_path.stat().st_size} 字节）")
     print(f"警告 {len(warns)} 条（不影响出包）")
     return zip_path
@@ -126,8 +182,10 @@ def main() -> int:
     ap.add_argument("--out-root", default=str(BUILD_OUT), help="输出目录（默认 build_out/）")
     ap.add_argument("--date", default=None, help="固定日期 YYYYMMDD")
     ap.add_argument("--time", dest="tm", default=None, help="固定时间 HHMM")
+    ap.add_argument("--skip-dll", action="store_true", help="不打包 ASI（纯文本构建）")
+    ap.add_argument("--dll-path", default=None, help="显式指定已编译的 W4CHS_DLL.dll")
     args = ap.parse_args()
-    build(Path(args.out_root), args.date, args.tm)
+    build(Path(args.out_root), args.date, args.tm, args.skip_dll, args.dll_path)
     return 0
 
 
