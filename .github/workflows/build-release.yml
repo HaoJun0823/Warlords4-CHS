@@ -2,16 +2,19 @@ name: build-release
 
 # ══════════════════════════════════════════════════════════════════════════
 # 战神IV（Warlords IV: Heroes of Etheria）简体中文汉化补丁
-#   校验译文 -> 装配 zip -> 包体门禁 -> Artifact ->（可选）Release
+#   校验译文 -> 装配 zip -> 包体门禁 -> Artifact -> Release（自动）
 #   纯 Python，无编译步骤：文本已是 GBK，直接打包覆盖 English/ 即可。
 # ══════════════════════════════════════════════════════════════════════════
 # 产物：build_out/Warlords4-CHS-vYYYYMMDD-HHMM.zip
 #       解压到游戏根目录覆盖 English/ 即可，Language.ini 保持 english。
 #
-# 触发：
-#   push(master / dev)     校验 + 构建 + 上传 Artifact
-#   pull_request(master)   门禁（只校验/构建，不发布）
-#   workflow_dispatch      手动；可勾选 publish 创建 Release
+# 触发与发布策略：
+#   push(master)          校验 + 构建 + 上传 Artifact + **自动创建 Release**
+#   push(dev)             校验 + 构建 + 上传 Artifact（不发布）
+#   pull_request(master)  门禁（只校验/构建，不发布）
+#   workflow_dispatch     手动；publish=true 时额外创建 Release
+#
+# Release tag：vYYYYMMDD-HHMM-<run号>，保证每次 push 唯一、可追溯。
 # ══════════════════════════════════════════════════════════════════════════
 
 on:
@@ -29,7 +32,7 @@ on:
         type: boolean
         default: false
       tag:
-        description: '发行标签（留空自动生成 vYYYYMMDD-HHMM）'
+        description: '发行标签（留空自动生成 vYYYYMMDD-HHMM-<run号>）'
         type: string
         default: ''
 
@@ -75,12 +78,14 @@ jobs:
           retention-days: 30
           if-no-files-found: error
 
-      - name: 创建 Release（手动勾选 publish 时）
-        if: github.event_name == 'workflow_dispatch' && inputs.publish
+      - name: 发布 Release（master push 自动 / 手动勾选时）
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/master') || (github.event_name == 'workflow_dispatch' && inputs.publish)
         env:
           GH_TOKEN: ${{ github.token }}
           INPUT_TAG: ${{ inputs.tag }}
         run: |
-          TAG="$INPUT_TAG"
-          if [ -z "$TAG" ]; then TAG="v$(date +%Y%m%d-%H%M)"; fi
-          gh release create "$TAG" build_out/*.zip --title "$TAG" --generate-notes
+          TAG="${INPUT_TAG:-v$(date +%Y%m%d-%H%M)-${GITHUB_RUN_NUMBER}}"
+          echo "发布 Release: $TAG"
+          gh release create "$TAG" build_out/*.zip \
+            --title "$TAG" \
+            --generate-notes

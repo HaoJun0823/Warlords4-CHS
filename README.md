@@ -95,6 +95,8 @@ python Tools/ci/verify_release.py build_out          # 包体门禁
 
 `.github/workflows/build-release.yml` 在 **push 到 `master` / `dev`**、**PR 到 `master`**
 时自动运行：校验译文 → 装配 zip → 包体门禁 → 上传 Actions Artifact（保留 30 天）。
+**push 到 `master` 时还会自动创建 GitHub Release 并上传汉化补丁**（tag 形如
+`vYYYYMMDD-HHMM-<run号>`），玩家可直接从 Releases 页下载最新补丁。
 纯 Python 步骤，不需要编译工具链。
 
 也可在 Actions 页手动 `workflow_dispatch`：
