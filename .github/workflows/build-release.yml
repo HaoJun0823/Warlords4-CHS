@@ -2,19 +2,18 @@ name: build-release
 
 # ══════════════════════════════════════════════════════════════════════════
 # 战神IV（Warlords IV: Heroes of Etheria）简体中文汉化补丁
-#   校验译文 -> 装配 zip -> 包体门禁 -> Artifact -> Release（自动）
-#   纯 Python，无编译步骤：文本已是 GBK，直接打包覆盖 English/ 即可。
+#   校验译文 -> 编译换行修复ASI -> 装配 zip -> 门禁 -> Release（自动）
 # ══════════════════════════════════════════════════════════════════════════
-# 产物：build_out/Warlords4-CHS-vYYYYMMDD-HHMM.zip
-#       解压到游戏根目录覆盖 English/ 即可，Language.ini 保持 english。
+# ★ 用 ubuntu-latest + msvc-wine（不是 windows-latest）：
+#   windows runner 预装组件经常变化，v141 装不回来；Linux 路线用 vsdownload.py
+#   从微软官方 manifest 精确锁定 MSVC 14.16 (v141)，版本钉死、可缓存，
+#   不受 runner 镜像调整影响。与 PanzerGeneral2CHS 同一套成熟配方。
 #
-# 触发与发布策略：
-#   push(master)          校验 + 构建 + 上传 Artifact + **自动创建 Release**
-#   push(dev)             校验 + 构建 + 上传 Artifact（不发布）
+# 触发：
+#   push(master)          校验 + 编译 ASI + 打包 + 门禁 + 自动 Release
+#   push(dev)             校验 + 编译 + 打包 + Artifact（不发布）
 #   pull_request(master)  门禁（只校验/构建，不发布）
-#   workflow_dispatch     手动；publish=true 时额外创建 Release
-#
-# Release tag：vYYYYMMDD-HHMM-<run号>，保证每次 push 唯一、可追溯。
+#   workflow_dispatch     手动；可勾选 publish 创建 Release / skip_dll 纯文本
 # ══════════════════════════════════════════════════════════════════════════
 
 on:
@@ -35,6 +34,10 @@ on:
         description: '发行标签（留空自动生成 vYYYYMMDD-HHMM-<run号>）'
         type: string
         default: ''
+      skip_dll:
+        description: '跳过 ASI 编译（只打包文本，排查用）'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -45,38 +48,143 @@ concurrency:
 
 jobs:
   build:
-    name: 校验 / 打包 / 门禁
+    name: 校验 / 编译ASI / 打包 / 门禁
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     env:
       PYTHONUTF8: '1'
       PYTHONIOENCODING: 'utf-8'
+      MSVC_WINE_PREFIX: ${{ github.workspace }}/.msvc
+      MSVC_SDK_DIR: ${{ github.workspace }}/.msvc-sdk
+      MSVCWINE_REF: master
 
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - name: 检出 msvc-wine
+        uses: actions/checkout@v4
+        with:
+          repository: mstorsjo/msvc-wine
+          ref: ${{ env.MSVCWINE_REF }}
+          path: .msvc-wine
 
       - name: 配置 Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: 校验译文（GBK / 数值实体 / XML 结构 / 占位符 / 行数）
-        run: python Tools/translate/check_translation.py
+      - name: 安装 wine / msitools 依赖
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y wine64 msitools ca-certificates winbind
+          wine --version
+
+      # 缓存解包后的工具链（~4GB）。key 含版本组合与 msvc-wine ref。
+      - name: 还原 MSVC 工具链缓存
+        uses: actions/cache@v4
+        with:
+          path: .msvc
+          key: w4chs-msvcwine-v141-x86-sdk26100-${{ env.MSVCWINE_REF }}-v1
+
+      - name: 下载并装配 MSVC v141 + Win10 SDK 26100（缓存未命中时）
+        run: |
+          set -euo pipefail
+          if [ -x "${MSVC_WINE_PREFIX}/bin/x86/cl" ] && [ -d "${MSVC_WINE_PREFIX}/kits/10/include/10.0.26100.0" ]; then
+            echo "工具链缓存命中，跳过下载。"
+          else
+            echo "==> [1/3] 下载 VC 14.16 (v141, VS2017 channel)"
+            python3 .msvc-wine/vsdownload.py \
+              --accept-license --major 15 --msvc-version 15.9 \
+              --architecture x86 x64 --host-arch x64 \
+              --with-sdk=no --with-atl=no --with-asan=no --with-dia=no \
+              --with-msbuild=no --with-devcmd=no \
+              --dest "${MSVC_WINE_PREFIX}"
+            echo "==> [2/3] 下载 Win10 SDK 26100 (VS2022 channel)"
+            python3 .msvc-wine/vsdownload.py \
+              --accept-license --major 17 \
+              --sdk-version 10.0.26100 \
+              --with-default=no \
+              --architecture x86 --host-arch x64 \
+              --dest "${MSVC_SDK_DIR}"
+            echo "==> [3/3] 合并 SDK 26100 进 MSVC prefix"
+            if [ -d "${MSVC_WINE_PREFIX}/Windows Kits" ]; then
+              echo "!! .msvc/Windows Kits 已存在，意外状态" >&2; exit 1
+            fi
+            mv "${MSVC_SDK_DIR}/Windows Kits" "${MSVC_WINE_PREFIX}/"
+          fi
+          rm -rf "${MSVC_SDK_DIR}"
+
+      - name: install.sh（生成包装脚本 / 大小写修复）
+        run: |
+          set -euo pipefail
+          sh .msvc-wine/install.sh "${MSVC_WINE_PREFIX}"
+
+      # 编译器门禁：banner 必须 19.16，且真能编出 32 位 DLL
+      - name: 验证编译器为 MSVC v141 x86（banner + 32 位试编）
+        run: |
+          set -euo pipefail
+          export PATH="${MSVC_WINE_PREFIX}/bin/x86:$PATH"
+          banner="$(cl 2>&1 || true)"
+          echo "$banner" | head -2
+          if ! echo "$banner" | grep -q "19\.16"; then
+            echo "!! cl 不是 MSVC 14.16 (v141)" >&2; exit 1
+          fi
+          cat > probe.c <<'EOF'
+          __declspec(dllexport) int probe(void) { return 42; }
+          int __stdcall DllMain(void* h, unsigned long r, void* p) { return 1; }
+          EOF
+          cl /nologo /LD /Fo:probe.obj /Fe:probe.dll probe.c
+          python3 - <<'PY'
+          import struct
+          d = open('probe.dll','rb').read()
+          pe = struct.unpack_from('<I', d, 0x3c)[0]
+          machine = struct.unpack_from('<H', d, pe+4)[0]
+          assert machine == 0x14c, 'probe.dll 不是 x86（machine=0x%04x）' % machine
+          print('✓ 试编成功：x86 DLL %d B' % len(d))
+          PY
+          rm -f probe.c probe.obj probe.dll
+          df -h . | tail -1
+
+      - name: 校验译文
+        run: python3 Tools/translate/check_translation.py
+
+      - name: 编译 W4CHS_DLL（MSVC v141 / Win32 x86）
+        if: ${{ github.event.inputs.skip_dll != 'true' }}
+        run: |
+          set -euo pipefail
+          export PATH="${MSVC_WINE_PREFIX}/bin/x86:$PATH"
+          python3 Tools/ci/build_dll_local.py --clean
+
+      - name: 跳过 ASI 编译
+        if: ${{ github.event.inputs.skip_dll == 'true' }}
+        run: echo "skip_dll：本次为纯文本构建（不含换行修复 ASI）"
 
       - name: 装配发布包
-        run: python Tools/ci/build_release.py --out-root build_out
+        run: |
+          set -euo pipefail
+          python3 Tools/ci/build_release.py --out-root build_out \
+            ${{ github.event.inputs.skip_dll == 'true' && '--skip-dll' || '' }}
 
       - name: 发布包门禁校验
-        run: python Tools/ci/verify_release.py build_out
+        run: |
+          set -euo pipefail
+          args=""
+          if [ "${{ github.event.inputs.skip_dll }}" != "true" ]; then
+            args="--require-asi"
+          fi
+          python3 Tools/ci/verify_release.py build_out $args
 
       - name: 上传 Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Warlords4-CHS
-          path: build_out/*.zip
-          retention-days: 30
+          path: build_out/Warlords4-CHS-*.zip
           if-no-files-found: error
+          retention-days: 30
 
       - name: 发布 Release（master push 自动 / 手动勾选时）
         if: (github.event_name == 'push' && github.ref == 'refs/heads/master') || (github.event_name == 'workflow_dispatch' && inputs.publish)
@@ -86,6 +194,4 @@ jobs:
         run: |
           TAG="${INPUT_TAG:-v$(date +%Y%m%d-%H%M)-${GITHUB_RUN_NUMBER}}"
           echo "发布 Release: $TAG"
-          gh release create "$TAG" build_out/*.zip \
-            --title "$TAG" \
-            --generate-notes
+          gh release create "$TAG" build_out/*.zip --title "$TAG" --generate-notes

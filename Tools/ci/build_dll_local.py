@@ -116,7 +116,7 @@ def build(clean: bool, out: Path | None):
     src = cl_rel(SRC)
     cmd = [
         str(cl), "/nologo", "/LD", "/EHsc", "/Y-", "/utf-8", "/O2",
-        "/D", "WIN32", "/D", "NDEBUG", "/D", "PG2CHSDLL_EXPORTS",
+        "/D", "WIN32", "/D", "NDEBUG", "/D", "W4CHSDLL_EXPORTS",
         "/D", "_WINDOWS", "/D", "_USRDLL",
         f"/Fo{fo_dir}",
         "/I", src,
