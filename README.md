@@ -102,6 +102,24 @@ python Tools/ci/verify_release.py build_out          # 包体门禁
 
 ---
 
+## 附赠文档：完整教程（未精简版）
+
+游戏内教程为防刷屏做了精简（每段≤24字）。完整原文由
+`Tools/dev/export_tutorials.py` 从 RC2 原始 `Help.xml` 提取，导出为：
+
+- `docs/完整教程_未精简版.md`
+- `docs/完整教程_未精简版.pdf`（微软雅黑字体，reportlab 生成）
+
+两者随每个发布包打进 `附赠文档/` 目录，供玩家对照阅读。重新生成：
+
+```bash
+python Tools/dev/export_tutorials.py     # 需要 reportlab（仅生成 PDF 时）
+```
+
+> PDF 是预生成并入库的静态文件，CI 打包不依赖 reportlab，在 ubuntu 上也能跑。
+
+---
+
 ## 翻译进度
 
 `chinese/` 初值为 `english/` 的文本文件副本（尚未翻译）。翻译进度由

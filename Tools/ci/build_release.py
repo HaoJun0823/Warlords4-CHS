@@ -60,6 +60,10 @@ README_TEXT = """《战神IV：艾瑟里亚英雄》(Warlords IV: Heroes of Ethe
   - 请勿在文本中写数值实体（形如 &#x4E2D;），引擎不支持，会导致游戏死循环卡死。
     需要引号时请用命名实体 &quot; 和 &apos;（原文本身就在用）。
 
+【附赠文档】
+  附赠文档/ 目录下有《完整教程_未精简版》的 PDF 和 Markdown。
+  游戏内教程为防止文本复读做了精简，完整原文请查阅此文档。
+
 【工程与源码】
   本补丁由 Git 管理、CI 自动构建。汉化工程见：
   G:\\Projects\\Warlords_IV_HOE_106_CH
@@ -93,6 +97,13 @@ def build(out_root: Path, date: str | None, tm: str | None) -> Path:
              + "\n".join(f"  English/{r}" for r in sorted(chs_files))
              + f"\n\n共 {len(chs_files)} 个文件\n").encode("utf-8-sig"),
         )
+        # 随附文档：未精简的完整教程（游戏内教程为防刷屏做了精简）
+        docs_dir = ROOT / "docs"
+        if docs_dir.is_dir():
+            for doc in sorted(docs_dir.iterdir()):
+                if doc.is_file() and doc.suffix.lower() in {".md", ".pdf"}:
+                    z.write(doc, f"附赠文档/{doc.name}")
+                    print(f"  附赠文档: {doc.name}")
 
     print(f"已生成：{zip_path}（{zip_path.stat().st_size} 字节）")
     print(f"警告 {len(warns)} 条（不影响出包）")
