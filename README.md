@@ -50,10 +50,13 @@
 
 ### 开发者：本机构建
 ```bash
-python Tools/translate/check_translation.py          # 校验
-python Tools/ci/build_release.py                     # 打包 -> build_out/
-python Tools/ci/verify_release.py build_out          # 包体门禁
+python Tools/translate/check_translation.py          # 校验译文
+python Tools/ci/build_dll_local.py --clean           # 编译换行修复 ASI（需 VS2017 v141）
+python Tools/ci/build_release.py                     # 打包 -> build_out/（含 ASI）
+python Tools/ci/verify_release.py build_out --require-asi   # 包体门禁
 ```
+本机调试 ASI：`python Tools/ci/deploy_asi.py` 把编译好的 DLL 部署为游戏根目录的
+`W4CHS_DLL.asi` + `winmm.dll`（ASI Loader）+ `W4CHS.ini`；`--uninstall` 卸载。
 
 ---
 
@@ -66,6 +69,10 @@ python Tools/ci/verify_release.py build_out          # 包体门禁
    需要引号时请用**命名实体** `&quot;` / `&apos;` —— 原文本身就在用，是安全的。
 3. **不要改 `Font.ini` / `HotKeys.xml`。** 原字体已能显示中文（GDI 自动回退），
    改字体名有卡死风险；热键配置与翻译无关。保持原样即可。
+4. **长中文文本复读机问题由随包 ASI 修复**（`W4CHS_DLL.asi`）。引擎按空格分词，
+   中文整句无空格 → 排版循环无法推进 → 反复重绘整句。ASI 在运行时对长中文串按
+   词边界插入空格解决。`W4CHS.ini` 的 `InsertSpace` / `WordsPerLine` 可调。
+   **发布包必须带 `winmm.dll` + `W4CHS_DLL.asi` + `W4CHS.ini`，删了会复读。**
 
 补充规则（由校验脚本强制）：
 - XML 标签结构必须与原文一致，不得增删/重排标签。
@@ -84,9 +91,14 @@ python Tools/ci/verify_release.py build_out          # 包体门禁
 | `chinese/` | **译文工作区**，仅含需翻译的文本文件（xml/nam/evt/qst/txt/ini），由翻译 AI 编辑 |
 | `Tools/translate/check_translation.py` | 译文铁律校验 |
 | `Tools/ci/build_release.py` | 装配发布包 zip |
-| `Tools/ci/verify_release.py` | 发布包结构与编码门禁 |
-| `.github/workflows/build-release.yml` | GitHub Actions：push/PR 自动校验打包；手动可发 Release |
+| `Tools/ci/verify_release.py` | 发布包结构与编码门禁（含 ASI 32位校验） |
+| `Tools/ci/build_dll_local.py` | 本地编译换行修复 DLL（v141 x86） |
+| `Tools/ci/deploy_asi.py` | 本地部署 ASI 到游戏目录调试 |
+| `W4CHS_DLL/` | 换行修复 ASI 源码（手动 detour，无 MinHook） |
+| `dist/common/winmm.dll` | Ultimate ASI Loader（MIT，必入库） |
+| `.github/workflows/build-release.yml` | GitHub Actions：Linux + msvc-wine 编译 ASI，push 自动发 Release |
 | `Documents/TECHNICAL_NOTES.md` | 技术分析、实验记录、结论与待办 |
+| `Documents/HOOK_换行修复方案.md` | 复读机 BUG 逆向分析与 DLL Hook 方案 |
 | `build_out/` | 构建产物（gitignore，不入库） |
 
 ---
@@ -94,17 +106,22 @@ python Tools/ci/verify_release.py build_out          # 包体门禁
 ## CI（GitHub Actions）
 
 `.github/workflows/build-release.yml` 在 **push 到 `master` / `dev`**、**PR 到 `master`**
-时自动运行：校验译文 → 装配 zip → 包体门禁 → 上传 Actions Artifact（保留 30 天）。
-**push 到 `master` 时还会自动创建 GitHub Release 并上传汉化补丁**（tag 形如
-`vYYYYMMDD-HHMM-<run号>`），玩家可直接从 Releases 页下载最新补丁。
-纯 Python 步骤，不需要编译工具链。
+时自动运行：校验译文 → **编译换行修复 ASI** → 装配 zip → 包体门禁 → 上传 Actions
+Artifact（保留 30 天）。**push 到 `master` 时还会自动创建 GitHub Release 并上传补丁**
+（tag 形如 `vYYYYMMDD-HHMM-<run号>`），玩家直接下载即可。
+
+**编译器用 `ubuntu-latest` + msvc-wine，不用 `windows-latest`**：windows runner 预装组件
+经常变化导致 v141 装不回来；Linux 路线用 `vsdownload.py` 从微软官方 manifest 精确锁定
+MSVC 14.16 (v141)，版本钉死、可缓存（`actions/cache` 缓存 ~4GB 工具链）。有编译器门禁：
+cl banner 必须 19.16，且先试编一个 32 位 DLL 确认，避免静默回退工具集。
 
 也可在 Actions 页手动 `workflow_dispatch`：
 
 | 输入 | 作用 |
 |---|---|
 | `publish` | 勾选后额外创建 GitHub Release；默认**不自动发版** |
-| `tag` | 发行标签，留空按 `vYYYYMMDD-HHMM` 生成 |
+| `tag` | 发行标签，留空按 `vYYYYMMDD-HHMM-<run号>` 生成 |
+| `skip_dll` | 跳过 ASI 编译，只打包文本（排查用） |
 
 ---
 
