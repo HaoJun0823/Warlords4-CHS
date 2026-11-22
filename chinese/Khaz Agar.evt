@@ -1,0 +1,71 @@
+<Events>
+
+	<Warlord side="1" name="King Agarikh XVIII" city="Khaz Agar" portrait="16" major="2" minor="2">
+		<Unit id="0" type="17" level="15" name="Khorith"/>
+		<Unit id="1" type="17" level="12" name="Jhenith"/>
+		<Unit id="2" type="28" level="10" name="Iryx"/>
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>You must make your way through the mountains to the east, fighting the Dwarven guards until you discover the citadel of Khaz Agar. | Once you have looted Khaz Agar, you will be able to return the treasure to Kelthurax.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="2"/>
+		<Message>A Dwarven Alchemist approaches you, seemingly oblivious to the fact that you are about to attack Khaz Agar. | He offers to create magic items for you if you will give him shelter in your capital.</Message>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="turn" data1="5"/>
+		<Message>The Dwarven Alchemist has created a magical item! | He presents you with a Helm of Sight (it may be collected by any hero in your capital city).</Message>
+		<Action type="item" data1="2"/>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="turn" data1="10"/>
+		<Message>The Dwarven Alchemist has created another magical item! | He presents you with an Axe of Malice (it may be collected by any hero in your capital city).</Message>
+		<Action type="item" data1="27"/>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="turn" data1="15"/>
+		<Message>The Dwarven Alchemist has created another magical item! | He presents you with a suit of Dwarven Mail (it may be collected by any hero in your capital city).</Message>
+		<Action type="item" data1="58"/>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="turn" data1="20"/>
+		<Message>The Dwarven Alchemist has created another magical item! | He presents you with a Ring of Taunting (it may be collected by any hero in your capital city).</Message>
+		<Action type="item" data1="89"/>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="25"/>
+		<Message>the Dwarven Alchemist approaches you. | He has no item to give you, but he tells you that he has made a discovery that will let him create a powerful Stormblade.  It may take him a while though.</Message>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="turn" data1="30"/>
+		<Message>The Dwarven Alchemist has finished the Stormblade.  He gives it to you as his final work.</Message>
+		<Action type="item" data1="48"/>
+	</Event>
+
+
+	<Ruin id="23" available_for_quest="no">
+		<Heading>Golem Guard</Heading>
+		<Message>This Golem is guarding a huge Dwarven treasure pile.</Message>
+		<Monster type="14" number="1" level="10"/>
+		<Reward type="gold" data="3241"/>
+	</Ruin>
+	<Ruin id="19" available_for_quest="no">
+		<Heading>Golem Guard</Heading>
+		<Message>This Golem is guarding a magical Dwarven sword.</Message>
+		<Monster type="14" number="1" level="10"/>
+		<Reward type="item" data="25"/>
+	</Ruin>
+	<Ruin id="17" available_for_quest="no">
+		<Heading>Golem Guard</Heading>
+		<Message>This Golem is guarding an Elven prisoner. Grateful for his release, he offers to join you.</Message>
+		<Monster type="14" number="1" level="10"/>
+		<Reward type="allies" data="54" level="15" number="1" name="Prince Delfen"/>
+	</Ruin>
+
+</Events>

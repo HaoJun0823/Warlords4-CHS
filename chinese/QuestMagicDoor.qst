@@ -1,0 +1,42 @@
+<Quest name="The Magic Door">
+   <Part id="0">
+      <Description done="no">There is rumored to be a magic door, behind which lies a great treasure.  You must discover 3 passwords to open the door.  The first can be found at: %s.</Description>
+      <Description done="yes" first="yes">You discovered the first word, engraved in a coffin.  It was &apos;Dedecus&apos;.</Description>
+      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found the first word, engraved in a coffin.  It was &apos;Dedecus&apos;.</Description>
+      <Success first="yes">After slaying the guardians of this ruin, you find the first word, engraved in a coffin. It is &apos;Dedecus&apos;.</Success>
+      <Success first="no">The ruin has already been searched, but you find the first word, engraved in a coffin. It is &apos;Dedecus&apos;.</Success>
+      <Reward type="xp" data="16">The Soul Gatherers had collected many spirits.  After releasing them, they reward you with their memories (+16 XP).</Reward>
+      <Monster type="43" number="7" level="2"/>
+      <Monster type="43" number="1" level="12"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You must now seek the second password for the door.  Location: %s</Description>
+      <Description done="yes" first="yes">You discovered the second word, engraved in an altar.  It was &apos;Ante&apos;.</Description>
+      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found the second word, engraved in an Altar.  It was &apos;Ante&apos;.</Description>
+      <Success first="yes">After slaying the guardians of this ruin, you find the second word, engraved in an Altar. It is &apos;Ante&apos;.</Success>
+      <Success first="no">The ruin has already been searched, but you find the second word, engraved in an Altar. It is &apos;Ante&apos;.</Success>
+      <Reward type="hero" unit="41" number="1" level="7" name="Terotha">After defeating the Daemon Guardians, you find a Dark Elven prisoner they were holding.  She vows to join you.</Reward>
+      <Monster type="44" number="7" level="2"/>
+      <Monster type="44" number="1" level="12"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must now seek the third password for the door.  Location: %s</Description>
+      <Description done="yes" first="yes">You discovered the third word, engraved in a stone.  It was &apos;Cladem&apos;.</Description>
+      <Description done="yes" first="no">Although you were not the first to reach this ruin, you found the third word, engraved in a stone.  It was &apos;Cladem&apos;.</Description>
+      <Success first="yes">After slaying the guardians of this ruin, you find the third word, engraved in a stone. It is &apos;Cladem&apos;.</Success>
+      <Success first="no">The ruin has already been searched, but you find the third word, engraved in a stone. It is &apos;Cladem&apos;.</Success>
+      <Reward type="gold" data="2200">After defeating the Undead Guardians, you find a small fortune in gems, worth 2200 Gold.</Reward>
+      <Monster type="30" number="7" level="3"/>
+      <Monster type="34" number="1" level="10"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">All that remains is to fight your way to the door and speak the words. Location: %s.</Description>
+      <Description done="yes" first="yes">You have spoken the words, opened the door and taken the Orb of Etheria.</Description>
+      <Description done="yes" first="no">When you reached the door, it had already been opened. You were too late to complete the quest.</Description>
+      <Success first="yes">The way to the door is clear, so you speak the words &apos;Dedecus Ante Cladem&apos; and the door opens.</Success>
+      <Success first="no">Unfortunately, the door has already been opened and the treasure has been taken.</Success>
+      <Reward type="item" data="99">Beyond the door, you find one of the most powerful items in the Realm - the Orb of Etheria!</Reward>
+      <Monster type="30" number="2" level="3"/>
+      <Monster type="34" number="1" level="18" name="Porathgarax"/>
+   </Part>
+</Quest>

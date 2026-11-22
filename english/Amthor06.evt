@@ -1,0 +1,112 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Sinora" city="Melwell" level="10" portrait="22" major="1" minor="0">
+	</Warlord>
+
+    <!--Story start-->
+	<Event side="0" repeat="1" location="city" locdata="5">
+		<Trigger type="turn" data1="1"/>
+		<Message>With the Drop of Life in hand you head back to the Realms of Death. Lord Ubgard is very surprised to see you so soon. You hand over the bottle:&quot;I have met my obligations, Ubgard! Now it is your turn.&quot;|The bony fingers of the Lord grasp the tincture. Suddenly six skeletons appear beside him. They do not look dangerous, but with a gesture of his bony hand, three of them turn into mighty Liches.</Message>
+		<Message>Standing before such unholy creatures you begin to doubt your plan, but there is no way back. You head to the passage of Melwell to enter the White Mountains.| But the Knights of Siria have blocked your path. You need to fight your way through...</Message>
+		<Action type="unit" data1="30" data2="3" data3="1"/>
+		<Action type="unit" data1="31" data2="3" data3="7"/>
+	</Event>
+
+
+    <!--Global Holy Word-->
+	<Event side="0" repeat="1" location="city" locdata="5">
+		<Trigger type="turn" data1="3"/>
+		<Message>Siantra sends you an envoy. She has heard rumors that the Inquisitor Sinora has reached Melwell. He is a very powerful priest and a master of the Holy Word.</Message>
+		<Action type="counter_set" data1="0" String1="q1"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="5"/>
+		<Trigger type="chance" data1="15"/>
+		<ShortMessage>Inquisitor Sinora speaks the Holy Word.</ShortMessage>
+		<Action type="counter_add" data1="1" String1="q1"/>
+		<Action type="counter_set" data1="1" String1="cast"/>
+	</Event>
+
+    <!--Global Holy Word Cities 9,6,7 -->
+	<Event side="1" repeat="99" location="city" locdata="9">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="6">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="7">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+    <!--Global Holy Word Cities 12, 10, 11-->
+	<Event side="1" repeat="99" location="city" locdata="12">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="2" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="10">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="2" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="11">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="2" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+    <!--Global Holy Word Cities 13, 8-->
+	<Event side="1" repeat="99" location="city" locdata="13">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="3" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="8">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="3" String1="q1"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="cast_spell" data1="13"/>
+	</Event>
+
+    <!--Global Holy Word Reset-->
+	<Event side="1" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="cast"/>
+		<Action type="counter_set" data1="0" String1="cast"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_ge" data1="4" String1="q1"/>
+		<Action type="counter_set" data1="0" String1="q1"/>
+	</Event>
+
+    <!--Warlord Knights-->
+	<Event side="0" repeat="1" location="city" locdata="1">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="1"/>
+		<Message>You have fought your way into the White Mountains.|Continue with Amthor 7...</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+</Events>

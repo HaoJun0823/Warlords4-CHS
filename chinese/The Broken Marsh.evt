@@ -1,0 +1,34 @@
+<Events>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>The Broken Marsh is full of unquiet spirits and perhaps even Daemons. | You must defeat these creatures, travelling northwest on twisting paths, to open up the way to Aravein.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="3"/>
+		<Message>The sound of chanting drifts softly across the marsh.  Daemons are being summoned in the distance!</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="turn" data1="5"/>
+		<Message>A group of Undead shamble into your capital. They still remember the destruction of 3000 years ago, and want to help stop it happening again.</Message>
+		<Action type="unit" data1="30" data2="8" data3="1"/>
+	</Event>
+
+
+	<Event side="3" repeat="1" location="capital">
+		<Trigger type="turn" data1="3"/>
+		<ShortMessage>Aravein has summoned 8 Daemons to slow you down</ShortMessage>
+		<Action type="unit" data1="44" data2="8" data3="1"/>
+	</Event>
+
+	<Event side="3" repeat="1" location="capital">
+		<Trigger type="turn_or_later" data1="5"/>
+		<Trigger type="chance" data1="10"/>
+		<ShortMessage>Aravein has summoned 4 more Daemons to slow you down</ShortMessage>
+		<Action type="unit" data1="44" data2="4" data3="1"/>
+	</Event>
+
+</Events>

@@ -1,0 +1,7 @@
+<CutScene file="Video\Campaign_6_1.bik" voice="Campaign\Campaign_6_1.wav" duration="52000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">The Dwarves of Khaz-Agar were defeated, and their gold was taken back to Kelthurax the Dragon.</Text>
+	<Text time="7500">Kelthurax was pleased – his smile showed row upon of row of needle-sharp teeth.  When he had heaped this new treasure upon his hoard, he spoke once more:</Text>
+	<Text time="18500">“Very well… you wish to know of the Sundering? Then I shall tell you.”</Text>
+	<Text time="24000">“Prince Mordaine was a fool to attempt the spell.  It cannot be cast.  Such power was not meant for mortals to wield.”</Text>
+	<Text time="32000">“As for how to stop it…Well… after the Sundering, 3000 years past, the Elven Queen Ehlanna created a counter-spell.  Ehlanna died long ago, and I believe the spell too is lost – locked away somewhere in the Citadel of Ice on the northern Tundra.”</Text>
+</CutScene>

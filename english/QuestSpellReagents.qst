@@ -1,0 +1,39 @@
+<Quest name="Spell Reagents">
+   <Part id="0">
+      <Description done="no">A wizard offers you 7 mana crystals if you can bring him 4 spell reagents. First he needs a red dragon scale. Location: %s.</Description>
+      <Description done="yes" first="yes">You obtained a red dragon scale.</Description>
+      <Description done="yes" first="no">The dragon was already dead, but you retrieved a red dragon scale.</Description>
+      <Success first="yes">You take a scale from the dragon&apos;s body</Success>
+      <Success first="no">The dragon is already dead, so you take a scale from its body.</Success>
+      <Reward type="gold" data="2543">This dragon had a treasure worth 2543 gold.</Reward>
+      <Monster type="52" number="1" level="10"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">The next spell reagent is a Wyvern&apos;s stinger. Location: %s.</Description>
+      <Description done="yes" first="yes">You obtained a Wyvern&apos;s stinger.</Description>
+      <Description done="yes" first="no">You found a dead Wyvern and cut the stinger from its tail.</Description>
+      <Success first="yes">You cut the stinger from the Wyvern&apos;s tail.</Success>
+      <Success first="no">The Wyvern is already dead, so you cut the stinger from its tail.</Success>
+      <Reward type="allies" unit="0" level="20" number="1" name="Dragonslayer">Impressed by the way you slew this Wyvern a Dragonslayer joins you.</Reward>
+      <Monster type="28" number="1" level="12"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">The next spell reagent is a Minotaur&apos;s horn. Location: %s.</Description>
+      <Description done="yes" first="yes">You obtained a Minotaur&apos;s horn.</Description>
+      <Description done="yes" first="no">The Minotaur was already dead, but you retrieved one of its horns.</Description>
+      <Success first="yes">You cut off one of the Minotaur&apos;s horns.</Success>
+      <Success first="no">The Minotaur is already dead, so you cut off one of its horns.</Success>
+      <Reward type="item" data="33">This Minotaur had a dreaded Doubleblade.</Reward>
+      <Monster type="20" number="1" level="15"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The final spell reagent is a Liche Lord&apos;s skull. Location: %s.</Description>
+      <Description done="yes" first="yes">You obtained a Liche Lord&apos;s skull and the wizard rewarded you with 7 mana crystals..</Description>
+      <Description done="yes" first="no">Alas, the Liche Lord could not be found so you could not complete the quest.</Description>
+      <Success first="yes">You remove the skull from the Liche Lord&apos;s body.</Success>
+      <Success first="no">The Liche Lord is dead and his skull has already been removed.</Success>
+      <Reward type="mana" data="7">The wizard accepts the 4 spell reagents and gives you 7 mana crystals.</Reward>
+      <Monster type="31" number="1" level="20" name="Liche Lord"/>
+      <Monster type="30" number="3" level="3"/>
+   </Part>
+</Quest>

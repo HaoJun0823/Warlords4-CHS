@@ -1,0 +1,96 @@
+<Events>
+
+	<Warlord side="1" name="Garranoth" city="Duimenhoth" portrait="14" major="4" minor="4">
+		<Unit id="0" type="37" level="5" name="Turgon"/>
+		<Unit id="1" type="38" level="5" name="Ghul"/>
+		<Unit id="2" type="41" level="8" name="Lamia"/>
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>You must fight your way to the center of the Doomwood to seek an audience with King Garranoth. | It is entirely possible that Garranoth will challenge you to combat before he speaks with you!</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="2"/>
+		<Message>Ghostly sounds emanate from the dark wood in the center of this land. | Were it not for your quest to seek answers from King Garranoth, you would not go near the Doomwood.</Message>
+	</Event>
+
+	<Ruin id="13" available_for_quest="no">
+		<Heading>A Crystal Ball</Heading>
+		<Message>These Harpies have a crystal ball that shows your future.</Message>
+		<Monster type="40" number="1" level="3"/>
+		<Monster type="40" number="2" level="1"/>
+		<Reward type="xp" data="15"/>
+	</Ruin >
+
+	<Ruin id="9" available_for_quest="no">
+		<Heading>Assassins!</Heading>
+		<Message>This group of Assassins had waylaid a Knight. Grateful for his rescue, he offers to join you.</Message>
+		<Monster type="41" number="1" level="5"/>
+		<Monster type="37" number="3" level="1"/>
+		<Reward type="hero" data="5" level="5" number="1" name="Sir Uther"/>
+	</Ruin >
+
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="3"/>
+		<Message>A group of Elves approach you. | One of their kin is being held captive in the citadel of Zeskin, in the southern part of the Doomwood. If you rescue her, they will send troops to aid you in your quest.</Message>
+		<Action type="counter_set" data1="1" string1="zeskin_counter"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="13">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" string1="zeskin_counter" data1="1"/>
+		<Trigger type="city_won" data1="13"/>
+		<Action type="counter_set" data1="2" string1="zeskin_counter"/>
+		<Message>You rescue the Elven captive from Zeskin. | She leaves you with a promise that help from her kinsfolk will be forthcoming shortly.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="3"/>
+		<Trigger type="counter_eq" string1="zeskin_counter" data1="2"/>
+		<Message>As promised, a group of Elves rally to join you at your capital city.</Message>
+		<Action type="counter_set" data1="3" string1="zeskin_counter"/>
+		<Action type="unit" data1="54" data2="6" data3="2"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="3"/>
+		<Trigger type="counter_eq" string1="zeskin_counter" data1="3"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>Still grateful for your aid in the rescue at Zeskin, the Elves find a few more troops to send you.</Message>
+		<Action type="unit" data1="56" data2="3" data3="2"/>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="0"/>
+		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+	</Event>
+	<Event side="3" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="3"/>
+		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+	</Event>
+	<Event side="5" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="5"/>
+		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+	</Event>
+	<Event side="7" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="7"/>
+		<Message>You have bested King Garranoth in combat. The Dark Elves lay down their weapons and are finally ready to talk with you.</Message>
+	</Event>
+
+</Events>

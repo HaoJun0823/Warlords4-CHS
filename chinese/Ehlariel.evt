@@ -1,0 +1,108 @@
+<Events>
+
+	<Warlord side="1" name="The Ice Queen" city="Citadel of Ice" portrait="12" major="1" minor="3">
+		<Unit id="0" type="59" level="12" name="Thelena"/>
+		<Unit id="1" type="50" level="8" name="Lightning"/>
+		<Unit id="2" type="54" level="20" name="Tolen"/>
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>The Citadel of Ice is found to the west, in the center of the Northern Tundra. | You must capture the citadel and find the lost counterspell of Queen Ehlanna.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="2"/>
+		<Message>You have found an old book that tells you of the Orbs of Winter. | These 5 Orbs contain the souls of old High Elven mages. There are 4 smaller Orbs and one Master Orb.</Message>
+	</Event>
+
+	<Ruin id="14" available_for_quest="no">
+		<Heading>Orb of Winter</Heading>
+		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Monster type="54" number="8" level="5"/>
+		<Reward type="xp" data="10"/>
+	</Ruin >
+	<Ruin id="13" available_for_quest="no">
+		<Heading>Orb of Winter</Heading>
+		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Monster type="55" number="8" level="5"/>
+		<Reward type="xp" data="10"/>
+	</Ruin >
+	<Ruin id="0" available_for_quest="no">
+		<Heading>Orb of Winter</Heading>
+		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Monster type="54" number="8" level="5"/>
+		<Reward type="xp" data="10"/>
+	</Ruin >
+	<Ruin id="3" available_for_quest="no">
+		<Heading>Orb of Winter</Heading>
+		<Message>You find one of the legendary Orbs of Winter. You smash it, releasing a storm onto the Northern Tundra.</Message>
+		<Monster type="55" number="8" level="5"/>
+		<Reward type="xp" data="10"/>
+	</Ruin >
+	<Ruin id="15" available_for_quest="no">
+		<Heading>Orb of Winter</Heading>
+		<Message>You find the Master Orb of Winter. You smash it, releasing a huge storm onto the Northern Tundra.</Message>
+		<Monster type="58" number="4" level="3"/>
+		<Reward type="xp" data="20"/>
+	</Ruin >
+
+
+	<Event side="0" repeat="1" location="ruin" locdata="0">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="0"/>
+		<Action type="particle" string1="HeavySnow"/>
+		<Action type="particle" string1="S_RingWhite"/>
+	</Event>
+	<Event side="0" repeat="1" location="ruin" locdata="3">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="3"/>
+		<Action type="particle" string1="HeavySnow"/>
+		<Action type="particle" string1="S_RingWhite"/>
+	</Event>
+	<Event side="0" repeat="1" location="ruin" locdata="13">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="13"/>
+		<Action type="particle" string1="HeavySnow"/>
+		<Action type="particle" string1="S_RingWhite"/>
+	</Event>
+	<Event side="0" repeat="1" location="ruin" locdata="14">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="14"/>
+		<Action type="particle" string1="HeavySnow"/>
+		<Action type="particle" string1="S_RingWhite"/>
+	</Event>
+	<Event side="0" repeat="1" location="ruin" locdata="15">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="15"/>
+		<Action type="particle" string1="HeavySnow"/>
+		<Action type="particle" string1="S_RingWhite"/>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="0"/>
+		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+	</Event>
+	<Event side="2" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="2"/>
+		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+	</Event>
+	<Event side="4" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="4"/>
+		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+	</Event>
+	<Event side="6" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="6"/>
+		<Message>You have captured the Citadel of Ice. | It takes a long time, but you eventually discover Queen Ehlanna&apos;s counterspell left forgotten in an old scrollcase.</Message>
+	</Event>
+</Events>

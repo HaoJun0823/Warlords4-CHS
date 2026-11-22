@@ -1,0 +1,42 @@
+<Quest name="The Healing Potion">
+   <Part id="0">
+      <Description done="no">King Celeath of the Dragonlords is ill.  You must create a healing potion to save him.  First you will need a Unicorn&apos;s horn. Location: %s.</Description>
+      <Description done="yes" first="yes">You have obtained the Unicorn&apos;s horn - the first part of King Celeath&apos;s healing potion.</Description>
+      <Description done="yes" first="no">You found a dead Unicorn and recovered its horn for a potion.</Description>
+      <Success first="yes">You take the Unicorn&apos;s horn to help create the potion.</Success>
+      <Success first="no">This place is empty, but a search reveals a dead Unicorn with its horn still intact.</Success>
+      <Reward type="mana" data="2">You find the Unicorn had also collected 2 mana crystals.</Reward>
+      <Monster type="57" number="1" level="10"/>
+      <Monster type="55" number="7" level="3"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">The next item King Celeath needs for his potion is Troll&apos;s Blood. Location: %s.</Description>
+      <Description done="yes" first="yes">You have obtained the Troll&apos;s Blood - the second part of King Celeath&apos;s healing potion.</Description>
+      <Description done="yes" first="no">You found some Troll&apos;s blood for the potion.</Description>
+      <Success first="yes">You collect some of the Troll&apos;s Blood to help create the potion.</Success>
+      <Success first="no">This place is empty, but a search reveals a freshly dead Troll with plenty of blood to spare.</Success>
+      <Reward type="gold" data="2312">This Troll had also collected a cache of 2312 gold.</Reward>
+      <Monster type="19" number="1" level="14"/>
+      <Monster type="24" number="7" level="2"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">The next item King Celeath needs for his potion is an Archon&apos;s Feather. Location: %s.</Description>
+      <Description done="yes" first="yes">You have obtained the Archon&apos;s Feather - the third part of King Celeath&apos;s healing potion.</Description>
+      <Description done="yes" first="no">You found a dead Archon and plucked a feather from its wing.</Description>
+      <Success first="yes">You take the Archon&apos;s Feather to help create the potion.</Success>
+      <Success first="no">This place is empty, but a search reveals a dead Archon with a feather for you to collect.</Success>
+      <Reward type="xp" data="20">Nearby you find the Archon&apos;s well.  Drinking from its waters, fills you with wisdom.</Reward>
+      <Monster type="4" number="1" level="14"/>
+      <Monster type="10" number="4" level="2"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The final item King Celeath needs for his potion is Spider Venom.  Location: %s.</Description>
+      <Description done="yes" first="yes">You have completed the potion and saved King Celeath</Description>
+      <Description done="yes" first="no">Alas!  You could find no Spider Venom and King Celeath died.</Description>
+      <Success first="yes">You collect the Spider Venom and the potion is complete.</Success>
+      <Success first="no">Alas!  This place is empty and you can find no spider venom.  King Celeath is doomed.</Success>
+      <Reward type="hero" unit="53" level="12" number="1" name="King Celeath">King Celeath makes a swift recovery and offers to join with you.</Reward>
+      <Monster type="37" number="1" level="10"/>
+      <Monster type="36" number="7" level="8"/>
+   </Part>
+</Quest>

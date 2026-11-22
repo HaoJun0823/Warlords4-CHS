@@ -1,0 +1,5 @@
+<CutScene file="Video\Campaign_5_0.bik" voice="Campaign\Campaign_5_0.wav" duration="37000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">Kelthurax was the most ancient Dragon in the Lands of Etheria.  It was said that he would sleep for 100 years at a time, then awaken and eat an entire village before going back to sleep again.</Text>
+	<Text time="14000">Nobody knew how old he was – perhaps not even Kelthurax himself – but it was believed that he flew the skies when the Elves were still young.</Text>
+	<Text time="24000">Approaching Kelthurax would not be simple.  An army of Dragons guarded his cave, and if Kelthurax himself should wake and join the fight, then it would all be for naught…. Dragonstone or not.</Text>
+</CutScene>

@@ -1,0 +1,42 @@
+<Quest name="The Globe of Darkness">
+   <Part id="0">
+      <Description done="no">Undead have discovered the legendary Globe of Darkness and you must create a hammer to smash it.  First you will need the shaft, held by the Treants. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the Treants and recovered the shaft of the hammer.</Description>
+      <Description done="yes" first="no">The treants were dead, but a search uncovered the shaft of the hammer.</Description>
+      <Success first="yes">You have slain the treants and found the shaft of the hammer disguised as one of their limbs.</Success>
+      <Success first="no">The treants were dead, but a search soon uncovers the shaft of the hammer.</Success>
+      <Reward type="allies" unit="13" level="4" number="6">A band of Dwarves impressed by your skills at chopping down trees offer to join you.</Reward>
+      <Monster type="58" number="1" level="10" name="Oaklord"/>
+      <Monster type="58" number="7" level="1"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">The head of the hammer must be fashioned from an ingot of metal held by the Daemons. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the Daemons and recovered the metal for the head of the hammer.</Description>
+      <Description done="yes" first="no">The Daemons were dead, but a search uncovered an ingot of metal for the head of the hammer.</Description>
+      <Success first="yes">You have slain the Daemons and found an ingot for the head of the hammer.</Success>
+      <Success first="no">The Daemons are already dead, but a search soon uncovers an ingot for the head of the hammer.</Success>
+      <Reward type="item" data="62">The leader of the Daemons also has a magical suit of Midnight Armor.</Reward>
+      <Monster type="47" number="1" level="10" name="G&apos;tharunox"/>
+      <Monster type="44" number="7" level="2"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must now take the parts to the Dwarven smith, Kharok, to get them forged into the hammer. Location: %s.</Description>
+      <Description done="yes" first="yes">The Dwarven smith, Kharok, forged the hammer for you.</Description>
+      <Description done="yes" first="no">The Dwarven smith, Kharok, forged the hammer for you.</Description>
+      <Success first="yes">Having fought your way past some Golems, you finally meet Kharok, who agrees to forge the hammer for you.</Success>
+      <Success first="no">You finally meet Kharok, who agrees to forge the hammer for you.</Success>
+      <Reward type="xp" data="14">As well as the hammer, Kharok also teaches you much about smithing.  You earn 14 XP.</Reward>
+      <Monster type="14" number="1" level="10"/>
+      <Monster type="14" number="5" level="2"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">You must now defeat the Undead who have the Globe of Darkness, and then smash it forever. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the Undead and smashed the Globe of Darkness.</Description>
+      <Description done="yes" first="no">Alas!  The Undead were gone and the globe was already smashed.</Description>
+      <Success first="yes">You have slain the Undead who were trying to bring darkness to the world.</Success>
+      <Success first="no">Alas!  The Undead have already been slain and the globe is broken.</Success>
+      <Reward type="xp" data="60">You smash the Globe of Darkness with the hammer.  It releases a burst of energy, filling your mind with power.  You gain 50 XP.</Reward>
+      <Monster type="35" number="1" level="20" name="Gothac"/>
+      <Monster type="31" number="7" level="3"/>
+   </Part>
+</Quest>

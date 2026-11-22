@@ -1,0 +1,142 @@
+<Events>
+
+	<Warlord side="1" name="Aredhol" city="Ulgaria" level="14" portrait="0" major="2" minor="0">
+		<Unit id="0" type="8" level="6" name="Thelas"/>
+		<Unit id="1" type="8" level="6" name="Tirful"/>
+		<Unit id="2" type="11" level="8" name="Melandria"/>
+	</Warlord>
+
+	<Warlord side="2" name="Grakkor" city="Grakkora" level="12" portrait="2" major="0" minor="4">
+		<Unit id="0" type="26" level="4" name="Wulf"/>
+		<Unit id="1" type="28" level="8" name="Farix"/>
+		<Unit id="2" type="29" level="9" name="Durk"/>
+	</Warlord>
+
+
+	<Ruin id="0" available_for_quest="no">
+		<Heading>Barrow Wight</Heading>
+		<Message>This barrow contains the treasure of an ancient hero - a shining magical sword.</Message>
+		<Monster type="30" number="1" level="16"/>
+		<Reward type="item" data="48"/>
+	</Ruin >
+
+	<Ruin id="1" available_for_quest="no">
+		<Heading>Barrow Wight</Heading>
+		<Message>This barrow contains the treasure of an ancient hero - a shining magical suit of armor.</Message>
+		<Monster type="30" number="1" level="16"/>
+		<Reward type="item" data="71"/>
+	</Ruin >
+
+	<Ruin id="2" available_for_quest="no">
+		<Heading>Barrow Wight</Heading>
+		<Message>This barrow contains the treasure of an ancient hero - a shining magical helmet.</Message>
+		<Monster type="30" number="1" level="16"/>
+		<Reward type="item" data="19"/>
+	</Ruin >
+
+	<Ruin id="3" available_for_quest="no">
+		<Heading>Barrow Wight</Heading>
+		<Message>This barrow contains the treasure of an ancient hero - a shining magical shield.</Message>
+		<Monster type="30" number="1" level="16"/>
+		<Reward type="item" data="96"/>
+	</Ruin >
+
+	<Ruin id="5" available_for_quest="no">
+		<Heading>Harpy Hag</Heading>
+		<Message>The Harpy seems to have collected a number of books.  Many of them are ancient texts containing much wisdom.</Message>
+		<Monster type="40" number="1" level="8"/>
+		<Reward type="xp" data="10"/>
+	</Ruin >
+
+	<Event side="0" repeat="1">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="1"/>
+		<Message>Your King has given you a mission - expand his lands to the north in the Barrow Hills by wiping out the Orkish and Imperial forces there.|These Barrow Hills are rumored to be haunted. Even without ghosts and spirits, your foes will be difficult enough to conquer.  To this end the King will periodically supply you with reinforcements and gold.</Message>
+	</Event>
+
+	<Event side="0" repeat="0" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="4"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>Reinforcements arrive! | 4 Knights arrive at your capital, sent by the King himself, bearing 300 Gold coins.</Message>
+		<Action type="gold" data1="300"/>
+		<Action type="unit" data1="2" data2="4" data3="2"/>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="2"/>
+		<Message>You are learning many things about these lands.  Rumor has it that many old kings are buried here in the Southern Hills - hidden away in dark barrows.</Message>
+	</Event>
+
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="3"/>
+		<Message>Today you heard a new rumor!  The people here tell of a legend that four pieces of Shining armor can be found in the Barrow Hills.  They say that he who wears them will control a legion of Undead!</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="0">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="0"/>
+		<Action type="counter_add" data1="1" string1="shiny_counter"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="1">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="1"/>
+		<Action type="counter_add" data1="1" string1="shiny_counter"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="2">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="2"/>
+		<Action type="counter_add" data1="1" string1="shiny_counter"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="3">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="3"/>
+		<Action type="counter_add" data1="1" string1="shiny_counter"/>
+	</Event>
+
+
+
+	<Event side="0" repeat="1" location="ruin" locdata="0">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="0"/>
+		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
+		<Action type="counter_set" data1="0" string1="shiny_counter"/>
+		<Action type="unit" data1="32" data2="8" data3="6"/>
+		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="1">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="1"/>
+		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
+		<Action type="counter_set" data1="0" string1="shiny_counter"/>
+		<Action type="unit" data1="32" data2="8" data3="6"/>
+		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="2">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="2"/>
+		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
+		<Action type="counter_set" data1="0" string1="shiny_counter"/>
+		<Action type="unit" data1="32" data2="8" data3="6"/>
+		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="3">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="3"/>
+		<Trigger type="counter_eq" data1="4" string1="shiny_counter"/>
+		<Action type="counter_set" data1="0" string1="shiny_counter"/>
+		<Action type="unit" data1="32" data2="8" data3="6"/>
+		<Message>You have uncovered all 4 pieces of the hero&apos;s armor.  A legion of Undead knights flock to your banner!</Message>
+	</Event>
+
+</Events>

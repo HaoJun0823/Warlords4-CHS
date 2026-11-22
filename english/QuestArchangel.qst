@@ -1,0 +1,43 @@
+<Quest name="The Archangel">
+   <Part id="0">
+      <Description done="no">An Archangel visits you and charges you with the task of slaying 4 Daemons.  You should seek the first one immediately.  Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the first Daemon.</Description>
+      <Description done="yes" first="no">The first Daemon was already dead when you found him.</Description>
+      <Success first="yes">You have slain the first Daemon and should now seek the second one.</Success>
+      <Success first="no">The first Daemon is already dead, so you should immediately seek the second one.</Success>
+      <Reward type="item" data="94">You take the Daemon&apos;s skin and fashion it into a magical banner - the Banner of Rage.</Reward>
+      <Monster type="47" number="1" level="12" name="Gorak"/>
+      <Monster type="44" number="4" level="2"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">The Archangel now asks that you seek the second Daemon.  Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the second Daemon.</Description>
+      <Description done="yes" first="no">The second Daemon was already dead when you found him.</Description>
+      <Success first="yes">You have slain the second Daemon and should now seek the third one.</Success>
+      <Success first="no">The second Daemon is already dead, so you should immediately seek the third one.</Success>
+      <Reward type="item" data="38">You take the Daemon&apos;s bone and fashion a magical bow out of it - the Bow of Accuracy.</Reward>
+      <Monster type="47" number="1" level="13" name="Hergaal"/>
+      <Monster type="44" number="4" level="2"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">The Archangel now asks that you seek the third Daemon.  Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the third Daemon.</Description>
+      <Description done="yes" first="no">The third Daemon was already dead when you found him.</Description>
+      <Success first="yes">You have slain the third Daemon and should now seek the final one.</Success>
+      <Success first="no">The third Daemon is already dead, so you should immediately seek the final one.</Success>
+      <Reward type="item" data="1">You take the Daemon&apos;s skull and fashion it into a magical helm - the Grotesque Helm.</Reward>
+      <Monster type="47" number="1" level="14" name="Ignoraak"/>
+      <Monster type="44" number="5" level="2"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The Archangel now asks that you seek the final and most powerful Daemon.  Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the final Daemon, and the Archangel has joined you.</Description>
+      <Description done="yes" first="no">The final Daemon was already slain when you found him.  The Archangel was displeased with your commitment to the task.</Description>
+      <Success first="yes">You have slain the final Daemon, completing the Archangel&apos;s quest.</Success>
+      <Success first="no">The final Daemon is already dead.  The Archangel is displeased and leaves.</Success>
+      <Reward type="allies" unit="4" level="12" number="1" name="The Archangel">The Archangel is pleased.  He floats down from above and joins you in your battle.</Reward>
+      <Monster type="47" number="1" level="16" name="Ungoraak"/>
+      <Monster type="44" number="5" level="2"/>
+      <Monster type="46" number="1" level="1"/>
+   </Part>
+</Quest>

@@ -1,0 +1,92 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Haunter" city="Agaril" level="5" portrait="27" major="2" minor="0">
+		<Unit id="0" type="12" level="12" name="Huntsman"/>
+		<Unit id="1" type="12" level="12" name="Huntsman"/>
+		<Unit id="2" type="12" level="16" name="Huntsman"/>
+	</Warlord>
+
+	<Warlord side="2" name="Altorden" city="Pamir" level="5" portrait="22" major="0" minor="0">
+	</Warlord>
+
+	<Event side="0" repeat="1">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="1"/>
+		<Message string1="dummy" string2="English\\Sounds\\Amthor\\intro01.wav">You have reached the edge of the White Mountains. Only a handful of warriors have managed to flee with you into this small village. All of your brothers and sisters are dead, killed by the haunters of Khaz Agar...|You are sitting by the fireside as a guard appears in the doorway to announce Siantra - an Elf. An Elf in your house? You reach for your staff, but your fingers get an electric shock. In that moment the air is filled with electricity. Suddenly a beautiful young woman stands right before you.|&quot;I greet you Lord Amthor, last son of the Uthnags...&quot;</Message>
+		<Message>Her dark eyes look over you.|&quot;I came here to offer you an alliance. We are not friends, but we have the same enemy - Khaz Agar.&quot;|You try to interrupt her,but she stops you with a click of her fingers.|&quot;Before you give me an answer you should assess the situation. This is your last chance...&quot;|You know she is right, so you gnash your teeth and agree to the pact.|A smile flickers over her lips. &quot;I knew we would get along wonderfully... Go to Triilfold in the south. There you will receive the support you need.&quot;|Then she leaves the room without another word.</Message>
+		<Action type="unit" data1="12" data2="3" data3="3"/>
+	</Event>
+
+    <!--Reinforcement Quest-->
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="chance" data1="20"/>
+		<Trigger type="counter_ge" data1="1" String1="reinforcement"/>
+		<Action type="counter_add" data1="1" String1="reinforcement"/>
+	</Event>
+
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="3" String1="reinforcement"/>
+		<ShortMessage>A Harpy reaches Triilfold</ShortMessage>
+		<Action type="unit" data1="40" data2="1" data3="3"/>
+		<Action type="counter_add" data1="1" String1="reinforcement"/>
+	</Event>
+
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="2" String1="reinforcement"/>
+		<ShortMessage>Spiders reach Triilfold</ShortMessage>
+		<Action type="unit" data1="36" data2="2" data3="2"/>
+		<Action type="counter_add" data1="1" String1="reinforcement"/>
+	</Event>
+
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="reinforcement"/>
+		<ShortMessage>A Spider reaches Triilfold 1</ShortMessage>
+		<Action type="unit" data1="36" data2="1" data3="4"/>
+		<Action type="counter_add" data1="1" String1="reinforcement"/>
+	</Event>
+
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_ge" data1="4" String1="reinforcement"/>
+		<Action type="counter_add" data1="-3" String1="reinforcement"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="5">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="5" data2="0"/>
+		<Message>You have reached the city of Triilfold. The Viceregent greets you. He has a message from Siantra. Her reinforcement will reach this city soon.</Message>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="reinforcement"/>
+	</Event>
+
+	<Event side="1" repeat="1" location="city" locdata="5">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="5"/>
+		<Action type="counter_set" data1="10" String1="reinforcement"/>
+	</Event>
+	<Event side="2" repeat="1" location="city" locdata="5">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="5"/>
+		<Action type="counter_set" data1="10" String1="reinforcement"/>
+	</Event>
+
+    <!--Win Options-->
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="10" String1="reinforcement"/>
+		<Message>The city of supply is under the control of your enemies. You have failed your quest.</Message>
+		<Action type="defeat" data1="0"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="20">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="20"/>
+		<Message>You have managed to kill the leader of the haunters.|Continue with Amthor 02...</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+</Events>

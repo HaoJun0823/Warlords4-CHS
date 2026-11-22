@@ -1,0 +1,54 @@
+[RULES]
+
+100 [PREF] [SYL1] [SYL2] [SYL3]
+
+[PREF]
+Tomb of 
+Pyramid of 
+Crypt of 
+Ziggurat of 
+Monument of 
+
+[SYL1]
+El'
+Tal'
+Im'
+Nor'
+En'
+
+
+
+[SYL2]
+Ba
+Cha
+Do
+Fa
+Go
+Ha
+I
+Ju
+Kha
+Lo
+Ma
+Nu
+O
+Pa
+Ru
+Sa
+To
+
+
+[SYL3]
+rad
+rel
+lid
+had
+ran
+chak
+shep
+hon
+mel
+mar
+nor
+mun
+

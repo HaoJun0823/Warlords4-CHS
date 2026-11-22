@@ -1,0 +1,38 @@
+<Quest name="The Spirit Lord">
+   <Part id="0">
+      <Description done="no">It is said that the essence of the Lord of the Barrow Hills was split into 4 parts and hidden away, locked inside magical globes.  You must seek the first one. Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the first guardian and recovered the first globe.</Description>
+      <Description done="yes" first="no">The first guardian was already dead, but a thorough search soon found the first globe.</Description>
+      <Success first="yes">You have slain the first guardian and found the first globe containing the Spirit Lord&apos;s essence.</Success>
+      <Success first="no">The guardian is already dead, but a thorough search reveals the first part of the Spirit Lord&apos;s essence</Success>
+      <Reward type="mana" data="2">The globe containing the essence is actually fashioned from 2 Mana Crystals.</Reward>
+      <Monster type="31" number="1" level="20"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You must seek the second globe containing the Spirit Lord&apos;s Essence. Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the second guardian and recovered the second globe.</Description>
+      <Description done="yes" first="no">The second guardian was already dead, but a thorough search soon found the second globe.</Description>
+      <Success first="yes">You have slain the second guardian and found the second globe containing the Spirit Lord&apos;s essence.</Success>
+      <Success first="no">The guardian is already dead, but a thorough search reveals the second part of the Spirit Lord&apos;s essence</Success>
+      <Reward type="mana" data="2">The globe containing the essence is actually fashioned from 2 Mana Crystals.</Reward>
+      <Monster type="44" number="1" level="16"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must seek the third globe containing the Spirit Lord&apos;s Essence. Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the third guardian and recovered the third globe.</Description>
+      <Description done="yes" first="no">The third guardian was already dead, but a thorough search soon found the third globe.</Description>
+      <Success first="yes">You have slain the third guardian and found the third globe containing the Spirit Lord&apos;s essence.</Success>
+      <Success first="no">The guardian is already dead, but a thorough search reveals the third part of the Spirit Lord&apos;s essence</Success>
+      <Reward type="mana" data="2">The globe containing the essence is actually fashioned from 2 Mana Crystals.</Reward>
+      <Monster type="14" number="1" level="16"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">You must seek the final globe containing the Spirit Lord&apos;s Essence. Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the final guardian and recovered the final globe.  The Spirit Lord himself has joined your army.</Description>
+      <Description done="yes" first="no">Alas!  The third guardian was dead, and the globe gone.  Without it, you will never be able to call upon the Spirit Lord.</Description>
+      <Success first="yes">You have slain the final guardian and found the final globe containing the Spirit Lord&apos;s essence.</Success>
+      <Success first="no">The guardian is already dead, and the final globe is nowhere to be found.</Success>
+      <Reward type="allies" unit="43" level="20" number="1" name="Spirit Lord">With all 4 globes present, you finally call upon the Spirit Lord.  Grateful for his freedom, he offers to join you.</Reward>
+      <Monster type="35" number="1" level="15"/>
+   </Part>
+</Quest>

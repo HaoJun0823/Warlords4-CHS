@@ -1,0 +1,99 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Lord Restorn" city="Renunburg" level="15" portrait="27" major="1" minor="0">
+	</Warlord>
+
+	<Warlord side="2" name="Oh&apos;rtrak" city="K'skuluur" level="15" portrait="03" major="0" minor="0">
+	</Warlord>
+
+	<Warlord side="3" name="Nugnartok" city="Ch'Arghoor" level="14" portrait="09" major="0" minor="1">
+	</Warlord>
+
+	<Warlord side="4" name="Chulkasik" city="Chun-ar" level="13" portrait="23" major="0" minor="2">
+	</Warlord>
+
+
+    <!--Story start-->
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="turn" data1="1"/>
+		<Message>You are back on land. You have missed your quest. The ancient Dragon Kirin is still alive. And he has told you that Ogres had crafted the amulet for Siantra! You need to find out who is telling the truth.|You have sent an envoy to Siantra. She must hand out the amulet. You want to make your own decision.|While you are waiting for the return of your envoy, you use the time to investigate ethe hills of the Giants. You cannot lead the Dark Elves for this task. It seems you cannot trust anyone anymore.|But you ARE a summoner.</Message>
+		<Action type="counter_set" data1="0" String1="w1"/>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="10"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>You have heard nothing from your envoy. It seems he may have gotten into trouble...</Message>
+	</Event>
+
+
+    <!--Spider start-->
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="33"/>
+		<Message>An outpost of the Dark Elves?! That makes you think...</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="36">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="36"/>
+		<Message>You have found a portal to a dark sphere. This will improve your mana flow...</Message>
+		<Action type="particle" string1="BlackCapitol"/>
+		<Action type="mana_crystals" data1="2"/>
+	</Event>
+
+    <!--Spider reinforcement-->
+	<Event side="2" repeat="20" location="city" locdata="16">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="w1"/>
+		<Action type="unit" data1="36" data2="1" data3="4"/>
+	</Event>
+
+	<Event side="3" repeat="20" location="city" locdata="20">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="w1"/>
+		<Action type="unit" data1="36" data2="1" data3="4"/>
+	</Event>
+
+
+    <!-- Warlord Win Option -->
+	<Event side="0" repeat="1" location="city" locdata="1">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="20"/>
+		<Action type="counter_add" data1="1" String1="w1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="1">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="16"/>
+		<Action type="counter_add" data1="1" String1="w1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="5">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="5"/>
+		<Message>It is always a pleasure to get rid of the stinky orcs...</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="5">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="4"/>
+		<Message>It seams like you have aroused the interest of the Knights and the Empire. They are always close behind, but why?</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="1" String1="w1"/>
+		<Message>You have struck down the giant warlord. You search the rooms of his citadel. The dragon was right; the Ogres possess the knowledge to craft items. But there is no proof of a connection to Siantra... yet.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="2" String1="w1"/>
+		<Message>This giant was very difficult to overcome! There is no doubt he was supported by the dark elves. Again you search the rooms of his citadel. In the room of the warlord you find a wooden chest containing a letter; it is signed with the seal of Siantra!|Falsified or not, the time has come to visit the elf and confront her with the results of your investigation. And of course... ask after your envoy!|Continue with Amthor 10...</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+</Events>

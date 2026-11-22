@@ -1,0 +1,5 @@
+<CutScene file="Video\Campaign_3_0.bik" voice="Campaign\Campaign_3_0.wav" duration="25000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">Where was the Dark Elven Sorceress, Aravein?  And what was she seeking?</Text>
+	<Text time="7000">Perhaps King Garranoth of the Doomwood, Lord of the Dark Elves, knew the answers.  Perhaps they were working together – both of them behind some sinister plot.</Text>
+	<Text time="17500">The road to his Citadel was well protected by his troops, but it was a road that needed to be traveled.</Text>
+</CutScene>

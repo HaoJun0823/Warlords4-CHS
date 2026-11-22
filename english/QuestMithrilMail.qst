@@ -1,0 +1,42 @@
+<Quest name="The Mithril Mail">
+   <Part id="0">
+      <Description done="no">If you clear out 4 old Dwarven mines, the Dwarves will make you a suit of Mithril Mail. Seek the first mine. Location: %s.</Description>
+      <Description done="yes" first="yes">The first mine has been cleared out and the Dwarves can return there.</Description>
+      <Description done="yes" first="no">The first mine was already cleared out.</Description>
+      <Success first="yes">The first mine is now free for the Dwarves to return.</Success>
+      <Success first="no">This mine is already empty, so the Dwarves can return at their leisure.</Success>
+      <Reward type="gold" data="1976">You find treasure in this mine worth 1976 gold.</Reward>
+      <Monster type="46" number="1" level="6"/>
+      <Monster type="42" number="4" level="2"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You must now clear out the second Dwarven mine. Location: %s.</Description>
+      <Description done="yes" first="yes">The second mine has been cleared out and the Dwarves can return there.</Description>
+      <Description done="yes" first="no">The second mine was already cleared out.</Description>
+      <Success first="yes">The second mine is now free for the Dwarves to return.</Success>
+      <Success first="no">This mine is already empty, so the Dwarves can return at their leisure.</Success>
+      <Reward type="xp" data="16">You find an ancient Dwarven text, detailing battle techniques.  Gain 16 XP.</Reward>
+      <Monster type="31" number="1" level="12"/>
+      <Monster type="30" number="7" level="3"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must now clear out the third Dwarven mine. Location: %s.</Description>
+      <Description done="yes" first="yes">The third mine has been cleared out and the Dwarves can return there.</Description>
+      <Description done="yes" first="no">The third mine was already cleared out.</Description>
+      <Success first="yes">The third mine is now free for the Dwarves to return.</Success>
+      <Success first="no">This mine is already empty, so the Dwarves can return at their leisure.</Success>
+      <Reward type="hero" unit="17" level="6" number="1" name="Khaffi">Impressed by your commitment, a Dwarven hero offers to help you with the final mine.</Reward>
+      <Monster type="29" number="1" level="9"/>
+      <Monster type="25" number="7" level="3"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">You must now clear out the final Dwarven mine. Location: %s.</Description>
+      <Description done="yes" first="yes">The final mine has been cleared out and the Dwarves have gifted you a suit of Mithril Mail.</Description>
+      <Description done="yes" first="no">The final mine was already cleared out.  The Dwarves refused to give you the Mithril Mail.</Description>
+      <Success first="yes">All 4 mines have now been cleared.</Success>
+      <Success first="no">Alas, this mine has already been cleared out.  The Dwarves decide not to give you the Mithril Mail.</Success>
+      <Reward type="item" data="74">With all the mines cleared out, the Dwarves are grateful, and they give you the Mithril Mail as promised.</Reward>
+      <Monster type="50" number="1" level="15"/>
+      <Monster type="43" number="4" level="1"/>
+   </Part>
+</Quest>

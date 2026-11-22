@@ -1,0 +1,5 @@
+<CutScene file="Video\Campaign_10_0.bik" voice="Campaign\Campaign_10_0.wav" duration="23000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">The tallest tower in Malbec could be seen for miles around, and it was there that Aravein waited.</Text>
+	<Text time="7500">Even now, the sound of her chanting carried heavily through the air.  Every syllable brought forth more Daemons, and brought the world one step closer to its doom.</Text>
+	<Text time="16500">It was time to decide the fate of Etheria...</Text>
+</CutScene>

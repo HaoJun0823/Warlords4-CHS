@@ -1,0 +1,7 @@
+<CutScene file="Video\Campaign_9_0.bik" voice="Campaign\Campaign_9_0.wav" duration="46000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">All that remained was to cross the Broken Marsh.</Text>
+	<Text time="5000">3000 years past, before the Sundering, the Marsh had been fertile land.  Men had settled there.  It was the beginning of a thriving empire, centered around the city of Malbec.</Text>
+	<Text time="17000">The Sundering had changed all that.  Huge tidal waves had swept over the land drowning it and its inhabitants, destroying everything in its path.</Text>
+	<Text time="26500">Ever since that fateful day, it had been known as the Broken Marsh.  Few doubted that unquiet spirits of the dead still walked amongst its reeds and pools.</Text>
+	<Text time="36500">Now however, an army needed to pass through, lest history repeat itself, and the Broken Marsh be broken once again.</Text>
+</CutScene>

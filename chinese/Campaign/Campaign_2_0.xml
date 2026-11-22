@@ -1,0 +1,5 @@
+<CutScene file="Video\Campaign_2_0.bik" voice="Campaign\Campaign_2_0.wav" duration="38000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">It was imperative to discover why the Daemons had led the Orcs in an attack.  What did they want from the libraries?  Why had they stolen books?  And what books had been taken?</Text>
+	<Text time="12500">Only one person might answer such questions – the Dark Elven Sorceress Aravein.  She was an expert in all things Daemonic.  And although her price might be high for such knowledge – there were questions that needed to be answered.</Text>
+	<Text time="27500">An expedition set forth, prepared to cross the Giantridge Mountains, battling Ogres and Trolls, in an attempt to reach Aravein’s Citadel.</Text>
+</CutScene>

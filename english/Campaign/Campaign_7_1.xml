@@ -1,0 +1,5 @@
+<CutScene file="Video\Campaign_7_1.bik" voice="Campaign\Campaign_7_1.wav" duration="34000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">The battle in the Selentine Empire was over, and the entire throne was carried back to Kelthurax, lest one gem be deemed missing.</Text>
+	<Text time="11000">Once again, Kelthurax was pleased, and he spoke these very words:</Text>
+	<Text time="16000">“Beyond the Broken Marsh, in the ruins of Malbec, at the top of the tallest tower that still stands, Aravein has already begun to conjure her spell.  Make haste… or these will be interesting times…”</Text>
+</CutScene>

@@ -1,0 +1,44 @@
+<Quest name="The Fallen Knight">
+   <Part id="0">
+      <Description done="no">Some Knights have been attacked and cornered.  If you go to their aid, there may be a reward involved.  Location: %s.</Description>
+      <Description done="yes" first="yes">You saved the Knights from their attackers, although their commander had already been slain.</Description>
+      <Description done="yes" first="no">The Knights had already been saved, but they gratefully acknowledged your offer to help track their assailants.</Description>
+      <Success first="yes">You have saved the Knights, though their commander has been slain.  They ask you to track down the leader of the Assassins who attacked them.</Success>
+      <Success first="no">The Knights are already safe, though their commander has been slain.  They ask you to track down the leader of the Assassins who attacked them.</Success>
+      <Reward type="allies" unit="2" level="8" number="1" name="Sir Beltroth">A young Knight offers to join you and help identify the Assassin.</Reward>
+      <Monster type="36" number="6" level="2"/>
+      <Monster type="36" number="1" level="8"/>
+      <Monster type="40" number="1" level="5"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">It is well known that Assassins often frequent an old burial ground. You should search there for clues. Location: %s.</Description>
+      <Description done="yes" first="yes">Although you did not find the Assassin, you learned that he had just collected his payment, and had received a new target.</Description>
+      <Description done="yes" first="no">Although you did not find the Assassin, you learned that he had just collected his payment, and had received a new target.</Description>
+      <Success first="yes">The Undead Guardians are defeated.  After some searching you find an old Goblin who tells you the Assassin was here to receive payment... and a new target.</Success>
+      <Success first="no">No Undead guard this place.  After some searching you find an old Goblin who tells you the Assassin was here to receive payment... and a new target.</Success>
+      <Reward type="gold" data="2032">In the tombs and coffins here, you discover much treasure: 2032 Gold.</Reward>
+      <Monster type="30" number="7" level="3"/>
+      <Monster type="35" number="1" level="8" name="Lord Boris"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">The Assassin is attempting to slay a hero who is out adventuring.  You must try to stop him.  Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the Assassin&apos;s troops, but he made a quick getaway.</Description>
+      <Description done="yes" first="no">The Assassin had already failed in this new task.  His allies were dead, but he was nowhere to be found.</Description>
+      <Success first="yes">You have stopped the Assassin and killed his allies.  Unfortunately the Assassin has escaped, but he has left a trail to follow.</Success>
+      <Success first="no">It seems that somebody else already stopped the Assassin, killing his allies.  Unfortunately the Assassin has escaped, but he has left a trail to follow.</Success>
+      <Reward type="item" data="35">One of the Assassin&apos;s men was carrying a wicked-looking blade - a Dagger of Venom.</Reward>
+      <Monster type="36" number="4" level="2"/>
+      <Monster type="37" number="3" level="2"/>
+      <Monster type="31" number="1" level="5"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The Assassin has escaped, but he was in such a hurry that he left a trail leading to his home. Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the Assassin and avenged the leader of the Knights.</Description>
+      <Description done="yes" first="no">Although you did not slay the Assassin, you found his dead body.</Description>
+      <Success first="yes">You have slain the Assassin and now the Knights have been avenged.</Success>
+      <Success first="no">Unfortunately, the Assassin is already dead and all of his treasure is gone.</Success>
+      <Reward type="allies" unit="2" level="8" number="8" >When news of this reaches the Knights, a group of them vow to serve you until death!</Reward>
+      <Monster type="36" number="2" level="8" />
+      <Monster type="37" number="1" level="22" name="Talon"/>
+   </Part>
+</Quest>

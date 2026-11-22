@@ -1,0 +1,42 @@
+<Quest name="The Treasure Map">
+   <Part id="0">
+      <Description done="no">Three pieces of a treasure map will show the way to a wealth of jewels and gems. Seek the first piece.  Location: %s.</Description>
+      <Description done="yes" first="yes">You found the first piece of the treasure map.</Description>
+      <Description done="yes" first="no">Nobody was around, so you took the first piece of the map for yourself.</Description>
+      <Success first="yes">A quick search reveals the first piece of the treasure map.</Success>
+      <Success first="no">This place is deserted, but a quick search reveals the first piece of the treasure map.</Success>
+      <Reward type="item" data="4">As well as the treasure map, you also find a Helm of Speed.</Reward>
+      <Monster type="48" number="1" level="8"/>
+      <Monster type="48" number="5" level="1"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You should seek the second piece of the treasure map.  Location: %s.</Description>
+      <Description done="yes" first="yes">You found the second piece of the treasure map.</Description>
+      <Description done="yes" first="no">Nobody was around, so you took the second piece of the map for yourself.</Description>
+      <Success first="yes">A quick search reveals the second piece of the treasure map.</Success>
+      <Success first="no">This place is deserted, but a quick search reveals the second piece of the treasure map.</Success>
+      <Reward type="mana" data="2">As well as the treasure map, you also find 2 Mana Crystals.</Reward>
+      <Monster type="41" number="1" level="8"/>
+      <Monster type="37" number="4" level="1"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You should seek the third piece of the treasure map.  Location: %s.</Description>
+      <Description done="yes" first="yes">You found the third piece of the treasure map.</Description>
+      <Description done="yes" first="no">Nobody was around, so you took the third piece of the map for yourself.</Description>
+      <Success first="yes">A quick search reveals the third piece of the treasure map.</Success>
+      <Success first="no">This place is deserted, but a quick search reveals the third piece of the treasure map.</Success>
+      <Reward type="allies" unit="12" level="12" number="1" name="Khudhar">A Dwarf who was also looking for the map offers to help you find the treasure.</Reward>
+      <Monster type="43" number="1" level="12"/>
+      <Monster type="42" number="6" level="1"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The map is complete!  You can now see the location of the treasure.  Location: %s.</Description>
+      <Description done="yes" first="yes">You found the treasure - a fortune in gems and jewellery.</Description>
+      <Description done="yes" first="no">You searched for the treasure, but it seems that somebody beat you here.</Description>
+      <Success first="yes">This must be the place - there are gems and jewels everywhere.</Success>
+      <Success first="no">This place is empty.  Somebody must have gotten the gems and jewels before you.</Success>
+      <Reward type="gold" data="23186">You find gems and jewellery to the value of 23186 gold.</Reward>
+      <Monster type="22" number="1" level="12"/>
+      <Monster type="25" number="6" level="1"/>
+   </Part>
+</Quest>

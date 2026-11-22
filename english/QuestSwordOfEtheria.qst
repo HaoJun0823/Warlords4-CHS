@@ -1,0 +1,42 @@
+<Quest name="The Sword of Etheria">
+   <Part id="0">
+      <Description done="no">You must find the 3 parts of the Sword of Etheria and then join them together. The first part is guarded by Krug the Orclord. Location: %s.</Description>
+      <Description done="yes" first="yes">The guardians of the first part of the sword were slain, and it was recovered.</Description>
+      <Description done="yes" first="no">The guardians of the first part of the sword were already dead, but you recovered the sword unharmed.</Description>
+      <Success first="yes">You have slain the guardians of the first part of the sword and recovered it.</Success>
+      <Success first="no">The guardians of the first part of the sword are already dead but fortunately the sword is unharmed.</Success>
+      <Reward type="gold" data="2134">As well as the piece of the sword you also discover a cache of gold and jewellery, value 2134 gp.</Reward>
+      <Monster type="25" number="1" level="10" name="Krug"/>
+      <Monster type="25" number="7" level="1"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You must now seek the second piece of the sword. It is guarded by the Imperial noble, Countess Kullandra.  Location: %s.</Description>
+      <Description done="yes" first="yes">The guardians of the second piece of the sword were slain, and it was recovered.</Description>
+      <Description done="yes" first="no">The guardians of the second piece of the sword were already dead, but you recovered the sword unharmed.</Description>
+      <Success first="yes">You have slain the guardians of the second piece of the sword and recovered it unharmed.</Success>
+      <Success first="no">The guardians of the second piece of the sword are already dead but fortunately the sword is unharmed.</Success>
+      <Reward type="item" data="16">As well as the second piece of sword you also discover a Medusa Helm that the Countess had collected.</Reward>
+      <Monster type="11" number="1" level="12" name="Kullandra"/>
+      <Monster type="6" number="5" level="3"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must now seek the final part of the sword.  It is guarded by  the Elven hero, Elea.  Location: %s.</Description>
+      <Description done="yes" first="yes">The guardians of the final piece of the sword were slain, and it was recovered.</Description>
+      <Description done="yes" first="no">The guardians of the final piece of the sword were already dead, but you recovered it unharmed.</Description>
+      <Success first="yes">You have slain the guardians of the final piece of the sword and recovered it unharmed.</Success>
+      <Success first="no">The guardians of final piece of the sword are already dead but fortunately it is unharmed.</Success>
+      <Reward type="mana" data="3">As well as the final piece of the sword you also discover a cache of 3 Mana Crystals.</Reward>
+      <Monster type="59" number="1" level="14" name="Elea"/>
+      <Monster type="54" number="6" level="1"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">With the 3 parts of the sword finally united, you must now seek the Dwarven Smith Durgan to forge the sword anew. Location: %s.</Description>
+      <Description done="yes" first="yes">Durgan has reforged the 3 pieces of the sword into a new Sword of Etheria.</Description>
+      <Description done="yes" first="no">Unfortunately Durgan was nowhere to be found and the sword could not be mended.</Description>
+      <Success first="yes">You have battled your way through to Durgan and he can now mend the sword.</Success>
+      <Success first="no">Unfortunately this place is empty and Durgan is nowhere to be found.</Success>
+      <Reward type="item" data="55">Durgan slaves away at his forge for an entire day before emerging with the Sword of Etheria gleaming like new.</Reward>
+      <Monster type="14" number="1" level="15"/>
+      <Monster type="14" number="7" level="2"/>
+   </Part>
+</Quest>

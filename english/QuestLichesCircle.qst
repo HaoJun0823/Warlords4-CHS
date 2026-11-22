@@ -1,0 +1,43 @@
+<Quest name="The Liche&apos;s Circle">
+   <Part id="0">
+      <Description done="no">You must stop a group of 4 Liches intent on world domination. The first is hidden away researching dark magic. Location: %s.</Description>
+      <Description done="yes" first="yes">The first Liche has been slain.</Description>
+      <Description done="yes" first="no">The first Liche was already dead.</Description>
+      <Success first="yes">You have slain the first Liche.</Success>
+      <Success first="no">This place is empty.  The first Liche has already been slain.</Success>
+      <Reward type="hero" unit="59" level="3" number="1" name="Rhiannon">This Liche had a young Elven girl prisoner whom he was about to sacrifice.  Once freed she joins you.</Reward>
+      <Monster type="31" number="1" level="10"/>
+      <Monster type="18" number="7" level="2"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You must now seek the second Liche. Location: %s.</Description>
+      <Description done="yes" first="yes">The second Liche has been slain.</Description>
+      <Description done="yes" first="no">The second Liche was already dead.</Description>
+      <Success first="yes">You have slain the second Liche.</Success>
+      <Success first="no">This place is empty.  The second Liche has already been slain.</Success>
+      <Reward type="item" data="92">This Liche was fashioning a magical ring from the bone of his Trollish servants.</Reward>
+      <Monster type="31" number="1" level="11"/>
+      <Monster type="19" number="3" level="3"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must now seek the third Liche. Location: %s.</Description>
+      <Description done="yes" first="yes">The third Liche has been slain.</Description>
+      <Description done="yes" first="no">The third Liche was already dead.</Description>
+      <Success first="yes">You have slain the third Liche.</Success>
+      <Success first="no">This place is empty.  The third Liche has already been slain.</Success>
+      <Reward type="mana" data="2">In this Liche&apos;s lair you find a cache of 2 mana crystals.</Reward>
+      <Monster type="31" number="1" level="13"/>
+      <Monster type="25" number="7" level="3"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">You must now seek the final and most powerful Liche. Location: %s.</Description>
+      <Description done="yes" first="yes">The final Liche has been slain and the Liche&apos;s circle is broken.</Description>
+      <Description done="yes" first="no">The final Liche was already dead, but at least now the Liche&apos;s circle is broken.</Description>
+      <Success first="yes">You have slain the final Liche and the circle of Liche&apos;s is finally broken.</Success>
+      <Success first="no">This place is empty.  The final Liche has already been slain.</Success>
+      <Reward type="item" data="21">This Liche possessed an ancient magical artifact - the Helm of Sartek.</Reward>
+      <Monster type="31" number="1" level="20"/>
+      <Monster type="34" number="1" level="3"/>
+      <Monster type="36" number="2" level="1"/>
+   </Part>
+</Quest>

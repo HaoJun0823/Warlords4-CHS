@@ -1,0 +1,82 @@
+<Events>
+
+	<Warlord side="1" name="Emperor Selentius XXVI" city="Enmouth" portrait="27" major="4" minor="0">
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>You must capture the citadel of Enmouth, at the north-western tip of the Selentine Empire. | Once you have captured the city you can take the gems from the throne back to Kelthurax.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="3"/>
+		<Message>A Dark Elf, named Xargon, approaches you in your capital. | They are a member of a cult called the Dark Path. They are enemies of the Selentines and will aid you in your attack on the Empire.</Message>
+		<Action type="unit" data1="37" data2="1" data3="5" string1="Xargon"/>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="6"/>
+		<Message>Another member of the Dark Path joins you in your capital. | This Dark Elf is called Arach - Master of Spiders.</Message>
+		<Action type="unit" data1="37" data2="1" data3="6" string1="Arach"/>
+		<Action type="unit" data1="36" data2="3" data3="3" string1="Tarantula"/>
+	</Event>
+	<Event side="1" repeat="1" location="city" locdata="0">
+		<Trigger type="turn" data1="7"/>
+		<Message>It seems the Emperor has heard the rumors about the Dark Path becoming active. He mobilizes a unit of Imperial Guards in Enmouth to seek out and destroy any Dark Path cultists.</Message>
+		<Action type="unit" data1="6" data2="1" data3="9" string1="Imperial Captain"/>
+		<Action type="unit" data1="6" data2="7" data3="3" string1="Imperial Guard"/>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="9"/>
+		<Message>Yet another member of the Dark Path joins you. | This Dark Elf is called Dethion - Master of Quasits.</Message>
+		<Action type="unit" data1="37" data2="1" data3="7" string1="Dethion"/>
+		<Action type="unit" data1="42" data2="3" data3="3" string1="Quasit"/>
+	</Event>
+	<Event side="1" repeat="1" location="city" locdata="0">
+		<Trigger type="turn" data1="10"/>
+		<Message>It seems the last unit of Imperial Guard was not sufficient. Another unit is mobilized in Enmouth and sent out to find the Dark Path cultists.</Message>
+		<Action type="unit" data1="6" data2="1" data3="9" string1="Imperial Captain"/>
+		<Action type="unit" data1="6" data2="7" data3="3" string1="Imperial Guard"/>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="12"/>
+		<Message>Another Dark Path cultist joins you - this one is a female. | Her name is Kayla - Mistress of Wights.</Message>
+		<Action type="unit" data1="41" data2="1" data3="6" string1="Kayla"/>
+		<Action type="unit" data1="30" data2="3" data3="3" string1="Wight"/>
+	</Event>
+	<Event side="1" repeat="1" location="city" locdata="0">
+		<Trigger type="turn" data1="13"/>
+		<Message>The Emperor is growing impatient. He sends out a group of Imperial Guardsmen led by his best general.</Message>
+		<Action type="unit" data1="8" data2="1" data3="14" string1="General Peleas"/>
+		<Action type="unit" data1="6" data2="7" data3="3" string1="Imperial Guard"/>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="15"/>
+		<Message>No more members of the Dark Path offer to join you. Perhaps the Emperor&apos;s response has scared them off.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="0"/>
+		<Message>Enmouth has fallen! You have defeated the Emperor. You may now loot the treasures from his throneroom.</Message>
+	</Event>
+	<Event side="4" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="4"/>
+		<Message>Enmouth has fallen! You have defeated the Emperor. You may now loot the treasures from his throneroom.</Message>
+	</Event>
+	<Event side="6" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="6"/>
+		<Message>Enmouth has fallen! You have defeated the Emperor. You may now loot the treasures from his throneroom.</Message>
+	</Event>
+	<Event side="7" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="7"/>
+		<Message>Enmouth has fallen! You have defeated the Emperor. You may now loot the treasures from his throneroom.</Message>
+	</Event>
+</Events>

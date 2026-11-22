@@ -1,0 +1,42 @@
+<Quest name="The Summoning">
+   <Part id="0">
+      <Description done="no">If you can find 4 pieces of a summoning spell, you will be able to summon a Daemon Prince.  The knights have hidden the first piece. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the first guardian knight and recovered part of the spell on a scrap of parchment.</Description>
+      <Description done="yes" first="no">There was no guardian, but you found a piece of the spell on a scrap of parchment.</Description>
+      <Success first="yes">You have slain the guardian knight and recovered the first piece of the spell.</Success>
+      <Success first="no">This place is empty, but a thorough search soon reveals the first part of the spell.</Success>
+      <Reward type="item" data="12">As well as the first part of the spell you also find a magical helm.</Reward>
+      <Monster type="2" number="1" level="10"/>
+      <Monster type="0" number="4" level="2"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">The second piece of the summoning spell is also guarded by a knight. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the second guardian knight and recovered part of the spell on a scrap of parchment.</Description>
+      <Description done="yes" first="no">There was no guardian, but you found a piece of the spell on a scrap of parchment.</Description>
+      <Success first="yes">You have slain the guardian knight and recovered the second piece of the spell.</Success>
+      <Success first="no">This place is empty, but a thorough search soon reveals the second part of the spell.</Success>
+      <Reward type="item" data="48">As well as the second part of the spell you also find a magical sword.</Reward>
+      <Monster type="2" number="1" level="12"/>
+      <Monster type="1" number="4" level="1"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">The third piece of the summoning spell is also guarded by a knight. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the third guardian knight and recovered part of the spell on a scrap of parchment.</Description>
+      <Description done="yes" first="no">There was no guardian, but you found a piece of the spell on a scrap of parchment.</Description>
+      <Success first="yes">You have slain the guardian knight and recovered the third piece of the spell.</Success>
+      <Success first="no">This place is empty, but a thorough search soon reveals the third part of the spell.</Success>
+      <Reward type="item" data="96">As well as the third part of the spell you also find a magical shield.</Reward>
+      <Monster type="2" number="1" level="15"/>
+      <Monster type="50" number="1" level="1"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The final piece of the summoning spell is guarded by a ancient and powerful Paladin. Location: %s.</Description>
+      <Description done="yes" first="yes">You recovered the final part of the spell and summoned a Daemon Lord.</Description>
+      <Description done="yes" first="no">Alas!  The final part of the spell could not be found, and so the spell could not be cast.</Description>
+      <Success first="yes">You have slain the final guardian and completed the spell.</Success>
+      <Success first="no">This place is empty.  Somebody has already been here and taken the final part of the spell.</Success>
+      <Reward type="allies" unit="44" level="18" number="1" name="Prince Azrafel">You put the pieces of parchment together and read the spell.  A huge Daemon Prince appears, ready to serve you.</Reward>
+      <Monster type="2" number="1" level="24" name="Paladin"/>
+      <Monster type="52" number="2" level="1"/>
+   </Part>
+</Quest>

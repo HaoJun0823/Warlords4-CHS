@@ -1,0 +1,56 @@
+[RULES]
+
+10 [NAME]
+50 [SYL1] [SYL2]
+80 [SYL1] [SYL3] [SYL2]
+90 [TITLE] [NAME]
+100 [TITLE] [SYL1] [SYL2]
+
+[NAME]
+Metella
+Filia
+Tiberia
+Claudia
+Vitellia
+Tituia
+Domitia
+Caecilia
+Augusta
+Laudaria
+Adraxia
+
+[SYL1]
+Car
+Ver
+Nor
+Mor
+Ter
+Tarn
+Met
+Gal
+Cal
+Ion
+Pel
+Just
+
+[SYL2]
+ia
+iam
+a
+am
+ix
+aga
+ixa
+
+[SYL3]
+en
+an
+il
+al
+em
+ar
+or
+
+[TITLE]
+Lady 
+

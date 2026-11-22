@@ -1,0 +1,90 @@
+<Events>
+
+	<Warlord side="1" name="Sir Agramor" city="Dragongaard" portrait="11" major="0" minor="1">
+		<Unit id="0" type="2" level="8" name="Lord James"/>
+		<Unit id="1" type="5" level="8" name="Sir Charles"/>
+		<Unit id="2" type="5" level="12" name="Sir Morgan"/>
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>In the center of the Bartonian Forest, deep inside a snowy valley, a group of Sirian Knights guard the Dragonstone. | You must obtain the Dragonstone, so that you may approach Kelthurax, the most Ancient of Dragons.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="3"/>
+		<Message>You are surprised! | Although you are here to wage war upon the Bartonian Knights, many of their neighbors seem to support you. Over the next few weeks, you will receive a number of envoys who will discuss how their nations might lend help.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="5"/>
+		<Message>The envoy of the Gildine Knights arrives. He proposes that his nation will occasionally send you some gold to help.</Message>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="6"/>
+		<Message>The envoy of the Elenian Knights arrives. He proposes that his nation will supply you with archers to attack the Bartonians.</Message>
+	</Event>
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="7"/>
+		<Message>The envoy of the Theiran Knights arrives. He is not so much interested in the Bartonians, but instead offers you some troops to fight the Trolls that the Bartonians use to guard their borders.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="4">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="4"/>
+		<Action type="victory" data1="0"/>
+		<Message>Dragongaard Keep has fallen at last, and you now possess the Dragonstone.  Your work in Bartonia is complete!</Message>
+	</Event>
+	<Event side="4" repeat="1" location="city" locdata="4">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="4"/>
+		<Action type="victory" data1="4"/>
+		<Message>Dragongaard Keep has fallen at last, and you now possess the Dragonstone.  Your work in Bartonia is complete!</Message>
+	</Event>
+	<Event side="6" repeat="1" location="city" locdata="4">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="4"/>
+		<Action type="victory" data1="6"/>
+		<Message>Dragongaard Keep has fallen at last, and you now possess the Dragonstone.  Your work in Bartonia is complete!</Message>
+	</Event>
+	<Event side="7" repeat="1" location="city" locdata="4">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="4"/>
+		<Action type="victory" data1="7"/>
+		<Message>Dragongaard Keep has fallen at last, and you now possess the Dragonstone.  Your work in Bartonia is complete!</Message>
+	</Event>
+
+	<Ruin id="9" available_for_quest="no">
+		<Heading>The Old Knight</Heading>
+		<Message>The old knight at this temple is glad to be rid of the bats.  He offers to teach you much about the correct and chivalric use of the sword.</Message>
+		<Monster type="18" number="1" level="10"/>
+		<Monster type="18" number="7" level="1"/>
+		<Reward type="xp" data="12"/>
+	</Ruin >
+
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="6"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>The Gildine Knights send you a chest containing 250 Gold for your treasury.</Message>
+		<Action type="gold" data1="250"/>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="7"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>A group of Elenian Archers march into your capital city, ready to serve you in your battles against the Bartonian Knights.</Message>
+		<Action type="unit" data1="1" data2="4" data3="2"/>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="8"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>Some Theiran soldiers led by a Trollslayer arrive at your capital, ready to take on any Ogres, Trolls or Giants you might encounter.</Message>
+		<Action type="unit" data1="0" data2="4" data3="1"/>
+		<Action type="unit" data1="12" data2="1" data3="4"/>
+	</Event>
+
+</Events>

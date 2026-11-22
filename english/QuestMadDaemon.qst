@@ -1,0 +1,42 @@
+<Quest name="The Mad Daemon">
+   <Part id="0">
+      <Description done="no">The Ring of Doom was broken into 4 parts by the Mad Daemon.  Three of these parts were given to his minions. You must find and slay the first minion. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the first minion of the Mad Daemon and found the first part of the Ring of Doom.</Description>
+      <Description done="yes" first="no">Although the first minion of the Mad Daemon was already dead, a thorough search revealed the first part of the Ring of Doom.</Description>
+      <Success first="yes">You have slain the first minion of the Mad Daemon and found the first part of the Ring of Doom.</Success>
+      <Success first="no">The first minion of the Mad Daemon is already dead, but a thorough search reveals the first part of the Ring of Doom.</Success>
+      <Reward type="mana" data="2">As well as the portion of the ring, you also discover a cache of magical gems: 2 Mana Crystals.</Reward>
+      <Monster type="44" number="1" level="8" name="Arax"/>
+      <Monster type="42" number="5" level="3"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">You must find and slay the second minion of the Mad Daemon to gain the second part of the Ring of Doom. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the second minion of the Mad Daemon and found the second part of the Ring of Doom.</Description>
+      <Description done="yes" first="no">Although the second minion of the Mad Daemon was already dead, a thorough search revealed the second part of the Ring of Doom.</Description>
+      <Success first="yes">You have slain the second minion of the Mad Daemon and found the second part of the Ring of Doom.</Success>
+      <Success first="no">The second minion of the Mad Daemon is already dead, but a thorough search reveals the second part of the Ring of Doom.</Success>
+      <Reward type="gold" data="1894">As well as the portion of the ring, you also discover a cache of gems and jewellery worth 1894 gold.</Reward>
+      <Monster type="44" number="1" level="10" name="Borax"/>
+      <Monster type="46" number="2" level="3"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">You must find and slay the third minion of the Mad Daemon to gain the third part of the Ring of Doom. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the third minion of the Mad Daemon and found the third part of the Ring of Doom.</Description>
+      <Description done="yes" first="no">Although the third minion of the Mad Daemon was already dead, a thorough search revealed the third part of the Ring of Doom.</Description>
+      <Success first="yes">You have slain the third minion of the Mad Daemon and found the third part of the Ring of Doom.</Success>
+      <Success first="no">The third minion of the Mad Daemon is already dead, but a thorough search reveals the third part of the Ring of Doom.</Success>
+      <Reward type="hero" unit="59" level="7" number="1" name="Brianna">As well as the portion of the ring, you find that this minion was torturing an Elven prisoner.  Grateful for this rescue, she joins you.</Reward>
+      <Monster type="44" number="1" level="12" name="Charax"/>
+      <Monster type="43" number="3" level="3"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">To obtain the final part of the Ring of Doom you must confront and slay the Mad Daemon himself. Location: %s.</Description>
+      <Description done="yes" first="yes">You have slain the Mad Daemon and taken the Ring of Doom for yourself.</Description>
+      <Description done="yes" first="no">Alas!  The Mad Daemon was already dead, and the final part of thr Ring of Doom could not be found.</Description>
+      <Success first="yes">You have slain the Mad Daemon, leaving you free to take the final part of the Ring of Doom.</Success>
+      <Success first="no">Unfortunately the Mad Daemon is already dead and the final part of the Ring of Doom is gone.</Success>
+      <Reward type="item" data="100">You take the final piece of the Ring from the Mad Daemon&apos;s body and reassemble the Ring of Doom.</Reward>
+      <Monster type="47" number="1" level="16" name="Mad Daemon"/>
+      <Monster type="44" number="4" level="1"/>
+   </Part>
+</Quest>

@@ -1,0 +1,37 @@
+<Hotkeys>
+   <Hotkey action="GameMenu"     key="ESCAPE"/>
+   <Hotkey action="CancelPath"   key="BACKSPACE"/>
+   <Hotkey action="Disband"      key="DELETE"/>
+   <Hotkey action="Deselect"     key="SPACE"/>
+   <Hotkey action="Center"	     key="PAGEUP"/>
+   <Hotkey action="EndOfPath"    key="PAGEDOWN"/>
+   <Hotkey action="Capital"      key="HOME"/>
+   <Hotkey action="NextGroup"    key="TAB"/>
+   <Hotkey action="PrevGroup"    key="`"/>
+   <Hotkey action="Screenshot"   key="PRINTSCREEN"/>
+   <Hotkey action="Help"         key="F1"/>
+   <Hotkey action="QuickSave"    key="F10"/>
+   <Hotkey action="MoveAll"      key="A"/>
+   <Hotkey action="CityMenu"     key="C"/>
+   <Hotkey action="Defend"       key="D"/>
+   <Hotkey action="Fortify"      key="F"/>
+   <Hotkey action="ReportMenu"   key="G"/>
+   <Hotkey action="MyNextHero"   key="H"/>
+   <Hotkey action="ItemMenu"     key="I"/>
+   <Hotkey action="StratMap"     key="M"/>
+   <Hotkey action="OpponentMenu" key="O"/>
+   <Hotkey action="SpellReport"  key="P"/>
+   <Hotkey action="QuestMenu"    key="Q"/>
+   <Hotkey action="RuinMenu"     key="R"/>
+   <Hotkey action="SpellMenu"    key="S"/>
+   <Hotkey action="UnitMenu"     key="U"/>
+   <Hotkey action="Move"         key="V"/>
+   <Hotkey action="WaypointMenu" key="W"/>
+   <Hotkey action="Raze"         key="Z"/>
+   <Hotkey action="EndTurn"      key="CTRL E"/>
+   <Hotkey action="Load"         key="CTRL L"/>
+   <Hotkey action="Options"      key="CTRL O"/>
+   <Hotkey action="Quit"         key="CTRL Q"/>
+   <Hotkey action="Resign"       key="CTRL R"/>
+   <Hotkey action="Save"         key="CTRL S"/>
+</Hotkeys>

@@ -1,0 +1,47 @@
+<Quest name="The Lost City Of Moon">
+   <Part id="0">
+      <Description done="no">Rumors have surfaced that the lost Elven city of Moon has been found by Orc Raiders!  Location: %s.</Description>
+      <Description done="yes" first="yes">The slain Orc raiders told you they stole the cup from Dark Elven marauders.</Description>
+      <Description done="yes" first="no">An investigation of the slain corpses points to a recent meeting with Dark Elves.</Description>
+      <Success first="yes">One of the slain Orc raiders boasted about the previous owner of the cup. In between guttural curses and sputtering blood, you learned that the cup was stolen from a band of Dark Elven marauders.</Success>
+      <Success first="no">An investigation of the slain corpses reveals they had recently met with a band of Dark Elves. Perhaps questioning the Dark Elves might help locate the city.</Success>
+      <Reward type="item" data="104">The Orcs were carrying the Moonwine Cup, whose mystical properties are conferred upon those drinking from it.</Reward>
+      <Monster type="29" number="1" level="10" name="Lobar"/>
+      <Monster type="25" number="7" level="5"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">Queen Nefaria and her entourage are the most infamous Dark Elven Marauders in the land. You shrug off the fireside stories you heard as a child and decide a visit to her stronghold is in order.  Location: %s.</Description>
+      <Description done="yes" first="yes">You discover half of Greenblade&apos;s journal describing his visits to Moon. After close examination of the pages, you learn that the Elven princess Lunaria has the other half.</Description>
+      <Description done="yes" first="no">You discover notes detailing a meeting with an Elven princess in regards to the location of the city of Moon.</Description>
+      <Success first="yes">A torn book falls out of Queen Nefaria&apos;s belt pouch. It appears to be a journal belonging to a bard named Greenblade, a frequent entertainer at various Moonfests. You learn that the other half of the journal is held by the Elven Princess Lunaria.</Success>
+      <Success first="no">This place is deserted, but a search reveals shreds of paper containing love ballads addressed to an Elven Princess named Lunaria. She appears to be related to Moon somehow; a rough sketch directs you to her expected location.</Success>
+      <Reward type="gold" data="7734">As well as the journal, Queen Nefaria had a horde of treasure.</Reward>
+      <Monster type="41" number="1" level="15" name="Queen Nefaria"/>
+      <Monster type="37" number="3" level="8"/>
+      <Monster type="38" number="4" level="10"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">Rumors abound that Princess Lunaria and her retainers are also seeking the city of Moon. They were last seen searching old burial grounds for clues.  Location: %s.</Description>
+      <Description done="yes" first="yes">The complete journal contains a detailed map showing the way to the city of Moon.</Description>
+      <Description done="yes" first="no">Amidst the ruins you found an enchanted map by the light of the moon that showed the location of the city.</Description>
+      <Success first="yes">Reading the complete journal you discover a great catacylsm fell upon Moon after King Seren began experimenting with the Undead. It also contains a map to the city!</Success>
+      <Success first="no">Someone else was here first. Desperate and exhausted, you decide to camp for the night. In the moonlight you&apos;re able to make out what appears to be a map on a nearby wall. A prominent black crescent on a red field draws your attention.</Success>
+      <Reward type="item" data="103">Lunaria was holding the legendary Crown of KGB; many great heroes have died trying to possess it!</Reward>
+      <Monster type="59" number="1" level="13" name="Lunaria"/>
+      <Monster type="57" number="1" level="10"/>
+      <Monster type="56" number="2" level="10"/>
+      <Monster type="54" number="4" level="8"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">To recover any treasure, you must defeat the horde of undead that King Seren was tricked into releasing into his realm.  Location: %s.</Description>
+      <Description done="yes" first="yes">You found a cache of Moonwine, known throughout the Realm for its magical properties.</Description>
+      <Description done="yes" first="no">You searched for treasure, finding nothing but empty moonwine casks. It seems that somebody beat you here.</Description>
+      <Success first="yes">You found a priceless treasure - a cache of Moonwine. Distilled from the blood of slain enemies, this bizarre concoction is often used in moonlight rituals to incite otherwise frolicking Elves into a battle-mad frenzy.</Success>
+      <Success first="no">The ruins of the city are empty.  Somebody must have drunk the mystical Moonwine before you arrived.</Success>
+      <Reward type="xp" data="75">As you drink the Moonwine, it goes right to your head. You go into a trance-like battle rage. Several hours later, you awake as if from a dream feeling refreshed and full of knowledge. You gain 75 XP.</Reward>
+      <Monster type="35" number="1" level="17" name="Captain Crescent"/>
+      <Monster type="34" number="2" level="12"/>
+      <Monster type="32" number="3" level="10"/>
+      <Monster type="31" number="2" level="10"/>
+   </Part>
+</Quest>

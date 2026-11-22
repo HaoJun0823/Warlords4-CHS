@@ -1,0 +1,98 @@
+[RULES]
+
+5  [NAME]
+10 [SYL1] [SYL2]
+15 [TITLE] [NAME]
+50 [TITLE] [SYL1] [SYL2]
+70 [TITLE] [SYL1] [SYL2] [NUMERAL]
+85 [TITLE] [SYL1] [SYL3] [SYL2]
+100 [TITLE] [SYL1] [SYL3] [SYL2] [NUMERAL]
+
+[NAME]
+Draconus
+Wyrrish
+Drackon
+Darragon
+Drake
+Ember
+Coal
+Thundor
+
+
+
+[SYL1]
+An
+Bal
+Bel
+Cor
+Den
+En
+For
+Fer
+Gal
+Han
+Il
+Jus
+Kel
+Lon
+Mel
+Nar
+Os
+Pel
+Quel
+Ras
+San
+Tel
+Ul
+Van
+Wal
+
+
+[SYL2]
+brond
+char
+dor
+fras
+gor
+kor
+lan
+min
+nar
+pin
+ton
+sar
+son
+rak
+rik
+thas
+thor
+dros
+ton
+
+[SYL3]
+a
+o
+i
+e
+
+[NUMERAL]
+ II
+ III
+ IV
+ V
+ VI
+ VII
+ VIII
+ IX
+ X
+ XI
+ XII
+ XIII
+ XIV
+ XV
+ XVI
+
+[TITLE]
+Sir 
+Lord 
+General 

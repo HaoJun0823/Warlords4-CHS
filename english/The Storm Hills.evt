@@ -1,0 +1,74 @@
+<Events>
+
+	<Warlord side="1" name="Damonica" city="Livaria" level="1" portrait="6" major="4" minor="0">
+		<Unit id="0" type="44" level="4" name="Cestus"/>
+		<Unit id="1" type="44" level="3" name="Claustus"/>
+		<Unit id="2" type="42" level="6" name="Blink"/>
+	</Warlord>
+
+
+	<Ruin id="11" available_for_quest="no">
+		<Heading>An Ancient Spirit</Heading>
+		<Message>The spirit of an ancient knight approaches you, and warns you of great danger in your future!</Message>
+		<Monster type="30" number="3" level="1"/>
+		<Monster type="30" number="1" level="4"/>
+		<Reward type="xp" data="10"/>
+	</Ruin >
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>You must save your northern lands from the Orcs by capturing the Orkish citadel of Livaria. Only then, will your people be safe from further invasion.|In doing this you might also discover who is behind this Orkish Invasion.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="3"/>
+		<Message>Some refugees from the northern citadels arrive in your capital. | They are ready to fight alongside you for revenge.  They have many tales of how the Orcs are wreaking havoc in their homes.</Message>
+		<Action type="unit" data1="0" data2="4" data3="1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="5"/>
+		<Message>More refugees from the northern citadels arrive in your capital. | They have interesting news. It seems that the Orcs are being led by strange fiery creatures, possibly Daemons.</Message>
+		<Action type="unit" data1="0" data2="5" data3="1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn" data1="7"/>
+		<Message>A group of Knights ride into your capital. | They have heard rumors about Daemons leading a band of Orcs in the Storm Hills and wish to help find and kill these creatures.</Message>
+		<Action type="unit" data1="2" data2="4" data3="1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="0"/>
+		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+
+	</Event>
+	<Event side="2" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="2"/>
+		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+
+	</Event>
+	<Event side="4" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="4"/>
+		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+
+	</Event>
+	<Event side="6" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="victory" data1="6"/>
+		<Message>Livaria has fallen and the Orcs have been beaten back. | A quick search of the battlefield reveals that it was indeed Daemons who were leading the Orcs. The question remain though... why?</Message>
+
+	</Event>
+
+
+</Events>

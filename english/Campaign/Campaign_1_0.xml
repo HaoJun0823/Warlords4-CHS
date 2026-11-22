@@ -1,0 +1,6 @@
+<CutScene file="Video\Campaign_1_0.bik" voice="Campaign\Campaign_1_0.wav" duration="32000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">It was a stormy wintry day when a messenger arrived at the castle, bearing news of war.</Text>
+	<Text time="7500">The northern fortresses were under attack.  Orcs had swept down from the mountains ravaging everything in their path.  A number of villages already lay in ruins.</Text>
+	<Text time="18500">Strangely, though, the Orcs seemed to have a purpose.  It was as if they were searching for something…</Text>
+	<Text time="24500">Regardless of their motives, it was imperative that a force be put together immediately to stop this invasion.</Text>
+</CutScene>

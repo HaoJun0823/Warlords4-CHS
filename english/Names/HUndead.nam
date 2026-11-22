@@ -1,0 +1,73 @@
+[RULES]
+
+10 [NAME]
+15 [TITLE] [SYL1] [SYL2]
+20  [SYL1] [SYL2] [POST]
+100 [SYL1] [SYL2]
+
+[NAME]
+Draaz
+Sable
+Tarn
+Gron
+Pell
+Erex
+Zed
+Dhruus
+Kalin
+Morik
+
+[TITLE]
+Lord 
+Prince 
+Count 
+Baron 
+
+[POST]
+ the Red 
+ the Black
+ the Dead
+ the Lost
+ the Beast
+ the Slain
+
+[SYL1]
+Zel
+Xan
+Kron
+Gor
+Gan
+Zan
+Hrul
+Ghaz
+Drax
+Dhus
+Akh
+Nar
+Laen
+Dun
+Man
+Tel
+Grish
+
+[SYL2]
+dor
+dan
+gor
+thos
+ghul
+goroth
+ax
+orok
+akor
+thor
+tur
+dorn
+don
+lis
+lith
+trul
+karn
+gin
+
+

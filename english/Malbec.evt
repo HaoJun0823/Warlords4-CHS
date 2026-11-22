@@ -1,0 +1,12 @@
+<Events>
+
+	<Warlord side="2" name="Aravein" city="Aravein&apos;s Citadel" level="50" portrait="6" major="4" minor="0">
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>This is the final battle.  Aravein awaits you in her citadel, summoning Daemons to throw themselves in your way!</Message>
+	</Event>
+
+</Events>

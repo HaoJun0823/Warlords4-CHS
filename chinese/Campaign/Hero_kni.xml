@@ -1,0 +1,3 @@
+<CutScene file="Video\Hero_kni.bik" voice="Campaign\Hero_kni.wav" duration="10000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1000">For having won this battle and proved your honor, the Knightly hero, Sir Albion, will join you in your next battle.</Text>
+</CutScene>

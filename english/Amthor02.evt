@@ -1,0 +1,278 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Orgnuk" city="Pukngor" level="5" portrait="23" major="3" minor="4">
+	</Warlord>
+
+	<Warlord side="2" name="Haunter" city="Agaril" level="7" portrait="27" major="2" minor="0">
+	</Warlord>
+
+	<Warlord side="3" name="Alingor" city="Chungna Gotral" level="1" portrait="6" major="4" minor="5">
+	</Warlord>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>Orcs have attacked your supply chain.|Siantra provides her troops to bring the cities back under your control.</Message>
+		<Action type="counter_set" data1="0" String1="ss1"/>
+		<Action type="counter_set" data1="0" String1="ss2"/>
+		<Action type="counter_set" data1="0" String1="ss3"/>
+		<Action type="counter_set" data1="0" String1="ss4"/>
+		<Action type="counter_set" data1="0" String1="ss5"/>
+		<Action type="counter_set" data1="0" String1="ss6"/>
+		<Action type="counter_set" data1="0" String1="ss7"/>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn_or_later" data1="1"/>
+		<Action type="AI_level" data1="3" data2="0"/>
+	</Event>
+
+    <!--Supply chain Quest City 29-->
+	<Event side="0" repeat="99" location="city" locdata="29">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="29" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss1"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss1"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="29">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="29" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss1"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="29">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="29" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss1"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="29">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="29" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss1"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss1"/>
+	</Event>
+
+
+    <!--Supply chain qcity 30 -->
+	<Event side="0" repeat="99" location="city" locdata="30">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="30" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss2"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss2"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="30">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="30" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss2"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="30">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="30" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss2"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="30">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="30" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss2"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss2"/>
+	</Event>
+
+
+    <!--Supply chain qcity 36 -->
+	<Event side="0" repeat="99" location="city" locdata="36">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="36" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss3"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss3"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="36">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="36" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss3"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="36">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="36" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss3"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="36">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="36" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss3"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss3"/>
+	</Event>
+
+    <!--Supply chain qcity 34 -->
+	<Event side="0" repeat="99" location="city" locdata="34">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="34" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss4"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss4"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="34">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="34" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss4"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="34">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="34" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss4"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="34">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="34" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss4"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss4"/>
+	</Event>
+
+    <!--Supply chain qcity 31 -->
+	<Event side="0" repeat="99" location="city" locdata="31">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="31" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss5"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss5"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="31">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="31" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss5"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="31">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="31" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss5"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="31">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="31" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss5"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss5"/>
+	</Event>
+
+
+    <!--Supply chain qcity 7 -->
+	<Event side="0" repeat="99" location="city" locdata="7">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="7" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss6"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss6"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="7">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="7" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss6"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="7">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="7" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss6"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="7">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="7" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss6"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss6"/>
+	</Event>
+
+    <!--Supply chain qcity 2 -->
+	<Event side="0" repeat="99" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="2" data2="0"/>
+		<Trigger type="counter_eq" data1="0" String1="ss7"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss7"/>
+	</Event>
+	<Event side="1" repeat="99" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="2" data2="1"/>
+		<Action type="counter_set" data1="0" String1="ss7"/>
+	</Event>
+	<Event side="2" repeat="99" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="2" data2="2"/>
+		<Action type="counter_set" data1="0" String1="ss7"/>
+	</Event>
+	<Event side="3" repeat="99" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="city_owned" data1="2" data2="3"/>
+		<Trigger type="counter_eq" data1="0" String1="ss7"/>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="counter_set" data1="1" String1="ss7"/>
+	</Event>
+
+    <!--Supply chain quest -->
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="ss1"/>
+		<Trigger type="counter_eq" data1="1" String1="ss2"/>
+		<Trigger type="counter_eq" data1="1" String1="ss3"/>
+		<Trigger type="counter_eq" data1="1" String1="ss4"/>
+		<Trigger type="counter_eq" data1="1" String1="ss5"/>
+		<Trigger type="counter_eq" data1="1" String1="ss6"/>
+		<Trigger type="counter_eq" data1="1" String1="ss7"/>
+		<Message>You have managed to bring the supply chain under your control.|Continue with Amthor 03.</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+    <!--Warlords quest -->
+	<Event side="0" repeat="1" location="city" locdata="42">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="42"/>
+		<Message>You have managed to kill the leader of the Dwarves.</Message>
+		<Action type="counter_set" data1="0" String1="k1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="8">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="8"/>
+		<Message>You have managed to kill the leader of the Orcs.</Message>
+		<Action type="counter_set" data1="0" String1="k2"/>
+	</Event>
+
+	<Event side="0" repeat="99" location="city" locdata="5">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="k1"/>
+		<Trigger type="counter_eq" data1="1" String1="k2"/>
+		<Message>You have killed the leaders of your enemies. Your supply chain is safe now.|Continue with Amthor 03...</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+
+    <!--Alliance -->
+	<Event side="1" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="counter_set" data1="1" String1="k3"/>
+	</Event>
+	<Event side="2" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Action type="counter_set" data1="1" String1="k3"/>
+	</Event>
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="1" String1="k3"/>
+		<Message>The city of supply is under the control of your enemies. You have failed your quest.</Message>
+		<Action type="defeat" data1="0"/>
+	</Event>
+
+	<Ruin id="12" available_for_quest="no">
+		<Heading>Cobweb</Heading>
+		<Message>This ruin contains the treasure of an old spider.</Message>
+		<Monster type="36" number="7" level="5"/>
+		<Monster type="36" number="1" level="16"/>
+		<Reward type="item" data="124"/>
+	</Ruin >
+
+</Events>

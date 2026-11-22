@@ -1,0 +1,86 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Dragon" city="Capital" level="17" portrait="35" major="3" minor="3">
+	</Warlord>
+
+	<Warlord side="2" name="Dragon" city="Capital" level="15" portrait="35" major="3" minor="0">
+	</Warlord>
+
+	<Warlord side="3" name="Dragon" city="Capital" level="14" portrait="35" major="3" minor="1">
+	</Warlord>
+
+	<Warlord side="4" name="Dragon" city="Capital" level="13" portrait="35" major="3" minor="2">
+	</Warlord>
+
+
+    <!--Story start-->
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="turn" data1="1"/>
+		<Message>Siantra has sent you an envoy, escorted by three Harpies. The elf has studied the amulet. There is no doubt. It is the craft of a dragon.|Siantra entrusts the Harpies to you. They should help you to dispense justice.|You travel to West Bay in the Borderlands. From here you must cross the water. You need to track down the ancient Dragon, Kirin. He lives on one of the four Dragon Islands. Be careful - now you are entering the Dragon Realm.</Message>
+		<Action type="unit" data1="40" data2="3" data3="3"/>
+		<Action type="counter_set" data1="0" String1="w1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="10"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>Siantra sends you some more Harpies. She reminds you to be firm. Strike with an iron hand!</Message>
+		<Action type="unit" data1="40" data2="3" data3="3"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="20"/>
+		<Trigger type="chance" data1="20"/>
+		<Message>Siantra sends you a elite Harpy. Don't fade!</Message>
+		<Action type="unit" data1="40" data2="1" data3="9"/>
+	</Event>
+
+  
+    <!-- Warlord Win Option -->
+	<Event side="0" repeat="1" location="city" locdata="1">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="1"/>
+		<Action type="counter_add" data1="1" String1="w1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="2">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="2"/>
+		<Action type="counter_add" data1="1" String1="w1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="3">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="3"/>
+		<Action type="counter_add" data1="1" String1="w1"/>
+	</Event>
+
+    <!-- Warlord Win Message -->
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="1" String1="w1"/>
+		<Message>You have conquered the Dragon Capital but found nothing. No hint of the amulet or the Dragon, Kirin.|This chase seems to get more and more complicated...</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="2" String1="w1"/>
+		<Message>You have struck down the Dragon of the second island. Mortally wounded he gasps some last words, &quot;...Read the stars...can't you see the wheel...it is turning...&quot;| You have no clue what the Dragon is talking about nor a chance to ask questions. The dragon is dead.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="3" String1="w1"/>
+		<Message>You have entered the citadel. An old dragon sits in the inner ward and open his wings. As you lift your staff to stop him, he springs up into the air. The Dragon flies toward the northwest.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="4">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="4"/>
+		<Message>You have conquered the Dragon Capital, and you feel it instantly. Kirin is near! Suddenly you hear a dark voice in your head, &quot;You are late Amthor!&quot;|You turn around, but you cannot see the Dragon. &quot;I have been watching you, since I recognized the strange constellation of the stars. A numen change touches Etheria. The Dwarves and the Dragons are getting closer every second. Can't you feel it?&quot;|You cover your ears with your hands, but the voice keeps speaking, &quot;You cannot comprehend the truth yet. But you will soon enough.&quot;| The deep voice stops for a second and continues with a fatherly tone, &quot;Go to the hills of the Giants. They have crafted the amulet for ... hmm, you call her ... Siantra!&quot;|Continue with Amthor 09...</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+</Events>

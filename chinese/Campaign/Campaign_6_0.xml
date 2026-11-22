@@ -1,0 +1,6 @@
+<CutScene file="Video\Campaign_6_0.bik" voice="Campaign\Campaign_6_0.wav" duration="38000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">The journey into Kelthurax’s lair took many hours, and upon arrival, the ancient creature was already awake.</Text>
+	<Text time="8500">Its piercing gaze never faltered as it accepted the Dragonstone and finally it spoke:</Text>
+	<Text time="15500">“You seek answers about the Sundering – answers that only I can give you.  And give them to you I shall!  But you must pay a price.”</Text>
+	<Text time="26000">“Bring to me the treasures from the Dwarven Halls of Khaz-Agar, and I shall tell you of the Sundering.  Of how it failed, and of how it can be stopped.”</Text>
+</CutScene>

@@ -1,0 +1,104 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Siantra" city="Tullis" level="16" portrait="34" major="3" minor="3">
+	</Warlord>
+
+	<Warlord side="2" name="Knight Cunroh" city="Conkor" level="15" portrait="11" major="1" minor="1">
+	</Warlord>
+
+	<Warlord side="3" name="Nu&apos;lrastik" city="Gr'Radikiir" level="09" portrait="03" major="0" minor="3">
+	</Warlord>
+
+	<Warlord side="4" name="Lord Lurkro" city="Charkeep" level="13" portrait="27" major="1" minor="0">
+	</Warlord>
+
+
+   <!--Story start-->
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="turn" data1="1"/>
+		<Message>You have carefully prepared your plan.|Your scouts have already found troops of the Knights and the Empire in the north. You need to hurry. They must not stop your plans. You will have to concentrate on the Elf in the south.|She is hiding somewhere in the Doomwood...</Message>
+		<Action type="counter_set" data1="0" String1="w1"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="37">
+		<Trigger type="turn" data1="1"/>
+		<Action type="AI_level" data1="2" data2="0"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="38">
+		<Trigger type="turn" data1="1"/>
+		<Action type="AI_level" data1="4" data2="0"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="6">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="6"/>
+		<Message>You have found a horde of Daemonic servants.</Message>
+		<Action type="unit" data1="44" data2="4" data3="2"/>
+	</Event>
+
+   <!--Reinforcement-->
+	<Event side="0" repeat="99" location="city" locdata="3">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_ne" data1="10" String1="w1"/>
+		<Action type="counter_add" data1="1" String1="w1"/>
+	</Event>
+
+	<Event side="1" repeat="99" location="city" locdata="3">
+		<Trigger type="on_turn"/>
+		<Trigger type="counter_eq" data1="4" String1="w1"/>
+		<Action type="unit" data1="21" data2="1" data3="4"/>
+		<Action type="counter_set" data1="0" String1="w1"/>
+	</Event>
+
+
+    <!-- Warlord Win Option -->
+	<Event side="0" repeat="1" location="city" locdata="3">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="3"/>
+		<Action type="counter_set" data1="20" String1="w1"/>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="3">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="20" String1="w1"/>
+		<Message>You have captured the capital of Siantra. As you face the Elf, she smiles back at you. You speak with a controlled voice, &quot;Before I kill you, tell me why. Why have you brought so much pain to my brothers and sisters?&quot; |She runs her fingers through her hair, &quot;Little mortal, it was just for the entertainment... merely a passtime...&quot;|&quot;Passtime?!&quot;, you shout.|In that moment the air fills with electricity.</Message>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="3">
+		<Trigger type="on_city"/>
+		<Trigger type="counter_eq" data1="20" String1="w1"/>
+		<Message>A knight and a merchant appear to either side of the elf. The manifestation is so powerful, that it throws you from your feet. The knight is so mighty, so glorious...|He grasps the elf and holds her tight, &quot;Stop LURINTH! At last I have you!&quot;|&quot;Father, you hurt me! Let me go...&quot;|You don't trust your ears. Siantra is the God of the Elves! And the knight is her father, Sirian.</Message>
+		<Message>&quot;I am sick of your escapades!&quot;, the knight continues.|&quot;I see you trying to follow in the footsteps of your evil sister YMORGIA! But you are not YMORGIA and not ARANEA the Goddess of the Dark Elves... I shall put an end to this now and forever! From this day you are the ward of myself and my brother OKRADON.&quot;|Sirian nods in the direction of the merchant.|&quot;The elves have surrounded by the Knights and the Empire. This will stop you bringing more harm to Etheria.&quot;|With these words the three Gods disappear and leave you behind in the empty throne hall.</Message>
+		<Message>You are indeed the only person, who has ever have met three gods and survived.|After the conviction of Siantra, you decide to return to the White Mountains and start to rebuild the old empire of your family. But the first building will be a temple for MORANNIN, the God of the Dwarves. Hopefuly he will give you back the neutrality you have lost and will protect your family against the whims of the Gods...|The End...</Message>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="44">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="44"/>
+		<Message>You have conquered the Capital of the Ogres.|Now, Siantra no longer receives support from the Giants.</Message>
+		<Action type="counter_set" data1="10" String1="w1"/>
+	</Event>
+
+
+	<Event side="0" repeat="1" location="city" locdata="37">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="37"/>
+		<Message>You have conquered the Capital of the Empire...|as a divine justice wipes you away from the surface of Etheria...|You have lost..</Message>
+		<Action type="raze" data1="0"/>  
+		<Action type="defeat" data1="0"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="38">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="38"/>
+		<Message>You have conquered the Capital of the Knights...|as a divine justice wipes you away from the surface of Etheria...|You have lost..</Message>
+		<Action type="raze" data1="0"/>  
+		<Action type="defeat" data1="0"/>
+	</Event>
+
+</Events>

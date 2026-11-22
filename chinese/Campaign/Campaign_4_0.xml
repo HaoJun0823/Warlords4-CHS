@@ -1,0 +1,8 @@
+<CutScene file="Video\Campaign_4_0.bik" voice="Campaign\Campaign_4_0.wav" duration="49000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">Little more could be learned of Aravein or her whereabouts, so the most obvious course seemed to be to learn about the Sundering instead.</Text>
+	<Text time="10000">There were few creatures still alive in Etheria who had witnessed the event, except the most ancient of Dragons.</Text>
+	<Text time="17000">To approach them without the most princely of gifts would be certain death – even for younger Dragons.  Yet the knowledge they could impart would be worth the risk.</Text>
+	<Text time="26500">There was one gift certain to gain favor – an item known as the Dragonstone.  It had long been lost to them, and had come into possession of the Sirian Knights.</Text>
+	<Text time="36000">The Knights would never be persuaded to part with it; it was a sacred relic to them, having helped them win the Bane-wars many years ago.</Text>
+	<Text time="44500">It would need to be taken by force.</Text>
+</CutScene>

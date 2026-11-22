@@ -1,0 +1,88 @@
+name: build-release
+
+# ══════════════════════════════════════════════════════════════════════════
+# 战神IV（Warlords IV: Heroes of Etheria）简体中文汉化补丁
+#   校验译文 -> 装配 zip -> 包体门禁 -> Artifact ->（可选）Release
+#   纯 Python，无编译步骤：文本已是 GBK，直接打包覆盖 English/ 即可。
+# ══════════════════════════════════════════════════════════════════════════
+# 产物：build_out/Warlords4-CHS-vYYYYMMDD-HHMM.zip
+#       解压到游戏根目录覆盖 English/ 即可，Language.ini 保持 english。
+#
+# 触发：
+#   push(master / dev)     校验 + 构建 + 上传 Artifact
+#   pull_request(master)   门禁（只校验/构建，不发布）
+#   workflow_dispatch      手动；可勾选 publish 创建 Release
+# ══════════════════════════════════════════════════════════════════════════
+
+on:
+  push:
+    branches: [master, dev]
+    paths-ignore:
+      - '**.md'
+      - 'Documents/**'
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: '构建完成后创建 GitHub Release（默认只上传 Artifact）'
+        type: boolean
+        default: false
+      tag:
+        description: '发行标签（留空自动生成 vYYYYMMDD-HHMM）'
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: 校验 / 打包 / 门禁
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: 'utf-8'
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 校验译文（GBK / 数值实体 / XML 结构 / 占位符 / 行数）
+        run: python Tools/translate/check_translation.py
+
+      - name: 装配发布包
+        run: python Tools/ci/build_release.py --out-root build_out
+
+      - name: 发布包门禁校验
+        run: python Tools/ci/verify_release.py build_out
+
+      - name: 上传 Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Warlords4-CHS
+          path: build_out/*.zip
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: 创建 Release（手动勾选 publish 时）
+        if: github.event_name == 'workflow_dispatch' && inputs.publish
+        permissions:
+          contents: write
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          TAG="$INPUT_TAG"
+          if [ -z "$TAG" ]; then TAG="v$(date +%Y%m%d-%H%M)"; fi
+          gh release create "$TAG" build_out/*.zip --title "$TAG" --generate-notes

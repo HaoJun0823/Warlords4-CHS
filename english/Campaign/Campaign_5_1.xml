@@ -1,0 +1,4 @@
+<CutScene file="Video\Campaign_5_1.bik" voice="Campaign\Campaign_5_1.wav" duration="22000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">At last the way to Kelthurax’s cave was clear – the skies that had rained fire, frost and lightning were quiet once more – and it seemed that Kelthurax himself was still deep in slumber.</Text>
+	<Text time="13500">Only one thing remained – to wake the creature, give him the Dragonstone, and hope that he was pleased.</Text>
+</CutScene>

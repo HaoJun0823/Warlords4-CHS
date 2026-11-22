@@ -1,0 +1,5 @@
+<CutScene file="Video\Campaign_9_1.bik" voice="Campaign\Campaign_9_1.wav" duration="15000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">The Marsh had been crossed and the Undead defeated.</Text>
+	<Text time="5500">The final task was the assault on Aravein’s Tower in the ruins of Malbec.</Text>
+	<Text time="10000">With luck, she would not finish her spell in time.</Text>
+</CutScene>

@@ -1,0 +1,7 @@
+<CutScene file="Video\Campaign_3_1.bik" voice="Campaign\Campaign_3_1.wav" duration="46000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">King Garranoth of the Dark Elves had no answers, only more questions.  It seemed that he sought Aravein also.</Text>
+	<Text time="10000">But although Garranoth had no answers, he still had an interesting tale to tell…</Text>
+	<Text time="15500">It seemed that Aravein had been studying the Spell of Sundering - Prince Mordaine’s Spell – the one that caused the catastrophic events of 3000 years past.</Text>
+	<Text time="26000">That in itself was not unusual – many had studied this spell – but these studies had become an obsession with Aravein and driven her mad.</Text>
+	<Text time="36000">King Garranoth was concerned that she might try to cast the spell once more.  And if this were so… then she must be stopped.</Text>
+</CutScene>

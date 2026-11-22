@@ -1,0 +1,86 @@
+<Events>
+
+	<Warlord side="1" name="Ogrus" city="Ogramok" level="2" portrait="3" major="0" minor="2">
+		<Unit id="0" type="19" level="5" name="Bert"/>
+		<Unit id="1" type="20" level="5" name="Minoskar"/>
+		<Unit id="2" type="21" level="5" name="Grom"/>
+	</Warlord>
+
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>You must defeat the Giants, Ogres and Trolls blocking your path east through the Giantridge Mountains. | Once you have done this, you will be able to make your way to Aravein&apos;s Citadel and ask for her advice.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="2"/>
+		<Message>A Giant approaches your capital. | He tells you that any attempt to cross the Giantridge Mountains will be regarded as an act of war.</Message>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="3"/>
+		<Message>The Giant approaches your capital once again. | He has heard tell that you plan to cross his lands near the city of Kirak Izgol. He warns you against it one last time.</Message>
+	</Event>
+
+	<Ruin id="1" available_for_quest="no">
+		<Heading>Half a Shield</Heading>
+		<Message>As well as 1056 Gold, you find half of a broken magical shield!</Message>
+		<Monster type="19" number="1" level="4"/>
+		<Monster type="19" number="3" level="1"/>
+		<Reward type="gold" data="1056"/>
+	</Ruin >
+
+	<Ruin id="10" available_for_quest="no">
+		<Heading>Half a Shield</Heading>
+		<Message>As well as 1135 Gold, you find half of a broken magical shield!</Message>
+		<Monster type="20" number="1" level="3"/>
+		<Monster type="19" number="3" level="1"/>
+		<Reward type="gold" data="1135"/>
+	</Ruin >
+
+	<Event side="0" repeat="1" location="ruin" locdata="1">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="1"/>
+		<Action type="counter_add" data1="1" string1="shield_counter"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="ruin" locdata="10">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="10"/>
+		<Action type="counter_add" data1="1" string1="shield_counter"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="1"/>
+		<Trigger type="counter_eq" data1="2" string1="shield_counter"/>
+		<Action type="counter_set" data1="0" string1="shield_counter"/>
+		<Action type="item" data1="86"/>
+		<Message>The two pieces of shield you found are a perfect fit. | You send them back to your capital to be forged into a Shield of Negation.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="capital">
+		<Trigger type="on_ruin"/>
+		<Trigger type="ruin_searched" data1="10"/>
+		<Trigger type="counter_eq" data1="2" string1="shield_counter"/>
+		<Action type="counter_set" data1="0" string1="shield_counter"/>
+		<Action type="item" data1="86"/>
+		<Message>The two pieces of shield you found are a perfect fit. | You send them back to your capital to be forged into a Shield of Negation.</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="1">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="1"/>
+		<Message>The remaining creatures flee from Kirak Izgol. | You realize that you are now truly at war with these giants... to the death!</Message>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="1">
+		<Trigger type="on_turn"/>
+		<Trigger type="turn_or_later" data1="3"/>
+		<Trigger type="city_owned" data1="1" data2="0"/>
+		<Message>A group of Giantslayers arrive at Kirak Izgol ready to join you. | They heard that you were at war with the Giants here.</Message>
+		<Action type="unit" data1="12" data2="4" data3="1"/>
+		<Action type="unit" data1="12" data2="1" data3="5" string1="Giantslayer"/>
+	</Event>
+
+</Events>

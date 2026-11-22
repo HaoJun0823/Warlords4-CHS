@@ -1,0 +1,4 @@
+<CutScene file="Video\Campaign_4_1.bik" voice="Campaign\Campaign_4_1.wav" duration="16000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">The Knights were defeated – and the Dragonstone taken – a small price for them to pay if it saved the World.</Text>
+	<Text time="8000">Yet the most dangerous part of this task still lay ahead… a journey into the Realm of Dragons.</Text>
+</CutScene>

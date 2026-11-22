@@ -1,0 +1,41 @@
+<Events>
+    <!--Campaign: Amthor. Created by Sil taTener-->
+	<Warlord side="1" name="Ubgard" city="Nightberg" level="10" portrait="20" major="5" minor="5">
+	</Warlord>
+
+	<Warlord side="2" name="Thurkar" city="Payfen" level="8" portrait="11" major="1" minor="0">
+		<Unit id="0" type="5" level="5" name="Karl"/>
+		<Unit id="1" type="5" level="7" name="Talan"/>
+		<Unit id="2" type="4" level="6" name="Silra"/>
+	</Warlord>
+
+    <!--Story start-->
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="1"/>
+		<Message>Siantra has translated the important text passages. The result is frustrating; it reads:|&quot;No living creature is able to slay the twin elementar.&quot;|Just as you are about to give up, you see the hidden meaning: &quot;No living creature&quot;. Your decision is made. You bring your troops deeper into the north. But how will you convince the Warlord of the Undead to help you?</Message>
+		<Action type="counter_set" data1="0" String1="war1"/>
+		<Action type="counter_set" data1="0" String1="war2"/>
+	</Event>
+
+	<Event side="0" repeat="1">
+		<Trigger type="turn" data1="3"/>
+		<Message>Your scouts have discovered troops of the Sirian Knights in the east, near your capital. They have recovered faster than expected. It seems they are following closely behind you.</Message>
+	</Event>
+
+    <!--Warlord defeat-->
+	<Event side="0" repeat="1" location="city" locdata="0">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="0"/>
+		<Message>Lord Ubgard kneels before you. You explain your plan to attack Khaz-Agar and the need for support. The Undead lord starts to laugh: &quot;I will give you command over some of my warriors, but first you must bring me that which I long for... The Drop of Life.&quot;|Anger wells up in your soul. This legendary artefact has been lost for many centuries. Damn! You lift your staff to smite Ubgard, but his skull just grins back at you: &quot;Pain is only a burden of the living!&quot; he rasps.</Message>
+		<Message>You realise that you cannot coerce Lord Ubgard in this matter. You return to Skyvine to confer with Siantra. How will you get the artefact? |Continue with Amthor 05.</Message>
+		<Action type="particle" string1="QuestSparkle"/>
+		<Action type="victory" data1="0"/>
+	</Event>
+
+	<Event side="0" repeat="1" location="city" locdata="17">
+		<Trigger type="on_city"/>
+		<Trigger type="city_won" data1="17"/>
+		<Message>You have managed to inflict heavy casualties on the Sirian Knights.</Message>
+	</Event>
+
+</Events>

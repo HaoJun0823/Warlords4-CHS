@@ -1,0 +1,42 @@
+<Quest name="Melkor&apos;s Staff">
+   <Part id="0">
+      <Description done="no">The four parts of Melkor&apos;s Staff have been scattered throughout the land. The first is held by a Liche Lord. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the guardian and recovered the first part of Melkor&apos;s Staff.</Description>
+      <Description done="yes" first="no">The guardians of the first part of the staff were already dead, but you recovered the piece unharmed.</Description>
+      <Success first="yes">You have slain the guardians of the first part of the staff and recovered it.</Success>
+      <Success first="no">The guardians of the first part of the staff are already dead but fortunately the piece was unharmed.</Success>
+      <Reward type="mana" data="3">As well as the piece of the staff you also discover the Liche Lord had a cache of 3 Mana Crystals.</Reward>
+      <Monster type="31" number="1" level="10" name="Liche Lord"/>
+      <Monster type="31" number="7" level="1"/>
+   </Part>
+   <Part id="1">
+      <Description done="no">The second part of Melkor&apos;s staff is held by a Daemon Prince. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the guardian and recovered the second part of Melkor&apos;s Staff.</Description>
+      <Description done="yes" first="no">The guardians of the second part of the staff were already dead, but you recovered the piece unharmed.</Description>
+      <Success first="yes">You have slain the guardians of the second part of the staff and recovered it.</Success>
+      <Success first="no">The guardians of the second part of the staff are already dead but fortunately the piece was unharmed.</Success>
+      <Reward type="hero" unit="17" level="7" number="1" name="Khozar Thane">The Daemon had imprisoned and tortured a Dwarven Hero, who offers to join you.</Reward>
+      <Monster type="44" number="1" level="12" name="Daemon Prince"/>
+      <Monster type="44" number="7" level="1"/>
+   </Part>
+   <Part id="2">
+      <Description done="no">The third part of Melkor&apos;s staff is held by an Ogre Lord. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the guardian and recovered the third part of Melkor&apos;s Staff.</Description>
+      <Description done="yes" first="no">The guardians of the third part of the staff were already dead, but you recovered the piece unharmed.</Description>
+      <Success first="yes">You have slain the guardians of the third part of the staff and recovered it.</Success>
+      <Success first="no">The guardians of the third part of the staff are already dead but fortunately the piece was unharmed.</Success>
+      <Reward type="gold" data="2534">The Ogre lord has a chest full of treasure, worth 2534 gold.</Reward>
+      <Monster type="22" number="1" level="13" name="Duug"/>
+      <Monster type="25" number="7" level="2"/>
+   </Part>
+   <Part id="3">
+      <Description done="no">The final part of Melkor&apos;s staff is held by an ancient Fire Dragon. Location: %s.</Description>
+      <Description done="yes" first="yes">You slew the dragon and recovered final part of Melkor&apos;s Staff.</Description>
+      <Description done="yes" first="no">Alas!  The dragon was already slain and the final part of the staff was nowhere to be found.</Description>
+      <Success first="yes">You have slain the guardians of the final part of the staff and recovered it.</Success>
+      <Success first="no">Alas!  The dragon is already slain and the final part of the is was nowhere to be found.</Success>
+      <Reward type="item" data="56">You fit the pieces together to recreate Melkor&apos;s Staff.</Reward>
+      <Monster type="52" number="1" level="16" name="Melthorix"/>
+      <Monster type="42" number="2" level="1"/>
+   </Part>
+</Quest>

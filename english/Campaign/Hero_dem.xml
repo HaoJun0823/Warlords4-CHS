@@ -1,0 +1,3 @@
+<CutScene file="Video\Hero_dem.bik" voice="Campaign\Hero_dem.wav" duration="10000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1000">For having shown your mastery over the elements, the Daemon hero, Thulcondar, will join you in your next battle.</Text>
+</CutScene>

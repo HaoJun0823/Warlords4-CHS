@@ -1,0 +1,11 @@
+<CutScene file="Video\Campaign_0.bik" voice="Campaign\Campaign_0.wav" duration="98000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
+	<Text time="1500">They say that true Genius is made of equal parts Wisdom and Inspiration, with just the right dose of madness added to the mix.</Text>
+	<Text time="10500">I have a tale to tell you of such Genius.  Of the wonders that it created, and ultimately… how it almost destroyed the world.</Text>
+	<Text time="19500">This tale has its roots in a distant age.  So distant that few save the most ancient Dragons can remember.</Text>
+	<Text time="27000">There was once an Elven Prince, named Mordaine.  Like many a younger child of royalty, the desire to rule burned fiercely in his blood.</Text>
+	<Text time="36500">Ever jealous of his brothers, Mordaine incited a rebellion – a bloody civil war - but after many years of bloodshed, he and his followers were defeated and exiled from their homelands.</Text>
+	<Text time="48500">They became known as the Dark Elves.  And while they plotted and schemed, Prince Mordaine delved into dark magicks, searching for a spell – one that would bring him victory.</Text>
+	<Text time="60500">Finally, Mordaine, found his spell.  He would open up a portal to the Dark Realms and summon forth four mighty creatures to do his bidding.</Text>
+	<Text time="70000">But the spell went awry.  The magical backlash slew Mordaine and shook the very world itself.  The earth cracked, mountains fell, and cities were washed away.</Text>
+	<Text time="82500">It was a dark time – 3000 years past - known as The Sundering.  And it would have eventually passed from memory altogether… but some cannot let history lie.</Text>
+</CutScene>
