@@ -1,7 +1,7 @@
 <CutScene file="Video\Campaign_3_1.bik" voice="Campaign\Campaign_3_1.wav" duration="46000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">黑暗精灵之王加拉诺斯并未解开疑团，反而带来了更多疑问。原来，</Text><Text time="5750">他也在寻找阿拉薇恩。</Text>
+	<Text time="1500">加拉诺斯未解疑团，反添疑问——原来他也在寻找阿拉薇恩。</Text>
 	<Text time="10000">尽管没有答案，加拉诺斯仍讲述了一件耐人寻味的往事……</Text>
-	<Text time="15500">阿拉薇恩一直在钻研“大崩裂之术”——莫尔戴恩王子当年施展的那道咒文，</Text><Text time="20750">正是它酿成了三千年前那场惊天浩劫。</Text>
-	<Text time="26000">研究这道咒文本不稀奇，许多人都曾探究过它。可阿拉薇恩却渐渐深陷其中，</Text><Text time="31000">痴迷成狂。</Text>
+	<Text time="15500">阿拉薇恩钻研“大崩裂之术”——正是它酿成三千年前的惊天浩劫。</Text>
+	<Text time="26000">探究此咒者众多，可阿拉薇恩却渐渐深陷其中，痴迷成狂。</Text>
 	<Text time="36000">加拉诺斯忧心的是，她或许想再次施放大崩裂之术。若果真如此……就必须阻止她。</Text>
 </CutScene>

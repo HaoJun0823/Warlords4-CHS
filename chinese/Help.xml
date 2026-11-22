@@ -156,7 +156,8 @@
    <!-- RACE WHEEL -->
    <Entry item="0">
       <Picture x="10" y="5" width="304" height="240">English\RaceWheel.tga</Picture>
-      <Text align="center">在上方的种族圆环中，两个种族距离越近，你生产该种族单位的速度就越快，加固其城市的费用也越低。</Text>
+      <Text align="center">在上方的种族圆环中，两个种族距离越近，你生产该种族单位的速度就越快，</Text>
+      <Text align="center">加固其城市的费用也越低。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - COMBAT MAJOR -->
@@ -165,7 +166,9 @@
       <Text align="left">优势：能组建拥有大量高级单位的军队，并在战斗中获得额外攻击机会。</Text>
       <Text align="left">弱点：只能使用英雄系法术，魔力恢复速度极低。</Text>
       <Text align="left">适合：偏爱集中培养少数高级精锐部队、不依赖魔法的玩家。</Text>
-      <Text align="left">玩法建议：优先提升“武器大师”，再提升“士气”。取得首都单位的全部升级，用这些单位组建精锐部队。尽量保持满编，以充分发挥“武器大师”的效果。可以考虑夷平附近城市，让更多特殊地点归属首都。“战斗”“自然”和“死灵”都是不错的辅修方向。</Text>
+      <Text align="left">玩法建议：优先提升“武器大师”，再提升“士气”。取得首都单位的全部升级，</Text>
+      <Text align="left">用这些单位组建精锐部队。尽量保持满编，以充分发挥“武器大师”的效果。可以考虑夷平附近城市，</Text>
+      <Text align="left">让更多特殊地点归属首都。“战斗”“自然”和“死灵”都是不错的辅修方向。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - DIVINE MAJOR -->
@@ -174,7 +177,10 @@
       <Text align="left">优势：兼具大量持续性法术、额外战斗生命值和单位移动力。</Text>
       <Text align="left">弱点：缺少战斗法术，首都单位较弱，防守不易。</Text>
       <Text align="left">适合：偏爱快速行军和主动进攻、不喜欢固守的玩家。</Text>
-      <Text align="left">玩法建议：优先提升“圣战”，再提升“神圣魔法”。尽量主动攻击，利用“圣战”的生命值加成。施放“坚韧”以迅速扩张。优先研究持续性法术；“圣骑士”“灵感”“白色结界”“坚韧”和“祭坛”法术尤为重要。“战斗”和“神圣魔法”适合作为辅修。</Text>
+      <Text align="left">玩法建议：优先提升“圣战”，再提升“神圣魔法”。尽量主动攻击，利用“圣战”的生命值加成。</Text>
+      <Text align="left">施放“坚韧”以迅速扩张。优先研究持续性法术；</Text>
+      <Text align="left">“圣骑士”“灵感”“白色结界”“坚韧”和“祭坛”法术尤为重要。</Text>
+      <Text align="left">“战斗”和“神圣魔法”适合作为辅修。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - RUNE MAJOR -->
@@ -183,7 +189,10 @@
       <Text align="left">优势：法术搭配均衡，资金充裕，获得商人出售魔法物品机会较多；在团队游戏中尤为出色。</Text>
       <Text align="left">弱点：没有特别突出的专长。</Text>
       <Text align="left">适合：喜欢收集魔法物品、积累资金以升级城市的玩家。</Text>
-      <Text align="left">玩法建议：“商贸”和“符文魔法”同步提升。招募或生产大量英雄，并为他们留出装备空位，以便购买商人的物品。尽早施放“迟缓术”，阻滞敌人的扩张。“大地之灵”“冰雹”“大地之力”“迟缓术”和“祭坛”法术尤其重要。“战斗”“神圣魔法”和“符文魔法”均适合作为辅修。</Text>
+      <Text align="left">玩法建议：“商贸”和“符文魔法”同步提升。招募或生产大量英雄，并为他们留出装备空位，</Text>
+      <Text align="left">以便购买商人的物品。尽早施放“迟缓术”，阻滞敌人的扩张。</Text>
+      <Text align="left">“大地之灵”“冰雹”“大地之力”“迟缓术”和“祭坛”法术尤其重要。</Text>
+      <Text align="left">“战斗”“神圣魔法”和“符文魔法”均适合作为辅修。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - NATURE MAJOR -->
@@ -192,7 +201,10 @@
       <Text align="left">优势：拥有许多强力战斗法术，还能提高守城单位的生命值和防御塔伤害。</Text>
       <Text align="left">弱点：“祭坛”法术最弱，战斗法术耗魔较高，进攻可能受到限制。</Text>
       <Text align="left">适合：喜欢逐城推进、攻占后立即重兵加固的玩家。</Text>
-      <Text align="left">玩法建议：优先提升“守城”，再提升“自然魔法”。把部队驻扎在城内，以获得“守城”的生命值加成。尽早、频繁施放“生长”，加快扩张。升级城市或增加防御塔生命值。“生长”“伊莉丝的祝福”“草药学”和“精准术”是重要法术，尽量避开“祭坛”法术。“自然魔法”和“召唤术”适合作为辅修。</Text>
+      <Text align="left">玩法建议：优先提升“守城”，再提升“自然魔法”。把部队驻扎在城内，</Text>
+      <Text align="left">以获得“守城”的生命值加成。尽早、频繁施放“生长”，加快扩张。升级城市或增加防御塔生命值。</Text>
+      <Text align="left">“生长”“伊莉丝的祝福”“草药学”和“精准术”是重要法术，尽量避开“祭坛”法术。</Text>
+      <Text align="left">“自然魔法”和“召唤术”适合作为辅修。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - SUMMONING MAJOR -->
@@ -201,7 +213,10 @@
       <Text align="left">优势：拥有大量召唤法术，并能强化被召唤单位的战力与生命值。</Text>
       <Text align="left">弱点：法术耗魔较高，往往必须在召唤单位与施放其他法术之间取舍。</Text>
       <Text align="left">适合：喜爱快攻、希望尽早且频繁召唤高级单位的玩家。</Text>
-      <Text align="left">玩法建议：优先提升“召唤强化”，再提升“召唤术”。派飞行单位深入敌后，施放“召唤仆从”或“烈焰九头蛇”。用“火焰之环”打击城内守军，用“激怒”消灭弓箭手。“火焰之环”“召唤仆从”“激怒”“烈焰九头蛇”“厄运蝠群”及“祭坛”法术十分关键。“战斗”和“召唤术”适合作为辅修。</Text>
+      <Text align="left">玩法建议：优先提升“召唤强化”，再提升“召唤术”。派飞行单位深入敌后，</Text>
+      <Text align="left">施放“召唤仆从”或“烈焰九头蛇”。用“火焰之环”打击城内守军，用“激怒”消灭弓箭手。</Text>
+      <Text align="left">“火焰之环”“召唤仆从”“激怒”“烈焰九头蛇”“厄运蝠群”及“祭坛”法术十分关键。</Text>
+      <Text align="left">“战斗”和“召唤术”适合作为辅修。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - NECROMANCY MAJOR -->
@@ -210,7 +225,10 @@
       <Text align="left">优势：兼有多样的召唤与战斗法术，还能提高部队的魔法抗性。</Text>
       <Text align="left">弱点：许多法术仅对不死族或邪恶阵营有效。</Text>
       <Text align="left">适合：偏爱多种法术搭配与魔法防护的玩家。</Text>
-      <Text align="left">玩法建议：“反魔法”和“死灵术”同步提升。使用不死族时，“死亡瘟疫”威力惊人。前期召唤“燃烧颅骨”协助攻城。派飞行单位深入远方，再施放“亡灵勇士”，以便购买远处城市。“死亡瘟疫”“燃烧颅骨”“幽灵战马”“魔力汲取”和“祭坛”法术尤为关键。“战斗”和“死灵术”适合作为辅修。</Text>
+      <Text align="left">玩法建议：“反魔法”和“死灵术”同步提升。使用不死族时，“死亡瘟疫”威力惊人。</Text>
+      <Text align="left">前期召唤“燃烧颅骨”协助攻城。派飞行单位深入远方，再施放“亡灵勇士”，以便购买远处城市。</Text>
+      <Text align="left">“死亡瘟疫”“燃烧颅骨”“幽灵战马”“魔力汲取”和“祭坛”法术尤为关键。</Text>
+      <Text align="left">“战斗”和“死灵术”适合作为辅修。</Text>
    </Entry>
 
    <!-- WARLORD CREATION - MINOR SKILLS -->
@@ -224,7 +242,8 @@
 
    <!-- MORALE AND CHAOS -->
    <Entry item="8">
-      <Text align="left">单位每次在战斗中击中敌人时，都会比较双方士气。如果己方士气较高，就有机会额外免费攻击一次；士气差距越大，额外攻击的概率越高。</Text>
+      <Text align="left">单位每次在战斗中击中敌人时，都会比较双方士气。如果己方士气较高，就有机会额外免费攻击一次；</Text>
+   <Text align="left">士气差距越大，额外攻击的概率越高。</Text>
       <Text align="left">最终士气受到以下因素影响：</Text>
       <Text align="center">己方统帅的“士气”技能和敌方的“混沌”技能</Text>
       <Text align="center">首都中的各种建筑</Text>
@@ -239,7 +258,8 @@
    <!-- SPELLCASTING -->
    <Entry item="9">
       <Text align="left">统帅只要将 5 大魔法学派中的一种选为主修或辅修，就能施放法术。</Text>
-      <Text align="left">法术必须先学会才能施放；威力越强的法术，研究所需时间越长。统帅一旦阵亡，便无法再研究或施放法术。</Text>
+      <Text align="left">法术必须先学会才能施放；威力越强的法术，研究所需时间越长。统帅一旦阵亡，</Text>
+      <Text align="left">便无法再研究或施放法术。</Text>
       <Text align="left">法术从当前选中的部队或城市所在位置施放；若均未选中，则从首都施放。</Text>
       <Text align="left">施法地点距首都越远，消耗的魔力就越多。</Text>
       <Text align="left">英雄也能施放数量有限的英雄专属法术；这些法术可由任何统帅研究。</Text>
@@ -318,7 +338,8 @@
 
    <!-- BLESS -->
    <Entry item="103">
-      <Text align="left">拥有“祝福”技能的单位，每当己方单位进入战斗，都有机会为其施加祝福。被祝福的单位战力 +3，并获得一定的敌方特殊能力防护。邪恶单位无法受到祝福。</Text>
+      <Text align="left">拥有“祝福”技能的单位，每当己方单位进入战斗，都有机会为其施加祝福。</Text>
+   <Text align="left">被祝福的单位战力 +3，并获得一定的敌方特殊能力防护。邪恶单位无法受到祝福。</Text>
       <Text align="center">等级 1：10% 触发概率</Text>
       <Text align="center">等级 2：20% 触发概率</Text>
       <Text align="center">等级 3：30% 触发概率</Text>
@@ -358,7 +379,8 @@
 
    <!-- CURSE -->
    <Entry item="107">
-      <Text align="left">拥有“诅咒”技能的单位，每当敌方单位进入战斗，都有机会诅咒它。受诅咒单位战力 -3，其特殊能力只能按当前等级的一半生效（向下取整）。</Text>
+      <Text align="left">拥有“诅咒”技能的单位，每当敌方单位进入战斗，都有机会诅咒它。受诅咒单位战力 -3，</Text>
+   <Text align="left">其特殊能力只能按当前等级的一半生效（向下取整）。</Text>
       <Text align="center">等级 1：10% 触发概率</Text>
       <Text align="center">等级 2：20% 触发概率</Text>
       <Text align="center">等级 3：30% 触发概率</Text>
@@ -449,7 +471,8 @@
 
    <!-- GIANTSLAYER -->
    <Entry item="117">
-      <Text align="left">拥有“巨人克星”的单位对抗敌方巨人类单位时，伤害和战力均获得加成，巨魔、食人魔和牛头怪也在此列。</Text>
+      <Text align="left">拥有“巨人克星”的单位对抗敌方巨人类单位时，伤害和战力均获得加成，巨魔、</Text>
+   <Text align="left">食人魔和牛头怪也在此列。</Text>
       <Text align="center">等级 1：伤害 +2，战力 +2</Text>
       <Text align="center">等级 2：伤害 +3，战力 +3</Text>
       <Text align="center">等级 3：伤害 +4，战力 +4</Text>
@@ -490,7 +513,8 @@
 
    <!-- MAGIC IMMUNITY -->
    <Entry item="122">
-      <Text align="left">拥有“魔法免疫”的单位可以保护整支部队免受敌方法术影响。若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
+      <Text align="left">拥有“魔法免疫”的单位可以保护整支部队免受敌方法术影响。若同一部队有多个此类单位，</Text>
+   <Text align="left">只采用技能等级最高者的效果，不能叠加。</Text>
       <Text align="center">等级 1：40% 触发概率</Text>
       <Text align="center">等级 2：55% 触发概率</Text>
       <Text align="center">等级 3：70% 触发概率</Text>
@@ -551,7 +575,8 @@
 
    <!-- SCAVENGING -->
    <Entry item="128">
-      <Text align="left">拥有“搜刮”技能的单位参与掠夺、洗劫或摧毁城市时，可增加获得的金币。若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
+      <Text align="left">拥有“搜刮”技能的单位参与掠夺、洗劫或摧毁城市时，可增加获得的金币。</Text>
+   <Text align="left">若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
       <Text align="center">等级 1：额外获得 1–50 金币</Text>
       <Text align="center">等级 2：额外获得 25–100 金币</Text>
       <Text align="center">等级 3：额外获得 50–150 金币</Text>
@@ -561,7 +586,8 @@
 
    <!-- SCOUTING -->
    <Entry item="129">
-      <Text align="left">拥有“侦察”的单位可以查看遗迹及敌方城市。若同一部队有多个此类单位，只采用技能等级最高者的效果，不能叠加。</Text>
+      <Text align="left">拥有“侦察”的单位可以查看遗迹及敌方城市。若同一部队有多个此类单位，</Text>
+   <Text align="left">只采用技能等级最高者的效果，不能叠加。</Text>
       <Text align="left">开启战争迷雾时，“侦察”还会扩大该单位的视野范围。</Text>
       <Text align="center">等级 1：可侦察相邻的 1 级敌方城市</Text>
       <Text align="center">等级 2：可侦察相邻的 2 级敌方城市及低级遗迹</Text>
@@ -612,7 +638,8 @@
 
    <!-- TAUNT -->
    <Entry item="134">
-      <Text align="left">“嘲讽”会迫使敌方实力较弱的下一名单位进入战斗，使敌方无法自行选择下一个上场单位，并令被嘲讽单位的战力降低 3 点。</Text>
+      <Text align="left">“嘲讽”会迫使敌方实力较弱的下一名单位进入战斗，使敌方无法自行选择下一个上场单位，</Text>
+   <Text align="left">并令被嘲讽单位的战力降低 3 点。</Text>
       <Text align="center">等级 1：20% 触发概率</Text>
       <Text align="center">等级 2：35% 触发概率</Text>
       <Text align="center">等级 3：50% 触发概率</Text>
@@ -622,7 +649,8 @@
 
    <!-- TERROR -->
    <Entry item="135">
-      <Text align="left">拥有“威慑”的单位，在交战开始时有机会使敌人陷入恐惧。受惊吓的单位在若干回合内战力与生命值都降为 1。</Text>
+      <Text align="left">拥有“威慑”的单位，在交战开始时有机会使敌人陷入恐惧。</Text>
+   <Text align="left">受惊吓的单位在若干回合内战力与生命值都降为 1。</Text>
       <Text align="left">拥有“威慑”技能的单位不会受到其他单位的恐惧效果影响。</Text>
       <Text align="center">等级 1：5% 触发概率，持续 5 回合</Text>
       <Text align="center">等级 2：10% 触发概率，持续 6 回合</Text>
@@ -655,7 +683,8 @@
    <Entry item="138">
       <Text align="left">单位的“战力”决定其战斗表现。双方战力差距越大，高战力一方越有可能击中对手。</Text>
       <Text align="left">单位击中敌人时，会使目标损失 5–8 点生命值；若攻击未命中，则只造成 1 点伤害。</Text>
-      <Text align="left">单位每次命中敌人，都有 10% 的概率造成暴击，造成 12 点伤害，而不是通常的 5–8 点。</Text>
+      <Text align="left">单位每次命中敌人，都有 10% 的概率造成暴击，造成 12 点伤害，</Text>
+      <Text align="left">而不是通常的 5–8 点。</Text>
    </Entry>
 
    <!-- LIFE -->
@@ -696,7 +725,8 @@
 
    <!-- ANTIMAGIC -->
    <Entry item="200">
-      <Text align="left">提升“反魔法”技能，可以提高己方所有部队抵御敌方魔法的能力。只有在非战斗状态下，这项效果才能与“魔法免疫”叠加。</Text>
+      <Text align="left">提升“反魔法”技能，可以提高己方所有部队抵御敌方魔法的能力。只有在非战斗状态下，</Text>
+   <Text align="left">这项效果才能与“魔法免疫”叠加。</Text>
       <Text align="center">等级 1：魔法抗性 +5%</Text>
       <Text align="center">等级 2：魔法抗性 +10%</Text>
       <Text align="center">等级 3：魔法抗性 +15%</Text>
@@ -775,7 +805,8 @@
       <Text align="left">提升这项技能可加快神圣系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
       <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
       <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
-      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，</Text>
+      <Text align="center">在达到 13 点与 15 点时各再缩短 1 回合。</Text>
       <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
    </Entry>
 
@@ -857,7 +888,8 @@
    <!-- MORALE -->
    <Entry item="211">
       <Text align="left">较高的士气能让你在战斗中占据优势。</Text>
-      <Text align="left">单位每次在战斗中击中敌人时，都会比较双方士气。若己方士气较高，便有机会免费额外攻击一次；差距越大，概率越高。</Text>
+      <Text align="left">单位每次在战斗中击中敌人时，都会比较双方士气。若己方士气较高，便有机会免费额外攻击一次；</Text>
+      <Text align="left">差距越大，概率越高。</Text>
 	  <Text align="left">有关士气的更多信息，请参阅本帮助中的“游玩技巧”。</Text>
    </Entry>
 
@@ -867,7 +899,8 @@
       <Text align="left">提升这项技能可加快自然系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
       <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
       <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
-      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，</Text>
+      <Text align="center">在达到 13 点与 15 点时各再缩短 1 回合。</Text>
       <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
    </Entry>
 
@@ -877,7 +910,8 @@
       <Text align="left">提升这项技能可加快死灵系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
       <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
       <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
-      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，</Text>
+      <Text align="center">在达到 13 点与 15 点时各再缩短 1 回合。</Text>
       <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
    </Entry>
 
@@ -887,7 +921,8 @@
       <Text align="left">提升这项技能可加快符文系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
       <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
       <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
-      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，</Text>
+      <Text align="center">在达到 13 点与 15 点时各再缩短 1 回合。</Text>
       <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
    </Entry>
 
@@ -897,7 +932,8 @@
       <Text align="left">提升这项技能可加快召唤系法术研究，并降低从远处城市或部队施法时产生的额外魔力消耗。</Text>
       <Text align="center">技能每提升 3 点，普通法术的研究时间缩短 1 回合。</Text>
       <Text align="center">技能每提升 2 点，稀有法术的研究时间缩短 1 回合。</Text>
-      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，在达到 13 点与 15 点时各再缩短 1 回合。</Text>
+      <Text align="center">技能达到 10 点前，每提升 1 点，奥秘法术研究时间缩短 1 回合。超过 10 点后，</Text>
+      <Text align="center">在达到 13 点与 15 点时各再缩短 1 回合。</Text>
       <Text align="center">技能每提升一点，远距离施法的额外魔力消耗减少 1 点。</Text>
    </Entry>
 
@@ -923,7 +959,8 @@
    <Entry item="500">
       <Text align="left">每场战役中，你的统帅都会逐渐学会许多法术，但每道法术都必须先经过研究。</Text>
       <Text align="left">每场战役开始时，以及每次学会新法术后，你都会得到最多 8 种可供研究的法术。</Text>
-      <Text align="left">法术越稀有、威力越强，研究所需时间就越长。不过，如果统帅擅长某个魔法学派，该学派法术的研究时间便会缩短。</Text>
+      <Text align="left">法术越稀有、威力越强，研究所需时间就越长。不过，如果统帅擅长某个魔法学派，</Text>
+      <Text align="left">该学派法术的研究时间便会缩短。</Text>
       <Text align="left">现在请选择一种可研究的法术，然后继续游戏。</Text>
    </Entry>
 
@@ -946,7 +983,8 @@
    <!-- TROOPS IN THE CITY -->
    <Entry item="503">
       <Text align="left">左侧显示城内部队，它们分别位于帐篷或塔楼区域。</Text>
-      <Text align="left">帐篷中的单位可以出城。塔楼内的驻军必须先调入帐篷，才能离城。统帅属于特殊单位，永远不能离开塔楼。</Text>
+      <Text align="left">帐篷中的单位可以出城。塔楼内的驻军必须先调入帐篷，才能离城。统帅属于特殊单位，</Text>
+      <Text align="left">永远不能离开塔楼。</Text>
       <Text align="left">在地图上对目标位置连续右击两次，便可将部分单位调出城市：第一次设置路线，第二次沿路线移动。</Text>
       <Text align="left">请记住：左键用于选中对象，右键用于移动对象（除非你在选项菜单中更改了操作方式）。</Text>
    </Entry>
@@ -979,20 +1017,23 @@
    <Entry item="507">
       <Text align="left">你击败了这座遗迹的守护者。</Text>
       <Text align="left">每座遗迹中都藏有宝物：可能是金币、魔力水晶、盟军、英雄或经验值。</Text>
-      <Text align="left">遗迹一经探索就不能立即再次探索。不过，过一段时间有时会有怪物重新占据已探索的遗迹，并带来新的宝藏。</Text>
+      <Text align="left">遗迹一经探索就不能立即再次探索。不过，过一段时间有时会有怪物重新占据已探索的遗迹，</Text>
+      <Text align="left">并带来新的宝藏。</Text>
    </Entry>
 
    <!-- QUESTS -->
    <Entry item="508">
       <Text align="left">如果你的城市连接着一座神殿，你就可以领取任务。</Text>
-      <Text align="left">领取任务后，你便能探索地图上特殊的隐藏遗迹。只要找齐并探索全部 4 座遗迹，就能获得丰厚的奖励。</Text>
+      <Text align="left">领取任务后，你便能探索地图上特殊的隐藏遗迹。只要找齐并探索全部 4 座遗迹，</Text>
+      <Text align="left">就能获得丰厚的奖励。</Text>
       <Text align="left">要领取任务，请右击打开快捷菜单，再选择“领取任务”。</Text>
    </Entry>
 
    <!-- POPUP MENU -->
    <Entry item="509">
       <Text align="left">游戏中有一组常用命令，集中在“弹出菜单”中，其中通常还包含各种战报。</Text>
-      <Text align="left">你可以用多种方式打开弹出菜单：点击左上角的按钮、按住 Ctrl 再点击地图，或在未选中任何对象时右击地图。</Text>
+      <Text align="left">你可以用多种方式打开弹出菜单：点击左上角的按钮、按住 Ctrl 再点击地图，</Text>
+      <Text align="left">或在未选中任何对象时右击地图。</Text>
       <Text align="left">许多游戏对象还支持右键查看详情，例如右击单位头像可查看完整属性，右击技能可查看说明。</Text>
    </Entry>
 
@@ -1007,23 +1048,28 @@
    <Entry item="511">
       <Text align="left">游戏中有两种极其重要的资源：金币与魔力。</Text>
       <Text align="left">底部控制面板会显示金币和魔力总量，以及收入与维护费。</Text>
-      <Text align="left">你拥有的每座城市都能产出金币，而你控制的每个单位都需要金币维持。金币耗尽时，你将无法继续生产部队。</Text>
-      <Text align="left">魔力则不同。它用于施放法术，并会随时间自然恢复。要查看魔力详情，请将鼠标停在魔力数值上，阅读屏幕最底部的帮助栏。</Text>
+      <Text align="left">你拥有的每座城市都能产出金币，而你控制的每个单位都需要金币维持。金币耗尽时，</Text>
+      <Text align="left">你将无法继续生产部队。</Text>
+      <Text align="left">魔力则不同。它用于施放法术，并会随时间自然恢复。要查看魔力详情，请将鼠标停在魔力数值上，</Text>
+      <Text align="left">阅读屏幕最底部的帮助栏。</Text>
    </Entry>
 
    <!-- CASTING A SPELL -->
    <Entry item="512">
       <Text align="left">有些法术属于“战斗法术”，可以在战斗中施放。</Text>
       <Text align="left">另一些属于“附魔”，可以随时施放，效果会持续存在，但需要不断消耗魔力维持。</Text>
-      <Text align="left">某些法术需要指定施法位置（如召唤或伤害法术）。它们会从当前选中的部队或城市施放；若未选中任何对象，则从首都施放。</Text>
+      <Text align="left">某些法术需要指定施法位置（如召唤或伤害法术）。它们会从当前选中的部队或城市施放；</Text>
+      <Text align="left">若未选中任何对象，则从首都施放。</Text>
       <Text align="left">施法位置距首都越远，消耗的魔力就越多。</Text>
    </Entry>
 
    <!-- WAYPOINTS -->
    <Entry item="513">
       <Text align="left">生产集结点能让新生产的部队自动前往前线。</Text>
-      <Text align="left">进入集结点菜单，左键选中一座城市，再右键点击目的地。此后该城新生产的部队便会自动向目标行进。</Text>
-      <Text align="left">如果 A 城的集结点指向 B 城，而 B 城指向 C 城，那么 A 城生产的所有单位都会沿集结路线抵达 C 城。</Text>
+      <Text align="left">进入集结点菜单，左键选中一座城市，再右键点击目的地。</Text>
+      <Text align="left">此后该城新生产的部队便会自动向目标行进。</Text>
+      <Text align="left">如果 A 城的集结点指向 B 城，而 B 城指向 C 城，</Text>
+      <Text align="left">那么 A 城生产的所有单位都会沿集结路线抵达 C 城。</Text>
       <Text align="left">你也可以在城市界面中，通过右下角小地图的左右键点击来设置集结点。</Text>
    </Entry>
 
@@ -1044,7 +1090,8 @@
    <!-- MORALE -->
    <Entry item="516">
       <Text align="left">保持高士气对战斗胜负十分重要。士气高的部队能够获得额外攻击机会。</Text>
-      <Text align="left">当前士气显示在底部控制面板中。许多因素都会影响它，包括你拥有的雕像数量，以及同一部队中的种族组合。</Text>
+      <Text align="left">当前士气显示在底部控制面板中。许多因素都会影响它，包括你拥有的雕像数量，</Text>
+      <Text align="left">以及同一部队中的种族组合。</Text>
       <Text align="left">有关士气的详细说明，请参阅本帮助“游玩技巧”中的相关条目。</Text>
    </Entry>
 
@@ -1076,7 +1123,8 @@
 
    <!-- FEAR -->
    <Entry item="601">
-      <Text align="left">拥有“恐惧”技能的英雄，会降低战斗中所有敌方单位的战力；若有多名英雄拥有该技能，只采用最高等级的效果，不能叠加。</Text>
+      <Text align="left">拥有“恐惧”技能的英雄，会降低战斗中所有敌方单位的战力；若有多名英雄拥有该技能，</Text>
+   <Text align="left">只采用最高等级的效果，不能叠加。</Text>
       <Text align="center">等级 1：敌方战力 -1</Text>
       <Text align="center">等级 2：敌方战力 -2</Text>
       <Text align="center">等级 3：敌方战力 -3</Text>
@@ -1086,7 +1134,8 @@
 
    <!-- LEADERSHIP -->
    <Entry item="602">
-      <Text align="left">拥有“统率”技能的英雄，会提高所在部队的战力与移动速度；若有多名英雄拥有该技能，只采用最高等级的效果，不能叠加。</Text>
+      <Text align="left">拥有“统率”技能的英雄，会提高所在部队的战力与移动速度；若有多名英雄拥有该技能，</Text>
+   <Text align="left">只采用最高等级的效果，不能叠加。</Text>
       <Text align="center">等级 1：所在部队战力 +1，速度 +1</Text>
       <Text align="center">等级 2：所在部队战力 +2，速度 +1</Text>
       <Text align="center">等级 3：所在部队战力 +2，速度 +2</Text>
@@ -1096,7 +1145,8 @@
 
    <!-- MOUNTS -->
    <Entry item="603">
-      <Text align="left">英雄可以通过法术召唤飞行坐骑，但坐骑只能载召唤它的英雄。如果多名英雄都想飞行，就必须各自召唤坐骑。</Text>
+      <Text align="left">英雄可以通过法术召唤飞行坐骑，但坐骑只能载召唤它的英雄。如果多名英雄都想飞行，</Text>
+   <Text align="left">就必须各自召唤坐骑。</Text>
       <Text align="left">如果坐骑被杀，或者英雄与坐骑在水面或熔岩上方分离，英雄就会坠地身亡。</Text>
       <Text align="left">坐骑的种类取决于英雄的阵营属性与等级。</Text>
       <Text align="center">英雄等级 1–4：1 级坐骑</Text>
@@ -1109,8 +1159,10 @@
 
    <!-- SPELLS -->
    <Entry item="604">
-      <Text align="left">英雄可以施放英雄魔法学派的法术（以橙色图标表示）。这些法术也需要研究，但所有统帅都能使用英雄魔法学派。</Text>
-      <Text align="left">英雄系法术必须在当前部队中有英雄时才能施放。若统帅阵亡，仍可施放已学会的英雄系法术，但不能再研究新法术。</Text>
+      <Text align="left">英雄可以施放英雄魔法学派的法术（以橙色图标表示）。这些法术也需要研究，</Text>
+   <Text align="left">但所有统帅都能使用英雄魔法学派。</Text>
+      <Text align="left">英雄系法术必须在当前部队中有英雄时才能施放。若统帅阵亡，仍可施放已学会的英雄系法术，</Text>
+      <Text align="left">但不能再研究新法术。</Text>
       <Text align="left">英雄系法术列表：</Text>
       <Text align="center">英雄坐骑：为英雄召唤飞行坐骑（生物法术）</Text>
       <Text align="center">英勇一击：使所有单位的暴击概率翻倍（战斗法术）</Text>
@@ -1287,18 +1339,21 @@
 
   <!-- DIVINE -->
    <Entry item="802">
-      <Text align="left">具有“神圣”效果的物品，会提高统帅的神圣魔法技能。不过，如果统帅没有主修或辅修神圣魔法，该物品也不会让其获得施放神圣系法术的能力。</Text>
+      <Text align="left">具有“神圣”效果的物品，会提高统帅的神圣魔法技能。不过，如果统帅没有主修或辅修神圣魔法，</Text>
+   <Text align="left">该物品也不会让其获得施放神圣系法术的能力。</Text>
    </Entry>
 
   <!-- ESCAPE -->
    <Entry item="803">
-      <Text align="left">具有“逃脱”效果的物品，可让佩戴者在战斗中遭到致命攻击前脱身。英雄会自动使用，但只能生效一次。</Text>
+      <Text align="left">具有“逃脱”效果的物品，可让佩戴者在战斗中遭到致命攻击前脱身。英雄会自动使用，</Text>
+   <Text align="left">但只能生效一次。</Text>
       <Text align="left">这种效果无法阻止暗杀、死亡凝视或箭术造成的死亡。</Text>
     </Entry>
 
   <!-- FEALTY -->
    <Entry item="804">
-      <Text align="left">具有“效忠”效果的物品，可让你直接买下一座任意种族的中立城市。它只能使用一次，请慎重选择目标。</Text>
+      <Text align="left">具有“效忠”效果的物品，可让你直接买下一座任意种族的中立城市。它只能使用一次，</Text>
+   <Text align="left">请慎重选择目标。</Text>
    </Entry>
 
   <!-- MOVEBONUS -->
@@ -1308,12 +1363,14 @@
 
   <!-- NATURE -->
    <Entry item="806">
-      <Text align="left">具有“自然”效果的物品，会提高统帅的自然魔法技能。不过，如果统帅没有主修或辅修自然魔法，该物品也不会赋予施放自然系法术的能力。</Text>
+      <Text align="left">具有“自然”效果的物品，会提高统帅的自然魔法技能。不过，如果统帅没有主修或辅修自然魔法，</Text>
+   <Text align="left">该物品也不会赋予施放自然系法术的能力。</Text>
    </Entry>
 
   <!-- NECROMANCY -->
    <Entry item="807">
-      <Text align="left">具有“死灵”效果的物品，会提高统帅的死灵术技能。不过，如果统帅没有主修或辅修死灵术，该物品也不会赋予施放死灵系法术的能力。</Text>
+      <Text align="left">具有“死灵”效果的物品，会提高统帅的死灵术技能。不过，如果统帅没有主修或辅修死灵术，</Text>
+   <Text align="left">该物品也不会赋予施放死灵系法术的能力。</Text>
    </Entry>
 
   <!-- RECRUIT ALLIES -->
@@ -1323,12 +1380,14 @@
 
   <!-- RUNE -->
    <Entry item="809">
-      <Text align="left">具有“符文”效果的物品，会提高统帅的符文魔法技能。不过，如果统帅没有主修或辅修符文魔法，该物品也不会赋予施放符文系法术的能力。</Text>
+      <Text align="left">具有“符文”效果的物品，会提高统帅的符文魔法技能。不过，如果统帅没有主修或辅修符文魔法，</Text>
+   <Text align="left">该物品也不会赋予施放符文系法术的能力。</Text>
    </Entry>
 
   <!-- SUMMONING -->
    <Entry item="810">
-      <Text align="left">具有“召唤”效果的物品，会提高统帅的召唤术技能。不过，如果统帅没有主修或辅修召唤术，该物品也不会赋予施放召唤系法术的能力。</Text>
+      <Text align="left">具有“召唤”效果的物品，会提高统帅的召唤术技能。不过，如果统帅没有主修或辅修召唤术，</Text>
+   <Text align="left">该物品也不会赋予施放召唤系法术的能力。</Text>
    </Entry>
 
   <!-- XP BONUS -->
@@ -1342,19 +1401,26 @@
 
   <!-- COMBAT TABLE -->
    <Entry item="901">
-      <Text align="left">战斗中命中对手的概率取决于双方单位的战力差值。用较强单位的战力减去较弱单位的战力，再查阅下表，即可得到较强单位的命中概率（百分比）。</Text>
-      <Text align="center">战力差：00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20</Text>
-      <Text align="center">命中率：50 55 59 63 67 70 73 76 79 82 84 86 88 90 92 94 95 96 97 98 99</Text>
+      <Text align="left">战斗中命中对手的概率取决于双方单位的战力差值。用较强单位的战力减去较弱单位的战力，</Text>
+   <Text align="left">再查阅下表，即可得到较强单位的命中概率（百分比）。</Text>
+      <Text align="center">战力差：</Text>
+      <Text align="center">00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 </Text>
+      <Text align="center">15 16 17 18 19 20</Text>
+      <Text align="center">命中率：</Text>
+      <Text align="center">50 55 59 63 67 70 73 76 79 82 84 86 88 90 92 </Text>
+      <Text align="center">94 95 96 97 98 99</Text>
       <Text align="center">.</Text>
       <Text align="left">较弱单位的命中概率为 100 减去较强单位的命中概率。</Text>
       <Text align="left">例 1：两名战力相同的单位交战，战力差为 0，双方命中概率均为 50%。</Text>
-      <Text align="left">例 2：战力 15 与战力 5 的单位交战，差值为 10。较强单位的命中概率为 84%，较弱单位为 16%。</Text>
+      <Text align="left">例 2：战力 15 与战力 5 的单位交战，差值为 10。较强单位的命中概率为 84%，</Text>
+      <Text align="left">较弱单位为 16%。</Text>
    </Entry>
 
    <Entry item="902">
       <Text align="left">士气可能介于 -5 至 15 之间，具体取决于各种加成和惩罚。</Text>
       <Text align="left">士气较高的一方，每轮战斗都有机会额外攻击一次；概率为“双方士气差 × 3%”。</Text>
-      <Text align="left">例 1：两方士气分别为 10 和 5，差值为 5，士气 10 的一方每轮额外攻击的概率为 5×3＝15%。</Text>
+      <Text align="left">例 1：两方士气分别为 10 和 5，差值为 5，</Text>
+      <Text align="left">士气 10 的一方每轮额外攻击的概率为 5×3＝15%。</Text>
    </Entry>
 
    <Entry item="903">

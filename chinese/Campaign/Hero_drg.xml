@@ -1,3 +1,3 @@
 <CutScene file="Video\Hero_drg.bik" voice="Campaign\Hero_drg.wav" duration="10000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1000">你证明了自己是一位值得尊敬的对手。</Text><Text time="5500">龙族领主英雄阿拉库斯爵士将加入你的下一场战斗。</Text>
+	<Text time="1000">你是一位可敬的对手。龙族英雄阿拉库斯爵士将加入下一场战斗。</Text>
 </CutScene>

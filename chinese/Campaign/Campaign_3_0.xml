@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_3_0.bik" voice="Campaign\Campaign_3_0.wav" duration="25000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
 	<Text time="1500">黑暗精灵女术士阿拉薇恩究竟身在何处？她苦苦寻觅的又是什么？</Text>
-	<Text time="7000">也许厄运密林的黑暗精灵之王加拉诺斯知道答案。也许两人早已联手，</Text><Text time="12250">正在暗中酝酿某个险恶的阴谋。</Text>
+	<Text time="7000">厄运密林的精灵王加拉诺斯或知答案。也许两人早已联手，暗藏阴谋。</Text>
 	<Text time="17500">通往他堡垒的道路有重兵把守，但这条路，非走不可。</Text>
 </CutScene>

@@ -111,14 +111,15 @@ def check_one(rel: str, chs_path: Path, eng_path: Path,
         # CutScene 的 <Text> 允许拆分（修复长文本复读的既定手段）：
         # 对比时把连续的 <Text> 折叠归一化，只要求总体标签集合一致。
         is_cutscene = raw.lstrip().startswith(b"<CutScene")
-        if is_cutscene:
-            norm = lambda seq: [t for t in seq if t != b"Text"] + [b"Text"] * seq.count(b"Text")
-            # 允许 Text 数量增加（拆分），但不能减少，其它标签必须完全一致
+        is_help = rel.endswith("Help.xml")
+        # 过场字幕与帮助文档都允许 <Text> 节点增加（拆段修复复读的既定手段）：
+        # 其它标签须完全一致，Text 数不得少于原文。
+        if is_cutscene or is_help:
             others = lambda seq: [t for t in seq if t != b"Text"]
             if others(tags) != others(tags_eng) or tags.count(b"Text") < tags_eng.count(b"Text"):
                 errors.append(
-                    f"{rel}: 过场字幕结构异常——除 <Text> 外的标签须与原文一致，"
-                    "且 <Text> 节点数不得少于原文（拆分才能修复复读）"
+                    f"{rel}: 结构异常——除 <Text> 外的标签须与原文一致，"
+                    "且 <Text> 节点数不得少于原文（拆段用于修复复读）"
                 )
         elif tags != tags_eng:
             errors.append(

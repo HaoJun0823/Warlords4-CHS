@@ -1,3 +1,3 @@
 <CutScene file="Video\Hero_drk.bik" voice="Campaign\Hero_drk.wav" duration="10000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1000">你以毫不留情的手段证明了自身实力。</Text><Text time="5500">黑暗精灵英雄维拉克希娅将加入你的下一场战斗。</Text>
+	<Text time="1000">你已证明自身实力。黑暗精灵英雄维拉克希娅将加入下一场战斗。</Text>
 </CutScene>

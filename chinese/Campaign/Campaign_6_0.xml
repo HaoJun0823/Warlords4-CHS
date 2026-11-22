@@ -1,6 +1,6 @@
 <CutScene file="Video\Campaign_6_0.bik" voice="Campaign\Campaign_6_0.wav" duration="38000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">进入凯尔图拉克斯巢穴的路程耗去了数个时辰。待众人抵达时，</Text><Text time="5000">这头古老生灵已经醒来。</Text>
+	<Text time="1500">跋涉数个时辰，众人抵达时，这头古老生灵已经醒来。</Text>
 	<Text time="8500">它以锐利的目光始终注视着来客，收下龙之石，终于开口说道：</Text>
-	<Text time="15500">“你们想知道大崩裂的真相——唯有我能给出答案。而我也会告诉你们！不过，</Text><Text time="20750">你们得付出代价。”</Text>
-	<Text time="26000">“把卡兹·阿加尔矮人殿堂中的珍宝带给我，我便会告诉你们大崩裂的来龙去脉：</Text><Text time="32000">那道咒文为何失败，又该如何阻止它。”</Text>
+	<Text time="15500">“想知道大崩裂真相？唯有我能解答。不过，你们得付出代价。”</Text>
+	<Text time="26000">“把卡兹·阿加尔的珍宝带来，我便道出真相与阻止之法。”</Text>
 </CutScene>

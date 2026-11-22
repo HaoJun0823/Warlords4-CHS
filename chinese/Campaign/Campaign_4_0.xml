@@ -1,8 +1,8 @@
 <CutScene file="Video\Campaign_4_0.bik" voice="Campaign\Campaign_4_0.wav" duration="49000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">关于阿拉薇恩及其行踪，再也打听不出更多线索。既然如此，最明智的做法，</Text><Text time="5750">便是从“大崩裂”本身着手。</Text>
-	<Text time="10000">艾瑟里亚至今仍活着、又曾亲眼见证那场灾变的生灵寥寥无几；</Text><Text time="13500">唯有最古老的巨龙或许知晓内情。</Text>
-	<Text time="17000">若不备下王侯也难以企及的厚礼便贸然求见，即使遇上的只是年轻巨龙，</Text><Text time="21750">也无异于自寻死路。但它们掌握的知识，值得冒险一试。</Text>
-	<Text time="26500">有一样礼物必能博得龙族的欢心——“龙之石”。这件宝物早已失落于龙族之手，</Text><Text time="31250">后来辗转落入了希里亚骑士团的掌控。</Text>
-	<Text time="36000">骑士们绝不可能自愿交出龙之石。多年前，</Text><Text time="40250">他们正是凭借这件圣物赢得了“灾厄战争”，将其奉若至宝。</Text>
+	<Text time="1500">阿拉薇恩的线索断了。最明智之举，便是从“大崩裂”本身着手。</Text>
+	<Text time="10000">亲眼见证那场灾变的生灵寥寥无几，唯有最古老的巨龙或知内情。</Text>
+	<Text time="17000">求见巨龙须备厚礼，否则无异自寻死路。但它们掌握的知识值得冒险。</Text>
+	<Text time="26500">“龙之石”必能博得龙族欢心。此宝早已失落，后落入骑士团之手。</Text>
+	<Text time="36000">骑士绝不会自愿交出龙之石。他们凭此圣物赢得“灾厄战争”，奉若至宝。</Text>
 	<Text time="44500">既然如此，就只能凭武力夺取。</Text>
 </CutScene>

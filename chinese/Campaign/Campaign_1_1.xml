@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_1_1.bik" voice="Campaign\Campaign_1_1.wav" duration="30000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
 	<Text time="1500">兽人的入侵终于平息。然而，比袭击本身更令人不安的，是他们对图书馆的洗劫。</Text>
 	<Text time="10000">这些家伙素来只把书本当作引火的柴薪。可这一次，他们为何偏偏要抢书？</Text>
-	<Text time="19000">战后的仓促勘察很快揭开了古怪行径背后的缘由——率领兽人的，竟是恶魔……</Text><Text time="24500">而恶魔行事，从来都怀着险恶的图谋。</Text>
+	<Text time="19000">勘察揭穿了谜底：率领兽人的竟是恶魔，而恶魔必怀险恶图谋。</Text>
 </CutScene>

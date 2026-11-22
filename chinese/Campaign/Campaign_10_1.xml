@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_10_1.bik" voice="Campaign\Campaign_10_1.wav" duration="28000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">就这样，阿拉薇恩终于败了。她的所有书籍，连同最后一片纸屑，</Text><Text time="6500">都被收集起来付之一炬；灰烬随风飘散，落向四方。</Text>
-	<Text time="11500">这个故事理应到此结束。然而，</Text><Text time="16500">倘若这场混乱与疯狂教会了我们什么永恒不变的真理，那便是：</Text>
+	<Text time="1500">阿拉薇恩败了。她的书籍连同片纸皆被焚毁，灰烬随风飘散。</Text>
+	<Text time="11500">故事理应到此结束。然而这场混乱教会我们一条真理——</Text>
 	<Text time="21500">“学到的东西或许可以遗忘……却永远无法当作从未学过。”</Text>
 </CutScene>
