@@ -44,6 +44,10 @@ def verify_one(zip_path: Path) -> list[str]:
                 errors.append("缺少 文件清单.txt")
             if not any(n.startswith("附赠文档/") for n in names):
                 errors.append("缺少 附赠文档/（完整教程 PDF/Markdown）")
+            if "许可/LICENSE" not in names:
+                errors.append("缺少 许可/LICENSE")
+            if "许可/Apache-2.0.txt" not in names:
+                errors.append("缺少 许可/Apache-2.0.txt")
 
             for n in entries:
                 data = z.read(n)

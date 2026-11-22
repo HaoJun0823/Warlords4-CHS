@@ -64,9 +64,15 @@ README_TEXT = """《战神IV：艾瑟里亚英雄》(Warlords IV: Heroes of Ethe
   附赠文档/ 目录下有《完整教程_未精简版》的 PDF 和 Markdown。
   游戏内教程为防止文本复读做了精简，完整原文请查阅此文档。
 
-【工程与源码】
-  本补丁由 Git 管理、CI 自动构建。汉化工程见：
-  G:\\Projects\\Warlords_IV_HOE_106_CH
+【署名与源码 / Credit & Source】
+  制作 By: HaoJun0823 (Randerion)
+  官方源码仓库 / Canonical source repository:
+  https://github.com/HaoJun0823/Warlords4-CHS
+
+  本补丁为非官方作品，未获游戏著作权人授权、背书或赞助。
+  游戏及其原始素材的权利归各自权利人所有；本补丁不主张其中任何权利。
+  本工程采用 HJNCSA-1.0 许可（Apache-2.0 加附加条件，非商业用途），
+  完整条款见包内 LICENSE 与 LICENSES/Apache-2.0.txt。
 """
 
 
@@ -104,6 +110,11 @@ def build(out_root: Path, date: str | None, tm: str | None) -> Path:
                 if doc.is_file() and doc.suffix.lower() in {".md", ".pdf"}:
                     z.write(doc, f"附赠文档/{doc.name}")
                     print(f"  附赠文档: {doc.name}")
+        # 许可文件：分发时须随附 LICENSE 与基础许可全文
+        for lic in [ROOT / "LICENSE", ROOT / "LICENSES" / "Apache-2.0.txt"]:
+            if lic.is_file():
+                z.write(lic, f"许可/{lic.name}")
+                print(f"  许可文件: {lic.name}")
 
     print(f"已生成：{zip_path}（{zip_path.stat().st_size} 字节）")
     print(f"警告 {len(warns)} 条（不影响出包）")

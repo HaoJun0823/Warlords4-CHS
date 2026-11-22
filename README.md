@@ -9,6 +9,10 @@
 
 通过**纯文本替换**为 32 位《战神IV：艾瑟里亚英雄》GOG 1.06 版提供简体中文。
 
+> **署名 / Credit**：HaoJun0823 (Randerion)
+> **官方源码仓库 / Canonical source**：https://github.com/HaoJun0823/Warlords4-CHS
+> **许可 / License**：[HJNCSA-1.0](LICENSE)（Apache-2.0 加附加条件，非商业用途；基础许可见 [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt)）
+
 > 好消息：**不需要逆向、不需要改字体、不需要改配置**。
 > 已实测：在 `English` 槽位下，GBK 编码的中文能被引擎正确解码，且系统字体（Arial）
 > 在简体中文 Windows 上自动回退到中文字体，直接显示正常中文。
