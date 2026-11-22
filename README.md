@@ -70,8 +70,9 @@ python Tools/ci/verify_release.py build_out --require-asi   # 包体门禁
 3. **不要改 `Font.ini` / `HotKeys.xml`。** 原字体已能显示中文（GDI 自动回退），
    改字体名有卡死风险；热键配置与翻译无关。保持原样即可。
 4. **长中文文本复读机问题由随包 ASI 修复**（`W4CHS_DLL.asi`）。引擎按空格分词，
-   中文整句无空格 → 排版循环无法推进 → 反复重绘整句。ASI 在运行时对长中文串按
-   词边界插入空格解决。`W4CHS.ini` 的 `InsertSpace` / `WordsPerLine` 可调。
+   中文整句无空格 → 排版循环无法在词内换行 → 反复重绘整句。ASI 完全接管排版
+   （`UseOwnWrap=1`），按 GBK 字符边界分行，不插空格 → 不拆词、不漏字、不刷屏。
+   字宽可用 `W4CHS.ini` 的 `CjkWidth`(默认19) / `AsciiWidth`(默认8) 微调。
    **发布包必须带 `winmm.dll` + `W4CHS_DLL.asi` + `W4CHS.ini`，删了会复读。**
 
 补充规则（由校验脚本强制）：
