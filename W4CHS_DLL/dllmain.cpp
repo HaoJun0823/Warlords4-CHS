@@ -24,8 +24,11 @@
 static struct Cfg {
     bool  debug       = true;  // 写详细日志
     int   fullWidth   = 0;     // GBK 全角宽度(px)（已证实引擎宽度正确，未使用）
-    bool  insertSpace = true;  // 对长中文串按字符边界插入空格，帮助引擎正确分词换行
-    int   wordsPerLine= 15;    // 每多少个中文字插入一个空格
+    bool  insertSpace = false; // 已废弃：插空格会拆词/漏字/刷屏（保留开关兼容旧配置）
+    int   wordsPerLine= 15;    // 已废弃
+    bool  useOwnWrap  = true;  // 自排版：完全接管 sub_5B1CA0，按字符边界分行
+    int   cjkWidth    = 19;    // 中文字宽(px)，实测值
+    int   asciiWidth  = 8;     // ASCII 字符宽(px)近似
 } g_cfg;
 
 static void LoadCfg() {
@@ -50,6 +53,15 @@ static void LoadCfg() {
         } else if (strncmp(line, "WordsPerLine", 12) == 0) {
             const char* p = strchr(line, '=');
             if (p) g_cfg.wordsPerLine = atoi(p + 1);
+        } else if (strncmp(line, "UseOwnWrap", 10) == 0) {
+            const char* p = strchr(line, '=');
+            if (p) g_cfg.useOwnWrap = (atoi(p + 1) != 0);
+        } else if (strncmp(line, "CjkWidth", 8) == 0) {
+            const char* p = strchr(line, '=');
+            if (p) g_cfg.cjkWidth = atoi(p + 1);
+        } else if (strncmp(line, "AsciiWidth", 10) == 0) {
+            const char* p = strchr(line, '=');
+            if (p) g_cfg.asciiWidth = atoi(p + 1);
         }
     }
     fclose(f);
@@ -250,12 +262,60 @@ static short __stdcall HookWidthB(int ch, const char* s) {
     return HookWidthCommon(ch, s, g_origWidthB, &g_dbgB, "B");
 }
 
-// 排版入口观测：打印每次调用的源字符串，确定长文本是被调用多次还是画多遍。
+// 自排版：完全接管 sub_5B1CA0，绕开引擎对无空格中文串的分词 bug。
+// out 缓冲 = 32 行 × 128 字节，每行一个 NUL 结尾字符串；空行首字节=0。
+// 按 GBK 字符边界累加宽度，超 maxW 换行，最多 maxL 行。
+// 关键：不修改字符串内容（不插空格）→ 不拆词、不漏字、不刷屏。
+static short OwnWrap(const char* src, int maxW, int maxL, void* out) {
+    unsigned char* o = (unsigned char*)out;
+    // 清空 32 行槽
+    memset(o, 0, 32 * 128);
+
+    if (!src || !*src) return 0;
+    int cjkW = g_cfg.cjkWidth > 0 ? g_cfg.cjkWidth : 19;
+    int ascW = g_cfg.asciiWidth > 0 ? g_cfg.asciiWidth : 8;
+
+    int line = 0;            // 当前行索引
+    int w = 0;               // 当前行已用宽度
+    int oi = 0;              // 当前行写入字节位置
+    unsigned char* dst = o;  // 当前行起始
+
+    const unsigned char* p = (const unsigned char*)src;
+    while (*p) {
+        int clen, px;
+        if (*p >= 0x81 && p[1] >= 0x40) { clen = 2; px = cjkW; }
+        else { clen = 1; px = (*p == ' ') ? (ascW / 2) : ascW; }
+
+        // 超宽且当前行已有内容 → 换行
+        if (w + px > maxW && oi > 0) {
+            line++;
+            if (line >= maxL) break;   // 超过最大行数，丢弃剩余（避免刷屏）
+            dst = o + line * 128;
+            w = 0; oi = 0;
+        }
+        // 写入字符（留 1 字节给 NUL）
+        if (oi + clen < 127) {
+            for (int k = 0; k < clen; ++k) dst[oi++] = p[k];
+            w += px;
+        }
+        p += clen;
+    }
+    dst[oi] = 0;  // 当前行结尾（槽本身已清零，后续为 NUL）
+
+    if (g_cfg.debug && g_dbgWrap < 20) {
+        Log("OWNWRAP srcLen=%d maxW=%d maxL=%d lines=%d s=%s\n",
+            (int)strlen(src), maxW, maxL, line + 1, src);
+        ++g_dbgWrap;
+    }
+    return (short)(line + 1);
+}
+
+// 排版入口 hook：中文串走自排版，纯 ASCII 走原函数（零回归）。
 static short __stdcall HookWrap(char* src, short maxW, short maxL, char flag, void* out) {
     void* self = nullptr;
     __asm { mov self, ecx }   // 进入时 ecx = this
 
-    // 统计中文字符数
+    // 统计中文字符数与是否含中文
     int gbk = 0;
     if (src) {
         for (const unsigned char* p = (const unsigned char*)src; *p; ) {
@@ -264,40 +324,16 @@ static short __stdcall HookWrap(char* src, short maxW, short maxL, char flag, vo
         }
     }
 
-    char* passSrc = src;
-    static char s_buf[1024];
-
-    // 核心修复：长中文串按字符边界插入空格，帮助引擎按空格分词→正确换行，
-    // 否则整句是一个"词"，排版循环无法推进指针，反复从头画整句 → 复读机。
-    if (g_cfg.insertSpace && gbk >= (g_cfg.wordsPerLine + 4)) {
-        int wpl = g_cfg.wordsPerLine > 0 ? g_cfg.wordsPerLine : 15;
-        int si = 0, cnt = 0;
-        const unsigned char* p = (const unsigned char*)src;
-        while (*p && si < (int)sizeof(s_buf) - 4) {
-            if (*p >= 0x81 && p[1] >= 0x40) {
-                s_buf[si++] = (char)p[0];
-                s_buf[si++] = (char)p[1];
-                p += 2;
-                // 遇到中文标点则强制断词；否则每 wpl 个字插入空格
-                if (cnt && (cnt % wpl == 0)) s_buf[si++] = ' ';
-                cnt++;
-            } else {
-                s_buf[si++] = (char)*p++;
-            }
-        }
-        s_buf[si] = 0;
-        passSrc = s_buf;
-        if (g_cfg.debug && g_dbgWrap < 30) {
-            Log("WRAP-INSERT gbk=%d wpl=%d -> %d bytes s=%s\n", gbk, wpl, si, s_buf);
-            ++g_dbgWrap;
-        }
+    // 含中文 → 自排版（彻底绕开引擎分词 bug）
+    if (g_cfg.useOwnWrap && gbk > 0) {
+        return OwnWrap(src, maxW, maxL, out);
     }
 
-    // 手动调用原函数：ecx=this，5个栈参数，原函数 retn 14h 自清栈
+    // 纯 ASCII → 原函数（零回归）
     short result = 0;
     WrapFn fp = g_origWrap;
     DWORD slf = (DWORD)self;
-    DWORD psrc = (DWORD)passSrc, mw = (DWORD)(short)maxW, ml = (DWORD)(short)maxL,
+    DWORD psrc = (DWORD)src, mw = (DWORD)(short)maxW, ml = (DWORD)(short)maxL,
           fl = (DWORD)(int)flag, po = (DWORD)out;
     if (!fp) return 0;
     __asm {
