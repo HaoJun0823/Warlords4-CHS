@@ -9,7 +9,7 @@
 
 	<Ruin id="11" available_for_quest="no">
 		<Heading>远古之魂</Heading>
-		<Message>一位古代骑士的幽灵向你走来，警告说未来将有巨大的危机降临！</Message>
+		<Message>一位古代骑士的幽灵向你走来，|警告说未来将有巨大的危机降临！</Message>
 		<Monster type="30" number="3" level="1"/>
 		<Monster type="30" number="1" level="4"/>
 		<Reward type="xp" data="10"/>
@@ -17,7 +17,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须攻占兽人堡垒利瓦里亚，拯救北方领土，才能让百姓免受进一步侵袭。|在此过程中，或许还能查出究竟是谁在幕后策动这场兽人入侵。</Message>
+		<Message>你必须攻占兽人堡垒利瓦里亚，拯救北方领土，|才能让百姓免受进一步侵袭。|在此过程中，或许还能查出究竟是谁在幕后策动这场兽人入侵。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="capital">

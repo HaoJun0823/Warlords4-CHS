@@ -19,31 +19,31 @@
 
 	<Ruin id="14" available_for_quest="no">
 		<Heading>冬之宝珠</Heading>
-		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，|一场风暴席卷了北方冻原。</Message>
 		<Monster type="54" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="13" available_for_quest="no">
 		<Heading>冬之宝珠</Heading>
-		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，|一场风暴席卷了北方冻原。</Message>
 		<Monster type="55" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="0" available_for_quest="no">
 		<Heading>冬之宝珠</Heading>
-		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，|一场风暴席卷了北方冻原。</Message>
 		<Monster type="54" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="3" available_for_quest="no">
 		<Heading>冬之宝珠</Heading>
-		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，一场风暴席卷了北方冻原。</Message>
+		<Message>你找到了传说中的一颗冬之宝珠。将它击碎后，|一场风暴席卷了北方冻原。</Message>
 		<Monster type="55" number="8" level="5"/>
 		<Reward type="xp" data="10"/>
 	</Ruin >
 	<Ruin id="15" available_for_quest="no">
 		<Heading>冬之宝珠</Heading>
-		<Message>你找到了冬之主宝珠。将它击碎后，一场巨大的风暴席卷了北方冻原。</Message>
+		<Message>你找到了冬之主宝珠。将它击碎后，|一场巨大的风暴席卷了北方冻原。</Message>
 		<Monster type="58" number="4" level="3"/>
 		<Reward type="xp" data="20"/>
 	</Ruin >

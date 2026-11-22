@@ -9,7 +9,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须击败阻挡在巨人脊山脉东行道路上的巨人、食人魔和巨魔。|道路打通之后，你便能前往阿拉薇恩的堡垒，请她指点迷津。</Message>
+		<Message>你必须击败阻挡在巨人脊山脉东行道路上的巨人、|食人魔和巨魔。|道路打通之后，你便能前往阿拉薇恩的堡垒，请她指点迷津。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
@@ -24,7 +24,7 @@
 
 	<Ruin id="1" available_for_quest="no">
 		<Heading>半面盾牌</Heading>
-		<Message>除了 1056 枚金币，你还找到了一面断裂魔法盾牌的一半！</Message>
+		<Message>除了 1056 枚金币，|你还找到了一面断裂魔法盾牌的一半！</Message>
 		<Monster type="19" number="1" level="4"/>
 		<Monster type="19" number="3" level="1"/>
 		<Reward type="gold" data="1056"/>
@@ -32,7 +32,7 @@
 
 	<Ruin id="10" available_for_quest="no">
 		<Heading>半面盾牌</Heading>
-		<Message>除了 1135 枚金币，你还找到了一面断裂魔法盾牌的一半！</Message>
+		<Message>除了 1135 枚金币，|你还找到了一面断裂魔法盾牌的一半！</Message>
 		<Monster type="20" number="1" level="3"/>
 		<Monster type="19" number="3" level="1"/>
 		<Reward type="gold" data="1135"/>
@@ -78,7 +78,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="city_owned" data1="1" data2="0"/>
-		<Message>一队巨人猎手赶到基拉克·伊兹戈尔，愿意加入你的军队。|他们听说你正在这里与巨人交战。</Message>
+		<Message>一队巨人猎手赶到基拉克·伊兹戈尔，|愿意加入你的军队。|他们听说你正在这里与巨人交战。</Message>
 		<Action type="unit" data1="12" data2="4" data3="1"/>
 		<Action type="unit" data1="12" data2="1" data3="5" string1="Giantslayer"/>
 	</Event>

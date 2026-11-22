@@ -1,3 +1,3 @@
 <CutScene file="Video\Hero_kni.bik" voice="Campaign\Hero_kni.wav" duration="10000" voicedelay="1000" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1000">你赢得了此役，也证明了自己的荣誉。骑士团英雄阿尔比昂爵士将加入你的下一场战斗。</Text>
+	<Text time="1000">你赢得了此役，也证明了自己的荣誉。</Text><Text time="5500">骑士团英雄阿尔比昂爵士将加入你的下一场战斗。</Text>
 </CutScene>

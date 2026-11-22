@@ -3,7 +3,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>破碎沼泽徘徊着无数不得安息的亡魂，甚至可能有恶魔出没。|你必须沿着曲折的小路向西北进军，击败这些怪物，为通往阿拉薇恩所在地的道路扫清障碍。</Message>
+		<Message>破碎沼泽徘徊着无数不得安息的亡魂，|甚至可能有恶魔出没。|你必须沿着曲折的小路向西北进军，击败这些怪物，为通往阿拉薇恩所在地的道路扫清障碍。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
@@ -13,7 +13,7 @@
 
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="5"/>
-		<Message>一群不死族摇摇晃晃地走进你的首都。它们仍记得 3000 年前那场毁灭性的灾难，希望阻止悲剧重演。</Message>
+		<Message>一群不死族摇摇晃晃地走进你的首都。|它们仍记得 3000 年前那场毁灭性的灾难，|希望阻止悲剧重演。</Message>
 		<Action type="unit" data1="30" data2="8" data3="1"/>
 	</Event>
 

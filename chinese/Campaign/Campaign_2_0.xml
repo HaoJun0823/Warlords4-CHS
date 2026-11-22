@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_2_0.bik" voice="Campaign\Campaign_2_0.wav" duration="38000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">必须查明恶魔为何驱使兽人发动袭击。他们在图书馆里寻找什么？为何要盗走书籍？被夺走的，又究竟是哪些书？</Text>
-	<Text time="12500">或许只有一人能回答这些疑问——黑暗精灵女术士阿拉薇恩。她深谙恶魔之事。即使求取这些知识要付出高昂的代价，有些答案也非得到不可。</Text>
-	<Text time="27500">于是，一支远征军启程了。他们必须翻越巨人脊山脉，与食人魔和巨魔奋战，才能抵达阿拉薇恩的堡垒。</Text>
+	<Text time="1500">必须查明恶魔为何驱使兽人发动袭击。他们在图书馆里寻找什么？为何要盗走书籍？</Text><Text time="7000">被夺走的，又究竟是哪些书？</Text>
+	<Text time="12500">或许只有一人能回答这些疑问——黑暗精灵女术士阿拉薇恩。她深谙恶魔之事。</Text><Text time="20000">即使求取这些知识要付出高昂的代价，有些答案也非得到不可。</Text>
+	<Text time="27500">于是，一支远征军启程了。他们必须翻越巨人脊山脉，与食人魔和巨魔奋战，</Text><Text time="32750">才能抵达阿拉薇恩的堡垒。</Text>
 </CutScene>

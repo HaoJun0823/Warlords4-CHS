@@ -2,7 +2,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须击败龙族之境中的各个巨龙派系，才能抵达凯尔图拉克斯的洞穴。唯有如此，你才有机会询问它关于大崩裂的真相。</Message>
+		<Message>你必须击败龙族之境中的各个巨龙派系，|才能抵达凯尔图拉克斯的洞穴。唯有如此，|你才有机会询问它关于大崩裂的真相。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
@@ -48,7 +48,7 @@
 	</Ruin >
 	<Ruin id="5" available_for_quest="no">
 		<Heading>烈焰之主</Heading>
-		<Message>这头古龙的财宝多得难以计数，宝石、珠宝与金币堆积如山。</Message>
+		<Message>这头古龙的财宝多得难以计数，宝石、|珠宝与金币堆积如山。</Message>
 		<Monster type="52" number="1" level="12"/>
 		<Reward type="gold" data="4000"/>
 	</Ruin >
@@ -84,7 +84,7 @@
 	</Ruin >
 	<Ruin id="11" available_for_quest="no">
 		<Heading>烈焰之主</Heading>
-		<Message>这头古龙的财宝多得难以计数，宝石、珠宝与金币堆积如山。</Message>
+		<Message>这头古龙的财宝多得难以计数，宝石、|珠宝与金币堆积如山。</Message>
 		<Monster type="52" number="1" level="12"/>
 		<Reward type="gold" data="4000"/>
 	</Ruin >
@@ -120,7 +120,7 @@
 	</Ruin >
 	<Ruin id="17" available_for_quest="no">
 		<Heading>烈焰之主</Heading>
-		<Message>这头古龙的财宝多得难以计数，宝石、珠宝与金币堆积如山。</Message>
+		<Message>这头古龙的财宝多得难以计数，宝石、|珠宝与金币堆积如山。</Message>
 		<Monster type="52" number="1" level="12"/>
 		<Reward type="gold" data="4000"/>
 	</Ruin >
@@ -333,7 +333,7 @@
 		<Action type="counter_add" data1="-1" string1="red_counter"/>
 		<Action type="counter_add" data1="-1" string1="blue_counter"/>
 		<Action type="mana_crystals" data1="1"/>
-		<Message>你取出收集齐的 3 颗不同龙骨，将它们制成一块魔力水晶。</Message>
+		<Message>你取出收集齐的 3 颗不同龙骨，|将它们制成一块魔力水晶。</Message>
 	</Event>
 
 </Events>

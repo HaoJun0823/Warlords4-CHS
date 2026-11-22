@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_7_1.bik" voice="Campaign\Campaign_7_1.wav" duration="34000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">塞伦提亚帝国的战斗结束了。为了不让凯尔图拉克斯挑剔少了一颗宝石，众人索性将整张宝座都搬了回来。</Text>
+	<Text time="1500">塞伦提亚帝国的战斗结束了。为了不让凯尔图拉克斯挑剔少了一颗宝石，</Text><Text time="6250">众人索性将整张宝座都搬了回来。</Text>
 	<Text time="11000">凯尔图拉克斯又一次心满意足，随即一字一句地说道：</Text>
-	<Text time="16000">“越过破碎沼泽，深入马尔贝克的废墟，在尚未倒塌的最高塔楼顶端，阿拉薇恩已经开始吟唱咒文。快去吧……不然，接下来的世道可就有意思了……”</Text>
+	<Text time="16000">“越过破碎沼泽，深入马尔贝克的废墟，在尚未倒塌的最高塔楼顶端，</Text><Text time="25000">阿拉薇恩已经开始吟唱咒文。快去吧……不然，接下来的世道可就有意思了……”</Text>
 </CutScene>

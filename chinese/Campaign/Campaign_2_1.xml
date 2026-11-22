@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_2_1.bik" voice="Campaign\Campaign_2_1.wav" duration="27000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
 	<Text time="1500">通往阿拉薇恩堡垒的道路终于打通了……可堡垒里空无一人，早已人去楼空。</Text>
-	<Text time="8500">众人在冰冷而寂静的塔楼里搜寻，很快便发现了许多从北方堡垒盗来的书籍。看来，策动恶魔袭击的正是阿拉薇恩本人。</Text>
+	<Text time="8500">众人在冰冷而寂静的塔楼里搜寻，很快便发现了许多从北方堡垒盗来的书籍。看来，</Text><Text time="13750">策动恶魔袭击的正是阿拉薇恩本人。</Text>
 	<Text time="19000">但那名黑暗精灵女术士早已不知去向……她逃走了，甚至将行踪也掩藏得滴水不漏。</Text>
 </CutScene>

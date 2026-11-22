@@ -43,9 +43,14 @@
 
 > 注意：CutScene 拆句会**增加 `<Text>` 节点数**，校验脚本已相应放宽（允许 Text 增加，其它标签仍须一致）。
 
-### 状态
-RC2 补丁仍含此 BUG（未拆句）。`Tools/translate/check_translation.py` 已加入长度警告（warning 级，不阻断翻译），
-后续由翻译 AI 按上述阈值修复。
+### 修复状态（已实施）
+- `Tools/dev/split_overflow.py` 按标点智能断句，自动应用上述阈值：
+  - 字幕：在原 time 到下一 time 区间内均分时间点，拆成多个 `<Text>`
+  - 消息：用 `|` 分页拆短首段
+- 已对 RC2 的 **48 处字幕 + 120 处消息 = 168 处**全部切分，切分后风险归零。
+- `check_translation.py` / `verify_release.py` 已放宽规则：**允许 `<Text>` 节点增加**（拆句的既定手段），
+  其它标签仍须与原文一致；并保留长度警告（warning 级）防止翻译 AI 改出超长文本。
+- 构建包 `Warlords4-CHS-v20261122-1002.zip` 已通过全部门禁校验。
 
 ---
 

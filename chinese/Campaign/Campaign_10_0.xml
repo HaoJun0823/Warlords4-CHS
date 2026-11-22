@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_10_0.bik" voice="Campaign\Campaign_10_0.wav" duration="23000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
 	<Text time="1500">马尔贝克最高的塔楼，远在数里之外便清晰可见。阿拉薇恩就在那里等待着。</Text>
-	<Text time="7500">她的吟唱声此刻仍在空中回荡，沉重而不祥。每念出一个音节，便有更多恶魔应召而来，世界也向毁灭更近一步。</Text>
+	<Text time="7500">她的吟唱声此刻仍在空中回荡，沉重而不祥。每念出一个音节，</Text><Text time="12000">便有更多恶魔应召而来，世界也向毁灭更近一步。</Text>
 	<Text time="16500">决定艾瑟里亚命运的时刻，到了……</Text>
 </CutScene>

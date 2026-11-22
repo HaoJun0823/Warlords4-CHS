@@ -1,4 +1,4 @@
 <CutScene file="Video\Campaign_4_1.bik" voice="Campaign\Campaign_4_1.wav" duration="16000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">骑士团败了，龙之石也被夺走。倘若这能拯救整个世界，对他们而言，或许不过是微不足道的代价。</Text>
+	<Text time="1500">骑士团败了，龙之石也被夺走。倘若这能拯救整个世界，对他们而言，</Text><Text time="4750">或许不过是微不足道的代价。</Text>
 	<Text time="8000">但此行最危险的一段仍在前方……他们必须踏入龙族之境。</Text>
 </CutScene>

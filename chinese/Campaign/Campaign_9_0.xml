@@ -1,7 +1,7 @@
 <CutScene file="Video\Campaign_9_0.bik" voice="Campaign\Campaign_9_0.wav" duration="46000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
 	<Text time="1500">如今，唯一的阻碍便是横亘在前的破碎沼泽。</Text>
-	<Text time="5000">三千年前，大崩裂尚未发生时，这里原是一片沃土。人类在此定居，建立起以马尔贝克城为中心、日渐繁盛的帝国。</Text>
-	<Text time="17000">大崩裂将一切彻底改变。滔天巨浪席卷大地，吞没了土地和居民，所经之处尽成废墟。</Text>
-	<Text time="26500">自那命运攸关的一日起，人们便将此地称为“破碎沼泽”。几乎没有人怀疑，死者不得安息的魂灵，至今仍徘徊在芦苇与泥潭之间。</Text>
+	<Text time="5000">三千年前，大崩裂尚未发生时，这里原是一片沃土。人类在此定居，</Text><Text time="11000">建立起以马尔贝克城为中心、日渐繁盛的帝国。</Text>
+	<Text time="17000">大崩裂将一切彻底改变。滔天巨浪席卷大地，吞没了土地和居民，</Text><Text time="21750">所经之处尽成废墟。</Text>
+	<Text time="26500">自那命运攸关的一日起，人们便将此地称为“破碎沼泽”。几乎没有人怀疑，</Text><Text time="31500">死者不得安息的魂灵，至今仍徘徊在芦苇与泥潭之间。</Text>
 	<Text time="36500">而今，一支大军必须从这里通过，否则历史就会重演，破碎沼泽将再遭浩劫。</Text>
 </CutScene>

@@ -1,5 +1,5 @@
 <CutScene file="Video\Campaign_8_0.bik" voice="Campaign\Campaign_8_0.wav" duration="22000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
 	<Text time="1500">当务之急，是先取得那道反制咒文。</Text>
-	<Text time="4500">根本没有时间与精灵展开漫长的谈判——一个寿命悠长的种族，做起什么事来都慢条斯理。</Text>
+	<Text time="4500">根本没有时间与精灵展开漫长的谈判——一个寿命悠长的种族，</Text><Text time="8750">做起什么事来都慢条斯理。</Text>
 	<Text time="13000">唯有迅速突袭精灵王国腹地的寒冰堡垒，才有可能及时取回咒文。</Text>
 </CutScene>

@@ -1,4 +1,4 @@
 <CutScene file="Video\Campaign_5_1.bik" voice="Campaign\Campaign_5_1.wav" duration="22000" voicedelay="1500" font="font_large" sound="snd_cutscene" x="0" y="128" width="1024" height="512" textx="512" texty="652">
-	<Text time="1500">通往凯尔图拉克斯洞穴的道路终于畅通。曾降下烈焰、冰霜与雷霆的天空重归沉寂；而凯尔图拉克斯本身，似乎依然酣睡未醒。</Text>
+	<Text time="1500">通往凯尔图拉克斯洞穴的道路终于畅通。曾降下烈焰、冰霜与雷霆的天空重归沉寂；</Text><Text time="7500">而凯尔图拉克斯本身，似乎依然酣睡未醒。</Text>
 	<Text time="13500">如今只剩最后一步——唤醒这头古老巨龙，献上龙之石，再祈祷它会满意。</Text>
 </CutScene>

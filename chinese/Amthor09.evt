@@ -16,7 +16,7 @@
     <!--Story start-->
 	<Event side="0" repeat="1" location="city" locdata="0">
 		<Trigger type="turn" data1="1"/>
-		<Message>你终于回到陆地，却没能达成此行的目的。古龙基林仍然活着，还告诉你那枚护符竟是食人魔替希安特拉打造的！你必须弄清究竟是谁在说谎。|你已经派使者去见希安特拉，要求她交出护符。你要亲自判断真相。|等待使者归来期间，你决定调查巨人丘陵。此行不能带上黑暗精灵，看来你再也不能信任任何人。|不过，你毕竟是一名召唤师。</Message>
+		<Message>你终于回到陆地，却没能达成此行的目的。|古龙基林仍然活着，|还告诉你那枚护符竟是食人魔替希安特拉打造的！|你必须弄清究竟是谁在说谎。|你已经派使者去见希安特拉，要求她交出护符。你要亲自判断真相。|等待使者归来期间，你决定调查巨人丘陵。此行不能带上黑暗精灵，看来你再也不能信任任何人。|不过，你毕竟是一名召唤师。</Message>
 		<Action type="counter_set" data1="0" String1="w1"/>
 	</Event>
 
@@ -39,7 +39,7 @@
 	<Event side="0" repeat="1" location="city" locdata="36">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="36"/>
-		<Message>你找到一扇通往黑暗位面的传送门，它会改善你的魔力流动……</Message>
+		<Message>你找到一扇通往黑暗位面的传送门，|它会改善你的魔力流动……</Message>
 		<Action type="particle" string1="BlackCapitol"/>
 		<Action type="mana_crystals" data1="2"/>
 	</Event>
@@ -80,19 +80,19 @@
 	<Event side="0" repeat="1" location="city" locdata="5">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
-		<Message>看来你引起了骑士团和帝国的注意。他们总在你身后紧追不舍，可究竟为什么？</Message>
+		<Message>看来你引起了骑士团和帝国的注意。|他们总在你身后紧追不舍，可究竟为什么？</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="2">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="1" String1="w1"/>
-		<Message>你击倒了那名巨人统帅，搜查他的堡垒。巨龙说得没错：食人魔确实掌握着制作魔法物品的技艺。可是，仍没有证据表明他们与希安特拉有关……至少现在没有。</Message>
+		<Message>你击倒了那名巨人统帅，搜查他的堡垒。|巨龙说得没错：|食人魔确实掌握着制作魔法物品的技艺。可是，|仍没有证据表明他们与希安特拉有关……|至少现在没有。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="2">
 		<Trigger type="on_city"/>
 		<Trigger type="counter_eq" data1="2" String1="w1"/>
-		<Message>你费了好大力气才击败这名巨人！毫无疑问，黑暗精灵曾暗中援助他。你再次搜查堡垒，在统帅的房间里发现一只木箱，里面藏着一封信——信上盖着希安特拉的印章！|不论信是否伪造，现在都该去找那名精灵，当面质问调查所得。当然……还有你那名使者的下落！|接下来进入《阿姆索尔 10》……</Message>
+		<Message>你费了好大力气才击败这名巨人！毫无疑问，|黑暗精灵曾暗中援助他。你再次搜查堡垒，|在统帅的房间里发现一只木箱，|里面藏着一封信——信上盖着希安特拉的印章！|不论信是否伪造，现在都该去找那名精灵，当面质问调查所得。当然……还有你那名使者的下落！|接下来进入《阿姆索尔 10》……</Message>
 		<Action type="victory" data1="0"/>
 	</Event>
 

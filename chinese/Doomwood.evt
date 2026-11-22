@@ -27,7 +27,7 @@
 
 	<Ruin id="9" available_for_quest="no">
 		<Heading>刺客！</Heading>
-		<Message>这群刺客伏击了一名骑士。获救后，他感激不尽，愿意加入你的队伍。</Message>
+		<Message>这群刺客伏击了一名骑士。获救后，他感激不尽，|愿意加入你的队伍。</Message>
 		<Monster type="41" number="1" level="5"/>
 		<Monster type="37" number="3" level="1"/>
 		<Reward type="hero" data="5" level="5" number="1" name="Sir Uther"/>
@@ -53,7 +53,7 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="counter_eq" string1="zeskin_counter" data1="2"/>
-		<Message>一队精灵如约而至，在你的首都集结，愿意加入你的队伍。</Message>
+		<Message>一队精灵如约而至，在你的首都集结，|愿意加入你的队伍。</Message>
 		<Action type="counter_set" data1="3" string1="zeskin_counter"/>
 		<Action type="unit" data1="54" data2="6" data3="2"/>
 	</Event>
@@ -63,7 +63,7 @@
 		<Trigger type="turn_or_later" data1="3"/>
 		<Trigger type="counter_eq" string1="zeskin_counter" data1="3"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>精灵们仍感激你在泽斯金的救援行动，又派来几名战士助你一臂之力。</Message>
+		<Message>精灵们仍感激你在泽斯金的救援行动，|又派来几名战士助你一臂之力。</Message>
 		<Action type="unit" data1="56" data2="3" data3="2"/>
 	</Event>
 
@@ -72,25 +72,25 @@
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="0"/>
-		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。|黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 	<Event side="3" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="3"/>
-		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。|黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 	<Event side="5" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="5"/>
-		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。|黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 	<Event side="7" repeat="1" location="city" locdata="0">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="0"/>
 		<Action type="victory" data1="7"/>
-		<Message>你在战斗中击败了加拉诺斯国王。黑暗精灵终于放下武器，愿意与你交谈。</Message>
+		<Message>你在战斗中击败了加拉诺斯国王。|黑暗精灵终于放下武器，愿意与你交谈。</Message>
 	</Event>
 
 </Events>

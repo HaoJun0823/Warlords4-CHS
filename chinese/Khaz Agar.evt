@@ -9,12 +9,12 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>你必须沿着山脉向东进军，击败矮人守卫，直到找到卡兹·阿加尔的堡垒。|洗劫卡兹·阿加尔之后，你便能把财宝带回去献给凯尔图拉克斯。</Message>
+		<Message>你必须沿着山脉向东进军，击败矮人守卫，|直到找到卡兹·阿加尔的堡垒。|洗劫卡兹·阿加尔之后，你便能把财宝带回去献给凯尔图拉克斯。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="2"/>
-		<Message>一名矮人炼金术士前来求见，似乎完全没有察觉你正准备进攻卡兹·阿加尔。|他提出，只要你愿意在首都为他提供庇护，他就会替你打造魔法物品。</Message>
+		<Message>一名矮人炼金术士前来求见，|似乎完全没有察觉你正准备进攻卡兹·阿加尔。|他提出，只要你愿意在首都为他提供庇护，他就会替你打造魔法物品。</Message>
 	</Event>
 
 
@@ -44,7 +44,7 @@
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="turn" data1="30"/>
-		<Message>矮人炼金术士终于完成了风暴之刃，并将它作为最后一件作品赠予你。</Message>
+		<Message>矮人炼金术士终于完成了风暴之刃，|并将它作为最后一件作品赠予你。</Message>
 		<Action type="item" data1="48"/>
 	</Event>
 
@@ -63,7 +63,7 @@
 	</Ruin>
 	<Ruin id="17" available_for_quest="no">
 		<Heading>魔像守卫</Heading>
-		<Message>这尊魔像看守着一名精灵俘虏。获救后，他心怀感激，愿意加入你的队伍。</Message>
+		<Message>这尊魔像看守着一名精灵俘虏。获救后，他心怀感激，|愿意加入你的队伍。</Message>
 		<Monster type="14" number="1" level="10"/>
 		<Reward type="allies" data="54" level="15" number="1" name="Prince Delfen"/>
 	</Ruin>

@@ -9,7 +9,7 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="1"/>
-		<Message>在巴托尼亚森林深处，一处积雪的幽谷中央，希里亚骑士团守护着龙之石。|你必须取得这块宝石，才能求见最古老的巨龙凯尔图拉克斯。</Message>
+		<Message>在巴托尼亚森林深处，一处积雪的幽谷中央，|希里亚骑士团守护着龙之石。|你必须取得这块宝石，才能求见最古老的巨龙凯尔图拉克斯。</Message>
 	</Event>
 
 	<Event side="0" repeat="1">
@@ -19,45 +19,45 @@
 
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="5"/>
-		<Message>吉尔丁骑士团的使者到了。他提议由本国不时送来金币，资助你的事业。</Message>
+		<Message>吉尔丁骑士团的使者到了。|他提议由本国不时送来金币，资助你的事业。</Message>
 	</Event>
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="6"/>
-		<Message>埃莱尼亚骑士团的使者到了。他提议派遣弓箭手，协助你进攻巴托尼亚骑士团。</Message>
+		<Message>埃莱尼亚骑士团的使者到了。他提议派遣弓箭手，|协助你进攻巴托尼亚骑士团。</Message>
 	</Event>
 	<Event side="0" repeat="1">
 		<Trigger type="turn" data1="7"/>
-		<Message>塞兰骑士团的使者到了。他对巴托尼亚人的事并不太感兴趣，却愿意派出一批士兵，对付巴托尼亚人用来守卫边境的巨魔。</Message>
+		<Message>塞兰骑士团的使者到了。|他对巴托尼亚人的事并不太感兴趣，|却愿意派出一批士兵，|对付巴托尼亚人用来守卫边境的巨魔。</Message>
 	</Event>
 
 	<Event side="0" repeat="1" location="city" locdata="4">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
 		<Action type="victory" data1="0"/>
-		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。在巴托尼亚的使命至此完成！</Message>
+		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。|在巴托尼亚的使命至此完成！</Message>
 	</Event>
 	<Event side="4" repeat="1" location="city" locdata="4">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
 		<Action type="victory" data1="4"/>
-		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。在巴托尼亚的使命至此完成！</Message>
+		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。|在巴托尼亚的使命至此完成！</Message>
 	</Event>
 	<Event side="6" repeat="1" location="city" locdata="4">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
 		<Action type="victory" data1="6"/>
-		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。在巴托尼亚的使命至此完成！</Message>
+		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。|在巴托尼亚的使命至此完成！</Message>
 	</Event>
 	<Event side="7" repeat="1" location="city" locdata="4">
 		<Trigger type="on_city"/>
 		<Trigger type="city_won" data1="4"/>
 		<Action type="victory" data1="7"/>
-		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。在巴托尼亚的使命至此完成！</Message>
+		<Message>龙卫堡终于陷落，你已将龙之石收入囊中。|在巴托尼亚的使命至此完成！</Message>
 	</Event>
 
 	<Ruin id="9" available_for_quest="no">
 		<Heading>老骑士</Heading>
-		<Message>这座神殿中的老骑士很高兴蝙蝠终于被赶走。他愿意传授你许多关于正确而高尚的用剑之道。</Message>
+		<Message>这座神殿中的老骑士很高兴蝙蝠终于被赶走。|他愿意传授你许多关于正确而高尚的用剑之道。</Message>
 		<Monster type="18" number="1" level="10"/>
 		<Monster type="18" number="7" level="1"/>
 		<Reward type="xp" data="12"/>
@@ -68,21 +68,21 @@
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="6"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>吉尔丁骑士团送来一只宝箱，内有 250 枚金币，供你充实国库。</Message>
+		<Message>吉尔丁骑士团送来一只宝箱，内有 250 枚金币，|供你充实国库。</Message>
 		<Action type="gold" data1="250"/>
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="7"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>一队埃莱尼亚弓箭手开进首都，准备在讨伐巴托尼亚骑士团的战斗中为你效力。</Message>
+		<Message>一队埃莱尼亚弓箭手开进首都，|准备在讨伐巴托尼亚骑士团的战斗中为你效力。</Message>
 		<Action type="unit" data1="1" data2="4" data3="2"/>
 	</Event>
 	<Event side="0" repeat="1" location="capital">
 		<Trigger type="on_turn"/>
 		<Trigger type="turn_or_later" data1="8"/>
 		<Trigger type="chance" data1="20"/>
-		<Message>一些塞兰士兵在一名巨魔猎手的带领下抵达首都，准备迎战任何挡路的食人魔、巨魔或巨人。</Message>
+		<Message>一些塞兰士兵在一名巨魔猎手的带领下抵达首都，|准备迎战任何挡路的食人魔、巨魔或巨人。</Message>
 		<Action type="unit" data1="0" data2="4" data3="1"/>
 		<Action type="unit" data1="12" data2="1" data3="4"/>
 	</Event>

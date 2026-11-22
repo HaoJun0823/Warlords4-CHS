@@ -58,7 +58,14 @@ def verify_one(zip_path: Path) -> list[str]:
                 if b"&#" in data:
                     errors.append(f"{n}: 含数值实体 '&#...;'，会导致游戏卡死")
                 if orig_raw is not None and Path(rel).suffix.lower() in {".xml", ".evt", ".qst"}:
-                    if tag_sequence(data) != tag_sequence(orig_raw):
+                    tags = tag_sequence(data)
+                    tags_eng = tag_sequence(orig_raw)
+                    if data.lstrip().startswith(b"<CutScene"):
+                        # 过场字幕允许 <Text> 节点增加（拆句修复复读的既定手段）
+                        others = lambda seq: [t for t in seq if t != b"Text"]
+                        if others(tags) != others(tags_eng) or tags.count(b"Text") < tags_eng.count(b"Text"):
+                            errors.append(f"{n}: 过场字幕结构异常（除 Text 外标签须一致，Text 不得少于原文）")
+                    elif tags != tags_eng:
                         errors.append(f"{n}: XML 标签结构与 english/ 原文不一致")
     except zipfile.BadZipFile:
         errors.append("不是合法 zip 文件")
